@@ -11,3 +11,5 @@ rig any character with 'faceit' and get MHA quality. No need for iphones, use an
 
 
 (note) If you didn't select the custom character on exporting your animation sequence, you can still add in sequencer: click + on the character's animation track, then 'allow incompatible skeletons' and add the animation. Or you can retarget the animation and it will appear by default.
+
+<img width="1481" height="221" alt="Screenshot 2026-02-07 135951" src="https://github.com/user-attachments/assets/ff1ba2c2-30fb-4fb6-9656-1cae7edccec6" />
