@@ -2,6 +2,8 @@
 remap metahuman animator curves to arkit curves to drive morph targets.
 rig any character with 'faceit' and get MHA quality. No need for iphones, use any monocular camera.
 
+it's done through an 'animation modifier' to convert your animation sequences.
+
 -------
 
 1. Drag the .uasset into your content folder of your project.
