@@ -16,3 +16,5 @@ rig any character with 'faceit' and get MHA quality. No need for iphones, use an
 
 Comparison video:
 https://youtu.be/oiIFQVm8Pug
+
+This video explains what's going on. Instead of renaming the curves in the animation sequence, I made an asset to do it automatically to ANY sequence. https://youtu.be/EF0tNFFY00Y?si=K5xUtGHVuF-Ryord
