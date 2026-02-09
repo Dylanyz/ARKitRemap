@@ -8,7 +8,7 @@ it's done through an 'animation modifier' to convert your animation sequences.
 # Instructions
 1. Drag the .uasset into your content folder of your project.
 2. Process your metahuman performance and export as animation sequence - select your custom character as the skeleton in the export dialog. If you already have an animation sequence - duplicate it if you want to preserve the original, and see the *note* below.
-3. Right click the sequence -> add modifiers -> AM_ArKitRemap
+3. Right click the sequence -> add modifiers -> AM_ArKitRemap. *Note- it can take up to several minutes especially if your animation is long. If it's really short- should be quick.*
 4. Your animation asset now contains ArKit compatible curves. You can add to the character animation track in sequencer by clicking the + on the animation track.
 
 *(note) If you didn't select the custom character on exporting your animation sequence, you can still add in sequencer: click + on the character's animation track, then 'allow incompatible skeletons' and add the animation. Or you can retarget the animation and it will appear by default.*
