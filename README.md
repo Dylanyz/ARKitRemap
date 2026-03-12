@@ -9,19 +9,22 @@ ARKit Remap converts MetaHuman Animator (MHA) facial performances into Apple ARK
 ## Demo
 
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
-
-> This video shows two examples. *note, I don't know why the eye direction is reversed. Some bug.*
+> This video shows two examples. *I don't know why the eye direction is reversed. Some bug.*
 ### 1. Character rigged with FaceIt. 
+
 *No manual corrections, just the basic workflow.*
+
 **Left:** The footage you see ran through metahuman animator(mono video input) and remmapped with ArKit Remap, to create ArKit curves the character can use
+
 **Right:** The straight ArKit curves from Live Link Face iOS
 
 ### 2. Metahuman
+
 **Left:** The same footage, ran through metahuman animator(mono video input), applied to the Metahuman
+
 **Middle:** The metahuman animator sequence remapped with ArKit Remap to create ArKit curves, then applied to the metahuman. *Note, in doing this, the pipeline needs to convert the arkit curves BACK into metahuman animator curves. Essentially going from MHA -> ArKit -> MHA haha. You would never do this- for visualization purposes.*
+
 Right: Straight ArKit curves from Live Link Face iOS. *These are also converted to MHA curves through Epic's pipeline*
-
-
 
 ---
 
