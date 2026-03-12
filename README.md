@@ -168,6 +168,8 @@ This tool was built through extensive reverse engineering of Epic's MetaHuman an
 
 ## Contributing
 
+Using agents like Cursor or Antigravity? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and it should clone(download) the development files to your computer. The whole project is already setup for the agents to work with.
+
 Want to improve the remap quality, add new features, or help with research? See **[CONTRIBUTING.md](CONTRIBUTING.md)** for:
 
 - Repository structure guide
