@@ -1,6 +1,6 @@
 # Contributing to ARKit Remap
 
-Using agents like Cursor or Antigravity? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and it should clone(download) the development files to your computer. The whole project is already setup for the agents to work with.
+Using agents like Cursor or Antigravity? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and ask it to clone(download) the development files to your computer. The whole project is already setup for the agents to work with.
 
 Welcome! This project benefits from both human contributors and AI agent workflows. This guide covers the repo layout, how to get started, and how to work effectively — whether you're coding by hand or using an AI assistant.
 
