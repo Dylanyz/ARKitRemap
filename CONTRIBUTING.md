@@ -40,12 +40,20 @@ ARKitRemap/
 │   ├── arkit-remap-next-steps_f8a2c301.plan.md
 │   └── pose_asset_extraction_methods_research.md
 │
-├── .cursor/                  AI agent integration (Cursor IDE)
+├── AGENTS.md                 Universal agent instructions (works with all AI tools)
+├── GEMINI.md                 Antigravity-native entry point
+├── .cursor/                  Cursor IDE agent integration
 │   ├── rules/
 │   │   └── arkit-remap.mdc      Trigger rules for ARKit remap context
 │   └── skills/
 │       └── arkit-remap/
 │           └── SKILL.md          Agent skill with full pipeline context
+├── .agent/                   Antigravity IDE agent integration
+│   ├── rules/
+│   │   └── arkit-remap.md       Same rules, Antigravity format
+│   └── skills/
+│       └── arkit-remap/
+│           └── SKILL.md          Same skill, Antigravity discovery path
 │
 ├── legacy/                   Legacy Blueprint AnimModifier (.uasset)
 │   └── AM_ArKitRemap.uasset
@@ -99,20 +107,23 @@ Some scripts (like `roundtrip_validation.py` and `coupled_solve.py`) are pure Py
 
 ---
 
-## Working with AI Agents (Cursor)
+## Working with AI Agents
 
-This repo is set up for productive AI-assisted development using [Cursor](https://cursor.sh).
+This repo is set up for productive AI-assisted development with multiple tools. Agent instructions and skills are provided for both **Cursor** and **Google Antigravity**, plus a universal `AGENTS.md` that works with any tool supporting the standard (Codex, Copilot, Windsurf, Jules, Aider, etc.).
 
-### Setup
+### Quick setup by tool
 
-1. Open the cloned `ARKitRemap` repo as a Cursor workspace
-2. The `.cursor/` folder is automatically detected:
-   - **Rules** (`.cursor/rules/arkit-remap.mdc`) — automatically triggers when discussing ARKit remap topics
-   - **Skills** (`.cursor/skills/arkit-remap/SKILL.md`) — provides full pipeline context, artifact locations, and workflow protocols
+| Tool | What happens when you open the repo |
+|------|------|
+| **Cursor** | `.cursor/rules/` and `.cursor/skills/` are auto-detected. Mentioning "ARKit remap" triggers the skill. |
+| **Antigravity** | `AGENTS.md` is loaded automatically. `.agent/skills/` and `.agent/rules/` are discovered. `GEMINI.md` also available. |
+| **Codex / Copilot / Windsurf / others** | `AGENTS.md` at the root is auto-detected. Full project context in one file. |
 
-### What the Agent Skill Provides
+No manual configuration needed for any of these — just open the repo.
 
-The SKILL.md gives AI agents:
+### What the agent gets
+
+All agent configurations provide:
 
 - Complete pipeline overview (forward and reverse)
 - Artifact locations for every script, data file, and report
@@ -121,26 +132,29 @@ The SKILL.md gives AI agents:
 - Required sync protocols (what to update when code changes)
 - Output organization rules
 
-### Agent Workflow Tips
+### Agent workflow tips
 
-- **Start a new task** by mentioning "ARKit remap" — the rule triggers automatic skill loading
+- **Start a new task** by mentioning "ARKit remap" — triggers automatic context loading
 - **For research tasks**, point the agent to `dev/knowledge-base.md` for full technical context
 - **For code changes**, the skill requires agents to update the knowledge base, SKILL.md, and AGENT_INDEX when relevant
 - **For calibration work**, the `dev/scripts/` folder has specialized calibration and validation tools
 - **For PoseAsset work**, start at `dev/mapping-pose-asset/AGENT_INDEX.md`
 
-### Adding New Rules or Skills
+### Adding new rules or skills
 
-If you want to add rules for your own workflow:
+For Cursor:
+```
+.cursor/rules/your-rule.mdc
+.cursor/skills/your-skill/SKILL.md
+```
 
+For Antigravity:
 ```
-.cursor/
-  rules/
-    your-rule.mdc       Cursor picks these up automatically
-  skills/
-    your-skill/
-      SKILL.md           Referenced by rules or loaded manually
+.agent/rules/your-rule.md
+.agent/skills/your-skill/SKILL.md
 ```
+
+For universal compatibility, add instructions to `AGENTS.md`.
 
 ---
 
