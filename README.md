@@ -6,11 +6,11 @@ ARKit Remap converts MetaHuman Animator (MHA) facial performances into Apple ARK
 
 > MHA(MetaHuman Animator) gives you studio-quality facial capture from monocular video, but outputs its own proprietary curve format (~130+ `CTRL_expressions` curves). FaceIt characters expect the 52 standard ARKit blendshapes. This tool bridges the gap using weighted reverse mapping extracted from Epic's own PoseAsset data.
 
-## Demo
+# Demo
 
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 > This video shows two examples. *I don't know why the eye direction is reversed. Some bug. Or maybe I reversed the mono video... I'll fix it if someone wants.*
-### 1. Character rigged with FaceIt. 
+### Example 1. Character rigged with FaceIt. 
 
 *No manual corrections, just the basic workflow.*
 
@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 
 **Right:** The straight ArKit curves from Live Link Face iOS
 
-### 2. Metahuman
+### Example 2. Metahuman
 
 **Left:** The same footage, ran through metahuman animator(mono video input), applied to the Metahuman
 
