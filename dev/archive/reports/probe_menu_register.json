@@ -1,0 +1,7 @@
+{
+  "add_menu_entry_object": "ToolMenu: Failed to convert parameter 'object' when calling function 'ToolMenu.AddMenuEntryObject' on 'RegisteredMenu_5'\n  TypeError: NativizeProperty: Cannot nativize 'ToolMenuEntry' as 'InObject' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'ToolMenuEntry' as 'Object' (allowed Class type: 'ToolMenuEntryScript')",
+  "add_menu_entry_section_entry": "ok",
+  "add_menu_entry_one_arg": "add_menu_entry() required argument 'args' (pos 2) not found",
+  "insert_position_approach": "ToolMenu: Failed to convert parameter 'object' when calling function 'ToolMenu.AddMenuEntryObject' on 'RegisteredMenu_5'\n  TypeError: NativizeProperty: Cannot nativize 'ToolMenuEntry' as 'InObject' (ObjectProperty)\n    TypeError: NativizeObject: Cannot nativize 'ToolMenuEntry' as 'Object' (allowed Class type: 'ToolMenuEntryScript')",
+  "own_section_approach": "ok"
+}

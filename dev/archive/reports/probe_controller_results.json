@@ -1,0 +1,85 @@
+{
+  "seq_controller_attrs": [
+    "controller"
+  ],
+  "seq_bracket_attrs": [],
+  "seq_model_attrs": [
+    "data_model",
+    "data_model_interface"
+  ],
+  "seq_modify_attrs": [
+    "add_animation_modifier_of_class",
+    "modify"
+  ],
+  "seq_compress_attrs": [],
+  "has_AnimationDataController": true,
+  "has_AnimationDataControllerBracket": false,
+  "has_AnimDataController": true,
+  "has_IAnimationDataController": false,
+  "has_AnimationDataModel": true,
+  "has_AnimDataModel": true,
+  "lib_bracket_attrs": [],
+  "lib_batch_attrs": [],
+  "lib_controller_attrs": [],
+  "has_ScopedEditorTransaction": true,
+  "has_ScopedTransaction": false,
+  "has_ScopedSlowTask": true,
+  "has_TransactionContext": false,
+  "seq.get_data_model": {
+    "error": "'AnimSequence' object has no attribute 'get_data_model'",
+    "ok": false
+  },
+  "seq.data_model": {
+    "type": "NoneType",
+    "ok": true
+  },
+  "seq.get_controller": {
+    "error": "'AnimSequence' object has no attribute 'get_controller'",
+    "ok": false
+  },
+  "seq.controller": {
+    "type": "AnimationDataController",
+    "ok": true
+  },
+  "seq_has_open_bracket": false,
+  "seq_has_close_bracket": false,
+  "seq_has_begin_modification": false,
+  "seq_has_end_modification": false,
+  "prop_bone_compression_settings": {
+    "value": "<Object '/ACLPlugin/ACLAnimBoneCompressionSettings.ACLAnimBoneCompressionSettings' (0x000001D8696285C0) Class 'AnimBoneCompressionSettings'>",
+    "ok": true
+  },
+  "prop_curve_compression_settings": {
+    "value": "<Object '/ACLPlugin/ACLAnimCurveCompressionSettings.ACLAnimCurveCompressionSettings' (0x000001D869608E00) Class 'AnimCurveCompressionSettings'>",
+    "ok": true
+  },
+  "prop_compressed_data": {
+    "error": "AnimSequence: Failed to find property 'compressed_data' for attribute 'compressed_data' on 'AnimSequence'",
+    "ok": false
+  },
+  "prop_do_not_override_compression": {
+    "value": "False",
+    "ok": true
+  },
+  "seq_kw_control": [
+    "controller"
+  ],
+  "seq_kw_model": [
+    "data_model",
+    "data_model_interface"
+  ],
+  "seq_kw_modif": [
+    "add_animation_modifier_of_class",
+    "modify"
+  ],
+  "seq_kw_data": [
+    "_wrapper_meta_data",
+    "add_asset_user_data_of_class",
+    "data_model",
+    "data_model_interface",
+    "find_meta_data_by_class",
+    "get_asset_user_data_of_class",
+    "has_asset_user_data_of_class",
+    "update_retarget_source_asset_data"
+  ]
+}

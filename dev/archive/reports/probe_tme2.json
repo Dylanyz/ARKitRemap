@@ -1,0 +1,21 @@
+{
+  "MultiBlockType": true,
+  "mbt_vals": [
+    "BUTTON_ROW",
+    "EDITABLE_TEXT",
+    "HEADING",
+    "MENU_ENTRY",
+    "NONE",
+    "SEPARATOR",
+    "TOOL_BAR_BUTTON",
+    "TOOL_BAR_COMBO_BUTTON",
+    "WIDGET",
+    "cast",
+    "get_display_name",
+    "name",
+    "static_enum",
+    "value"
+  ],
+  "ToolMenuOwner": true,
+  "ToolMenuStringCommandType": true
+}

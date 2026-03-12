@@ -1,0 +1,1249 @@
+{
+  "target_frame": 956,
+  "sequences": {
+    "mha_source_creature": {
+      "label": "mha_source_creature",
+      "frame": 956,
+      "curves": {
+        "ctrl_expressions_jawchinraisedl": {
+          "value": 0.005577,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawchinraisedr": {
+          "value": 0.005723,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawchinraiseul": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawchinraiseur": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawfwd": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawleft": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawopen": {
+          "value": 0.531982,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawright": {
+          "value": 0.02832,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcheekblowl": {
+          "value": 0.001465,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcheekblowr": {
+          "value": 0.001953,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerdepressl": {
+          "value": 0.195882,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerdepressr": {
+          "value": 0.196777,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerpulll": {
+          "value": 0.000977,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerpullr": {
+          "value": 0.00708,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthdimplel": {
+          "value": 0.160522,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthdimpler": {
+          "value": 0.125732,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunneldl": {
+          "value": 0.062071,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunneldr": {
+          "value": 0.068658,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunnelul": {
+          "value": 0.001698,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunnelur": {
+          "value": 0.000862,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthleft": {
+          "value": 1.6e-05,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipsblowl": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipsblowr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspursedl": {
+          "value": 0.518675,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspursedr": {
+          "value": 0.538625,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspurseul": {
+          "value": 0.521879,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspurseur": {
+          "value": 0.43203,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsdl": {
+          "value": 0.002804,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsdr": {
+          "value": 0.005191,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsul": {
+          "value": 0.008092,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsur": {
+          "value": 0.027741,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerlipdepressl": {
+          "value": 0.003161,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerlipdepressr": {
+          "value": 0.003745,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerliprollinl": {
+          "value": 0.060059,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerliprollinr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressdl": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressdr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressul": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressur": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthright": {
+          "value": 0.050589,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthstretchl": {
+          "value": 0.279053,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthstretchr": {
+          "value": 0.318034,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperlipraisel": {
+          "value": 0.001383,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperlipraiser": {
+          "value": 0.00052,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperliprollinl": {
+          "value": 0.027344,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperliprollinr": {
+          "value": 0.0,
+          "time": 15.9333
+        }
+      }
+    },
+    "remapped_arkit": {
+      "label": "remapped_arkit",
+      "frame": 956,
+      "curves": {
+        "ctrl_expressions_jawchinraisedl": {
+          "value": 0.005577,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawchinraisedr": {
+          "value": 0.005723,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawchinraiseul": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawchinraiseur": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawfwd": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawleft": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawopen": {
+          "value": 0.531982,
+          "time": 15.9333
+        },
+        "ctrl_expressions_jawright": {
+          "value": 0.02832,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcheekblowl": {
+          "value": 0.001465,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcheekblowr": {
+          "value": 0.001953,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerdepressl": {
+          "value": 0.195882,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerdepressr": {
+          "value": 0.196777,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerpulll": {
+          "value": 0.000977,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthcornerpullr": {
+          "value": 0.00708,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthdimplel": {
+          "value": 0.160522,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthdimpler": {
+          "value": 0.125732,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunneldl": {
+          "value": 0.062071,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunneldr": {
+          "value": 0.068658,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunnelul": {
+          "value": 0.001698,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthfunnelur": {
+          "value": 0.000862,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthleft": {
+          "value": 1.6e-05,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipsblowl": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipsblowr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspursedl": {
+          "value": 0.518675,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspursedr": {
+          "value": 0.538625,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspurseul": {
+          "value": 0.521879,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipspurseur": {
+          "value": 0.43203,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsdl": {
+          "value": 0.002804,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsdr": {
+          "value": 0.005191,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsul": {
+          "value": 0.008092,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlipstowardsur": {
+          "value": 0.027741,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerlipdepressl": {
+          "value": 0.003161,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerlipdepressr": {
+          "value": 0.003745,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerliprollinl": {
+          "value": 0.060059,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthlowerliprollinr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressdl": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressdr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressul": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthpressur": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthright": {
+          "value": 0.050589,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthstretchl": {
+          "value": 0.279053,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthstretchr": {
+          "value": 0.318034,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperlipraisel": {
+          "value": 0.001383,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperlipraiser": {
+          "value": 0.00052,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperliprollinl": {
+          "value": 0.027344,
+          "time": 15.9333
+        },
+        "ctrl_expressions_mouthupperliprollinr": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "jawforward": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "jawleft": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "jawopen": {
+          "value": 0.532543,
+          "time": 15.9333
+        },
+        "jawright": {
+          "value": 0.045769,
+          "time": 15.9333
+        },
+        "mouthclose": {
+          "value": 0.005986,
+          "time": 15.9333
+        },
+        "mouthdimpleleft": {
+          "value": 0.161579,
+          "time": 15.9333
+        },
+        "mouthdimpleright": {
+          "value": 0.124307,
+          "time": 15.9333
+        },
+        "mouthfrownleft": {
+          "value": 0.199298,
+          "time": 15.9333
+        },
+        "mouthfrownright": {
+          "value": 0.198074,
+          "time": 15.9333
+        },
+        "mouthfunnel": {
+          "value": 0.000225,
+          "time": 15.9333
+        },
+        "mouthleft": {
+          "value": 2.4e-05,
+          "time": 15.9333
+        },
+        "mouthlowerdownleft": {
+          "value": 0.009431,
+          "time": 15.9333
+        },
+        "mouthlowerdownright": {
+          "value": 0.01049,
+          "time": 15.9333
+        },
+        "mouthpressleft": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "mouthpressright": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "mouthpucker": {
+          "value": 0.436471,
+          "time": 15.9333
+        },
+        "mouthright": {
+          "value": 0.046337,
+          "time": 15.9333
+        },
+        "mouthrolllower": {
+          "value": 0.04197,
+          "time": 15.9333
+        },
+        "mouthrollupper": {
+          "value": 0.003204,
+          "time": 15.9333
+        },
+        "mouthshruglower": {
+          "value": 0.008217,
+          "time": 15.9333
+        },
+        "mouthshrugupper": {
+          "value": 0.0,
+          "time": 15.9333
+        },
+        "mouthsmileleft": {
+          "value": 0.000939,
+          "time": 15.9333
+        },
+        "mouthsmileright": {
+          "value": 0.004963,
+          "time": 15.9333
+        },
+        "mouthstretchleft": {
+          "value": 0.26686,
+          "time": 15.9333
+        },
+        "mouthstretchright": {
+          "value": 0.306501,
+          "time": 15.9333
+        },
+        "mouthupperupleft": {
+          "value": 0.001362,
+          "time": 15.9333
+        },
+        "mouthupperupright": {
+          "value": 0.000585,
+          "time": 15.9333
+        }
+      }
+    },
+    "mha_source_metahuman": {
+      "label": "mha_source_metahuman",
+      "frame": 956,
+      "curves": {
+        "ctrl_expressions_jawchinraisedl": {
+          "value": 0.038358,
+          "time": 23.55
+        },
+        "ctrl_expressions_jawchinraisedr": {
+          "value": 0.312493,
+          "time": 23.2
+        },
+        "ctrl_expressions_jawchinraiseul": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_jawchinraiseur": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_jawfwd": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 183
+        },
+        "ctrl_expressions_jawleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 293
+        },
+        "ctrl_expressions_jawopen": {
+          "value": 0.625977,
+          "time": 17.3
+        },
+        "ctrl_expressions_jawright": {
+          "value": 0.162598,
+          "time": 18.15
+        },
+        "ctrl_expressions_mouthcheekblowl": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 227
+        },
+        "ctrl_expressions_mouthcheekblowr": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 320
+        },
+        "ctrl_expressions_mouthcornerdepressl": {
+          "value": 0.212891,
+          "time": 16.3167
+        },
+        "ctrl_expressions_mouthcornerdepressr": {
+          "value": 0.132324,
+          "time": 16.4333
+        },
+        "ctrl_expressions_mouthcornerpulll": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 543
+        },
+        "ctrl_expressions_mouthcornerpullr": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 460
+        },
+        "ctrl_expressions_mouthdimplel": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 685
+        },
+        "ctrl_expressions_mouthdimpler": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 594
+        },
+        "ctrl_expressions_mouthfunneldl": {
+          "value": 0.451757,
+          "time": 16.55
+        },
+        "ctrl_expressions_mouthfunneldr": {
+          "value": 0.486163,
+          "time": 16.5167
+        },
+        "ctrl_expressions_mouthfunnelul": {
+          "value": 0.048617,
+          "time": 16.95
+        },
+        "ctrl_expressions_mouthfunnelur": {
+          "value": 0.038883,
+          "time": 16.8167
+        },
+        "ctrl_expressions_mouthleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 831
+        },
+        "ctrl_expressions_mouthlipsblowl": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_mouthlipsblowr": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_mouthlipspursedl": {
+          "value": 0.157159,
+          "time": 16.15
+        },
+        "ctrl_expressions_mouthlipspursedr": {
+          "value": 0.062416,
+          "time": 16.2
+        },
+        "ctrl_expressions_mouthlipspurseul": {
+          "value": 0.357238,
+          "time": 16.1
+        },
+        "ctrl_expressions_mouthlipspurseur": {
+          "value": 0.183884,
+          "time": 16.1833
+        },
+        "ctrl_expressions_mouthlipstowardsdl": {
+          "value": 0.275588,
+          "time": 18.4333
+        },
+        "ctrl_expressions_mouthlipstowardsdr": {
+          "value": 0.210343,
+          "time": 18.0333
+        },
+        "ctrl_expressions_mouthlipstowardsul": {
+          "value": 0.274565,
+          "time": 16.5333
+        },
+        "ctrl_expressions_mouthlipstowardsur": {
+          "value": 0.024275,
+          "time": 16.3333
+        },
+        "ctrl_expressions_mouthlowerlipdepressl": {
+          "value": 0.437948,
+          "time": 16.7667
+        },
+        "ctrl_expressions_mouthlowerlipdepressr": {
+          "value": 0.437103,
+          "time": 16.4667
+        },
+        "ctrl_expressions_mouthlowerliprollinl": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 831
+        },
+        "ctrl_expressions_mouthlowerliprollinr": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 403
+        },
+        "ctrl_expressions_mouthpressdl": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_mouthpressdr": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_mouthpressul": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_mouthpressur": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "ctrl_expressions_mouthright": {
+          "value": 0.018476,
+          "time": 23.65
+        },
+        "ctrl_expressions_mouthstretchl": {
+          "value": 0.259033,
+          "time": 22.65
+        },
+        "ctrl_expressions_mouthstretchr": {
+          "value": 0.008382,
+          "time": 17.7
+        },
+        "ctrl_expressions_mouthupperlipraisel": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 826
+        },
+        "ctrl_expressions_mouthupperlipraiser": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 792
+        },
+        "ctrl_expressions_mouthupperliprollinl": {
+          "value": 0.334473,
+          "time": 23.8
+        },
+        "ctrl_expressions_mouthupperliprollinr": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 907
+        },
+        "jawforward": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 183
+        },
+        "jawleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 293
+        },
+        "jawopen": {
+          "value": 0.625977,
+          "time": 17.3
+        },
+        "jawright": {
+          "value": 0.162598,
+          "time": 18.15
+        },
+        "mouthclose": {
+          "value": 0.223622,
+          "time": 16.1
+        },
+        "mouthdimpleleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 685
+        },
+        "mouthdimpleright": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 594
+        },
+        "mouthfrownleft": {
+          "value": 0.212891,
+          "time": 16.3167
+        },
+        "mouthfrownright": {
+          "value": 0.132324,
+          "time": 16.4333
+        },
+        "mouthfunnel": {
+          "value": 0.048617,
+          "time": 16.95
+        },
+        "mouthleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 831
+        },
+        "mouthlowerdownleft": {
+          "value": 0.437948,
+          "time": 16.7667
+        },
+        "mouthlowerdownright": {
+          "value": 0.437103,
+          "time": 16.4667
+        },
+        "mouthpressleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "mouthpressright": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "mouthpucker": {
+          "value": 0.183884,
+          "time": 16.1833
+        },
+        "mouthright": {
+          "value": 0.018476,
+          "time": 23.65
+        },
+        "mouthrolllower": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 831
+        },
+        "mouthrollupper": {
+          "value": 0.334473,
+          "time": 23.8
+        },
+        "mouthshruglower": {
+          "value": 0.038358,
+          "time": 23.55
+        },
+        "mouthshrugupper": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 0
+        },
+        "mouthsmileleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 543
+        },
+        "mouthsmileright": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 460
+        },
+        "mouthstretchleft": {
+          "value": 0.259033,
+          "time": 22.65
+        },
+        "mouthstretchright": {
+          "value": 0.008382,
+          "time": 17.7
+        },
+        "mouthupperupleft": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 826
+        },
+        "mouthupperupright": {
+          "value": null,
+          "frame_out_of_range": true,
+          "total_frames": 792
+        }
+      }
+    },
+    "real_arkit_reference": {
+      "label": "real_arkit_reference",
+      "frame": 956,
+      "curves": {
+        "jawforward": {
+          "value": 0.017001,
+          "time": 31.9333
+        },
+        "jawleft": {
+          "value": 0.005763,
+          "time": 31.9333
+        },
+        "jawopen": {
+          "value": 0.108086,
+          "time": 31.9333
+        },
+        "jawright": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthclose": {
+          "value": 0.126714,
+          "time": 31.9333
+        },
+        "mouthdimpleleft": {
+          "value": 0.061404,
+          "time": 31.9333
+        },
+        "mouthdimpleright": {
+          "value": 0.068962,
+          "time": 31.9333
+        },
+        "mouthfrownleft": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthfrownright": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthfunnel": {
+          "value": 0.036018,
+          "time": 31.9333
+        },
+        "mouthleft": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthlowerdownleft": {
+          "value": 0.13259,
+          "time": 31.9333
+        },
+        "mouthlowerdownright": {
+          "value": 0.135465,
+          "time": 31.9333
+        },
+        "mouthpressleft": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthpressright": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthpucker": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthright": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthrolllower": {
+          "value": 0.012904,
+          "time": 31.9333
+        },
+        "mouthrollupper": {
+          "value": 0.038908,
+          "time": 31.9333
+        },
+        "mouthshruglower": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthshrugupper": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthsmileleft": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthsmileright": {
+          "value": 0.0,
+          "time": 31.9333
+        },
+        "mouthstretchleft": {
+          "value": 0.126294,
+          "time": 31.9333
+        },
+        "mouthstretchright": {
+          "value": 0.133217,
+          "time": 31.9333
+        },
+        "mouthupperupleft": {
+          "value": 0.001617,
+          "time": 31.9333
+        },
+        "mouthupperupright": {
+          "value": 0.002757,
+          "time": 31.9333
+        }
+      }
+    }
+  },
+  "context_frames": {
+    "mha_source_creature": {
+      "954": {
+        "ctrl_expressions_jawopen": 0.505737,
+        "ctrl_expressions_mouthlipstowardsul": 0.008474,
+        "ctrl_expressions_mouthlipstowardsur": 0.027771,
+        "ctrl_expressions_mouthlipstowardsdl": 0.003184,
+        "ctrl_expressions_mouthlipstowardsdr": 0.005674,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.014088,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.015616,
+        "ctrl_expressions_mouthupperlipraisel": 0.001376,
+        "ctrl_expressions_mouthupperlipraiser": 0.000623
+      },
+      "955": {
+        "ctrl_expressions_jawopen": 0.531738,
+        "ctrl_expressions_mouthlipstowardsul": 0.008385,
+        "ctrl_expressions_mouthlipstowardsur": 0.028929,
+        "ctrl_expressions_mouthlipstowardsdl": 0.002929,
+        "ctrl_expressions_mouthlipstowardsdr": 0.005769,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.006665,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.007636,
+        "ctrl_expressions_mouthupperlipraisel": 0.001296,
+        "ctrl_expressions_mouthupperlipraiser": 0.000554
+      },
+      "956": {
+        "ctrl_expressions_jawopen": 0.531982,
+        "ctrl_expressions_mouthlipstowardsul": 0.008092,
+        "ctrl_expressions_mouthlipstowardsur": 0.027741,
+        "ctrl_expressions_mouthlipstowardsdl": 0.002804,
+        "ctrl_expressions_mouthlipstowardsdr": 0.005191,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.003161,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.003745,
+        "ctrl_expressions_mouthupperlipraisel": 0.001383,
+        "ctrl_expressions_mouthupperlipraiser": 0.00052
+      },
+      "957": {
+        "ctrl_expressions_jawopen": 0.520996,
+        "ctrl_expressions_mouthlipstowardsul": 0.007448,
+        "ctrl_expressions_mouthlipstowardsur": 0.025032,
+        "ctrl_expressions_mouthlipstowardsdl": 0.002744,
+        "ctrl_expressions_mouthlipstowardsdr": 0.003409,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.001503,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.001779,
+        "ctrl_expressions_mouthupperlipraisel": 0.001425,
+        "ctrl_expressions_mouthupperlipraiser": 0.000504
+      },
+      "958": {
+        "ctrl_expressions_jawopen": 0.511475,
+        "ctrl_expressions_mouthlipstowardsul": 0.009386,
+        "ctrl_expressions_mouthlipstowardsur": 0.028845,
+        "ctrl_expressions_mouthlipstowardsdl": 0.002839,
+        "ctrl_expressions_mouthlipstowardsdr": 0.002789,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.00225,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.000847,
+        "ctrl_expressions_mouthupperlipraisel": 0.00157,
+        "ctrl_expressions_mouthupperlipraiser": 0.001246
+      },
+      "959": {
+        "ctrl_expressions_jawopen": 0.512939,
+        "ctrl_expressions_mouthlipstowardsul": 0.01108,
+        "ctrl_expressions_mouthlipstowardsur": 0.034576,
+        "ctrl_expressions_mouthlipstowardsdl": 0.00351,
+        "ctrl_expressions_mouthlipstowardsdr": 0.002611,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.0105,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.000404,
+        "ctrl_expressions_mouthupperlipraisel": 0.001766,
+        "ctrl_expressions_mouthupperlipraiser": 0.004355
+      },
+      "960": {
+        "ctrl_expressions_jawopen": 0.52832,
+        "ctrl_expressions_mouthlipstowardsul": 0.010157,
+        "ctrl_expressions_mouthlipstowardsur": 0.033998,
+        "ctrl_expressions_mouthlipstowardsdl": 0.004087,
+        "ctrl_expressions_mouthlipstowardsdr": 0.002524,
+        "ctrl_expressions_mouthlowerlipdepressl": 0.025593,
+        "ctrl_expressions_mouthlowerlipdepressr": 0.007447,
+        "ctrl_expressions_mouthupperlipraisel": 0.001862,
+        "ctrl_expressions_mouthupperlipraiser": 0.017137
+      }
+    },
+    "remapped_arkit": {
+      "954": {
+        "jawopen": 0.535851,
+        "mouthclose": 0.006381,
+        "mouthfunnel": 0.001406,
+        "mouthpucker": 0.426076,
+        "mouthlowerdownleft": 0.037093,
+        "mouthlowerdownright": 0.040063,
+        "mouthupperupleft": 0.00138,
+        "mouthupperupright": 0.000875,
+        "mouthshruglower": 0.014124,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.085252,
+        "mouthrollupper": 0.020023,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "955": {
+        "jawopen": 0.533384,
+        "mouthclose": 0.006222,
+        "mouthfunnel": 0.000562,
+        "mouthpucker": 0.44063,
+        "mouthlowerdownleft": 0.018836,
+        "mouthlowerdownright": 0.020607,
+        "mouthupperupleft": 0.00133,
+        "mouthupperupright": 0.000683,
+        "mouthshruglower": 0.012069,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.059882,
+        "mouthrollupper": 0.008009,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "956": {
+        "jawopen": 0.532543,
+        "mouthclose": 0.005986,
+        "mouthfunnel": 0.000225,
+        "mouthpucker": 0.436471,
+        "mouthlowerdownleft": 0.009431,
+        "mouthlowerdownright": 0.01049,
+        "mouthupperupleft": 0.001362,
+        "mouthupperupright": 0.000585,
+        "mouthshruglower": 0.008217,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.04197,
+        "mouthrollupper": 0.003204,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "957": {
+        "jawopen": 0.525615,
+        "mouthclose": 0.005414,
+        "mouthfunnel": 9e-05,
+        "mouthpucker": 0.405169,
+        "mouthlowerdownleft": 0.004674,
+        "mouthlowerdownright": 0.005263,
+        "mouthupperupleft": 0.001399,
+        "mouthupperupright": 0.000536,
+        "mouthshruglower": 0.005163,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.040372,
+        "mouthrollupper": 0.001281,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "958": {
+        "jawopen": 0.517131,
+        "mouthclose": 0.00553,
+        "mouthfunnel": 3.6e-05,
+        "mouthpucker": 0.339082,
+        "mouthlowerdownleft": 0.003219,
+        "mouthlowerdownright": 0.002613,
+        "mouthupperupleft": 0.001502,
+        "mouthupperupright": 0.000962,
+        "mouthshruglower": 0.00328,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.033288,
+        "mouthrollupper": 0.000513,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "959": {
+        "jawopen": 0.514616,
+        "mouthclose": 0.006196,
+        "mouthfunnel": 1.4e-05,
+        "mouthpucker": 0.264427,
+        "mouthlowerdownleft": 0.007588,
+        "mouthlowerdownright": 0.001288,
+        "mouthupperupleft": 0.00166,
+        "mouthupperupright": 0.002998,
+        "mouthshruglower": 0.017661,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.013462,
+        "mouthrollupper": 0.000205,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "960": {
+        "jawopen": 0.522839,
+        "mouthclose": 0.006502,
+        "mouthfunnel": 0.010372,
+        "mouthpucker": 0.196881,
+        "mouthlowerdownleft": 0.018391,
+        "mouthlowerdownright": 0.004983,
+        "mouthupperupleft": 0.001781,
+        "mouthupperupright": 0.011481,
+        "mouthshruglower": 0.042703,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.005385,
+        "mouthrollupper": 8.2e-05,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      }
+    },
+    "real_arkit_reference": {
+      "954": {
+        "jawopen": 0.050551,
+        "mouthclose": 0.060776,
+        "mouthfunnel": 0.0,
+        "mouthpucker": 0.0,
+        "mouthlowerdownleft": 0.143721,
+        "mouthlowerdownright": 0.143873,
+        "mouthupperupleft": 0.001562,
+        "mouthupperupright": 0.002891,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.013401,
+        "mouthrollupper": 0.03657,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "955": {
+        "jawopen": 0.063432,
+        "mouthclose": 0.077978,
+        "mouthfunnel": 0.0,
+        "mouthpucker": 0.0,
+        "mouthlowerdownleft": 0.148701,
+        "mouthlowerdownright": 0.147367,
+        "mouthupperupleft": 0.001592,
+        "mouthupperupright": 0.002859,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.013529,
+        "mouthrollupper": 0.037549,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "956": {
+        "jawopen": 0.108086,
+        "mouthclose": 0.126714,
+        "mouthfunnel": 0.036018,
+        "mouthpucker": 0.0,
+        "mouthlowerdownleft": 0.13259,
+        "mouthlowerdownright": 0.135465,
+        "mouthupperupleft": 0.001617,
+        "mouthupperupright": 0.002757,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.012904,
+        "mouthrollupper": 0.038908,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "957": {
+        "jawopen": 0.150747,
+        "mouthclose": 0.183177,
+        "mouthfunnel": 0.192949,
+        "mouthpucker": 0.283293,
+        "mouthlowerdownleft": 0.102848,
+        "mouthlowerdownright": 0.124767,
+        "mouthupperupleft": 0.001808,
+        "mouthupperupright": 0.002802,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.0,
+        "mouthrollupper": 0.038772,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "958": {
+        "jawopen": 0.148868,
+        "mouthclose": 0.173138,
+        "mouthfunnel": 0.239192,
+        "mouthpucker": 0.448174,
+        "mouthlowerdownleft": 0.083775,
+        "mouthlowerdownright": 0.109197,
+        "mouthupperupleft": 0.001992,
+        "mouthupperupright": 0.00286,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.0,
+        "mouthrollupper": 0.034873,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "959": {
+        "jawopen": 0.115142,
+        "mouthclose": 0.135585,
+        "mouthfunnel": 0.237038,
+        "mouthpucker": 0.438612,
+        "mouthlowerdownleft": 0.067286,
+        "mouthlowerdownright": 0.085033,
+        "mouthupperupleft": 0.002108,
+        "mouthupperupright": 0.002872,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.0,
+        "mouthrollupper": 0.029221,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.0
+      },
+      "960": {
+        "jawopen": 0.076096,
+        "mouthclose": 0.09263,
+        "mouthfunnel": 0.232288,
+        "mouthpucker": 0.439987,
+        "mouthlowerdownleft": 0.050384,
+        "mouthlowerdownright": 0.065393,
+        "mouthupperupleft": 0.002309,
+        "mouthupperupright": 0.002976,
+        "mouthshruglower": 0.0,
+        "mouthshrugupper": 0.0,
+        "mouthrolllower": 0.0,
+        "mouthrollupper": 0.019334,
+        "mouthpressleft": 0.0,
+        "mouthpressright": 0.000971
+      }
+    }
+  }
+}

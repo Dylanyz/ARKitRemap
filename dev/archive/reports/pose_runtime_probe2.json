@@ -1,0 +1,17 @@
+{
+  "inst_type": "AnimSingleNodeInstance",
+  "all_curve_names": [],
+  "update0": "ok",
+  "update033": "ok",
+  "posteval": "ok",
+  "setpos": "ok",
+  "playfalse": "ok",
+  "set_preview": "ok",
+  "update_after": "ok",
+  "posteval_after": "ok",
+  "setpos_after": "ok",
+  "JawOpen": 0.0,
+  "ctrl_expressions_jaw_open": 0.0,
+  "CTRL_Expressions_Jaw_Open": 0.0,
+  "ctrl_expressions_mouthstretchl": 0.0
+}

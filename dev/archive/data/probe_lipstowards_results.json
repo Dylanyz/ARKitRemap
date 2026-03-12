@@ -1,0 +1,425 @@
+{
+  "animPath": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys",
+  "curves": {
+    "ctrl_expressions_mouthlipstowardsul": {
+      "count": 1450,
+      "min": 0.004286,
+      "max": 0.711117,
+      "mean": 0.164514,
+      "std": 0.162318,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsTowards"
+    },
+    "ctrl_expressions_mouthlipstowardsur": {
+      "count": 1450,
+      "min": 0.007738,
+      "max": 0.731695,
+      "mean": 0.192413,
+      "std": 0.167508,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsTowards"
+    },
+    "ctrl_expressions_mouthlipstowardsdl": {
+      "count": 1450,
+      "min": 0.001341,
+      "max": 0.540431,
+      "mean": 0.097897,
+      "std": 0.122563,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsTowards"
+    },
+    "ctrl_expressions_mouthlipstowardsdr": {
+      "count": 1450,
+      "min": 0.000771,
+      "max": 0.543651,
+      "mean": 0.104475,
+      "std": 0.12557,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsTowards"
+    },
+    "ctrl_expressions_mouthlipspurseul": {
+      "count": 1450,
+      "min": 0.033307,
+      "max": 0.902988,
+      "mean": 0.437276,
+      "std": 0.217712,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsPurse"
+    },
+    "ctrl_expressions_mouthlipspurseur": {
+      "count": 1450,
+      "min": 0.033633,
+      "max": 0.914497,
+      "mean": 0.431346,
+      "std": 0.225913,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsPurse"
+    },
+    "ctrl_expressions_mouthlipspursedl": {
+      "count": 1450,
+      "min": 0.027189,
+      "max": 0.769848,
+      "mean": 0.335927,
+      "std": 0.197528,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsPurse"
+    },
+    "ctrl_expressions_mouthlipspursedr": {
+      "count": 1450,
+      "min": 0.015471,
+      "max": 0.755735,
+      "mean": 0.328609,
+      "std": 0.197782,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "lipsPurse"
+    },
+    "ctrl_expressions_mouth_lips_together_ul": {
+      "exists": false
+    },
+    "ctrl_expressions_mouth_lips_together_ur": {
+      "exists": false
+    },
+    "ctrl_expressions_mouth_lips_together_dl": {
+      "exists": false
+    },
+    "ctrl_expressions_mouth_lips_together_dr": {
+      "exists": false
+    },
+    "ctrl_expressions_jawopen": {
+      "count": 1450,
+      "min": 0.048584,
+      "max": 1.0,
+      "mean": 0.585375,
+      "std": 0.317281,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0,
+      "exists": true,
+      "group": "jawOpen"
+    }
+  },
+  "correlations": {
+    "ul vs ur": 0.994122,
+    "ul vs dl": 0.948557,
+    "ul vs dr": 0.927542,
+    "ur vs dl": 0.946729,
+    "ur vs dr": 0.937014,
+    "dl vs dr": 0.990274,
+    "lipsTowards_ul vs jawOpen": 0.529673,
+    "lipsTowards_ur vs jawOpen": 0.539271,
+    "lipsTowards_dl vs jawOpen": 0.415382,
+    "lipsTowards_dr vs jawOpen": 0.36804,
+    "lipsPurse_ul vs jawOpen": 0.610711,
+    "lipsPurse_ur vs jawOpen": 0.610652,
+    "lipsPurse_dl vs jawOpen": 0.452556,
+    "lipsPurse_dr vs jawOpen": 0.440171,
+    "formulaA_vs_jawOpen": 0.480684,
+    "formulaB_vs_jawOpen": 0.667377
+  },
+  "candidateFormulas": {
+    "A_lipsTowardsMean": {
+      "count": 1450,
+      "min": 0.00403,
+      "max": 0.631724,
+      "mean": 0.139825,
+      "std": 0.14221,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0
+    },
+    "B_lipsTowardsMean_x_jawOpen": {
+      "count": 1450,
+      "min": 0.000389,
+      "max": 0.629873,
+      "mean": 0.103539,
+      "std": 0.131805,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0
+    },
+    "C_weighted_LT07_LP03": {
+      "count": 1450,
+      "min": 0.017044,
+      "max": 0.654953,
+      "mean": 0.212864,
+      "std": 0.150136,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0
+    },
+    "C2_weighted_LT07_LP03_x_jawOpen": {
+      "count": 1450,
+      "min": 0.001592,
+      "max": 0.653034,
+      "mean": 0.150433,
+      "std": 0.154407,
+      "nonzeroFrames": 1450,
+      "nonzeroPct": 100.0
+    }
+  },
+  "highLipsTowardsFrames": [
+    {
+      "frame": 0,
+      "lipsTowardsMean": 0.1179,
+      "jawOpen": 0.0708
+    },
+    {
+      "frame": 1,
+      "lipsTowardsMean": 0.228,
+      "jawOpen": 0.0901
+    },
+    {
+      "frame": 2,
+      "lipsTowardsMean": 0.2888,
+      "jawOpen": 0.1224
+    },
+    {
+      "frame": 3,
+      "lipsTowardsMean": 0.3215,
+      "jawOpen": 0.1625
+    },
+    {
+      "frame": 4,
+      "lipsTowardsMean": 0.2868,
+      "jawOpen": 0.2257
+    },
+    {
+      "frame": 5,
+      "lipsTowardsMean": 0.183,
+      "jawOpen": 0.3043
+    },
+    {
+      "frame": 6,
+      "lipsTowardsMean": 0.1229,
+      "jawOpen": 0.3419
+    },
+    {
+      "frame": 7,
+      "lipsTowardsMean": 0.1004,
+      "jawOpen": 0.3383
+    },
+    {
+      "frame": 9,
+      "lipsTowardsMean": 0.1016,
+      "jawOpen": 0.3739
+    },
+    {
+      "frame": 11,
+      "lipsTowardsMean": 0.1165,
+      "jawOpen": 0.4077
+    },
+    {
+      "frame": 12,
+      "lipsTowardsMean": 0.1182,
+      "jawOpen": 0.4399
+    },
+    {
+      "frame": 13,
+      "lipsTowardsMean": 0.1181,
+      "jawOpen": 0.4878
+    },
+    {
+      "frame": 14,
+      "lipsTowardsMean": 0.1239,
+      "jawOpen": 0.5349
+    },
+    {
+      "frame": 15,
+      "lipsTowardsMean": 0.1351,
+      "jawOpen": 0.5767
+    },
+    {
+      "frame": 16,
+      "lipsTowardsMean": 0.1478,
+      "jawOpen": 0.6118
+    },
+    {
+      "frame": 17,
+      "lipsTowardsMean": 0.1583,
+      "jawOpen": 0.6479
+    },
+    {
+      "frame": 18,
+      "lipsTowardsMean": 0.162,
+      "jawOpen": 0.6846
+    },
+    {
+      "frame": 19,
+      "lipsTowardsMean": 0.1823,
+      "jawOpen": 0.7183
+    },
+    {
+      "frame": 20,
+      "lipsTowardsMean": 0.2019,
+      "jawOpen": 0.7332
+    },
+    {
+      "frame": 21,
+      "lipsTowardsMean": 0.2196,
+      "jawOpen": 0.7363
+    },
+    {
+      "frame": 22,
+      "lipsTowardsMean": 0.2507,
+      "jawOpen": 0.7708
+    },
+    {
+      "frame": 23,
+      "lipsTowardsMean": 0.2742,
+      "jawOpen": 0.8171
+    },
+    {
+      "frame": 24,
+      "lipsTowardsMean": 0.2997,
+      "jawOpen": 0.8342
+    },
+    {
+      "frame": 25,
+      "lipsTowardsMean": 0.3206,
+      "jawOpen": 0.8428
+    },
+    {
+      "frame": 26,
+      "lipsTowardsMean": 0.3355,
+      "jawOpen": 0.8462
+    },
+    {
+      "frame": 27,
+      "lipsTowardsMean": 0.3337,
+      "jawOpen": 0.8479
+    },
+    {
+      "frame": 28,
+      "lipsTowardsMean": 0.3159,
+      "jawOpen": 0.8491
+    },
+    {
+      "frame": 29,
+      "lipsTowardsMean": 0.3043,
+      "jawOpen": 0.842
+    },
+    {
+      "frame": 30,
+      "lipsTowardsMean": 0.2887,
+      "jawOpen": 0.8325
+    },
+    {
+      "frame": 31,
+      "lipsTowardsMean": 0.2817,
+      "jawOpen": 0.8257
+    },
+    {
+      "frame": 32,
+      "lipsTowardsMean": 0.2603,
+      "jawOpen": 0.8247
+    },
+    {
+      "frame": 33,
+      "lipsTowardsMean": 0.2609,
+      "jawOpen": 0.8218
+    },
+    {
+      "frame": 34,
+      "lipsTowardsMean": 0.26,
+      "jawOpen": 0.8145
+    },
+    {
+      "frame": 35,
+      "lipsTowardsMean": 0.2505,
+      "jawOpen": 0.8062
+    },
+    {
+      "frame": 36,
+      "lipsTowardsMean": 0.2497,
+      "jawOpen": 0.8018
+    },
+    {
+      "frame": 37,
+      "lipsTowardsMean": 0.2423,
+      "jawOpen": 0.7988
+    },
+    {
+      "frame": 38,
+      "lipsTowardsMean": 0.2354,
+      "jawOpen": 0.7866
+    },
+    {
+      "frame": 39,
+      "lipsTowardsMean": 0.2235,
+      "jawOpen": 0.7715
+    },
+    {
+      "frame": 40,
+      "lipsTowardsMean": 0.221,
+      "jawOpen": 0.7646
+    },
+    {
+      "frame": 41,
+      "lipsTowardsMean": 0.2103,
+      "jawOpen": 0.7603
+    },
+    {
+      "frame": 42,
+      "lipsTowardsMean": 0.2017,
+      "jawOpen": 0.7593
+    },
+    {
+      "frame": 43,
+      "lipsTowardsMean": 0.2092,
+      "jawOpen": 0.7537
+    },
+    {
+      "frame": 44,
+      "lipsTowardsMean": 0.2016,
+      "jawOpen": 0.7458
+    },
+    {
+      "frame": 45,
+      "lipsTowardsMean": 0.1917,
+      "jawOpen": 0.7446
+    },
+    {
+      "frame": 46,
+      "lipsTowardsMean": 0.1822,
+      "jawOpen": 0.7402
+    },
+    {
+      "frame": 47,
+      "lipsTowardsMean": 0.1816,
+      "jawOpen": 0.7317
+    },
+    {
+      "frame": 48,
+      "lipsTowardsMean": 0.1725,
+      "jawOpen": 0.7249
+    },
+    {
+      "frame": 49,
+      "lipsTowardsMean": 0.1609,
+      "jawOpen": 0.7202
+    },
+    {
+      "frame": 50,
+      "lipsTowardsMean": 0.1597,
+      "jawOpen": 0.7141
+    },
+    {
+      "frame": 51,
+      "lipsTowardsMean": 0.1603,
+      "jawOpen": 0.7114
+    }
+  ],
+  "highLipsTowardsFrameCount": 648
+}

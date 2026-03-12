@@ -1,0 +1,56 @@
+{
+  "/Game/3_FaceAnims/VecnaArkitFace/Vec-ARKITBAKED-T34_60fps-02": {
+    "number_of_frames": 57954,
+    "sequence_length_s": 965.900024,
+    "sampling_fps": "60/1 = 60.0000",
+    "fps_float": 60.0,
+    "jaw_curve": {
+      "curve": "jawOpen",
+      "key_count": 55528,
+      "first_time": 0.016667,
+      "last_time": 949.93335
+    }
+  },
+  "/Game/3_FaceAnims/VEC_MHA/AS_EL01-v01_VEC": {
+    "number_of_frames": 19060,
+    "sequence_length_s": 317.984344,
+    "sampling_fps": "60/1 = 59.9401",
+    "fps_float": 59.9401,
+    "jaw_curve": {
+      "curve": "jawOpen",
+      "key_count": 19061,
+      "first_time": 0.0,
+      "last_time": 317.984344
+    }
+  },
+  "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys": {
+    "number_of_frames": 1449,
+    "sequence_length_s": 24.15,
+    "sampling_fps": "60/1 = 60.0000",
+    "fps_float": 60.0,
+    "jaw_curve": {
+      "curve": "ctrl_expressions_jawopen",
+      "key_count": 1450,
+      "first_time": 0.0,
+      "last_time": 24.15
+    }
+  },
+  "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys3": {
+    "number_of_frames": 1449,
+    "sequence_length_s": 24.15,
+    "sampling_fps": "60/1 = 60.0000",
+    "fps_float": 60.0,
+    "jaw_curve": {
+      "curve": "ctrl_expressions_jawopen",
+      "key_count": 1450,
+      "first_time": 0.0,
+      "last_time": 24.15
+    }
+  },
+  "alignment": {
+    "arkit_frame_at_mha_frame0": 20724,
+    "arkit_fps": 60.0,
+    "offset_seconds": 345.4,
+    "note": "ARKit time at frame 20724 = MHA frame 0 time"
+  }
+}

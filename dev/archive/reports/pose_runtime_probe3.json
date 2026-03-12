@@ -1,0 +1,12 @@
+{
+  "has_valid_before": true,
+  "set_enable_animation": "ok",
+  "set_allow_curve_eval": "ok",
+  "reset_allowed": "ok",
+  "allowed_eval": true,
+  "inst_type": "AnimSingleNodeInstance",
+  "has_valid_after": true,
+  "all_curve_names": [],
+  "JawOpen": 0.0,
+  "ctrl_expressions_jaw_open": 0.0
+}

@@ -1,0 +1,75 @@
+{
+  "source": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys3",
+  "output": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys3_ARKit",
+  "reference": "/Game/3_FaceAnims/VecnaArkitFace/Vec-ARKITBAKED-T34_60fps-02",
+  "offset_seconds": 345.4,
+  "frames": 1450,
+  "key_frames": [
+    {
+      "frame": 0,
+      "our_jawOpen": 0.0,
+      "our_mouthClose": 0.0,
+      "our_mouthPucker": 0.6242,
+      "ref_jawOpen": 0.0291,
+      "ref_mouthClose": 0.0492,
+      "ref_mouthPucker": 0.014
+    },
+    {
+      "frame": 276,
+      "our_jawOpen": 0.0,
+      "our_mouthClose": 0.0,
+      "our_mouthPucker": 0.3206,
+      "ref_jawOpen": 0.723,
+      "ref_mouthClose": 0.1446,
+      "ref_mouthPucker": 0
+    },
+    {
+      "frame": 362,
+      "our_jawOpen": 0.419,
+      "our_mouthClose": 0.1056,
+      "our_mouthPucker": 0.1841,
+      "ref_jawOpen": 0,
+      "ref_mouthClose": 0,
+      "ref_mouthPucker": 0.0163
+    },
+    {
+      "frame": 725,
+      "our_jawOpen": 0.125,
+      "our_mouthClose": 0.0915,
+      "our_mouthPucker": 0.2421,
+      "ref_jawOpen": 0.1824,
+      "ref_mouthClose": 0.2309,
+      "ref_mouthPucker": 0.1571
+    },
+    {
+      "frame": 956,
+      "our_jawOpen": 0.1549,
+      "our_mouthClose": 0.2024,
+      "our_mouthPucker": 0.4337,
+      "ref_jawOpen": 0.1725,
+      "ref_mouthClose": 0.2028,
+      "ref_mouthPucker": 0
+    },
+    {
+      "frame": 1087,
+      "our_jawOpen": 0.1511,
+      "our_mouthClose": 0.2267,
+      "our_mouthPucker": 0.5384,
+      "ref_jawOpen": 0.9434,
+      "ref_mouthClose": 0.6801,
+      "ref_mouthPucker": 0.5683
+    },
+    {
+      "frame": 1200,
+      "our_jawOpen": 0.6066,
+      "our_mouthClose": 0.1566,
+      "our_mouthPucker": 0.2145,
+      "ref_jawOpen": 0.9548,
+      "ref_mouthClose": 0.767,
+      "ref_mouthPucker": 0.534
+    }
+  ],
+  "mc_gt_jaw_frames": 437,
+  "mc_gt_jaw_pct": 30.1,
+  "hard_clipping_frames": 0
+}

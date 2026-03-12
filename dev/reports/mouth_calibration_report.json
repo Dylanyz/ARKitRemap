@@ -1,0 +1,150 @@
+{
+  "mha_source": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys",
+  "arkit_reference": "/Game/3_FaceAnims/VecnaArkitFace/Vec-ARKITBAKED-T34_60fps-02",
+  "time_offset_seconds": 345.4,
+  "matched_pairs": 1450,
+  "calibrated_params": {
+    "jawCompensationFactor": 0.155,
+    "puckerFactor": 0.0,
+    "lipsPurseWeight": 0.735
+  },
+  "fit_quality": {
+    "jawOpen_MSE": 0.150062,
+    "jawOpen_MAE_median": 0.2481,
+    "jawOpen_MAE_p95": 0.77677,
+    "mouthClose_MSE": 0.041039,
+    "mouthClose_MAE_median": 0.11824,
+    "mouthClose_MAE_p95": 0.40465
+  },
+  "old_params_comparison": {
+    "old_jawFactor": 0.75,
+    "old_lipsPurseWeight": 0.5,
+    "old_puckerFactor": 0.0,
+    "old_jawOpen_MSE": 0.204028,
+    "old_mouthClose_MSE": 0.048575
+  },
+  "diagnostics_key_frames": [
+    {
+      "mha_frame": 956,
+      "mha_jawOpen": 0.53198,
+      "mha_lipsPurse": 0.5028,
+      "mha_lipsTowards": 0.01096,
+      "real_arkit_jawOpen": 0.17246,
+      "real_arkit_mouthClose": 0.20278,
+      "real_arkit_mouthPucker": 0.0,
+      "our_adjusted_jawOpen": 0.45405,
+      "our_lip_closure": 0.38052,
+      "our_raw_mouthClose": 0.20243,
+      "our_effective_cap": 0.45405,
+      "our_final_mouthClose": 0.20243,
+      "jawOpen_error": 0.28159,
+      "mouthClose_error": -0.00035
+    },
+    {
+      "mha_frame": 276,
+      "mha_jawOpen": 0.172,
+      "mha_lipsPurse": 0.35119,
+      "mha_lipsTowards": 0.05781,
+      "real_arkit_jawOpen": 0.72296,
+      "real_arkit_mouthClose": 0.14465,
+      "real_arkit_mouthPucker": 0.0,
+      "our_adjusted_jawOpen": 0.11756,
+      "our_lip_closure": 0.31594,
+      "our_raw_mouthClose": 0.05434,
+      "our_effective_cap": 0.11756,
+      "our_final_mouthClose": 0.05434,
+      "jawOpen_error": -0.6054,
+      "mouthClose_error": -0.09031
+    },
+    {
+      "mha_frame": 0,
+      "mha_jawOpen": 0.0708,
+      "mha_lipsPurse": 0.68164,
+      "mha_lipsTowards": 0.11786,
+      "real_arkit_jawOpen": 0.02912,
+      "real_arkit_mouthClose": 0.0492,
+      "real_arkit_mouthPucker": 0.01399,
+      "our_adjusted_jawOpen": 0.0,
+      "our_lip_closure": 0.61886,
+      "our_raw_mouthClose": 0.04382,
+      "our_effective_cap": 0.0,
+      "our_final_mouthClose": 0.0,
+      "jawOpen_error": -0.02912,
+      "mouthClose_error": -0.0492
+    },
+    {
+      "mha_frame": 362,
+      "mha_jawOpen": 0.56836,
+      "mha_lipsPurse": 0.19911,
+      "mha_lipsTowards": 0.03951,
+      "real_arkit_jawOpen": 0.0,
+      "real_arkit_mouthClose": 0.0,
+      "real_arkit_mouthPucker": 0.01631,
+      "our_adjusted_jawOpen": 0.5375,
+      "our_lip_closure": 0.18586,
+      "our_raw_mouthClose": 0.10563,
+      "our_effective_cap": 0.5375,
+      "our_final_mouthClose": 0.10563,
+      "jawOpen_error": 0.5375,
+      "mouthClose_error": 0.10563
+    },
+    {
+      "mha_frame": 725,
+      "mha_jawOpen": 0.28967,
+      "mha_lipsPurse": 0.21957,
+      "mha_lipsTowards": 0.15458,
+      "real_arkit_jawOpen": 0.18243,
+      "real_arkit_mouthClose": 0.23091,
+      "real_arkit_mouthPucker": 0.1571,
+      "our_adjusted_jawOpen": 0.25564,
+      "our_lip_closure": 0.31596,
+      "our_raw_mouthClose": 0.09153,
+      "our_effective_cap": 0.25564,
+      "our_final_mouthClose": 0.09153,
+      "jawOpen_error": 0.07321,
+      "mouthClose_error": -0.13938
+    },
+    {
+      "mha_frame": 1087,
+      "mha_jawOpen": 0.61499,
+      "mha_lipsPurse": 0.61851,
+      "mha_lipsTowards": 0.02743,
+      "real_arkit_jawOpen": 0.94342,
+      "real_arkit_mouthClose": 0.68007,
+      "real_arkit_mouthPucker": 0.56828,
+      "our_adjusted_jawOpen": 0.51912,
+      "our_lip_closure": 0.48203,
+      "our_raw_mouthClose": 0.29645,
+      "our_effective_cap": 0.51912,
+      "our_final_mouthClose": 0.29645,
+      "jawOpen_error": -0.4243,
+      "mouthClose_error": -0.38363
+    }
+  ],
+  "statistics": {
+    "mha_jawOpen_range": [
+      0.0486,
+      1.0
+    ],
+    "mha_lipsPurse_range": [
+      0.0304,
+      0.8351
+    ],
+    "mha_lipsTowards_range": [
+      0.004,
+      0.6317
+    ],
+    "arkit_jawOpen_range": [
+      -0.0,
+      0.9744
+    ],
+    "arkit_mouthClose_range": [
+      -0.0,
+      0.8098
+    ],
+    "arkit_mouthPucker_range": [
+      0.0,
+      0.8095
+    ]
+  }
+}

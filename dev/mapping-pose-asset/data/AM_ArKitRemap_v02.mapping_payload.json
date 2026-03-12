@@ -1,0 +1,1301 @@
+{
+  "payloadVersion": "am_v02_compact_1",
+  "generatedAtUtc": "2026-03-11T19:20:41.000710+00:00",
+  "sourceReverseMap": "c:\\Users\\DYLPC\\Documents\\Unreal Projects\\mdr_StrangerThings01\\.cursor\\arkit-remap\\mapping-pose-asset\\data\\PA_MetaHuman_ARKit_Mapping.reverse_map.json",
+  "sourceReverseMapGeneratedAtUtc": "2026-03-11T19:01:52.065365+00:00",
+  "missingArkit52Targets": [
+    "MouthClose"
+  ],
+  "arkit52": [
+    {
+      "target": "BrowDownLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_browdownl",
+          "weight": 0.999998
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_browdownl",
+      "absWeightSum": 1.030998
+    },
+    {
+      "target": "BrowDownRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_browdownr",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_browdownr",
+      "absWeightSum": 1.030999
+    },
+    {
+      "target": "BrowInnerUp",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_browlateralr",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_browraiseinl",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_browraiseinr",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 4,
+      "dominantSource": "ctrl_expressions_browlaterall",
+      "absWeightSum": 4.0
+    },
+    {
+      "target": "BrowOuterUpLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_browraiseinl",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_browraiseouterl",
+          "weight": 0.999998
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031002
+        }
+      ],
+      "contributorCount": 3,
+      "dominantSource": "ctrl_expressions_browraiseinl",
+      "absWeightSum": 2.031
+    },
+    {
+      "target": "BrowOuterUpRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_browraiseinr",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_browraiseouterr",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 3,
+      "dominantSource": "ctrl_expressions_browraiseinr",
+      "absWeightSum": 2.030998
+    },
+    {
+      "target": "CheekPuff",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthcheekblowl",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthcheekblowr",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthlipsblowl",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthlipsblowr",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_mouthcheekblowl",
+      "absWeightSum": 4.031
+    },
+    {
+      "target": "CheekSquintLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyecheekraisel",
+          "weight": 0.999998
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_eyecheekraisel",
+      "absWeightSum": 1.030998
+    },
+    {
+      "target": "CheekSquintRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyecheekraiser",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_eyecheekraiser",
+      "absWeightSum": 1.030999
+    },
+    {
+      "target": "EyeBlinkLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyeblinkl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyeblinkl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeBlinkRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyeblinkr",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyeblinkr",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookDownLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookdownl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookdownl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookDownRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookdownr",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookdownr",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookInLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookrightl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookrightl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookInRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookleftr",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookleftr",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookOutLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookleftl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookleftl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookOutRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookrightr",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookrightr",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "EyeLookUpLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookupl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookupl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeLookUpRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyelookupr",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyelookupr",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeSquintLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyesquintinnerl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyesquintinnerl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeSquintRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyesquintinnerr",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyesquintinnerr",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "EyeWideLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyewidenl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyewidenl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "EyeWideRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_eyewidenr",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_eyewidenr",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "JawForward",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_jawfwd",
+          "weight": 0.999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_jawfwd",
+      "absWeightSum": 0.999
+    },
+    {
+      "target": "JawLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_jawleft",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_jawleft",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "JawOpen",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_jawopen",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_jawopen",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "JawRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_jawright",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_jawright",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "MouthDimpleLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthdimplel",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthdimplel",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "MouthDimpleRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthdimpler",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthdimpler",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "MouthFrownLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthcornerdepressl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthcornerdepressl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "MouthFrownRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthcornerdepressr",
+          "weight": 0.999998
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthcornerdepressr",
+      "absWeightSum": 0.999998
+    },
+    {
+      "target": "MouthFunnel",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthfunneldl",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_mouthfunneldr",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_mouthfunnelul",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_mouthfunnelur",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 4,
+      "dominantSource": "ctrl_expressions_mouthfunneldl",
+      "absWeightSum": 3.999996
+    },
+    {
+      "target": "MouthLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthleft",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthleft",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "MouthLowerDownLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthlowerlipdepressl",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthlowerlipdepressl",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "MouthLowerDownRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthlowerlipdepressr",
+          "weight": 0.999998
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthlowerlipdepressr",
+      "absWeightSum": 0.999998
+    },
+    {
+      "target": "MouthPressLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthpressdl",
+          "weight": 0.999998
+        },
+        {
+          "source": "ctrl_expressions_mouthpressul",
+          "weight": 0.999998
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_mouthpressdl",
+      "absWeightSum": 1.999996
+    },
+    {
+      "target": "MouthPressRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthpressdr",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_mouthpressur",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_mouthpressdr",
+      "absWeightSum": 1.999998
+    },
+    {
+      "target": "MouthPucker",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthlipspursedl",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthlipspursedr",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthlipspurseul",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthlipspurseur",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthfunneldl",
+          "weight": 0.752
+        },
+        {
+          "source": "ctrl_expressions_mouthfunneldr",
+          "weight": 0.752
+        },
+        {
+          "source": "ctrl_expressions_mouthfunnelul",
+          "weight": 0.752
+        },
+        {
+          "source": "ctrl_expressions_mouthfunnelur",
+          "weight": 0.752
+        },
+        {
+          "source": "ctrl_expressions_mouthlipstowardsdl",
+          "weight": 0.412
+        },
+        {
+          "source": "ctrl_expressions_mouthlipstowardsdr",
+          "weight": 0.412
+        },
+        {
+          "source": "ctrl_expressions_mouthlipstowardsul",
+          "weight": 0.412
+        },
+        {
+          "source": "ctrl_expressions_mouthlipstowardsur",
+          "weight": 0.412
+        }
+      ],
+      "contributorCount": 12,
+      "dominantSource": "ctrl_expressions_mouthlipspursedl",
+      "absWeightSum": 8.656
+    },
+    {
+      "target": "MouthRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthright",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthright",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "MouthRollLower",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthlowerliprollinl",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthlowerliprollinr",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_mouthupperliprollinl",
+          "weight": 0.499
+        },
+        {
+          "source": "ctrl_expressions_mouthupperliprollinr",
+          "weight": 0.499
+        }
+      ],
+      "contributorCount": 4,
+      "dominantSource": "ctrl_expressions_mouthlowerliprollinl",
+      "absWeightSum": 2.998
+    },
+    {
+      "target": "MouthRollUpper",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthupperliprollinl",
+          "weight": 0.997999
+        },
+        {
+          "source": "ctrl_expressions_mouthupperliprollinr",
+          "weight": 0.997999
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_mouthupperliprollinl",
+      "absWeightSum": 1.995998
+    },
+    {
+      "target": "MouthShrugLower",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_jawchinraisedl",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_jawchinraisedr",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_jawchinraisedl",
+      "absWeightSum": 1.999998
+    },
+    {
+      "target": "MouthShrugUpper",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_jawchinraiseul",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_jawchinraiseur",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_jawchinraiseul",
+      "absWeightSum": 2.0
+    },
+    {
+      "target": "MouthSmileLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthcornerpulll",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthcornerpulll",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "MouthSmileRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthcornerpullr",
+          "weight": 0.999999
+        },
+        {
+          "source": "ctrl_expressions_mouthdimpler",
+          "weight": 0.003
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_mouthcornerpullr",
+      "absWeightSum": 1.002999
+    },
+    {
+      "target": "MouthStretchLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthstretchl",
+          "weight": 0.999998
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthstretchl",
+      "absWeightSum": 0.999998
+    },
+    {
+      "target": "MouthStretchRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthstretchr",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthstretchr",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "MouthUpperUpLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthupperlipraisel",
+          "weight": 0.999999
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthupperlipraisel",
+      "absWeightSum": 0.999999
+    },
+    {
+      "target": "MouthUpperUpRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_mouthupperlipraiser",
+          "weight": 1.0
+        }
+      ],
+      "contributorCount": 1,
+      "dominantSource": "ctrl_expressions_mouthupperlipraiser",
+      "absWeightSum": 1.0
+    },
+    {
+      "target": "NoseSneerLeft",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_nosewrinklel",
+          "weight": 0.999997
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_nosewrinklel",
+      "absWeightSum": 1.030997
+    },
+    {
+      "target": "NoseSneerRight",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_nosewrinkler",
+          "weight": 1.0
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 2,
+      "dominantSource": "ctrl_expressions_nosewrinkler",
+      "absWeightSum": 1.031
+    },
+    {
+      "target": "TongueOut",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.825999
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.768999
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.627999
+        },
+        {
+          "source": "ctrl_expressions_tonguerolldown",
+          "weight": 0.247319
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 6,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.571316
+    }
+  ],
+  "extended_pose": [
+    {
+      "target": "Pose_10",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_11",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_12",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_13",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_14",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_15",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_16",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_17",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_4",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tonguerolldown",
+          "weight": 0.149542
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 6,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.473542
+    },
+    {
+      "target": "Pose_5",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_tonguerolldown",
+          "weight": 0.051764
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 6,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.375764
+    },
+    {
+      "target": "Pose_6",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_7",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_8",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    },
+    {
+      "target": "Pose_9",
+      "contributors": [
+        {
+          "source": "ctrl_expressions_tonguedown",
+          "weight": 0.826
+        },
+        {
+          "source": "ctrl_expressions_tongueout",
+          "weight": 0.769
+        },
+        {
+          "source": "ctrl_expressions_tonguewide",
+          "weight": 0.628
+        },
+        {
+          "source": "ctrl_expressions_tongueright",
+          "weight": 0.07
+        },
+        {
+          "source": "ctrl_expressions_browlaterall",
+          "weight": 0.031
+        }
+      ],
+      "contributorCount": 5,
+      "dominantSource": "ctrl_expressions_tonguedown",
+      "absWeightSum": 2.324
+    }
+  ],
+  "other_targets": [],
+  "coupledPairs": [
+    ["MouthPucker", "MouthFunnel"],
+    ["MouthRollLower", "MouthRollUpper"]
+  ],
+  "coupledGroups": [
+    ["BrowInnerUp", "BrowOuterUpLeft", "BrowOuterUpRight"]
+  ],
+  "calibrationDefaults": {
+    "minWeight": 0.05,
+    "global": {
+      "scale": 1.0,
+      "offset": 0.0,
+      "clampMin": 0.0,
+      "clampMax": 1.0
+    },
+    "jawPurseCompensation": {
+      "enabled": true,
+      "factor": 0.75,
+      "puckerFactor": 0.0,
+      "lipsPurseSourceCurves": [
+        "ctrl_expressions_mouthlipspurseul",
+        "ctrl_expressions_mouthlipspurseur",
+        "ctrl_expressions_mouthlipspursedl",
+        "ctrl_expressions_mouthlipspursedr"
+      ],
+      "funnelSourceCurves": [
+        "ctrl_expressions_mouthfunnelul",
+        "ctrl_expressions_mouthfunnelur",
+        "ctrl_expressions_mouthfunneldl",
+        "ctrl_expressions_mouthfunneldr"
+      ],
+      "funnelGateScale": 2.0
+    },
+    "mouthClose": {
+      "enabled": true,
+      "lipsTowardsSourceCurves": [
+        "ctrl_expressions_mouthlipstowardsul",
+        "ctrl_expressions_mouthlipstowardsur",
+        "ctrl_expressions_mouthlipstowardsdl",
+        "ctrl_expressions_mouthlipstowardsdr"
+      ],
+      "lipsPurseSourceCurves": [
+        "ctrl_expressions_mouthlipspurseul",
+        "ctrl_expressions_mouthlipspurseur",
+        "ctrl_expressions_mouthlipspursedl",
+        "ctrl_expressions_mouthlipspursedr"
+      ],
+      "lipsPurseWeight": 0.735,
+      "funnelGateScale": 2.0,
+      "forwardConstraintRatio": 1.5,
+      "lipsTogetherSourceCurve": "CTRL_Expressions_Mouth_Lips_Together_UL",
+      "jawOpenSourceCurve": "JawOpen",
+      "scale": 1.0,
+      "offset": 0.0,
+      "clampMin": 0.0,
+      "clampMax": 0.5
+    },
+    "perCurveOverrides": {}
+  },
+  "smoothing": {
+    "enabled": false,
+    "method": "one_euro",
+    "defaults": {
+      "minCutoff": 1.5,
+      "beta": 0.5,
+      "dCutoff": 1.0
+    },
+    "perCurveOverrides": {
+      "MouthClose": {
+        "minCutoff": 0.8,
+        "beta": 0.3
+      },
+      "MouthPucker": {
+        "minCutoff": 1.0,
+        "beta": 0.4
+      },
+      "MouthFunnel": {
+        "minCutoff": 1.0,
+        "beta": 0.4
+      }
+    }
+  },
+  "notes": [
+    "Compact payload for AM_ArKitRemap_v02 weighted synthesis.",
+    "Contributors preserve reverse-map weights (no top-1 collapse).",
+    "MouthClose is expected to use explicit branch logic because it is missing from arkit52 extraction.",
+    "minWeight: contributors with |weight| < threshold are excluded (removes browlaterall 0.031 artifact).",
+    "coupledPairs: targets solved jointly via 2x2 least-squares to eliminate cross-contamination.",
+    "coupledGroups: small target clusters solved jointly via NxN least-squares (currently BrowInnerUp + BrowOuterUpLeft/Right).",
+    "MouthClose clampMax raised from 0.3 to 0.5 (was hitting ceiling on expressive performances).",
+    "MouthClose now derives from LipsTowards + lipsPurseWeight * LipsPurse. lipsPurseWeight calibrated to 0.735 using matched ARKit reference (offset 345.4s, ARKit frame 20724 = MHA frame 0).",
+    "jawPurseCompensation: unified visual-opening model. factor=0.75 reduces JawOpen when LipsPurse active. funnelGateScale=2.0 reduces compensation when mouthFunnel source curves are high (open/rounded mouth). puckerFactor (default 0.0) available for pucker-aware cap.",
+    "forwardConstraintRatio: relaxed to 1.5 (allows MouthClose up to 1.5x adjusted JawOpen). Real ARKit data has mouthClose > jawOpen in 25% of frames; the old strict constraint (ratio=1.0) was capping MouthClose below its correct level.",
+    "smoothing: optional temporal post-processing (disabled by default). Enable for noisy MHA captures."
+  ]
+}

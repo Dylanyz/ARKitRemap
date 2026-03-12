@@ -1,0 +1,4072 @@
+{
+  "assetPath": "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping.PA_MetaHuman_ARKit_Mapping",
+  "sourceAdjustedDataset": "c:\\Users\\DYLPC\\Documents\\Unreal Projects\\mdr_StrangerThings01\\.cursor\\arkit-remap\\mapping-pose-asset\\data\\PA_MetaHuman_ARKit_Mapping.posemap.json",
+  "generatedAtUtc": "2026-03-11T19:01:52.065365+00:00",
+  "generationMethod": "group_adjusted_records_by_arkit_pose",
+  "notes": [
+    "Uses baseline-adjusted posemap as source of truth for reverse map.",
+    "Preserves all contributors per target (no 1:1 collapsing).",
+    "Includes both signed and abs-normalized weight metadata."
+  ],
+  "summary": {
+    "totalPoseTargets": 65,
+    "arkit52Targets": 51,
+    "missingArkit52Targets": [
+      "MouthClose"
+    ],
+    "extendedPoseTargets": 14,
+    "defaultOrOtherTargets": 0,
+    "sourceRecordCount": 168
+  },
+  "reverseMappingTableByClass": {
+    "arkit52": [
+      {
+        "arkitPoseName": "BrowDownLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.030998,
+          "absSum": 1.030998,
+          "maxAbsWeight": 0.999998,
+          "dominantSourceMhaCurveName": "ctrl_expressions_browdownl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browdownl",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.969932
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.030068
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "BrowDownRight",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.030999,
+          "absSum": 1.030999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_browdownr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browdownr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.969932
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.030068
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "BrowInnerUp",
+        "poseClass": "arkit52",
+        "contributorCount": 4,
+        "weightStats": {
+          "signedSum": 4.0,
+          "absSum": 4.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_browlaterall"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.25
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlateralr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.25
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browraiseinl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.25
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browraiseinr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.25
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "BrowOuterUpLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 3,
+        "weightStats": {
+          "signedSum": 2.031,
+          "absSum": 2.031,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_browraiseinl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browraiseinl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.492368
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browraiseouterl",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.492367
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031002,
+            "absWeight": 0.031002,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.015264
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "BrowOuterUpRight",
+        "poseClass": "arkit52",
+        "contributorCount": 3,
+        "weightStats": {
+          "signedSum": 2.030998,
+          "absSum": 2.030998,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_browraiseinr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browraiseinr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.492368
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browraiseouterr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.492368
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.015263
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "CheekPuff",
+        "poseClass": "arkit52",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 4.031,
+          "absSum": 4.031,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthcheekblowl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthcheekblowl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.248077
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthcheekblowr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.248077
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipsblowl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.248077
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipsblowr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.248077
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.00769
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "CheekSquintLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.030998,
+          "absSum": 1.030998,
+          "maxAbsWeight": 0.999998,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyecheekraisel"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyecheekraisel",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.969932
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.030068
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "CheekSquintRight",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.030999,
+          "absSum": 1.030999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyecheekraiser"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyecheekraiser",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.969932
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.030068
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeBlinkLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyeblinkl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyeblinkl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeBlinkRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyeblinkr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyeblinkr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookDownLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookdownl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookdownl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookDownRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookdownr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookdownr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookInLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookrightl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookrightl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookInRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookleftr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookleftr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookOutLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookleftl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookleftl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookOutRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookrightr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookrightr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookUpLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookupl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookupl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeLookUpRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyelookupr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyelookupr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeSquintLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyesquintinnerl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyesquintinnerl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeSquintRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyesquintinnerr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyesquintinnerr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeWideLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyewidenl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyewidenl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "EyeWideRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_eyewidenr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_eyewidenr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "JawForward",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999,
+          "absSum": 0.999,
+          "maxAbsWeight": 0.999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_jawfwd"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawfwd",
+            "weight": 0.999,
+            "absWeight": 0.999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "JawLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_jawleft"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawleft",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "JawOpen",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_jawopen"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawopen",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "JawRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_jawright"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawright",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthDimpleLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthdimplel"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthdimplel",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthDimpleRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthdimpler"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthdimpler",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthFrownLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerdepressl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthcornerdepressl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthFrownRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999998,
+          "absSum": 0.999998,
+          "maxAbsWeight": 0.999998,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerdepressr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthcornerdepressr",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthFunnel",
+        "poseClass": "arkit52",
+        "contributorCount": 4,
+        "weightStats": {
+          "signedSum": 3.999996,
+          "absSum": 3.999996,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthfunneldl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunneldl",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.25
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunneldr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.25
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunnelul",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.25
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunnelur",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.25
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthleft"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthleft",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthLowerDownLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthLowerDownRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999998,
+          "absSum": 0.999998,
+          "maxAbsWeight": 0.999998,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressr",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthPressLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.999996,
+          "absSum": 1.999996,
+          "maxAbsWeight": 0.999998,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthpressdl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthpressdl",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.5
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthpressul",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.5
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthPressRight",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.999998,
+          "absSum": 1.999998,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthpressdr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthpressdr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.5
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthpressur",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.5
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthPucker",
+        "poseClass": "arkit52",
+        "contributorCount": 12,
+        "weightStats": {
+          "signedSum": 8.656,
+          "absSum": 8.656,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthlipspursedl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipspursedl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.115527
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipspursedr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.115527
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipspurseul",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.115527
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipspurseur",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.115527
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunneldl",
+            "weight": 0.752,
+            "absWeight": 0.752,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.086876
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunneldr",
+            "weight": 0.752,
+            "absWeight": 0.752,
+            "rankByAbsWeight": 6,
+            "normalizedByAbsWeight": 0.086876
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunnelul",
+            "weight": 0.752,
+            "absWeight": 0.752,
+            "rankByAbsWeight": 7,
+            "normalizedByAbsWeight": 0.086876
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthfunnelur",
+            "weight": 0.752,
+            "absWeight": 0.752,
+            "rankByAbsWeight": 8,
+            "normalizedByAbsWeight": 0.086876
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsdl",
+            "weight": 0.412,
+            "absWeight": 0.412,
+            "rankByAbsWeight": 9,
+            "normalizedByAbsWeight": 0.047597
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsdr",
+            "weight": 0.412,
+            "absWeight": 0.412,
+            "rankByAbsWeight": 10,
+            "normalizedByAbsWeight": 0.047597
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsul",
+            "weight": 0.412,
+            "absWeight": 0.412,
+            "rankByAbsWeight": 11,
+            "normalizedByAbsWeight": 0.047597
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsur",
+            "weight": 0.412,
+            "absWeight": 0.412,
+            "rankByAbsWeight": 12,
+            "normalizedByAbsWeight": 0.047597
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthright"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthright",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthRollLower",
+        "poseClass": "arkit52",
+        "contributorCount": 4,
+        "weightStats": {
+          "signedSum": 2.998,
+          "absSum": 2.998,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinl",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.333556
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinr",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.333556
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl",
+            "weight": 0.499,
+            "absWeight": 0.499,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.166444
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinr",
+            "weight": 0.499,
+            "absWeight": 0.499,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.166444
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthRollUpper",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.995998,
+          "absSum": 1.995998,
+          "maxAbsWeight": 0.997999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl",
+            "weight": 0.997999,
+            "absWeight": 0.997999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.5
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinr",
+            "weight": 0.997999,
+            "absWeight": 0.997999,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.5
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthShrugLower",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.999998,
+          "absSum": 1.999998,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_jawchinraisedl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawchinraisedl",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.5
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawchinraisedr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.5
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthShrugUpper",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 2.0,
+          "absSum": 2.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_jawchinraiseul"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawchinraiseul",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.5
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_jawchinraiseur",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.5
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthSmileLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerpulll"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthcornerpulll",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthSmileRight",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.002999,
+          "absSum": 1.002999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerpullr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthcornerpullr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.997009
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthdimpler",
+            "weight": 0.003,
+            "absWeight": 0.003,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.002991
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthStretchLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999998,
+          "absSum": 0.999998,
+          "maxAbsWeight": 0.999998,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthstretchl"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthstretchl",
+            "weight": 0.999998,
+            "absWeight": 0.999998,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthStretchRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthstretchr"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthstretchr",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthUpperUpLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 0.999999,
+          "absSum": 0.999999,
+          "maxAbsWeight": 0.999999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthupperlipraisel"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthupperlipraisel",
+            "weight": 0.999999,
+            "absWeight": 0.999999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "MouthUpperUpRight",
+        "poseClass": "arkit52",
+        "contributorCount": 1,
+        "weightStats": {
+          "signedSum": 1.0,
+          "absSum": 1.0,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_mouthupperlipraiser"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_mouthupperlipraiser",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 1.0
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "NoseSneerLeft",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.030997,
+          "absSum": 1.030997,
+          "maxAbsWeight": 0.999997,
+          "dominantSourceMhaCurveName": "ctrl_expressions_nosewrinklel"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_nosewrinklel",
+            "weight": 0.999997,
+            "absWeight": 0.999997,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.969932
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.030068
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "NoseSneerRight",
+        "poseClass": "arkit52",
+        "contributorCount": 2,
+        "weightStats": {
+          "signedSum": 1.031,
+          "absSum": 1.031,
+          "maxAbsWeight": 1.0,
+          "dominantSourceMhaCurveName": "ctrl_expressions_nosewrinkler"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_nosewrinkler",
+            "weight": 1.0,
+            "absWeight": 1.0,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.969932
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.030068
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "TongueOut",
+        "poseClass": "arkit52",
+        "contributorCount": 6,
+        "weightStats": {
+          "signedSum": 2.571316,
+          "absSum": 2.571316,
+          "maxAbsWeight": 0.825999,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.825999,
+            "absWeight": 0.825999,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.321236
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.768999,
+            "absWeight": 0.768999,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.299068
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.627999,
+            "absWeight": 0.627999,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.244233
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+            "weight": 0.247319,
+            "absWeight": 0.247319,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.096184
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.027223
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 6,
+            "normalizedByAbsWeight": 0.012056
+          }
+        ]
+      }
+    ],
+    "extended_pose": [
+      {
+        "arkitPoseName": "Pose_10",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_11",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_12",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_13",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_14",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_15",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_16",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_17",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_4",
+        "poseClass": "extended_pose",
+        "contributorCount": 6,
+        "weightStats": {
+          "signedSum": 2.473542,
+          "absSum": 2.473542,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.333934
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.31089
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.253887
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+            "weight": 0.149542,
+            "absWeight": 0.149542,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.060457
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.028299
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 6,
+            "normalizedByAbsWeight": 0.012533
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_5",
+        "poseClass": "extended_pose",
+        "contributorCount": 6,
+        "weightStats": {
+          "signedSum": 2.375764,
+          "absSum": 2.375764,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.347678
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.323685
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.264336
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.029464
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+            "weight": 0.051764,
+            "absWeight": 0.051764,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.021788
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 6,
+            "normalizedByAbsWeight": 0.013048
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_6",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_7",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_8",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      },
+      {
+        "arkitPoseName": "Pose_9",
+        "poseClass": "extended_pose",
+        "contributorCount": 5,
+        "weightStats": {
+          "signedSum": 2.324,
+          "absSum": 2.324,
+          "maxAbsWeight": 0.826,
+          "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+        },
+        "contributors": [
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+            "weight": 0.826,
+            "absWeight": 0.826,
+            "rankByAbsWeight": 1,
+            "normalizedByAbsWeight": 0.355422
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueout",
+            "weight": 0.769,
+            "absWeight": 0.769,
+            "rankByAbsWeight": 2,
+            "normalizedByAbsWeight": 0.330895
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+            "weight": 0.628,
+            "absWeight": 0.628,
+            "rankByAbsWeight": 3,
+            "normalizedByAbsWeight": 0.270224
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_tongueright",
+            "weight": 0.07,
+            "absWeight": 0.07,
+            "rankByAbsWeight": 4,
+            "normalizedByAbsWeight": 0.03012
+          },
+          {
+            "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+            "weight": 0.031,
+            "absWeight": 0.031,
+            "rankByAbsWeight": 5,
+            "normalizedByAbsWeight": 0.013339
+          }
+        ]
+      }
+    ],
+    "other_targets": []
+  },
+  "reverseMappingTable": [
+    {
+      "arkitPoseName": "BrowDownLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.030998,
+        "absSum": 1.030998,
+        "maxAbsWeight": 0.999998,
+        "dominantSourceMhaCurveName": "ctrl_expressions_browdownl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browdownl",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.969932
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.030068
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "BrowDownRight",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.030999,
+        "absSum": 1.030999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_browdownr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browdownr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.969932
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.030068
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "BrowInnerUp",
+      "poseClass": "arkit52",
+      "contributorCount": 4,
+      "weightStats": {
+        "signedSum": 4.0,
+        "absSum": 4.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_browlaterall"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.25
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlateralr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.25
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browraiseinl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.25
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browraiseinr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.25
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "BrowOuterUpLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 3,
+      "weightStats": {
+        "signedSum": 2.031,
+        "absSum": 2.031,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_browraiseinl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browraiseinl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.492368
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browraiseouterl",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.492367
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031002,
+          "absWeight": 0.031002,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.015264
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "BrowOuterUpRight",
+      "poseClass": "arkit52",
+      "contributorCount": 3,
+      "weightStats": {
+        "signedSum": 2.030998,
+        "absSum": 2.030998,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_browraiseinr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browraiseinr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.492368
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browraiseouterr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.492368
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.015263
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "CheekPuff",
+      "poseClass": "arkit52",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 4.031,
+        "absSum": 4.031,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthcheekblowl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthcheekblowl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.248077
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthcheekblowr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.248077
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipsblowl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.248077
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipsblowr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.248077
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.00769
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "CheekSquintLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.030998,
+        "absSum": 1.030998,
+        "maxAbsWeight": 0.999998,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyecheekraisel"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyecheekraisel",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.969932
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.030068
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "CheekSquintRight",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.030999,
+        "absSum": 1.030999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyecheekraiser"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyecheekraiser",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.969932
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.030068
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeBlinkLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyeblinkl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyeblinkl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeBlinkRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyeblinkr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyeblinkr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookDownLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookdownl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookdownl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookDownRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookdownr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookdownr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookInLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookrightl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookrightl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookInRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookleftr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookleftr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookOutLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookleftl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookleftl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookOutRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookrightr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookrightr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookUpLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookupl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookupl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeLookUpRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyelookupr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyelookupr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeSquintLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyesquintinnerl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyesquintinnerl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeSquintRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyesquintinnerr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyesquintinnerr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeWideLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyewidenl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyewidenl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "EyeWideRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_eyewidenr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_eyewidenr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "JawForward",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999,
+        "absSum": 0.999,
+        "maxAbsWeight": 0.999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_jawfwd"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawfwd",
+          "weight": 0.999,
+          "absWeight": 0.999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "JawLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_jawleft"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawleft",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "JawOpen",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_jawopen"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawopen",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "JawRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_jawright"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawright",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthDimpleLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthdimplel"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthdimplel",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthDimpleRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthdimpler"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthdimpler",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthFrownLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerdepressl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthcornerdepressl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthFrownRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999998,
+        "absSum": 0.999998,
+        "maxAbsWeight": 0.999998,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerdepressr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthcornerdepressr",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthFunnel",
+      "poseClass": "arkit52",
+      "contributorCount": 4,
+      "weightStats": {
+        "signedSum": 3.999996,
+        "absSum": 3.999996,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthfunneldl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunneldl",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.25
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunneldr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.25
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunnelul",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.25
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunnelur",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.25
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthleft"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthleft",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthLowerDownLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthLowerDownRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999998,
+        "absSum": 0.999998,
+        "maxAbsWeight": 0.999998,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressr",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthPressLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.999996,
+        "absSum": 1.999996,
+        "maxAbsWeight": 0.999998,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthpressdl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthpressdl",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.5
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthpressul",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.5
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthPressRight",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.999998,
+        "absSum": 1.999998,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthpressdr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthpressdr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.5
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthpressur",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.5
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "poseClass": "arkit52",
+      "contributorCount": 12,
+      "weightStats": {
+        "signedSum": 8.656,
+        "absSum": 8.656,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthlipspursedl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipspursedl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.115527
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipspursedr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.115527
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipspurseul",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.115527
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipspurseur",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.115527
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunneldl",
+          "weight": 0.752,
+          "absWeight": 0.752,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.086876
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunneldr",
+          "weight": 0.752,
+          "absWeight": 0.752,
+          "rankByAbsWeight": 6,
+          "normalizedByAbsWeight": 0.086876
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunnelul",
+          "weight": 0.752,
+          "absWeight": 0.752,
+          "rankByAbsWeight": 7,
+          "normalizedByAbsWeight": 0.086876
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthfunnelur",
+          "weight": 0.752,
+          "absWeight": 0.752,
+          "rankByAbsWeight": 8,
+          "normalizedByAbsWeight": 0.086876
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsdl",
+          "weight": 0.412,
+          "absWeight": 0.412,
+          "rankByAbsWeight": 9,
+          "normalizedByAbsWeight": 0.047597
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsdr",
+          "weight": 0.412,
+          "absWeight": 0.412,
+          "rankByAbsWeight": 10,
+          "normalizedByAbsWeight": 0.047597
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsul",
+          "weight": 0.412,
+          "absWeight": 0.412,
+          "rankByAbsWeight": 11,
+          "normalizedByAbsWeight": 0.047597
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsur",
+          "weight": 0.412,
+          "absWeight": 0.412,
+          "rankByAbsWeight": 12,
+          "normalizedByAbsWeight": 0.047597
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthright"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthright",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthRollLower",
+      "poseClass": "arkit52",
+      "contributorCount": 4,
+      "weightStats": {
+        "signedSum": 2.998,
+        "absSum": 2.998,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinl",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.333556
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinr",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.333556
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl",
+          "weight": 0.499,
+          "absWeight": 0.499,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.166444
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinr",
+          "weight": 0.499,
+          "absWeight": 0.499,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.166444
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthRollUpper",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.995998,
+        "absSum": 1.995998,
+        "maxAbsWeight": 0.997999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl",
+          "weight": 0.997999,
+          "absWeight": 0.997999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.5
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinr",
+          "weight": 0.997999,
+          "absWeight": 0.997999,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.5
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthShrugLower",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.999998,
+        "absSum": 1.999998,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_jawchinraisedl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawchinraisedl",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.5
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawchinraisedr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.5
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthShrugUpper",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 2.0,
+        "absSum": 2.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_jawchinraiseul"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawchinraiseul",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.5
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_jawchinraiseur",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.5
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthSmileLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerpulll"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthcornerpulll",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthSmileRight",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.002999,
+        "absSum": 1.002999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthcornerpullr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthcornerpullr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.997009
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthdimpler",
+          "weight": 0.003,
+          "absWeight": 0.003,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.002991
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthStretchLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999998,
+        "absSum": 0.999998,
+        "maxAbsWeight": 0.999998,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthstretchl"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthstretchl",
+          "weight": 0.999998,
+          "absWeight": 0.999998,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthStretchRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthstretchr"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthstretchr",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthUpperUpLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 0.999999,
+        "absSum": 0.999999,
+        "maxAbsWeight": 0.999999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthupperlipraisel"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthupperlipraisel",
+          "weight": 0.999999,
+          "absWeight": 0.999999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "MouthUpperUpRight",
+      "poseClass": "arkit52",
+      "contributorCount": 1,
+      "weightStats": {
+        "signedSum": 1.0,
+        "absSum": 1.0,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_mouthupperlipraiser"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_mouthupperlipraiser",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 1.0
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "NoseSneerLeft",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.030997,
+        "absSum": 1.030997,
+        "maxAbsWeight": 0.999997,
+        "dominantSourceMhaCurveName": "ctrl_expressions_nosewrinklel"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_nosewrinklel",
+          "weight": 0.999997,
+          "absWeight": 0.999997,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.969932
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.030068
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "NoseSneerRight",
+      "poseClass": "arkit52",
+      "contributorCount": 2,
+      "weightStats": {
+        "signedSum": 1.031,
+        "absSum": 1.031,
+        "maxAbsWeight": 1.0,
+        "dominantSourceMhaCurveName": "ctrl_expressions_nosewrinkler"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_nosewrinkler",
+          "weight": 1.0,
+          "absWeight": 1.0,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.969932
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.030068
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_10",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_11",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_12",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_13",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_14",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_15",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_16",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_17",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "poseClass": "extended_pose",
+      "contributorCount": 6,
+      "weightStats": {
+        "signedSum": 2.473542,
+        "absSum": 2.473542,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.333934
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.31089
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.253887
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+          "weight": 0.149542,
+          "absWeight": 0.149542,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.060457
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.028299
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 6,
+          "normalizedByAbsWeight": 0.012533
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "poseClass": "extended_pose",
+      "contributorCount": 6,
+      "weightStats": {
+        "signedSum": 2.375764,
+        "absSum": 2.375764,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.347678
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.323685
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.264336
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.029464
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+          "weight": 0.051764,
+          "absWeight": 0.051764,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.021788
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 6,
+          "normalizedByAbsWeight": 0.013048
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_6",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_7",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_8",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "Pose_9",
+      "poseClass": "extended_pose",
+      "contributorCount": 5,
+      "weightStats": {
+        "signedSum": 2.324,
+        "absSum": 2.324,
+        "maxAbsWeight": 0.826,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.826,
+          "absWeight": 0.826,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.355422
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.769,
+          "absWeight": 0.769,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.330895
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.628,
+          "absWeight": 0.628,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.270224
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.03012
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.013339
+        }
+      ]
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "poseClass": "arkit52",
+      "contributorCount": 6,
+      "weightStats": {
+        "signedSum": 2.571316,
+        "absSum": 2.571316,
+        "maxAbsWeight": 0.825999,
+        "dominantSourceMhaCurveName": "ctrl_expressions_tonguedown"
+      },
+      "contributors": [
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+          "weight": 0.825999,
+          "absWeight": 0.825999,
+          "rankByAbsWeight": 1,
+          "normalizedByAbsWeight": 0.321236
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueout",
+          "weight": 0.768999,
+          "absWeight": 0.768999,
+          "rankByAbsWeight": 2,
+          "normalizedByAbsWeight": 0.299068
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+          "weight": 0.627999,
+          "absWeight": 0.627999,
+          "rankByAbsWeight": 3,
+          "normalizedByAbsWeight": 0.244233
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+          "weight": 0.247319,
+          "absWeight": 0.247319,
+          "rankByAbsWeight": 4,
+          "normalizedByAbsWeight": 0.096184
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_tongueright",
+          "weight": 0.07,
+          "absWeight": 0.07,
+          "rankByAbsWeight": 5,
+          "normalizedByAbsWeight": 0.027223
+        },
+        {
+          "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+          "weight": 0.031,
+          "absWeight": 0.031,
+          "rankByAbsWeight": 6,
+          "normalizedByAbsWeight": 0.012056
+        }
+      ]
+    }
+  ]
+}

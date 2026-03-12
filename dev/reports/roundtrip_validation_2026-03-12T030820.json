@@ -1,0 +1,5912 @@
+{
+  "generated_utc": "2026-03-12T03:08:20.347476+00:00",
+  "payload_path": "C:\\Users\\DYLPC\\Documents\\Unreal Projects\\mdr_StrangerThings01\\.cursor\\arkit-remap\\mapping-pose-asset\\data\\AM_ArKitRemap_v02.mapping_payload.json",
+  "payload_version": "am_v02_compact_1",
+  "n_targets": 51,
+  "target_names": [
+    "BrowDownLeft",
+    "BrowDownRight",
+    "BrowInnerUp",
+    "BrowOuterUpLeft",
+    "BrowOuterUpRight",
+    "CheekPuff",
+    "CheekSquintLeft",
+    "CheekSquintRight",
+    "EyeBlinkLeft",
+    "EyeBlinkRight",
+    "EyeLookDownLeft",
+    "EyeLookDownRight",
+    "EyeLookInLeft",
+    "EyeLookInRight",
+    "EyeLookOutLeft",
+    "EyeLookOutRight",
+    "EyeLookUpLeft",
+    "EyeLookUpRight",
+    "EyeSquintLeft",
+    "EyeSquintRight",
+    "EyeWideLeft",
+    "EyeWideRight",
+    "JawForward",
+    "JawLeft",
+    "JawOpen",
+    "JawRight",
+    "MouthDimpleLeft",
+    "MouthDimpleRight",
+    "MouthFrownLeft",
+    "MouthFrownRight",
+    "MouthFunnel",
+    "MouthLeft",
+    "MouthLowerDownLeft",
+    "MouthLowerDownRight",
+    "MouthPressLeft",
+    "MouthPressRight",
+    "MouthPucker",
+    "MouthRight",
+    "MouthRollLower",
+    "MouthRollUpper",
+    "MouthShrugLower",
+    "MouthShrugUpper",
+    "MouthSmileLeft",
+    "MouthSmileRight",
+    "MouthStretchLeft",
+    "MouthStretchRight",
+    "MouthUpperUpLeft",
+    "MouthUpperUpRight",
+    "NoseSneerLeft",
+    "NoseSneerRight",
+    "TongueOut"
+  ],
+  "shared_curves": {
+    "ctrl_expressions_browraiseinl": [
+      {
+        "target": "BrowInnerUp",
+        "weight": 1.0
+      },
+      {
+        "target": "BrowOuterUpLeft",
+        "weight": 1.0
+      }
+    ],
+    "ctrl_expressions_browraiseinr": [
+      {
+        "target": "BrowInnerUp",
+        "weight": 1.0
+      },
+      {
+        "target": "BrowOuterUpRight",
+        "weight": 0.999999
+      }
+    ],
+    "ctrl_expressions_mouthfunneldl": [
+      {
+        "target": "MouthFunnel",
+        "weight": 0.999999
+      },
+      {
+        "target": "MouthPucker",
+        "weight": 0.752
+      }
+    ],
+    "ctrl_expressions_mouthfunneldr": [
+      {
+        "target": "MouthFunnel",
+        "weight": 0.999999
+      },
+      {
+        "target": "MouthPucker",
+        "weight": 0.752
+      }
+    ],
+    "ctrl_expressions_mouthfunnelul": [
+      {
+        "target": "MouthFunnel",
+        "weight": 0.999999
+      },
+      {
+        "target": "MouthPucker",
+        "weight": 0.752
+      }
+    ],
+    "ctrl_expressions_mouthfunnelur": [
+      {
+        "target": "MouthFunnel",
+        "weight": 0.999999
+      },
+      {
+        "target": "MouthPucker",
+        "weight": 0.752
+      }
+    ],
+    "ctrl_expressions_mouthupperliprollinl": [
+      {
+        "target": "MouthRollLower",
+        "weight": 0.499
+      },
+      {
+        "target": "MouthRollUpper",
+        "weight": 0.997999
+      }
+    ],
+    "ctrl_expressions_mouthupperliprollinr": [
+      {
+        "target": "MouthRollLower",
+        "weight": 0.499
+      },
+      {
+        "target": "MouthRollUpper",
+        "weight": 0.997999
+      }
+    ]
+  },
+  "top_isolation_ghosts": [],
+  "scenarios": [
+    {
+      "name": "Isolation (ramp 0->1, each target solo)",
+      "n_frames": 1530,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 1530
+        }
+      }
+    },
+    {
+      "name": "Pair: MouthPucker=0.5 + MouthFunnel=0.3",
+      "n_frames": 30,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      }
+    },
+    {
+      "name": "Pair: MouthRollLower=0.7 + MouthRollUpper=0.4",
+      "n_frames": 30,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      }
+    },
+    {
+      "name": "Pair: BrowInnerUp=0.6 + BrowOuterUpLeft=0.8",
+      "n_frames": 30,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      }
+    },
+    {
+      "name": "Group: BrowInnerUp=0.6 + BrowOuterUpLeft=0.8 + BrowOuterUpRight=0.4",
+      "n_frames": 30,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      }
+    },
+    {
+      "name": "Speech combo (JawOpen + SmileL + Pucker)",
+      "n_frames": 60,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 60
+        }
+      }
+    },
+    {
+      "name": "Full activation (all @ 0.5)",
+      "n_frames": 30,
+      "metrics_raw": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      },
+      "metrics_clamped": {
+        "BrowDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowInnerUp": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "BrowOuterUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekPuff": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "CheekSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeBlinkRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookInRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookOutRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeLookUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeSquintRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "EyeWideRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawForward": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawOpen": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "JawRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthDimpleRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFrownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthFunnel": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthLowerDownRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPressRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthPucker": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthRollUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugLower": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthShrugUpper": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthSmileRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthStretchRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "MouthUpperUpRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerLeft": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "NoseSneerRight": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        },
+        "TongueOut": {
+          "max_abs_error": 0.0,
+          "mae": 0.0,
+          "rmse": 0.0,
+          "frames_over_005": 0,
+          "frames_over_005_pct": 0.0,
+          "n_frames": 30
+        }
+      }
+    }
+  ]
+}

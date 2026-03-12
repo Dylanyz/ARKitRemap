@@ -1,0 +1,102 @@
+{
+  "poseAssetPath": "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping",
+  "sourceAnimationPath": "/Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping.AS_MetaHuman_ARKit_Mapping",
+  "poseAssetProperties": {
+    "parent_asset": null,
+    "preview_pose_asset": null,
+    "retarget_source": "None",
+    "retarget_source_asset": null,
+    "source_animation": "<Object '/Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping.AS_MetaHuman_ARKit_Mapping' (0x000001FB3F23CB00) Class 'AnimSequence'>",
+    "skeleton": "<Object '/Game/MetaHumans/Common/Face/Face_Archetype_Skeleton.Face_Archetype_Skeleton' (0x000001FB3F0F0500) Class 'Skeleton'>"
+  },
+  "sourceAnimationProperties": {
+    "additive_anim_type": "<AdditiveAnimationType.AAT_NONE: 0>",
+    "additive_base_pose_type": "UNAVAILABLE: AnimSequence: Failed to find property 'additive_base_pose_type' for attribute 'additive_base_pose_type' on 'AnimSequence'",
+    "ref_pose_type": "<AdditiveBasePoseType.ABPT_NONE: 0>",
+    "ref_frame_index": 0,
+    "interpolation": "<AnimInterpolationType.LINEAR: 0>",
+    "enable_root_motion": false
+  },
+  "runtimeProbe": {
+    "meshPath": "/Game/MetaHumans/Common/Face/SKM_Face",
+    "animInstanceType": "AnimSingleNodeInstance",
+    "activeCurveNames": [],
+    "samples": [
+      {
+        "inputPose": "JawOpen",
+        "weight": 0.25,
+        "setPreviewCurveOverride": "ok",
+        "JawOpen": 0.0,
+        "ctrl_expressions_jaw_open": 0.0,
+        "CTRL_Expressions_Jaw_Open": 0.0
+      },
+      {
+        "inputPose": "JawOpen",
+        "weight": 0.5,
+        "setPreviewCurveOverride": "ok",
+        "JawOpen": 0.0,
+        "ctrl_expressions_jaw_open": 0.0,
+        "CTRL_Expressions_Jaw_Open": 0.0
+      },
+      {
+        "inputPose": "JawOpen",
+        "weight": 0.75,
+        "setPreviewCurveOverride": "ok",
+        "JawOpen": 0.0,
+        "ctrl_expressions_jaw_open": 0.0,
+        "CTRL_Expressions_Jaw_Open": 0.0
+      },
+      {
+        "inputPose": "JawOpen",
+        "weight": 1.0,
+        "setPreviewCurveOverride": "ok",
+        "JawOpen": 0.0,
+        "ctrl_expressions_jaw_open": 0.0,
+        "CTRL_Expressions_Jaw_Open": 0.0
+      }
+    ],
+    "status": "runtime_readback_inconclusive"
+  },
+  "firstSegmentProbe": {
+    "status": "ok",
+    "firstNonDefaultPose": "EyeBlinkLeft",
+    "sampleTime": 0.04166666544400729,
+    "fractions": [
+      {
+        "fraction": 0.25,
+        "sampleTime": 0.010416666361001822,
+        "maxAbsError": 0.0,
+        "meanAbsError": 0.0
+      },
+      {
+        "fraction": 0.5,
+        "sampleTime": 0.020833332722003644,
+        "maxAbsError": 0.0,
+        "meanAbsError": 0.0
+      },
+      {
+        "fraction": 0.75,
+        "sampleTime": 0.031249999083005464,
+        "maxAbsError": 0.0,
+        "meanAbsError": 0.0
+      },
+      {
+        "fraction": 1.0,
+        "sampleTime": 0.04166666544400729,
+        "maxAbsError": 0.0,
+        "meanAbsError": 0.0
+      }
+    ],
+    "curveCount": 1,
+    "maxAbsError": 0.0,
+    "meanAbsError": 0.0,
+    "topCurvesAtFullPose": [
+      {
+        "curve": "ctrl_expressions_eyeblinkl",
+        "fullAdjusted": 0.9999999408538542
+      }
+    ]
+  },
+  "status": "likely_linear_runtime_probe_inconclusive",
+  "conclusion": "The direct PoseAsset runtime probe did not expose readable output curves from Python on a transient `AnimSingleNodeInstance`, but the first uncontaminated source-animation segment sampled cleanly at 0.25/0.5/0.75/1.0 with negligible error. This materially reduces the linearity risk, but it does not fully prove live-node behavior for every pose."
+}

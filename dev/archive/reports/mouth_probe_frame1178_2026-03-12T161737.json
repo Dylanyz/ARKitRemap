@@ -1,0 +1,183 @@
+{
+  "frame_index": 1177,
+  "frame_display": 1178,
+  "sequences": {
+    "A_original": {
+      "path": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys",
+      "curves": {
+        "ctrl_expressions_mouthlipspurseul": 0.805407,
+        "ctrl_expressions_mouthlipspurseur": 0.830354,
+        "ctrl_expressions_mouthlipspursedl": 0.709189,
+        "ctrl_expressions_mouthlipspursedr": 0.700712,
+        "ctrl_expressions_mouthlipstowardsul": 0.444352,
+        "ctrl_expressions_mouthlipstowardsur": 0.483045,
+        "ctrl_expressions_mouthlipstowardsdl": 0.398683,
+        "ctrl_expressions_mouthlipstowardsdr": 0.400603,
+        "ctrl_expressions_mouthfunnelul": 0.003535,
+        "ctrl_expressions_mouthfunnelur": 0.003267,
+        "ctrl_expressions_mouthfunneldl": 0.478297,
+        "ctrl_expressions_mouthfunneldr": 0.501179,
+        "ctrl_expressions_mouthpressul": 0.0,
+        "ctrl_expressions_mouthpressur": 0.0,
+        "ctrl_expressions_mouthpressdl": 0.0,
+        "ctrl_expressions_mouthpressdr": 0.0,
+        "ctrl_expressions_mouthcornerpulll": 0.000977,
+        "ctrl_expressions_mouthcornerpullr": 0.0,
+        "ctrl_expressions_mouthstretchl": 0.0,
+        "ctrl_expressions_mouthstretchr": 0.012288,
+        "ctrl_expressions_mouthdimplel": 0.0,
+        "ctrl_expressions_mouthdimpler": 0.000122,
+        "ctrl_expressions_jawopen": 1.0,
+        "ctrl_expressions_jawleft": 0.0,
+        "ctrl_expressions_jawright": 0.119141,
+        "ctrl_expressions_mouthleft": 0.0,
+        "ctrl_expressions_mouthright": 0.058904,
+        "ctrl_expressions_mouthup": 0.0
+      }
+    },
+    "arkit_remap": {
+      "path": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys_ARKit",
+      "curves": {
+        "jawOpen": 0.428938,
+        "jawForward": 0.0,
+        "jawLeft": 0.0,
+        "jawRight": 0.119141,
+        "mouthClose": 0.5,
+        "mouthFunnel": 0.0,
+        "mouthPucker": 0.802965,
+        "mouthLeft": 0.0,
+        "mouthRight": 0.058904,
+        "mouthSmileLeft": 0.000977,
+        "mouthSmileRight": 0.0,
+        "mouthFrownLeft": 0.185791,
+        "mouthFrownRight": 0.20223,
+        "mouthDimpleLeft": 0.0,
+        "mouthDimpleRight": 0.000122,
+        "mouthStretchLeft": 0.0,
+        "mouthStretchRight": 0.012288,
+        "mouthRollLower": 0.005127,
+        "mouthRollUpper": 0.0,
+        "mouthShrugLower": 0.000964,
+        "mouthShrugUpper": 0.0,
+        "mouthPressLeft": 0.0,
+        "mouthPressRight": 0.0,
+        "mouthLowerDownLeft": 0.070554,
+        "mouthLowerDownRight": 0.077525,
+        "mouthUpperUpLeft": 0.001429,
+        "mouthUpperUpRight": 5e-06,
+        "cheekPuff": 0.000488,
+        "cheekSquintLeft": 0.01473,
+        "cheekSquintRight": 0.315186,
+        "noseSneerLeft": 0.028612,
+        "noseSneerRight": 0.237893
+      }
+    },
+    "B_roundtrip": {
+      "path": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/apples/AS_MP_VecDemo1-allkeys_ARKit_OnMH",
+      "curves": {
+        "ctrl_expressions_mouthlipspurseul": 0.802965,
+        "ctrl_expressions_mouthlipspurseur": 0.802965,
+        "ctrl_expressions_mouthlipspursedl": 0.802965,
+        "ctrl_expressions_mouthlipspursedr": 0.802965,
+        "ctrl_expressions_mouthlipstowardsul": 0.330822,
+        "ctrl_expressions_mouthlipstowardsur": 0.330822,
+        "ctrl_expressions_mouthlipstowardsdl": 0.330822,
+        "ctrl_expressions_mouthlipstowardsdr": 0.330822,
+        "ctrl_expressions_mouthfunnelul": 0.60383,
+        "ctrl_expressions_mouthfunnelur": 0.60383,
+        "ctrl_expressions_mouthfunneldl": 0.60383,
+        "ctrl_expressions_mouthfunneldr": 0.60383,
+        "ctrl_expressions_mouthpressul": 0.0,
+        "ctrl_expressions_mouthpressur": 0.0,
+        "ctrl_expressions_mouthpressdl": 0.0,
+        "ctrl_expressions_mouthpressdr": 0.0,
+        "ctrl_expressions_mouthcornerpulll": 0.000977,
+        "ctrl_expressions_mouthcornerpullr": 0.0,
+        "ctrl_expressions_mouthstretchl": 0.0,
+        "ctrl_expressions_mouthstretchr": 0.012288,
+        "ctrl_expressions_mouthdimplel": 0.0,
+        "ctrl_expressions_mouthdimpler": 0.000122,
+        "ctrl_expressions_jawopen": 0.428938,
+        "ctrl_expressions_jawleft": 0.0,
+        "ctrl_expressions_jawright": 0.119141,
+        "ctrl_expressions_mouthleft": 0.0,
+        "ctrl_expressions_mouthright": 0.058904,
+        "ctrl_expressions_mouthup": 0.0
+      }
+    }
+  },
+  "a_vs_b_diffs": [
+    {
+      "curve": "ctrl_expressions_jawopen",
+      "A": 1.0,
+      "B": 0.428938,
+      "diff": 0.571062
+    },
+    {
+      "curve": "ctrl_expressions_mouthfunneldl",
+      "A": 0.478297,
+      "B": 0.60383,
+      "diff": 0.125533
+    },
+    {
+      "curve": "ctrl_expressions_mouthfunneldr",
+      "A": 0.501179,
+      "B": 0.60383,
+      "diff": 0.102651
+    },
+    {
+      "curve": "ctrl_expressions_mouthfunnelul",
+      "A": 0.003535,
+      "B": 0.60383,
+      "diff": 0.600295
+    },
+    {
+      "curve": "ctrl_expressions_mouthfunnelur",
+      "A": 0.003267,
+      "B": 0.60383,
+      "diff": 0.600563
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipspursedl",
+      "A": 0.709189,
+      "B": 0.802965,
+      "diff": 0.093776
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipspursedr",
+      "A": 0.700712,
+      "B": 0.802965,
+      "diff": 0.102253
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipspurseur",
+      "A": 0.830354,
+      "B": 0.802965,
+      "diff": 0.027389
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipstowardsdl",
+      "A": 0.398683,
+      "B": 0.330822,
+      "diff": 0.067861
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipstowardsdr",
+      "A": 0.400603,
+      "B": 0.330822,
+      "diff": 0.069781
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipstowardsul",
+      "A": 0.444352,
+      "B": 0.330822,
+      "diff": 0.11353
+    },
+    {
+      "curve": "ctrl_expressions_mouthlipstowardsur",
+      "A": 0.483045,
+      "B": 0.330822,
+      "diff": 0.152223
+    }
+  ]
+}

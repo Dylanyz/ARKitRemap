@@ -1,0 +1,1550 @@
+{
+  "assetPath": "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping.PA_MetaHuman_ARKit_Mapping",
+  "extractionMethod": "editor_python",
+  "records": [
+    {
+      "arkitPoseName": "EyeBlinkLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyeblinkl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.041667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookDownLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookdownl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.083333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookInLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookrightl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookOutLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookleftl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookUpLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookupl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeSquintLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyesquintinnerl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeWideLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyewidenl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeBlinkRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyeblinkr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookDownRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookdownr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookInRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookleftr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookOutRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookrightr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeLookUpRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyelookupr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeSquintRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyesquintinnerr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "EyeWideRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyewidenr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "JawForward",
+      "sourceMhaCurveName": "ctrl_expressions_jawfwd",
+      "weight": 0.999,
+      "sampleTimeOrFrame": "time=0.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "JawLeft",
+      "sourceMhaCurveName": "ctrl_expressions_jawleft",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "JawRight",
+      "sourceMhaCurveName": "ctrl_expressions_jawright",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "JawOpen",
+      "sourceMhaCurveName": "ctrl_expressions_jawopen",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.750000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthFunnel",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunnelul",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthFunnel",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunnelur",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthFunnel",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunneldl",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthFunnel",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunneldr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipspurseul",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipspurseur",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipspursedl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipspursedr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsul",
+      "weight": 0.412,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsur",
+      "weight": 0.412,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsdl",
+      "weight": 0.412,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipstowardsdr",
+      "weight": 0.412,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunnelul",
+      "weight": 0.752,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunnelur",
+      "weight": 0.752,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunneldl",
+      "weight": 0.752,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPucker",
+      "sourceMhaCurveName": "ctrl_expressions_mouthfunneldr",
+      "weight": 0.752,
+      "sampleTimeOrFrame": "time=0.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthleft",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.875000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthright",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=0.916667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthSmileLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthcornerpulll",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=0.958333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthSmileRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthcornerpullr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.000000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthSmileRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthdimpler",
+      "weight": 0.003,
+      "sampleTimeOrFrame": "time=1.000000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthFrownLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthcornerdepressl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.041667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthFrownRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthcornerdepressr",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.083333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthDimpleLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthdimplel",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthDimpleRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthdimpler",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthStretchLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthstretchl",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthStretchRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthstretchr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRollLower",
+      "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl",
+      "weight": 0.499,
+      "sampleTimeOrFrame": "time=1.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRollLower",
+      "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinr",
+      "weight": 0.499,
+      "sampleTimeOrFrame": "time=1.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRollLower",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRollLower",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlowerliprollinr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRollUpper",
+      "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinl",
+      "weight": 0.997999,
+      "sampleTimeOrFrame": "time=1.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthRollUpper",
+      "sourceMhaCurveName": "ctrl_expressions_mouthupperliprollinr",
+      "weight": 0.997999,
+      "sampleTimeOrFrame": "time=1.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthShrugLower",
+      "sourceMhaCurveName": "ctrl_expressions_jawchinraisedl",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthShrugLower",
+      "sourceMhaCurveName": "ctrl_expressions_jawchinraisedr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthShrugUpper",
+      "sourceMhaCurveName": "ctrl_expressions_jawchinraiseul",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthShrugUpper",
+      "sourceMhaCurveName": "ctrl_expressions_jawchinraiseur",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPressLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthpressul",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPressLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthpressdl",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPressRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthpressur",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthPressRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthpressdr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthLowerDownLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthLowerDownRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlowerlipdepressr",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthUpperUpLeft",
+      "sourceMhaCurveName": "ctrl_expressions_mouthupperlipraisel",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "MouthUpperUpRight",
+      "sourceMhaCurveName": "ctrl_expressions_mouthupperlipraiser",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowDownLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browdownl",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowDownLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=1.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowDownRight",
+      "sourceMhaCurveName": "ctrl_expressions_browdownr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.750000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowDownRight",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=1.750000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowInnerUp",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowInnerUp",
+      "sourceMhaCurveName": "ctrl_expressions_browlateralr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowInnerUp",
+      "sourceMhaCurveName": "ctrl_expressions_browraiseinl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowInnerUp",
+      "sourceMhaCurveName": "ctrl_expressions_browraiseinr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.791667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowOuterUpLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031002,
+      "sampleTimeOrFrame": "time=1.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowOuterUpLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browraiseinl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowOuterUpLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browraiseouterl",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.833333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowOuterUpRight",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=1.875000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowOuterUpRight",
+      "sourceMhaCurveName": "ctrl_expressions_browraiseinr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.875000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "BrowOuterUpRight",
+      "sourceMhaCurveName": "ctrl_expressions_browraiseouterr",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=1.875000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekPuff",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=1.916667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekPuff",
+      "sourceMhaCurveName": "ctrl_expressions_mouthcheekblowl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.916667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekPuff",
+      "sourceMhaCurveName": "ctrl_expressions_mouthcheekblowr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.916667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekPuff",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipsblowl",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.916667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekPuff",
+      "sourceMhaCurveName": "ctrl_expressions_mouthlipsblowr",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=1.916667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekSquintLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=1.958333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekSquintLeft",
+      "sourceMhaCurveName": "ctrl_expressions_eyecheekraisel",
+      "weight": 0.999998,
+      "sampleTimeOrFrame": "time=1.958333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekSquintRight",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.000000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "CheekSquintRight",
+      "sourceMhaCurveName": "ctrl_expressions_eyecheekraiser",
+      "weight": 0.999999,
+      "sampleTimeOrFrame": "time=2.000000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "NoseSneerLeft",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.041667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "NoseSneerLeft",
+      "sourceMhaCurveName": "ctrl_expressions_nosewrinklel",
+      "weight": 0.999997,
+      "sampleTimeOrFrame": "time=2.041667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "NoseSneerRight",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.083333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "NoseSneerRight",
+      "sourceMhaCurveName": "ctrl_expressions_nosewrinkler",
+      "weight": 1.0,
+      "sampleTimeOrFrame": "time=2.083333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.825999,
+      "sampleTimeOrFrame": "time=2.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.768999,
+      "sampleTimeOrFrame": "time=2.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+      "weight": 0.247319,
+      "sampleTimeOrFrame": "time=2.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "TongueOut",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.627999,
+      "sampleTimeOrFrame": "time=2.125000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+      "weight": 0.149542,
+      "sampleTimeOrFrame": "time=2.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_4",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.166667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "sourceMhaCurveName": "ctrl_expressions_tonguerolldown",
+      "weight": 0.051764,
+      "sampleTimeOrFrame": "time=2.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_5",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.208333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_6",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_6",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_6",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_6",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_6",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.250000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_7",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_7",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_7",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_7",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_7",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.291667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_8",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_8",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_8",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_8",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_8",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.333333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_9",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_9",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_9",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_9",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_9",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.375000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_10",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_10",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_10",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_10",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_10",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.416667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_11",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_11",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_11",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_11",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_11",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.458333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_12",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_12",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_12",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_12",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_12",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.500000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_13",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_13",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_13",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_13",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_13",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.541667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_14",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_14",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_14",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_14",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_14",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.583333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_15",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_15",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_15",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_15",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_15",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.625000s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_16",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_16",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_16",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_16",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_16",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.666667s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_17",
+      "sourceMhaCurveName": "ctrl_expressions_browlaterall",
+      "weight": 0.031,
+      "sampleTimeOrFrame": "time=2.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_17",
+      "sourceMhaCurveName": "ctrl_expressions_tonguedown",
+      "weight": 0.826,
+      "sampleTimeOrFrame": "time=2.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_17",
+      "sourceMhaCurveName": "ctrl_expressions_tongueright",
+      "weight": 0.07,
+      "sampleTimeOrFrame": "time=2.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_17",
+      "sourceMhaCurveName": "ctrl_expressions_tongueout",
+      "weight": 0.769,
+      "sampleTimeOrFrame": "time=2.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    },
+    {
+      "arkitPoseName": "Pose_17",
+      "sourceMhaCurveName": "ctrl_expressions_tonguewide",
+      "weight": 0.628,
+      "sampleTimeOrFrame": "time=2.708333s",
+      "confidenceNotes": "sampled then baseline-subtracted using Default pose sample"
+    }
+  ],
+  "mappingAssumptions": {
+    "poseIndexToTimeRule": "i/(N-1)",
+    "samplingRule": "linear_interpolation_from_float_keys",
+    "baselineAdjustment": "subtract_default_pose_sample_per_curve",
+    "filteredZeroWeights": true,
+    "epsilon": 0.0001
+  },
+  "validationSummary": {
+    "poseCount": 66,
+    "curveCount": 274,
+    "sanityChecks": [
+      "pose asset loaded",
+      "source animation loaded",
+      "curve key sampling completed",
+      "non-zero record count: 168"
+    ],
+    "warnings": []
+  },
+  "debug": {
+    "poseNames": [
+      "Default",
+      "EyeBlinkLeft",
+      "EyeLookDownLeft",
+      "EyeLookInLeft",
+      "EyeLookOutLeft",
+      "EyeLookUpLeft",
+      "EyeSquintLeft",
+      "EyeWideLeft",
+      "EyeBlinkRight",
+      "EyeLookDownRight",
+      "EyeLookInRight",
+      "EyeLookOutRight",
+      "EyeLookUpRight",
+      "EyeSquintRight",
+      "EyeWideRight",
+      "JawForward",
+      "JawLeft",
+      "JawRight",
+      "JawOpen",
+      "MouthFunnel",
+      "MouthPucker",
+      "MouthLeft",
+      "MouthRight",
+      "MouthSmileLeft",
+      "MouthSmileRight",
+      "MouthFrownLeft",
+      "MouthFrownRight",
+      "MouthDimpleLeft",
+      "MouthDimpleRight",
+      "MouthStretchLeft",
+      "MouthStretchRight",
+      "MouthRollLower",
+      "MouthRollUpper",
+      "MouthShrugLower",
+      "MouthShrugUpper",
+      "MouthPressLeft",
+      "MouthPressRight",
+      "MouthLowerDownLeft",
+      "MouthLowerDownRight",
+      "MouthUpperUpLeft",
+      "MouthUpperUpRight",
+      "BrowDownLeft",
+      "BrowDownRight",
+      "BrowInnerUp",
+      "BrowOuterUpLeft",
+      "BrowOuterUpRight",
+      "CheekPuff",
+      "CheekSquintLeft",
+      "CheekSquintRight",
+      "NoseSneerLeft",
+      "NoseSneerRight",
+      "TongueOut",
+      "Pose_4",
+      "Pose_5",
+      "Pose_6",
+      "Pose_7",
+      "Pose_8",
+      "Pose_9",
+      "Pose_10",
+      "Pose_11",
+      "Pose_12",
+      "Pose_13",
+      "Pose_14",
+      "Pose_15",
+      "Pose_16",
+      "Pose_17"
+    ],
+    "sourceAnimationPath": "/Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping.AS_MetaHuman_ARKit_Mapping",
+    "curveNames": [
+      "ctrl_expressions_browdownl",
+      "ctrl_expressions_browdownr",
+      "ctrl_expressions_browlaterall",
+      "ctrl_expressions_browlateralr",
+      "ctrl_expressions_browraiseinl",
+      "ctrl_expressions_browraiseinr",
+      "ctrl_expressions_browraiseouterl",
+      "ctrl_expressions_browraiseouterr",
+      "ctrl_expressions_earupl",
+      "ctrl_expressions_earupr",
+      "ctrl_expressions_eyeblinkl",
+      "ctrl_expressions_eyeblinkr",
+      "ctrl_expressions_eyelidpressl",
+      "ctrl_expressions_eyelidpressr",
+      "ctrl_expressions_eyewidenl",
+      "ctrl_expressions_eyewidenr",
+      "ctrl_expressions_eyesquintinnerl",
+      "ctrl_expressions_eyesquintinnerr",
+      "ctrl_expressions_eyecheekraisel",
+      "ctrl_expressions_eyecheekraiser",
+      "ctrl_expressions_eyefacescrunchl",
+      "ctrl_expressions_eyefacescrunchr",
+      "ctrl_expressions_eyeupperlidupl",
+      "ctrl_expressions_eyeupperlidupr",
+      "ctrl_expressions_eyerelaxl",
+      "ctrl_expressions_eyerelaxr",
+      "ctrl_expressions_eyelowerlidupl",
+      "ctrl_expressions_eyelowerlidupr",
+      "ctrl_expressions_eyelowerliddownl",
+      "ctrl_expressions_eyelowerliddownr",
+      "ctrl_expressions_eyelookupl",
+      "ctrl_expressions_eyelookupr",
+      "ctrl_expressions_eyelookdownl",
+      "ctrl_expressions_eyelookdownr",
+      "ctrl_expressions_eyelookleftl",
+      "ctrl_expressions_eyelookleftr",
+      "ctrl_expressions_eyelookrightl",
+      "ctrl_expressions_eyelookrightr",
+      "ctrl_expressions_eyepupilwidel",
+      "ctrl_expressions_eyepupilwider",
+      "ctrl_expressions_eyepupilnarrowl",
+      "ctrl_expressions_eyepupilnarrowr",
+      "ctrl_expressions_eyeparallellookdirection",
+      "ctrl_expressions_eyelashesupinl",
+      "ctrl_expressions_eyelashesupinr",
+      "ctrl_expressions_eyelashesupoutl",
+      "ctrl_expressions_eyelashesupoutr",
+      "ctrl_expressions_eyelashesdowninl",
+      "ctrl_expressions_eyelashesdowninr",
+      "ctrl_expressions_eyelashesdownoutl",
+      "ctrl_expressions_eyelashesdownoutr",
+      "ctrl_expressions_nosewrinklel",
+      "ctrl_expressions_nosewrinkler",
+      "ctrl_expressions_nosewrinkleupperl",
+      "ctrl_expressions_nosewrinkleupperr",
+      "ctrl_expressions_nosenostrildepressl",
+      "ctrl_expressions_nosenostrildepressr",
+      "ctrl_expressions_nosenostrildilatel",
+      "ctrl_expressions_nosenostrildilater",
+      "ctrl_expressions_nosenostrilcompressl",
+      "ctrl_expressions_nosenostrilcompressr",
+      "ctrl_expressions_nosenasolabialdeepenl",
+      "ctrl_expressions_nosenasolabialdeepenr",
+      "ctrl_expressions_mouthcheeksuckl",
+      "ctrl_expressions_mouthcheeksuckr",
+      "ctrl_expressions_mouthcheekblowl",
+      "ctrl_expressions_mouthcheekblowr",
+      "ctrl_expressions_mouthlipsblowl",
+      "ctrl_expressions_mouthlipsblowr",
+      "ctrl_expressions_mouthleft",
+      "ctrl_expressions_mouthright",
+      "ctrl_expressions_mouthup",
+      "ctrl_expressions_mouthdown",
+      "ctrl_expressions_mouthupperlipraisel",
+      "ctrl_expressions_mouthupperlipraiser",
+      "ctrl_expressions_mouthlowerlipdepressl",
+      "ctrl_expressions_mouthlowerlipdepressr",
+      "ctrl_expressions_mouthcornerpulll",
+      "ctrl_expressions_mouthcornerpullr",
+      "ctrl_expressions_mouthstretchl",
+      "ctrl_expressions_mouthstretchr",
+      "ctrl_expressions_mouthstretchlipsclosel",
+      "ctrl_expressions_mouthstretchlipscloser",
+      "ctrl_expressions_mouthdimplel",
+      "ctrl_expressions_mouthdimpler",
+      "ctrl_expressions_mouthcornerdepressl",
+      "ctrl_expressions_mouthcornerdepressr",
+      "ctrl_expressions_mouthpressul",
+      "ctrl_expressions_mouthpressur",
+      "ctrl_expressions_mouthpressdl",
+      "ctrl_expressions_mouthpressdr",
+      "ctrl_expressions_mouthlipspurseul",
+      "ctrl_expressions_mouthlipspurseur",
+      "ctrl_expressions_mouthlipspursedl",
+      "ctrl_expressions_mouthlipspursedr",
+      "ctrl_expressions_mouthlipstowardsul",
+      "ctrl_expressions_mouthlipstowardsur",
+      "ctrl_expressions_mouthlipstowardsdl",
+      "ctrl_expressions_mouthlipstowardsdr",
+      "ctrl_expressions_mouthfunnelul",
+      "ctrl_expressions_mouthfunnelur",
+      "ctrl_expressions_mouthfunneldl",
+      "ctrl_expressions_mouthfunneldr",
+      "ctrl_expressions_mouthlipstogetherul",
+      "ctrl_expressions_mouthlipstogetherur",
+      "ctrl_expressions_mouthlipstogetherdl",
+      "ctrl_expressions_mouthlipstogetherdr",
+      "ctrl_expressions_mouthupperlipbitel",
+      "ctrl_expressions_mouthupperlipbiter",
+      "ctrl_expressions_mouthlowerlipbitel",
+      "ctrl_expressions_mouthlowerlipbiter",
+      "ctrl_expressions_mouthlipstightenul",
+      "ctrl_expressions_mouthlipstightenur",
+      "ctrl_expressions_mouthlipstightendl",
+      "ctrl_expressions_mouthlipstightendr",
+      "ctrl_expressions_mouthlipspressl",
+      "ctrl_expressions_mouthlipspressr",
+      "ctrl_expressions_mouthsharpcornerpulll",
+      "ctrl_expressions_mouthsharpcornerpullr",
+      "ctrl_expressions_mouthstickyuc",
+      "ctrl_expressions_mouthstickyuinl",
+      "ctrl_expressions_mouthstickyuinr",
+      "ctrl_expressions_mouthstickyuoutl",
+      "ctrl_expressions_mouthstickyuoutr",
+      "ctrl_expressions_mouthstickydc",
+      "ctrl_expressions_mouthstickydinl",
+      "ctrl_expressions_mouthstickydinr",
+      "ctrl_expressions_mouthstickydoutl",
+      "ctrl_expressions_mouthstickydoutr",
+      "ctrl_expressions_mouthlipsstickylph1",
+      "ctrl_expressions_mouthlipsstickylph2",
+      "ctrl_expressions_mouthlipsstickylph3",
+      "ctrl_expressions_mouthlipsstickyrph1",
+      "ctrl_expressions_mouthlipsstickyrph2",
+      "ctrl_expressions_mouthlipsstickyrph3",
+      "ctrl_expressions_mouthlipspushul",
+      "ctrl_expressions_mouthlipspushur",
+      "ctrl_expressions_mouthlipspushdl",
+      "ctrl_expressions_mouthlipspushdr",
+      "ctrl_expressions_mouthlipspullul",
+      "ctrl_expressions_mouthlipspullur",
+      "ctrl_expressions_mouthlipspulldl",
+      "ctrl_expressions_mouthlipspulldr",
+      "ctrl_expressions_mouthlipsthinul",
+      "ctrl_expressions_mouthlipsthinur",
+      "ctrl_expressions_mouthlipsthindl",
+      "ctrl_expressions_mouthlipsthindr",
+      "ctrl_expressions_mouthlipsthickul",
+      "ctrl_expressions_mouthlipsthickur",
+      "ctrl_expressions_mouthlipsthickdl",
+      "ctrl_expressions_mouthlipsthickdr",
+      "ctrl_expressions_mouthcornersharpenul",
+      "ctrl_expressions_mouthcornersharpenur",
+      "ctrl_expressions_mouthcornersharpendl",
+      "ctrl_expressions_mouthcornersharpendr",
+      "ctrl_expressions_mouthcornerrounderul",
+      "ctrl_expressions_mouthcornerrounderur",
+      "ctrl_expressions_mouthcornerrounderdl",
+      "ctrl_expressions_mouthcornerrounderdr",
+      "ctrl_expressions_mouthupperliptowardsteethl",
+      "ctrl_expressions_mouthupperliptowardsteethr",
+      "ctrl_expressions_mouthlowerliptowardsteethl",
+      "ctrl_expressions_mouthlowerliptowardsteethr",
+      "ctrl_expressions_mouthupperlipshiftleft",
+      "ctrl_expressions_mouthupperlipshiftright",
+      "ctrl_expressions_mouthlowerlipshiftleft",
+      "ctrl_expressions_mouthlowerlipshiftright",
+      "ctrl_expressions_mouthupperliprollinl",
+      "ctrl_expressions_mouthupperliprollinr",
+      "ctrl_expressions_mouthupperliprolloutl",
+      "ctrl_expressions_mouthupperliprolloutr",
+      "ctrl_expressions_mouthlowerliprollinl",
+      "ctrl_expressions_mouthlowerliprollinr",
+      "ctrl_expressions_mouthlowerliprolloutl",
+      "ctrl_expressions_mouthlowerliprolloutr",
+      "ctrl_expressions_mouthcornerupl",
+      "ctrl_expressions_mouthcornerupr",
+      "ctrl_expressions_mouthcornerdownl",
+      "ctrl_expressions_mouthcornerdownr",
+      "ctrl_expressions_mouthcornerwidel",
+      "ctrl_expressions_mouthcornerwider",
+      "ctrl_expressions_mouthcornernarrowl",
+      "ctrl_expressions_mouthcornernarrowr",
+      "ctrl_expressions_tongueup",
+      "ctrl_expressions_tonguedown",
+      "ctrl_expressions_tongueleft",
+      "ctrl_expressions_tongueright",
+      "ctrl_expressions_tongueout",
+      "ctrl_expressions_tonguein",
+      "ctrl_expressions_tonguerollup",
+      "ctrl_expressions_tonguerolldown",
+      "ctrl_expressions_tonguerollleft",
+      "ctrl_expressions_tonguerollright",
+      "ctrl_expressions_tonguetipup",
+      "ctrl_expressions_tonguetipdown",
+      "ctrl_expressions_tonguetipleft",
+      "ctrl_expressions_tonguetipright",
+      "ctrl_expressions_tonguewide",
+      "ctrl_expressions_tonguenarrow",
+      "ctrl_expressions_tonguepress",
+      "ctrl_expressions_jawopen",
+      "ctrl_expressions_jawleft",
+      "ctrl_expressions_jawright",
+      "ctrl_expressions_jawfwd",
+      "ctrl_expressions_jawback",
+      "ctrl_expressions_jawclenchl",
+      "ctrl_expressions_jawclenchr",
+      "ctrl_expressions_jawchinraisedl",
+      "ctrl_expressions_jawchinraisedr",
+      "ctrl_expressions_jawchinraiseul",
+      "ctrl_expressions_jawchinraiseur",
+      "ctrl_expressions_jawchincompressl",
+      "ctrl_expressions_jawchincompressr",
+      "ctrl_expressions_jawopenextreme",
+      "ctrl_expressions_neckstretchl",
+      "ctrl_expressions_neckstretchr",
+      "ctrl_expressions_neckswallowph1",
+      "ctrl_expressions_neckswallowph2",
+      "ctrl_expressions_neckswallowph3",
+      "ctrl_expressions_neckswallowph4",
+      "ctrl_expressions_neckmastoidcontractl",
+      "ctrl_expressions_neckmastoidcontractr",
+      "ctrl_expressions_neckthroatdown",
+      "ctrl_expressions_neckthroatup",
+      "ctrl_expressions_neckdigastricdown",
+      "ctrl_expressions_neckdigastricup",
+      "ctrl_expressions_neckthroatexhale",
+      "ctrl_expressions_neckthroatinhale",
+      "ctrl_expressions_teethupu",
+      "ctrl_expressions_teethupd",
+      "ctrl_expressions_teethdownu",
+      "ctrl_expressions_teethdownd",
+      "ctrl_expressions_teethleftu",
+      "ctrl_expressions_teethleftd",
+      "ctrl_expressions_teethrightu",
+      "ctrl_expressions_teethrightd",
+      "ctrl_expressions_teethfwdu",
+      "ctrl_expressions_teethfwdd",
+      "ctrl_expressions_teethbacku",
+      "ctrl_expressions_teethbackd",
+      "ctrl_expressions_skullunified",
+      "ctrl_expressions_headturnupu",
+      "ctrl_expressions_headturnupm",
+      "ctrl_expressions_headturnupd",
+      "ctrl_expressions_headturndownu",
+      "ctrl_expressions_headturndownm",
+      "ctrl_expressions_headturndownd",
+      "ctrl_expressions_headturnleftu",
+      "ctrl_expressions_headturnleftm",
+      "ctrl_expressions_headturnleftd",
+      "ctrl_expressions_headturnrightu",
+      "ctrl_expressions_headturnrightm",
+      "ctrl_expressions_headturnrightd",
+      "ctrl_expressions_headtiltleftu",
+      "ctrl_expressions_headtiltleftm",
+      "ctrl_expressions_headtiltleftd",
+      "ctrl_expressions_headtiltrightu",
+      "ctrl_expressions_headtiltrightm",
+      "ctrl_expressions_headtiltrightd",
+      "ctrl_expressions_mouthlipsthininwardul",
+      "ctrl_expressions_mouthlipsthininwardur",
+      "ctrl_expressions_mouthlipsthininwarddl",
+      "ctrl_expressions_mouthlipsthininwarddr",
+      "ctrl_expressions_mouthlipsthickinwardul",
+      "ctrl_expressions_mouthlipsthickinwardur",
+      "ctrl_expressions_mouthlipsthickinwarddl",
+      "ctrl_expressions_mouthlipsthickinwarddr",
+      "ctrl_expressions_tonguebendup",
+      "ctrl_expressions_tonguebenddown",
+      "ctrl_expressions_tonguetwistleft",
+      "ctrl_expressions_tonguetwistright",
+      "ctrl_expressions_tongueroll",
+      "ctrl_expressions_tonguethick",
+      "ctrl_expressions_tonguethin"
+    ],
+    "sourceAnimationLengthSeconds": 2.7083332538604736,
+    "nonEmptyCurveKeyCount": 274,
+    "baselineCurveCount": 274
+  }
+}

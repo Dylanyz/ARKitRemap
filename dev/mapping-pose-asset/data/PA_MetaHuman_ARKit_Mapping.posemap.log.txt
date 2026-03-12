@@ -1,0 +1,4 @@
+Loaded pose asset. Pose count: 66
+Source animation: /Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping.AS_MetaHuman_ARKit_Mapping
+Curve count from source animation: 274
+Source animation length (s): 2.708333

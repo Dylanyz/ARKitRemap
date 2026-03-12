@@ -1,0 +1,114 @@
+{
+  "animation_library_class": {
+    "ok": true,
+    "value": {
+      "AnimationLibrary": true,
+      "AnimationBlueprintLibrary": false
+    }
+  },
+  "raw_curve_track_types": {
+    "ok": true,
+    "value": {
+      "exists": true,
+      "RCT_FLOAT": "<RawCurveTrackTypes.RCT_FLOAT: 0>",
+      "FLOAT": null,
+      "RCT_VECTOR": null,
+      "RCT_TRANSFORM": "<RawCurveTrackTypes.RCT_TRANSFORM: 2>"
+    }
+  },
+  "load_sandbox_asset": {
+    "ok": true,
+    "value": {
+      "type": "AnimSequence",
+      "is_anim_sequence": true
+    }
+  },
+  "does_curve_exist": {
+    "ok": true,
+    "value": {
+      "lib": "AnimationLibrary",
+      "with_RCT_FLOAT": true,
+      "name_only_err": "does_curve_exist() required argument 'curve_type' (pos 3) not found",
+      "nonexistent": false
+    }
+  },
+  "get_float_keys": {
+    "ok": true,
+    "value": {
+      "return_type": "tuple",
+      "length": 2,
+      "first_type": "Array",
+      "first_attrs": [
+        "append",
+        "cast",
+        "clear",
+        "copy",
+        "count",
+        "extend",
+        "index",
+        "insert",
+        "pop",
+        "remove",
+        "resize",
+        "reverse",
+        "sort"
+      ],
+      "total_keys": 2
+    }
+  },
+  "add_and_remove_curve": {
+    "ok": true,
+    "value": {
+      "add_with_enum_and_meta": "ok",
+      "add_with_enum_only": "ok",
+      "add_name_only": "ok",
+      "add_float_curve_keys": "ok",
+      "remove_with_enum_and_meta_err": "remove_curve() takes at most 3 arguments (4 given)",
+      "remove_with_enum_only_err": "AnimationLibrary: Failed to convert parameter 'remove_name_from_skeleton' when calling function 'AnimationBlueprintLibrary.RemoveCurve' on 'Default__AnimationBlueprintLibrary'\n  TypeError: NativizeProperty: Cannot nativize 'RawCurveTrackTypes' as 'bRemoveNameFromSkeleton' (BoolProperty)\n    TypeError: Nativize: Cannot nativize 'RawCurveTrackTypes' as 'bool'",
+      "remove_name_only": "ok",
+      "remove_bool_only": "ok",
+      "cleanup": "ok"
+    }
+  },
+  "duplicate_asset": {
+    "ok": true,
+    "value": {
+      "return_type": "AnimSequence",
+      "returned_non_null": true,
+      "dest_exists": true,
+      "dup_when_exists_return": "None",
+      "dup_when_exists_non_null": false
+    }
+  },
+  "save_asset": {
+    "ok": true,
+    "value": {
+      "has_save_asset": true,
+      "has_save_loaded_asset": true
+    }
+  },
+  "get_selected_assets": {
+    "ok": true,
+    "value": {
+      "has_EditorUtilityLibrary": true,
+      "return_type": "Array",
+      "count": 1,
+      "first_type": "AnimSequence",
+      "first_path": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_VecDemo1RAW_Cursor.AS_VecDemo1RAW_Cursor"
+    }
+  },
+  "reexecution": {
+    "ok": true,
+    "value": {
+      "run_count": 1,
+      "note": "Run py probe_ue_api again; if count increments, re-execution works."
+    }
+  },
+  "list_curves": {
+    "ok": true,
+    "value": {
+      "get_animation_curve_names_err": "get_animation_curve_names() required argument 'curve_type' (pos 2) not found",
+      "get_float_curve_names": "not_found"
+    }
+  }
+}

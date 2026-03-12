@@ -1,0 +1,585 @@
+{
+  "matched_pairs": 1450,
+  "candidates": {
+    "old_strict": {
+      "params": {
+        "jawFactor": 0.75,
+        "lipsPurseWeight": 0.5,
+        "forwardConstraintRatio": 1.0
+      },
+      "metrics": {
+        "jaw_mse": 0.204028,
+        "mc_mse": 0.048575,
+        "combined": 0.252603,
+        "jaw_capped_pct": 41.517241,
+        "mc_gt_jaw_pct": 0.0
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.0,
+          "real_jaw": 0.723,
+          "our_mc": 0.0,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.419,
+          "real_jaw": 0.0,
+          "our_mc": 0.079,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.125,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0766,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.1549,
+          "real_jaw": 0.1725,
+          "our_mc": 0.1396,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.1511,
+          "real_jaw": 0.9434,
+          "our_mc": 0.1511,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "old_relaxed_1.5": {
+      "params": {
+        "jawFactor": 0.75,
+        "lipsPurseWeight": 0.5,
+        "forwardConstraintRatio": 1.5
+      },
+      "metrics": {
+        "jaw_mse": 0.204028,
+        "mc_mse": 0.046477,
+        "combined": 0.250505,
+        "jaw_capped_pct": 32.206897,
+        "mc_gt_jaw_pct": 23.034483
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.0,
+          "real_jaw": 0.723,
+          "our_mc": 0.0,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.419,
+          "real_jaw": 0.0,
+          "our_mc": 0.079,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.125,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0766,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.1549,
+          "real_jaw": 0.1725,
+          "our_mc": 0.1396,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.1511,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2071,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "old_relaxed_2.0": {
+      "params": {
+        "jawFactor": 0.75,
+        "lipsPurseWeight": 0.5,
+        "forwardConstraintRatio": 2.0
+      },
+      "metrics": {
+        "jaw_mse": 0.204028,
+        "mc_mse": 0.045906,
+        "combined": 0.249934,
+        "jaw_capped_pct": 23.793103,
+        "mc_gt_jaw_pct": 23.034483
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.0,
+          "real_jaw": 0.723,
+          "our_mc": 0.0,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.419,
+          "real_jaw": 0.0,
+          "our_mc": 0.079,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.125,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0766,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.1549,
+          "real_jaw": 0.1725,
+          "our_mc": 0.1396,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.1511,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2071,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "old_no_constraint": {
+      "params": {
+        "jawFactor": 0.75,
+        "lipsPurseWeight": 0.5,
+        "forwardConstraintRatio": 999.0
+      },
+      "metrics": {
+        "jaw_mse": 0.204028,
+        "mc_mse": 0.045932,
+        "combined": 0.24996,
+        "jaw_capped_pct": 15.172414,
+        "mc_gt_jaw_pct": 23.034483
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.0,
+          "real_jaw": 0.723,
+          "our_mc": 0.0,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.419,
+          "real_jaw": 0.0,
+          "our_mc": 0.079,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.125,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0766,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.1549,
+          "real_jaw": 0.1725,
+          "our_mc": 0.1396,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.1511,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2071,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "cal_strict": {
+      "params": {
+        "jawFactor": 0.155,
+        "lipsPurseWeight": 0.735,
+        "forwardConstraintRatio": 1.0
+      },
+      "metrics": {
+        "jaw_mse": 0.150062,
+        "mc_mse": 0.041039,
+        "combined": 0.191101,
+        "jaw_capped_pct": 10.206897,
+        "mc_gt_jaw_pct": 0.0
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.1176,
+          "real_jaw": 0.723,
+          "our_mc": 0.0543,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.5375,
+          "real_jaw": 0.0,
+          "our_mc": 0.1056,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.2556,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0915,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.454,
+          "real_jaw": 0.1725,
+          "our_mc": 0.2024,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.5191,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2964,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "cal_relaxed_1.5": {
+      "params": {
+        "jawFactor": 0.155,
+        "lipsPurseWeight": 0.735,
+        "forwardConstraintRatio": 1.5
+      },
+      "metrics": {
+        "jaw_mse": 0.150062,
+        "mc_mse": 0.040831,
+        "combined": 0.190893,
+        "jaw_capped_pct": 0.413793,
+        "mc_gt_jaw_pct": 1.724138
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.1176,
+          "real_jaw": 0.723,
+          "our_mc": 0.0543,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.5375,
+          "real_jaw": 0.0,
+          "our_mc": 0.1056,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.2556,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0915,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.454,
+          "real_jaw": 0.1725,
+          "our_mc": 0.2024,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.5191,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2964,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "high_jaw_high_lw_1.5": {
+      "params": {
+        "jawFactor": 0.75,
+        "lipsPurseWeight": 0.735,
+        "forwardConstraintRatio": 1.5
+      },
+      "metrics": {
+        "jaw_mse": 0.204028,
+        "mc_mse": 0.04637,
+        "combined": 0.250398,
+        "jaw_capped_pct": 37.241379,
+        "mc_gt_jaw_pct": 30.137931
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.0,
+          "real_jaw": 0.723,
+          "our_mc": 0.0,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.419,
+          "real_jaw": 0.0,
+          "our_mc": 0.1056,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.125,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0915,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.1549,
+          "real_jaw": 0.1725,
+          "our_mc": 0.2024,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.1511,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2267,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "high_jaw_high_lw_2.0": {
+      "params": {
+        "jawFactor": 0.75,
+        "lipsPurseWeight": 0.735,
+        "forwardConstraintRatio": 2.0
+      },
+      "metrics": {
+        "jaw_mse": 0.204028,
+        "mc_mse": 0.045685,
+        "combined": 0.249713,
+        "jaw_capped_pct": 30.344828,
+        "mc_gt_jaw_pct": 30.137931
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.0,
+          "real_jaw": 0.723,
+          "our_mc": 0.0,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.419,
+          "real_jaw": 0.0,
+          "our_mc": 0.1056,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.125,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0915,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.1549,
+          "real_jaw": 0.1725,
+          "our_mc": 0.2024,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.1511,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2964,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "moderate_1.5": {
+      "params": {
+        "jawFactor": 0.45,
+        "lipsPurseWeight": 0.6,
+        "forwardConstraintRatio": 1.5
+      },
+      "metrics": {
+        "jaw_mse": 0.164519,
+        "mc_mse": 0.042683,
+        "combined": 0.207202,
+        "jaw_capped_pct": 9.517241,
+        "mc_gt_jaw_pct": 9.655172
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.014,
+          "real_jaw": 0.723,
+          "our_mc": 0.0209,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.4788,
+          "real_jaw": 0.0,
+          "our_mc": 0.0904,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.1909,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0829,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.3057,
+          "real_jaw": 0.1725,
+          "our_mc": 0.1663,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.3367,
+          "real_jaw": 0.9434,
+          "our_mc": 0.2451,
+          "real_mc": 0.6801
+        }
+      ]
+    },
+    "optimized": {
+      "params": {
+        "jawFactor": 0.15500000000000003,
+        "lipsPurseWeight": 0.755,
+        "forwardConstraintRatio": 2.0
+      },
+      "metrics": {
+        "jaw_mse": 0.150062,
+        "mc_mse": 0.040808,
+        "combined": 0.19087,
+        "jaw_capped_pct": 0.275862,
+        "mc_gt_jaw_pct": 1.724138
+      },
+      "key_frames": [
+        {
+          "frame": 0,
+          "our_jaw": 0.0,
+          "real_jaw": 0.0291,
+          "our_mc": 0.0,
+          "real_mc": 0.0492
+        },
+        {
+          "frame": 276,
+          "our_jaw": 0.1176,
+          "real_jaw": 0.723,
+          "our_mc": 0.0555,
+          "real_mc": 0.1446
+        },
+        {
+          "frame": 362,
+          "our_jaw": 0.5375,
+          "real_jaw": 0.0,
+          "our_mc": 0.1079,
+          "real_mc": 0.0
+        },
+        {
+          "frame": 725,
+          "our_jaw": 0.2556,
+          "real_jaw": 0.1824,
+          "our_mc": 0.0928,
+          "real_mc": 0.2309
+        },
+        {
+          "frame": 956,
+          "our_jaw": 0.454,
+          "real_jaw": 0.1725,
+          "our_mc": 0.2078,
+          "real_mc": 0.2028
+        },
+        {
+          "frame": 1087,
+          "our_jaw": 0.5191,
+          "real_jaw": 0.9434,
+          "our_mc": 0.3041,
+          "real_mc": 0.6801
+        }
+      ]
+    }
+  }
+}

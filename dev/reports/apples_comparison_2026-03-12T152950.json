@@ -1,0 +1,4699 @@
+{
+  "timestamp": "2026-03-12T152950",
+  "sequences": {
+    "A": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/apples/AS_MP_VecDemo1-OnMH",
+    "B": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/apples/AS_MP_VecDemo1-allkeys_ARKit_OnMH",
+    "C": "/Game/3_FaceAnims/VEC_MHA/AgenticPy/apples/Vec-ARKITBAKED-T34_60fps-02_OnMH"
+  },
+  "frame_counts": {
+    "A": 1450,
+    "B": 1450,
+    "C": 1449,
+    "common": 1449
+  },
+  "per_curve": {
+    "ctrl_expressions_browdownl": {
+      "family": "brow",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00110343,
+      "max_ac": 0.30312538,
+      "mse_bc": 0.00110343,
+      "max_bc": 0.30312538
+    },
+    "ctrl_expressions_browdownr": {
+      "family": "brow",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00107837,
+      "max_ac": 0.30171459,
+      "mse_bc": 0.00107837,
+      "max_bc": 0.30171459
+    },
+    "ctrl_expressions_browlaterall": {
+      "family": "brow",
+      "mse_ab": 0.00461787,
+      "max_ab": 0.11845183,
+      "mse_ac": 0.48924526,
+      "max_ac": 0.99294952,
+      "mse_bc": 0.40670724,
+      "max_bc": 0.92675228
+    },
+    "ctrl_expressions_browlateralr": {
+      "family": "brow",
+      "mse_ab": 4.966e-05,
+      "max_ab": 0.04020182,
+      "mse_ac": 0.43305751,
+      "max_ac": 0.93808546,
+      "mse_bc": 0.43882406,
+      "max_bc": 0.95398867
+    },
+    "ctrl_expressions_browraiseinl": {
+      "family": "brow",
+      "mse_ab": 0.05865899,
+      "max_ab": 0.45270495,
+      "mse_ac": 0.3947695,
+      "max_ac": 1.08349387,
+      "mse_bc": 0.29914145,
+      "max_bc": 0.82982677
+    },
+    "ctrl_expressions_browraiseinr": {
+      "family": "brow",
+      "mse_ab": 0.05709848,
+      "max_ab": 0.40917293,
+      "mse_ac": 0.41653342,
+      "max_ac": 1.08446324,
+      "mse_bc": 0.30592348,
+      "max_bc": 0.88809997
+    },
+    "ctrl_expressions_browraiseouterl": {
+      "family": "brow",
+      "mse_ab": 0.01552282,
+      "max_ab": 0.24160504,
+      "mse_ac": 0.12400122,
+      "max_ac": 0.91178387,
+      "mse_bc": 0.06736463,
+      "max_bc": 0.90222885
+    },
+    "ctrl_expressions_browraiseouterr": {
+      "family": "brow",
+      "mse_ab": 0.01477531,
+      "max_ab": 0.21289051,
+      "mse_ac": 0.10155618,
+      "max_ac": 0.90956062,
+      "mse_bc": 0.05127481,
+      "max_bc": 0.86028569
+    },
+    "ctrl_expressions_eyeblinkl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.10460536,
+      "max_ac": 0.88607585,
+      "mse_bc": 0.10460536,
+      "max_bc": 0.88607585
+    },
+    "ctrl_expressions_eyeblinkr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.09937731,
+      "max_ac": 0.89764196,
+      "mse_bc": 0.09937731,
+      "max_bc": 0.89764196
+    },
+    "ctrl_expressions_eyecheekraisel": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00709527,
+      "max_ac": 0.50569832,
+      "mse_bc": 0.00709527,
+      "max_bc": 0.50569832
+    },
+    "ctrl_expressions_eyecheekraiser": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.01425901,
+      "max_ac": 0.7141672,
+      "mse_bc": 0.01425901,
+      "max_bc": 0.7141672
+    },
+    "ctrl_expressions_eyelookdownl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.01629893,
+      "max_ac": 0.49773896,
+      "mse_bc": 0.01629893,
+      "max_bc": 0.49773896
+    },
+    "ctrl_expressions_eyelookdownr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.01653796,
+      "max_ac": 0.50144523,
+      "mse_bc": 0.01653796,
+      "max_bc": 0.50144523
+    },
+    "ctrl_expressions_eyelookleftl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.05077304,
+      "max_ac": 0.77011776,
+      "mse_bc": 0.05077304,
+      "max_bc": 0.77011776
+    },
+    "ctrl_expressions_eyelookleftr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.05028737,
+      "max_ac": 0.7227,
+      "mse_bc": 0.05028737,
+      "max_bc": 0.7227
+    },
+    "ctrl_expressions_eyelookrightl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.06099271,
+      "max_ac": 1.0,
+      "mse_bc": 0.06099271,
+      "max_bc": 1.0
+    },
+    "ctrl_expressions_eyelookrightr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.04050852,
+      "max_ac": 0.8648333,
+      "mse_bc": 0.04050852,
+      "max_bc": 0.8648333
+    },
+    "ctrl_expressions_eyelookupl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.15561617,
+      "max_ac": 0.80350631,
+      "mse_bc": 0.15561617,
+      "max_bc": 0.80350631
+    },
+    "ctrl_expressions_eyelookupr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.15137199,
+      "max_ac": 0.79656947,
+      "mse_bc": 0.15137199,
+      "max_bc": 0.79656947
+    },
+    "ctrl_expressions_eyesquintinnerl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.10501678,
+      "max_ac": 0.96677418,
+      "mse_bc": 0.10501678,
+      "max_bc": 0.96677418
+    },
+    "ctrl_expressions_eyesquintinnerr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 1.01e-06,
+      "mse_ac": 0.1714961,
+      "max_ac": 1.0,
+      "mse_bc": 0.17149598,
+      "max_bc": 0.99999899
+    },
+    "ctrl_expressions_eyewidenl": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.0949971,
+      "max_ac": 0.92106283,
+      "mse_bc": 0.0949971,
+      "max_bc": 0.92106283
+    },
+    "ctrl_expressions_eyewidenr": {
+      "family": "eye",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.08658392,
+      "max_ac": 0.92109323,
+      "mse_bc": 0.08658392,
+      "max_bc": 0.92109323
+    },
+    "ctrl_expressions_jawchinraisedl": {
+      "family": "jaw",
+      "mse_ab": 2.19e-06,
+      "max_ab": 0.00589567,
+      "mse_ac": 0.01585221,
+      "max_ac": 0.60713485,
+      "mse_bc": 0.01593292,
+      "max_bc": 0.60700608
+    },
+    "ctrl_expressions_jawchinraisedr": {
+      "family": "jaw",
+      "mse_ab": 2.19e-06,
+      "max_ab": 0.00589567,
+      "mse_ac": 0.01601801,
+      "max_ac": 0.6068773,
+      "mse_bc": 0.01593292,
+      "max_bc": 0.60700608
+    },
+    "ctrl_expressions_jawchinraiseul": {
+      "family": "jaw",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00389234,
+      "max_ac": 0.53987443,
+      "mse_bc": 0.00389234,
+      "max_bc": 0.53987443
+    },
+    "ctrl_expressions_jawchinraiseur": {
+      "family": "jaw",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00389234,
+      "max_ac": 0.53987443,
+      "mse_bc": 0.00389234,
+      "max_bc": 0.53987443
+    },
+    "ctrl_expressions_jawfwd": {
+      "family": "jaw",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00432164,
+      "max_ac": 0.2481339,
+      "mse_bc": 0.00432164,
+      "max_bc": 0.2481339
+    },
+    "ctrl_expressions_jawleft": {
+      "family": "jaw",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00111987,
+      "max_ac": 0.20930448,
+      "mse_bc": 0.00111987,
+      "max_bc": 0.20930448
+    },
+    "ctrl_expressions_jawopen": {
+      "family": "jaw",
+      "mse_ab": 0.10049274,
+      "max_ab": 0.62629488,
+      "mse_ac": 0.14790365,
+      "max_ac": 0.99199112,
+      "mse_bc": 0.19925664,
+      "max_bc": 0.94610608
+    },
+    "ctrl_expressions_jawright": {
+      "family": "jaw",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.01747972,
+      "max_ac": 0.36083984,
+      "mse_bc": 0.01747972,
+      "max_bc": 0.36083984
+    },
+    "ctrl_expressions_mouthcheekblowl": {
+      "family": "mouth",
+      "mse_ab": 1.48e-06,
+      "max_ab": 0.02331543,
+      "mse_ac": 1.375e-05,
+      "max_ac": 0.05419922,
+      "mse_bc": 8.8e-06,
+      "max_bc": 0.03088379
+    },
+    "ctrl_expressions_mouthcheekblowr": {
+      "family": "mouth",
+      "mse_ab": 5.95e-06,
+      "max_ab": 0.03845215,
+      "mse_ac": 2.245e-05,
+      "max_ac": 0.06933594,
+      "mse_bc": 8.8e-06,
+      "max_bc": 0.03088379
+    },
+    "ctrl_expressions_mouthcornerdepressl": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.04428502,
+      "max_ac": 0.62858907,
+      "mse_bc": 0.04428502,
+      "max_bc": 0.62858907
+    },
+    "ctrl_expressions_mouthcornerdepressr": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.04402452,
+      "max_ac": 0.65811582,
+      "mse_bc": 0.04402452,
+      "max_bc": 0.65811582
+    },
+    "ctrl_expressions_mouthcornerpulll": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00430364,
+      "max_ac": 0.47912884,
+      "mse_bc": 0.00430364,
+      "max_bc": 0.47912884
+    },
+    "ctrl_expressions_mouthcornerpullr": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00520457,
+      "max_ac": 0.4831543,
+      "mse_bc": 0.00520457,
+      "max_bc": 0.4831543
+    },
+    "ctrl_expressions_mouthdimplel": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 3e-08,
+      "mse_ac": 0.0161582,
+      "max_ac": 0.55479787,
+      "mse_bc": 0.0161582,
+      "max_bc": 0.55479787
+    },
+    "ctrl_expressions_mouthdimpler": {
+      "family": "mouth",
+      "mse_ab": 5e-08,
+      "max_ab": 0.00144947,
+      "mse_ac": 0.0109578,
+      "max_ac": 0.44992754,
+      "mse_bc": 0.01096658,
+      "max_bc": 0.45009866
+    },
+    "ctrl_expressions_mouthfunneldl": {
+      "family": "mouth",
+      "mse_ab": 0.03228656,
+      "max_ab": 0.46016561,
+      "mse_ac": 0.16851512,
+      "max_ac": 1.16317313,
+      "mse_bc": 0.13274472,
+      "max_bc": 0.98028748
+    },
+    "ctrl_expressions_mouthfunneldr": {
+      "family": "mouth",
+      "mse_ab": 0.03674768,
+      "max_ab": 0.46306436,
+      "mse_ac": 0.1683303,
+      "max_ac": 1.16359983,
+      "mse_bc": 0.13274472,
+      "max_bc": 0.98028748
+    },
+    "ctrl_expressions_mouthfunnelul": {
+      "family": "mouth",
+      "mse_ab": 0.07636594,
+      "max_ab": 0.62477014,
+      "mse_ac": 0.31236021,
+      "max_ac": 1.1849518,
+      "mse_bc": 0.13274472,
+      "max_bc": 0.98028748
+    },
+    "ctrl_expressions_mouthfunnelur": {
+      "family": "mouth",
+      "mse_ab": 0.07190995,
+      "max_ab": 0.62098765,
+      "mse_ac": 0.3062011,
+      "max_ac": 1.18566753,
+      "mse_bc": 0.13274472,
+      "max_bc": 0.98028748
+    },
+    "ctrl_expressions_mouthleft": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00034179,
+      "max_ac": 0.13538578,
+      "mse_bc": 0.00034179,
+      "max_bc": 0.13538578
+    },
+    "ctrl_expressions_mouthlipsblowl": {
+      "family": "mouth",
+      "mse_ab": 3.02e-06,
+      "max_ab": 0.03088379,
+      "mse_ac": 6.24e-06,
+      "max_ac": 0.02706628,
+      "mse_bc": 8.8e-06,
+      "max_bc": 0.03088379
+    },
+    "ctrl_expressions_mouthlipsblowr": {
+      "family": "mouth",
+      "mse_ab": 3.02e-06,
+      "max_ab": 0.03088379,
+      "mse_ac": 6.24e-06,
+      "max_ac": 0.02706628,
+      "mse_bc": 8.8e-06,
+      "max_bc": 0.03088379
+    },
+    "ctrl_expressions_mouthlipspursedl": {
+      "family": "mouth",
+      "mse_ab": 0.00556438,
+      "max_ab": 0.2220881,
+      "mse_ac": 0.09006903,
+      "max_ac": 0.71594161,
+      "mse_bc": 0.11452791,
+      "max_bc": 0.83327132
+    },
+    "ctrl_expressions_mouthlipspursedr": {
+      "family": "mouth",
+      "mse_ab": 0.00686357,
+      "max_ab": 0.24329293,
+      "mse_ac": 0.08678604,
+      "max_ac": 0.71453184,
+      "mse_bc": 0.11452791,
+      "max_bc": 0.83327132
+    },
+    "ctrl_expressions_mouthlipspurseul": {
+      "family": "mouth",
+      "mse_ab": 0.00550666,
+      "max_ab": 0.1619873,
+      "mse_ac": 0.15347487,
+      "max_ac": 0.81425953,
+      "mse_bc": 0.11452791,
+      "max_bc": 0.83327132
+    },
+    "ctrl_expressions_mouthlipspurseur": {
+      "family": "mouth",
+      "mse_ab": 0.0050176,
+      "max_ab": 0.15687156,
+      "mse_ac": 0.15228328,
+      "max_ac": 0.83749926,
+      "mse_bc": 0.11452791,
+      "max_bc": 0.83327132
+    },
+    "ctrl_expressions_mouthlipstogetherdl": {
+      "family": "mouth",
+      "mse_ab": 0.451138,
+      "max_ab": 1.0,
+      "mse_ac": 0.36611073,
+      "max_ac": 1.0,
+      "mse_bc": 0.24685082,
+      "max_bc": 1.0
+    },
+    "ctrl_expressions_mouthlipstogetherdr": {
+      "family": "mouth",
+      "mse_ab": 0.45161549,
+      "max_ab": 1.0,
+      "mse_ac": 0.36702435,
+      "max_ac": 1.0,
+      "mse_bc": 0.24685082,
+      "max_bc": 1.0
+    },
+    "ctrl_expressions_mouthlipstogetherul": {
+      "family": "mouth",
+      "mse_ab": 0.30171917,
+      "max_ab": 1.0,
+      "mse_ac": 0.24868724,
+      "max_ac": 1.0,
+      "mse_bc": 0.24685082,
+      "max_bc": 1.0
+    },
+    "ctrl_expressions_mouthlipstogetherur": {
+      "family": "mouth",
+      "mse_ab": 0.30080373,
+      "max_ab": 0.99960542,
+      "mse_ac": 0.24824654,
+      "max_ac": 1.0,
+      "mse_bc": 0.24685082,
+      "max_bc": 1.0
+    },
+    "ctrl_expressions_mouthlipstowardsdl": {
+      "family": "mouth",
+      "mse_ab": 0.00867783,
+      "max_ab": 0.26544177,
+      "mse_ac": 0.01618882,
+      "max_ac": 0.54043114,
+      "mse_bc": 0.01944042,
+      "max_bc": 0.34330779
+    },
+    "ctrl_expressions_mouthlipstowardsdr": {
+      "family": "mouth",
+      "mse_ab": 0.00881768,
+      "max_ab": 0.26894739,
+      "mse_ac": 0.01765727,
+      "max_ac": 0.54365087,
+      "mse_bc": 0.01944042,
+      "max_bc": 0.34330779
+    },
+    "ctrl_expressions_mouthlipstowardsul": {
+      "family": "mouth",
+      "mse_ab": 0.01068009,
+      "max_ab": 0.36967242,
+      "mse_ac": 0.03738034,
+      "max_ac": 0.71111733,
+      "mse_bc": 0.01944042,
+      "max_bc": 0.34330779
+    },
+    "ctrl_expressions_mouthlipstowardsur": {
+      "family": "mouth",
+      "mse_ab": 0.0129968,
+      "max_ab": 0.39024979,
+      "mse_ac": 0.04615828,
+      "max_ac": 0.7316947,
+      "mse_bc": 0.01944042,
+      "max_bc": 0.34330779
+    },
+    "ctrl_expressions_mouthlowerlipdepressl": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.16156422,
+      "max_ac": 0.98728152,
+      "mse_bc": 0.16156422,
+      "max_bc": 0.98728152
+    },
+    "ctrl_expressions_mouthlowerlipdepressr": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.15984173,
+      "max_ac": 0.99223667,
+      "mse_bc": 0.15984173,
+      "max_bc": 0.99223667
+    },
+    "ctrl_expressions_mouthlowerliprollinl": {
+      "family": "mouth",
+      "mse_ab": 0.00039596,
+      "max_ab": 0.11425781,
+      "mse_ac": 0.01078962,
+      "max_ac": 0.60058594,
+      "mse_bc": 0.00939374,
+      "max_bc": 0.56176758
+    },
+    "ctrl_expressions_mouthlowerliprollinr": {
+      "family": "mouth",
+      "mse_ab": 0.00039596,
+      "max_ab": 0.11425781,
+      "mse_ac": 0.00878977,
+      "max_ac": 0.52294922,
+      "mse_bc": 0.00939374,
+      "max_bc": 0.56176758
+    },
+    "ctrl_expressions_mouthpressdl": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00014168,
+      "max_ac": 0.08954884,
+      "mse_bc": 0.00014168,
+      "max_bc": 0.08954884
+    },
+    "ctrl_expressions_mouthpressdr": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00012258,
+      "max_ac": 0.08556823,
+      "mse_bc": 0.00012258,
+      "max_bc": 0.08556823
+    },
+    "ctrl_expressions_mouthpressul": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00014168,
+      "max_ac": 0.08954884,
+      "mse_bc": 0.00014168,
+      "max_bc": 0.08954884
+    },
+    "ctrl_expressions_mouthpressur": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00012258,
+      "max_ac": 0.08556823,
+      "mse_bc": 0.00012258,
+      "max_bc": 0.08556823
+    },
+    "ctrl_expressions_mouthright": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.00401524,
+      "max_ac": 0.44766997,
+      "mse_bc": 0.00401524,
+      "max_bc": 0.44766997
+    },
+    "ctrl_expressions_mouthstretchl": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.08710873,
+      "max_ac": 0.60178494,
+      "mse_bc": 0.08710873,
+      "max_bc": 0.60178494
+    },
+    "ctrl_expressions_mouthstretchr": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.08691996,
+      "max_ac": 0.57383762,
+      "mse_bc": 0.08691996,
+      "max_bc": 0.57383762
+    },
+    "ctrl_expressions_mouthupperlipraisel": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.0150108,
+      "max_ac": 0.59137384,
+      "mse_bc": 0.0150108,
+      "max_bc": 0.59137384
+    },
+    "ctrl_expressions_mouthupperlipraiser": {
+      "family": "mouth",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.02378358,
+      "max_ac": 0.90280558,
+      "mse_bc": 0.02378358,
+      "max_bc": 0.90280558
+    },
+    "ctrl_expressions_mouthupperliprollinl": {
+      "family": "mouth",
+      "mse_ab": 0.00013571,
+      "max_ab": 0.1438435,
+      "mse_ac": 0.03017597,
+      "max_ac": 0.49732554,
+      "mse_bc": 0.02969712,
+      "max_bc": 0.47937448
+    },
+    "ctrl_expressions_mouthupperliprollinr": {
+      "family": "mouth",
+      "mse_ab": 0.00016171,
+      "max_ab": 0.14433178,
+      "mse_ac": 0.030998,
+      "max_ac": 0.49732554,
+      "mse_bc": 0.02969712,
+      "max_bc": 0.47937448
+    },
+    "ctrl_expressions_nosewrinklel": {
+      "family": "nose",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.02457241,
+      "max_ac": 0.83618718,
+      "mse_bc": 0.02457241,
+      "max_bc": 0.83618718
+    },
+    "ctrl_expressions_nosewrinkler": {
+      "family": "nose",
+      "mse_ab": 0.0,
+      "max_ab": 0.0,
+      "mse_ac": 0.0309412,
+      "max_ac": 0.92338825,
+      "mse_bc": 0.0309412,
+      "max_bc": 0.92338825
+    },
+    "ctrl_expressions_tonguedown": {
+      "family": "tongue",
+      "mse_ab": 0.04157315,
+      "max_ab": 0.31841072,
+      "mse_ac": 0.20947576,
+      "max_ac": 1.0,
+      "mse_bc": 0.14116768,
+      "max_bc": 0.69258553
+    },
+    "ctrl_expressions_tongueout": {
+      "family": "tongue",
+      "mse_ab": 0.12235971,
+      "max_ab": 0.64479202,
+      "mse_ac": 0.0,
+      "max_ac": 0.00012583,
+      "mse_bc": 0.12235671,
+      "max_bc": 0.64479202
+    },
+    "ctrl_expressions_tongueright": {
+      "family": "tongue",
+      "mse_ab": 0.00098647,
+      "max_ab": 0.05869376,
+      "mse_ac": 2.81e-06,
+      "max_ac": 0.01129034,
+      "mse_bc": 0.00101385,
+      "max_bc": 0.05869376
+    },
+    "ctrl_expressions_tonguerolldown": {
+      "family": "tongue",
+      "mse_bc": 0.01265585,
+      "max_bc": 0.20737259
+    },
+    "ctrl_expressions_tonguewide": {
+      "family": "tongue",
+      "mse_ab": 0.25407195,
+      "max_ab": 0.77256989,
+      "mse_ac": 0.58096369,
+      "max_ac": 1.0,
+      "mse_bc": 0.08160075,
+      "max_bc": 0.52656603
+    }
+  },
+  "family_summary": {
+    "brow": {
+      "ab": {
+        "mean_mse": 0.01884039,
+        "max_mse": 0.05865899,
+        "n_curves": 8
+      },
+      "ac": {
+        "mean_mse": 0.24516811,
+        "max_mse": 0.48924526,
+        "n_curves": 8
+      },
+      "bc": {
+        "mean_mse": 0.19642718,
+        "max_mse": 0.43882406,
+        "n_curves": 8
+      }
+    },
+    "eye": {
+      "ab": {
+        "mean_mse": 0.0,
+        "max_mse": 0.0,
+        "n_curves": 16
+      },
+      "ac": {
+        "mean_mse": 0.0766136,
+        "max_mse": 0.1714961,
+        "n_curves": 16
+      },
+      "bc": {
+        "mean_mse": 0.07661359,
+        "max_mse": 0.17149598,
+        "n_curves": 16
+      }
+    },
+    "jaw": {
+      "ab": {
+        "mean_mse": 0.01256214,
+        "max_mse": 0.10049274,
+        "n_curves": 8
+      },
+      "ac": {
+        "mean_mse": 0.02630997,
+        "max_mse": 0.14790365,
+        "n_curves": 8
+      },
+      "bc": {
+        "mean_mse": 0.03272855,
+        "max_mse": 0.19925664,
+        "n_curves": 8
+      }
+    },
+    "mouth": {
+      "ab": {
+        "mean_mse": 0.042567,
+        "max_mse": 0.45161549,
+        "n_curves": 42
+      },
+      "ac": {
+        "mean_mse": 0.08405533,
+        "max_mse": 0.36702435,
+        "n_curves": 42
+      },
+      "bc": {
+        "mean_mse": 0.06658404,
+        "max_mse": 0.24685082,
+        "n_curves": 42
+      }
+    },
+    "nose": {
+      "ab": {
+        "mean_mse": 0.0,
+        "max_mse": 0.0,
+        "n_curves": 2
+      },
+      "ac": {
+        "mean_mse": 0.02775681,
+        "max_mse": 0.0309412,
+        "n_curves": 2
+      },
+      "bc": {
+        "mean_mse": 0.02775681,
+        "max_mse": 0.0309412,
+        "n_curves": 2
+      }
+    },
+    "tongue": {
+      "ab": {
+        "mean_mse": 0.10474782,
+        "max_mse": 0.25407195,
+        "n_curves": 4
+      },
+      "ac": {
+        "mean_mse": 0.19761056,
+        "max_mse": 0.58096369,
+        "n_curves": 4
+      },
+      "bc": {
+        "mean_mse": 0.07175897,
+        "max_mse": 0.14116768,
+        "n_curves": 5
+      }
+    }
+  },
+  "key_frames": {
+    "0": {
+      "ctrl_expressions_browdownl": {
+        "A": 0.059326,
+        "B": 0.059326,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.059326,
+        "diff_BC": 0.059326
+      },
+      "ctrl_expressions_browdownr": {
+        "A": 0.052246,
+        "B": 0.052246,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.052246,
+        "diff_BC": 0.052246
+      },
+      "ctrl_expressions_browlaterall": {
+        "A": 0.014893,
+        "B": 0.113425,
+        "C": 0.424727,
+        "diff_AB": 0.098532,
+        "diff_AC": 0.409834,
+        "diff_BC": 0.311302
+      },
+      "ctrl_expressions_browlateralr": {
+        "A": 0.012695,
+        "B": 0.0,
+        "C": 0.368615,
+        "diff_AB": 0.012695,
+        "diff_AC": 0.35592,
+        "diff_BC": 0.368615
+      },
+      "ctrl_expressions_browraiseinl": {
+        "A": 0.405029,
+        "B": 0.799073,
+        "C": 0.891377,
+        "diff_AB": 0.394044,
+        "diff_AC": 0.486348,
+        "diff_BC": 0.092304
+      },
+      "ctrl_expressions_browraiseinr": {
+        "A": 0.381104,
+        "B": 0.787109,
+        "C": 0.892447,
+        "diff_AB": 0.406006,
+        "diff_AC": 0.511343,
+        "diff_BC": 0.105337
+      },
+      "ctrl_expressions_browraiseouterl": {
+        "A": 1.0,
+        "B": 0.799071,
+        "C": 0.52276,
+        "diff_AB": 0.200929,
+        "diff_AC": 0.47724,
+        "diff_BC": 0.276311
+      },
+      "ctrl_expressions_browraiseouterr": {
+        "A": 1.0,
+        "B": 0.787109,
+        "C": 0.523831,
+        "diff_AB": 0.212891,
+        "diff_AC": 0.476169,
+        "diff_BC": 0.263278
+      },
+      "ctrl_expressions_eyeblinkl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.14231,
+        "diff_AB": 0.0,
+        "diff_AC": 0.14231,
+        "diff_BC": 0.14231
+      },
+      "ctrl_expressions_eyeblinkr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.142308,
+        "diff_AB": 0.0,
+        "diff_AC": 0.142308,
+        "diff_BC": 0.142308
+      },
+      "ctrl_expressions_eyecheekraisel": {
+        "A": 0.039062,
+        "B": 0.039062,
+        "C": 0.110224,
+        "diff_AB": 0.0,
+        "diff_AC": 0.071161,
+        "diff_BC": 0.071161
+      },
+      "ctrl_expressions_eyecheekraiser": {
+        "A": 0.156982,
+        "B": 0.156982,
+        "C": 0.102372,
+        "diff_AB": 0.0,
+        "diff_AC": 0.054611,
+        "diff_BC": 0.054611
+      },
+      "ctrl_expressions_eyelookdownl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 2.4e-05,
+        "diff_AB": 0.0,
+        "diff_AC": 2.4e-05,
+        "diff_BC": 2.4e-05
+      },
+      "ctrl_expressions_eyelookdownr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 2.4e-05,
+        "diff_AB": 0.0,
+        "diff_AC": 2.4e-05,
+        "diff_BC": 2.4e-05
+      },
+      "ctrl_expressions_eyelookleftl": {
+        "A": 0.12793,
+        "B": 0.12793,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.12793,
+        "diff_BC": 0.12793
+      },
+      "ctrl_expressions_eyelookleftr": {
+        "A": 0.083008,
+        "B": 0.083008,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.083008,
+        "diff_BC": 0.083008
+      },
+      "ctrl_expressions_eyelookrightl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.107047,
+        "diff_AB": 0.0,
+        "diff_AC": 0.107047,
+        "diff_BC": 0.107047
+      },
+      "ctrl_expressions_eyelookrightr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.025664,
+        "diff_AB": 0.0,
+        "diff_AC": 0.025664,
+        "diff_BC": 0.025664
+      },
+      "ctrl_expressions_eyelookupl": {
+        "A": 0.386719,
+        "B": 0.386719,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.386719,
+        "diff_BC": 0.386719
+      },
+      "ctrl_expressions_eyelookupr": {
+        "A": 0.382812,
+        "B": 0.382812,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.382812,
+        "diff_BC": 0.382812
+      },
+      "ctrl_expressions_eyesquintinnerl": {
+        "A": 1.0,
+        "B": 1.0,
+        "C": 0.145333,
+        "diff_AB": 0.0,
+        "diff_AC": 0.854667,
+        "diff_BC": 0.854667
+      },
+      "ctrl_expressions_eyesquintinnerr": {
+        "A": 1.0,
+        "B": 0.999999,
+        "C": 0.144238,
+        "diff_AB": 1e-06,
+        "diff_AC": 0.855762,
+        "diff_BC": 0.855761
+      },
+      "ctrl_expressions_eyewidenl": {
+        "A": 0.266602,
+        "B": 0.266602,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.266602,
+        "diff_BC": 0.266602
+      },
+      "ctrl_expressions_eyewidenr": {
+        "A": 0.233398,
+        "B": 0.233398,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.233398,
+        "diff_BC": 0.233398
+      },
+      "ctrl_expressions_jawchinraisedl": {
+        "A": 0.422607,
+        "B": 0.426514,
+        "C": 0.134698,
+        "diff_AB": 0.003906,
+        "diff_AC": 0.287909,
+        "diff_BC": 0.291816
+      },
+      "ctrl_expressions_jawchinraisedr": {
+        "A": 0.43042,
+        "B": 0.426514,
+        "C": 0.134698,
+        "diff_AB": 0.003906,
+        "diff_AC": 0.295722,
+        "diff_BC": 0.291816
+      },
+      "ctrl_expressions_jawchinraiseul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.089098,
+        "diff_AB": 0.0,
+        "diff_AC": 0.089098,
+        "diff_BC": 0.089098
+      },
+      "ctrl_expressions_jawchinraiseur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.089098,
+        "diff_AB": 0.0,
+        "diff_AC": 0.089098,
+        "diff_BC": 0.089098
+      },
+      "ctrl_expressions_jawfwd": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.020526,
+        "diff_AB": 0.0,
+        "diff_AC": 0.020526,
+        "diff_BC": 0.020526
+      },
+      "ctrl_expressions_jawleft": {
+        "A": 0.037598,
+        "B": 0.037598,
+        "C": 0.005392,
+        "diff_AB": 0.0,
+        "diff_AC": 0.032206,
+        "diff_BC": 0.032206
+      },
+      "ctrl_expressions_jawopen": {
+        "A": 0.070801,
+        "B": 0.0,
+        "C": 0.028177,
+        "diff_AB": 0.070801,
+        "diff_AC": 0.042623,
+        "diff_BC": 0.028177
+      },
+      "ctrl_expressions_jawright": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthcheekblowl": {
+        "A": 0.000977,
+        "B": 0.000488,
+        "C": 0.025569,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.024592,
+        "diff_BC": 0.025081
+      },
+      "ctrl_expressions_mouthcheekblowr": {
+        "A": 0.000977,
+        "B": 0.000488,
+        "C": 0.025569,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.024592,
+        "diff_BC": 0.025081
+      },
+      "ctrl_expressions_mouthcornerdepressl": {
+        "A": 0.006348,
+        "B": 0.006348,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.006348,
+        "diff_BC": 0.006348
+      },
+      "ctrl_expressions_mouthcornerdepressr": {
+        "A": 0.005371,
+        "B": 0.005371,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.005371,
+        "diff_BC": 0.005371
+      },
+      "ctrl_expressions_mouthcornerpulll": {
+        "A": 0.000488,
+        "B": 0.000488,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000488,
+        "diff_BC": 0.000488
+      },
+      "ctrl_expressions_mouthcornerpullr": {
+        "A": 0.000244,
+        "B": 0.000244,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000244,
+        "diff_BC": 0.000244
+      },
+      "ctrl_expressions_mouthdimplel": {
+        "A": 0.001709,
+        "B": 0.001709,
+        "C": 0.01777,
+        "diff_AB": 0.0,
+        "diff_AC": 0.016061,
+        "diff_BC": 0.016061
+      },
+      "ctrl_expressions_mouthdimpler": {
+        "A": 0.000732,
+        "B": 0.000733,
+        "C": 0.022989,
+        "diff_AB": 1e-06,
+        "diff_AC": 0.022256,
+        "diff_BC": 0.022256
+      },
+      "ctrl_expressions_mouthfunneldl": {
+        "A": 0.070557,
+        "B": 0.469427,
+        "C": 0.120358,
+        "diff_AB": 0.39887,
+        "diff_AC": 0.049801,
+        "diff_BC": 0.349069
+      },
+      "ctrl_expressions_mouthfunneldr": {
+        "A": 0.068848,
+        "B": 0.469427,
+        "C": 0.120358,
+        "diff_AB": 0.400579,
+        "diff_AC": 0.05151,
+        "diff_BC": 0.349069
+      },
+      "ctrl_expressions_mouthfunnelul": {
+        "A": 0.000977,
+        "B": 0.469427,
+        "C": 0.120358,
+        "diff_AB": 0.46845,
+        "diff_AC": 0.119382,
+        "diff_BC": 0.349069
+      },
+      "ctrl_expressions_mouthfunnelur": {
+        "A": 0.000977,
+        "B": 0.469427,
+        "C": 0.120358,
+        "diff_AB": 0.46845,
+        "diff_AC": 0.119382,
+        "diff_BC": 0.349069
+      },
+      "ctrl_expressions_mouthleft": {
+        "A": 0.038086,
+        "B": 0.038086,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.038086,
+        "diff_BC": 0.038086
+      },
+      "ctrl_expressions_mouthlipsblowl": {
+        "A": 0.0,
+        "B": 0.000488,
+        "C": 0.025569,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.025569,
+        "diff_BC": 0.025081
+      },
+      "ctrl_expressions_mouthlipsblowr": {
+        "A": 0.0,
+        "B": 0.000488,
+        "C": 0.025569,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.025569,
+        "diff_BC": 0.025081
+      },
+      "ctrl_expressions_mouthlipspursedl": {
+        "A": 0.697754,
+        "B": 0.624238,
+        "C": 0.033741,
+        "diff_AB": 0.073516,
+        "diff_AC": 0.664013,
+        "diff_BC": 0.590497
+      },
+      "ctrl_expressions_mouthlipspursedr": {
+        "A": 0.712891,
+        "B": 0.624238,
+        "C": 0.033741,
+        "diff_AB": 0.088653,
+        "diff_AC": 0.679149,
+        "diff_BC": 0.590497
+      },
+      "ctrl_expressions_mouthlipspurseul": {
+        "A": 0.658203,
+        "B": 0.624238,
+        "C": 0.033741,
+        "diff_AB": 0.033965,
+        "diff_AC": 0.624462,
+        "diff_BC": 0.590497
+      },
+      "ctrl_expressions_mouthlipspurseur": {
+        "A": 0.657715,
+        "B": 0.624238,
+        "C": 0.033741,
+        "diff_AB": 0.033477,
+        "diff_AC": 0.623974,
+        "diff_BC": 0.590497
+      },
+      "ctrl_expressions_mouthlipstogetherdl": {
+        "A": 0.172363,
+        "B": 0.0,
+        "C": 1.0,
+        "diff_AB": 0.172363,
+        "diff_AC": 0.827637,
+        "diff_BC": 1.0
+      },
+      "ctrl_expressions_mouthlipstogetherdr": {
+        "A": 0.172363,
+        "B": 0.0,
+        "C": 1.0,
+        "diff_AB": 0.172363,
+        "diff_AC": 0.827637,
+        "diff_BC": 1.0
+      },
+      "ctrl_expressions_mouthlipstogetherul": {
+        "A": 0.006893,
+        "B": 0.0,
+        "C": 1.0,
+        "diff_AB": 0.006893,
+        "diff_AC": 0.993107,
+        "diff_BC": 1.0
+      },
+      "ctrl_expressions_mouthlipstogetherur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 1.0,
+        "diff_AB": 0.0,
+        "diff_AC": 1.0,
+        "diff_BC": 1.0
+      },
+      "ctrl_expressions_mouthlipstowardsdl": {
+        "A": 0.14917,
+        "B": 0.257186,
+        "C": 0.013901,
+        "diff_AB": 0.108016,
+        "diff_AC": 0.135269,
+        "diff_BC": 0.243285
+      },
+      "ctrl_expressions_mouthlipstowardsdr": {
+        "A": 0.146973,
+        "B": 0.257186,
+        "C": 0.013901,
+        "diff_AB": 0.110213,
+        "diff_AC": 0.133071,
+        "diff_BC": 0.243285
+      },
+      "ctrl_expressions_mouthlipstowardsul": {
+        "A": 0.080322,
+        "B": 0.257186,
+        "C": 0.013901,
+        "diff_AB": 0.176864,
+        "diff_AC": 0.066421,
+        "diff_BC": 0.243285
+      },
+      "ctrl_expressions_mouthlipstowardsur": {
+        "A": 0.094971,
+        "B": 0.257186,
+        "C": 0.013901,
+        "diff_AB": 0.162215,
+        "diff_AC": 0.081069,
+        "diff_BC": 0.243285
+      },
+      "ctrl_expressions_mouthlowerlipdepressl": {
+        "A": 0.000977,
+        "B": 0.000977,
+        "C": 0.021174,
+        "diff_AB": 0.0,
+        "diff_AC": 0.020198,
+        "diff_BC": 0.020198
+      },
+      "ctrl_expressions_mouthlowerlipdepressr": {
+        "A": 0.001221,
+        "B": 0.001221,
+        "C": 0.042898,
+        "diff_AB": 0.0,
+        "diff_AC": 0.041677,
+        "diff_BC": 0.041677
+      },
+      "ctrl_expressions_mouthlowerliprollinl": {
+        "A": 0.074219,
+        "B": 0.049805,
+        "C": 0.032045,
+        "diff_AB": 0.024414,
+        "diff_AC": 0.042173,
+        "diff_BC": 0.017759
+      },
+      "ctrl_expressions_mouthlowerliprollinr": {
+        "A": 0.025391,
+        "B": 0.049805,
+        "C": 0.032045,
+        "diff_AB": 0.024414,
+        "diff_AC": 0.006655,
+        "diff_BC": 0.017759
+      },
+      "ctrl_expressions_mouthpressdl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.015901,
+        "diff_AB": 0.0,
+        "diff_AC": 0.015901,
+        "diff_BC": 0.015901
+      },
+      "ctrl_expressions_mouthpressdr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.008177,
+        "diff_AB": 0.0,
+        "diff_AC": 0.008177,
+        "diff_BC": 0.008177
+      },
+      "ctrl_expressions_mouthpressul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.015901,
+        "diff_AB": 0.0,
+        "diff_AC": 0.015901,
+        "diff_BC": 0.015901
+      },
+      "ctrl_expressions_mouthpressur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.008177,
+        "diff_AB": 0.0,
+        "diff_AC": 0.008177,
+        "diff_BC": 0.008177
+      },
+      "ctrl_expressions_mouthright": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthstretchl": {
+        "A": 0.010498,
+        "B": 0.010498,
+        "C": 0.063704,
+        "diff_AB": 0.0,
+        "diff_AC": 0.053206,
+        "diff_BC": 0.053206
+      },
+      "ctrl_expressions_mouthstretchr": {
+        "A": 0.013672,
+        "B": 0.013672,
+        "C": 0.088379,
+        "diff_AB": 0.0,
+        "diff_AC": 0.074707,
+        "diff_BC": 0.074707
+      },
+      "ctrl_expressions_mouthupperlipraisel": {
+        "A": 0.537109,
+        "B": 0.537109,
+        "C": 0.013089,
+        "diff_AB": 0.0,
+        "diff_AC": 0.52402,
+        "diff_BC": 0.52402
+      },
+      "ctrl_expressions_mouthupperlipraiser": {
+        "A": 0.589844,
+        "B": 0.589844,
+        "C": 0.010992,
+        "diff_AB": 0.0,
+        "diff_AC": 0.578852,
+        "diff_BC": 0.578852
+      },
+      "ctrl_expressions_mouthupperliprollinl": {
+        "A": 0.161133,
+        "B": 0.157227,
+        "C": 0.022717,
+        "diff_AB": 0.003906,
+        "diff_AC": 0.138416,
+        "diff_BC": 0.134509
+      },
+      "ctrl_expressions_mouthupperliprollinr": {
+        "A": 0.15332,
+        "B": 0.157227,
+        "C": 0.022717,
+        "diff_AB": 0.003906,
+        "diff_AC": 0.130603,
+        "diff_BC": 0.134509
+      },
+      "ctrl_expressions_nosewrinklel": {
+        "A": 0.693359,
+        "B": 0.693359,
+        "C": 0.280216,
+        "diff_AB": 0.0,
+        "diff_AC": 0.413143,
+        "diff_BC": 0.413143
+      },
+      "ctrl_expressions_nosewrinkler": {
+        "A": 0.767578,
+        "B": 0.767578,
+        "C": 0.245031,
+        "diff_AB": 0.0,
+        "diff_AC": 0.522547,
+        "diff_BC": 0.522547
+      },
+      "ctrl_expressions_tonguedown": {
+        "A": 0.552148,
+        "B": 0.250766,
+        "C": 0.0,
+        "diff_AB": 0.301382,
+        "diff_AC": 0.552148,
+        "diff_BC": 0.250766
+      },
+      "ctrl_expressions_tongueout": {
+        "A": 0.0,
+        "B": 0.233461,
+        "C": 0.0,
+        "diff_AB": 0.233461,
+        "diff_AC": 0.0,
+        "diff_BC": 0.233461
+      },
+      "ctrl_expressions_tongueright": {
+        "A": 0.0,
+        "B": 0.021251,
+        "C": 0.0,
+        "diff_AB": 0.021251,
+        "diff_AC": 0.0,
+        "diff_BC": 0.021251
+      },
+      "ctrl_expressions_tonguewide": {
+        "A": 0.112067,
+        "B": 0.190655,
+        "C": 0.0,
+        "diff_AB": 0.078587,
+        "diff_AC": 0.112067,
+        "diff_BC": 0.190655
+      }
+    },
+    "276": {
+      "ctrl_expressions_browdownl": {
+        "A": 0.010254,
+        "B": 0.010254,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.010254,
+        "diff_BC": 0.010254
+      },
+      "ctrl_expressions_browdownr": {
+        "A": 0.006673,
+        "B": 0.006673,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.006673,
+        "diff_BC": 0.006673
+      },
+      "ctrl_expressions_browlaterall": {
+        "A": 0.008138,
+        "B": 0.08281,
+        "C": 0.864404,
+        "diff_AB": 0.074672,
+        "diff_AC": 0.856266,
+        "diff_BC": 0.781594
+      },
+      "ctrl_expressions_browlateralr": {
+        "A": 0.005208,
+        "B": 0.0,
+        "C": 0.817871,
+        "diff_AB": 0.005208,
+        "diff_AC": 0.812663,
+        "diff_BC": 0.817871
+      },
+      "ctrl_expressions_browraiseinl": {
+        "A": 0.702474,
+        "B": 0.903945,
+        "C": 1.568278,
+        "diff_AB": 0.201471,
+        "diff_AC": 0.865804,
+        "diff_BC": 0.664333
+      },
+      "ctrl_expressions_browraiseinr": {
+        "A": 0.638346,
+        "B": 0.871881,
+        "C": 1.568457,
+        "diff_AB": 0.233534,
+        "diff_AC": 0.93011,
+        "diff_BC": 0.696576
+      },
+      "ctrl_expressions_browraiseouterl": {
+        "A": 1.0,
+        "B": 0.903943,
+        "C": 0.750406,
+        "diff_AB": 0.096057,
+        "diff_AC": 0.249594,
+        "diff_BC": 0.153538
+      },
+      "ctrl_expressions_browraiseouterr": {
+        "A": 1.0,
+        "B": 0.871881,
+        "C": 0.750585,
+        "diff_AB": 0.128119,
+        "diff_AC": 0.249415,
+        "diff_BC": 0.121295
+      },
+      "ctrl_expressions_eyeblinkl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyeblinkr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyecheekraisel": {
+        "A": 0.001139,
+        "B": 0.001139,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001139,
+        "diff_BC": 0.001139
+      },
+      "ctrl_expressions_eyecheekraiser": {
+        "A": 0.001383,
+        "B": 0.001383,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001383,
+        "diff_BC": 0.001383
+      },
+      "ctrl_expressions_eyelookdownl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookdownr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookleftl": {
+        "A": 0.066426,
+        "B": 0.066426,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.066426,
+        "diff_BC": 0.066426
+      },
+      "ctrl_expressions_eyelookleftr": {
+        "A": 0.03144,
+        "B": 0.03144,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.03144,
+        "diff_BC": 0.03144
+      },
+      "ctrl_expressions_eyelookrightl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookrightr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookupl": {
+        "A": 0.524916,
+        "B": 0.524916,
+        "C": 0.049004,
+        "diff_AB": 0.0,
+        "diff_AC": 0.475912,
+        "diff_BC": 0.475912
+      },
+      "ctrl_expressions_eyelookupr": {
+        "A": 0.521258,
+        "B": 0.521258,
+        "C": 0.04908,
+        "diff_AB": 0.0,
+        "diff_AC": 0.472178,
+        "diff_BC": 0.472178
+      },
+      "ctrl_expressions_eyesquintinnerl": {
+        "A": 0.081055,
+        "B": 0.081055,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.081055,
+        "diff_BC": 0.081055
+      },
+      "ctrl_expressions_eyesquintinnerr": {
+        "A": 0.121094,
+        "B": 0.121094,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.121094,
+        "diff_BC": 0.121094
+      },
+      "ctrl_expressions_eyewidenl": {
+        "A": 0.451904,
+        "B": 0.451904,
+        "C": 0.623148,
+        "diff_AB": 0.0,
+        "diff_AC": 0.171244,
+        "diff_BC": 0.171244
+      },
+      "ctrl_expressions_eyewidenr": {
+        "A": 0.345459,
+        "B": 0.345459,
+        "C": 0.623631,
+        "diff_AB": 0.0,
+        "diff_AC": 0.278172,
+        "diff_BC": 0.278172
+      },
+      "ctrl_expressions_jawchinraisedl": {
+        "A": 0.444089,
+        "B": 0.443447,
+        "C": 0.0,
+        "diff_AB": 0.000642,
+        "diff_AC": 0.444089,
+        "diff_BC": 0.443447
+      },
+      "ctrl_expressions_jawchinraisedr": {
+        "A": 0.442805,
+        "B": 0.443447,
+        "C": 0.0,
+        "diff_AB": 0.000642,
+        "diff_AC": 0.442805,
+        "diff_BC": 0.443447
+      },
+      "ctrl_expressions_jawchinraiseul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawchinraiseur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawfwd": {
+        "A": 0.005236,
+        "B": 0.005236,
+        "C": 0.084542,
+        "diff_AB": 0.0,
+        "diff_AC": 0.079307,
+        "diff_BC": 0.079307
+      },
+      "ctrl_expressions_jawleft": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.060494,
+        "diff_AB": 0.0,
+        "diff_AC": 0.060494,
+        "diff_BC": 0.060494
+      },
+      "ctrl_expressions_jawopen": {
+        "A": 0.171997,
+        "B": 0.0,
+        "C": 0.728272,
+        "diff_AB": 0.171997,
+        "diff_AC": 0.556275,
+        "diff_BC": 0.728272
+      },
+      "ctrl_expressions_jawright": {
+        "A": 0.046387,
+        "B": 0.046387,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.046387,
+        "diff_BC": 0.046387
+      },
+      "ctrl_expressions_mouthcheekblowl": {
+        "A": 0.000977,
+        "B": 0.000488,
+        "C": 0.0,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.000977,
+        "diff_BC": 0.000488
+      },
+      "ctrl_expressions_mouthcheekblowr": {
+        "A": 0.000977,
+        "B": 0.000488,
+        "C": 0.0,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.000977,
+        "diff_BC": 0.000488
+      },
+      "ctrl_expressions_mouthcornerdepressl": {
+        "A": 0.085286,
+        "B": 0.085286,
+        "C": 0.338394,
+        "diff_AB": 0.0,
+        "diff_AC": 0.253107,
+        "diff_BC": 0.253107
+      },
+      "ctrl_expressions_mouthcornerdepressr": {
+        "A": 0.082682,
+        "B": 0.082682,
+        "C": 0.346456,
+        "diff_AB": 0.0,
+        "diff_AC": 0.263773,
+        "diff_BC": 0.263773
+      },
+      "ctrl_expressions_mouthcornerpulll": {
+        "A": 0.000326,
+        "B": 0.000326,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000326,
+        "diff_BC": 0.000326
+      },
+      "ctrl_expressions_mouthcornerpullr": {
+        "A": 0.000244,
+        "B": 0.000244,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000244,
+        "diff_BC": 0.000244
+      },
+      "ctrl_expressions_mouthdimplel": {
+        "A": 0.000977,
+        "B": 0.000977,
+        "C": 0.077664,
+        "diff_AB": 0.0,
+        "diff_AC": 0.076687,
+        "diff_BC": 0.076687
+      },
+      "ctrl_expressions_mouthdimpler": {
+        "A": 0.000122,
+        "B": 0.000123,
+        "C": 0.068531,
+        "diff_AB": 1e-06,
+        "diff_AC": 0.068409,
+        "diff_BC": 0.068408
+      },
+      "ctrl_expressions_mouthfunneldl": {
+        "A": 0.000765,
+        "B": 0.241082,
+        "C": 0.66513,
+        "diff_AB": 0.240316,
+        "diff_AC": 0.664364,
+        "diff_BC": 0.424048
+      },
+      "ctrl_expressions_mouthfunneldr": {
+        "A": 0.001777,
+        "B": 0.241082,
+        "C": 0.66513,
+        "diff_AB": 0.239304,
+        "diff_AC": 0.663352,
+        "diff_BC": 0.424048
+      },
+      "ctrl_expressions_mouthfunnelul": {
+        "A": 0.022663,
+        "B": 0.241082,
+        "C": 0.66513,
+        "diff_AB": 0.218418,
+        "diff_AC": 0.642466,
+        "diff_BC": 0.424048
+      },
+      "ctrl_expressions_mouthfunnelur": {
+        "A": 0.019231,
+        "B": 0.241082,
+        "C": 0.66513,
+        "diff_AB": 0.221851,
+        "diff_AC": 0.645899,
+        "diff_BC": 0.424048
+      },
+      "ctrl_expressions_mouthleft": {
+        "A": 0.000273,
+        "B": 0.000273,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000273,
+        "diff_BC": 0.000273
+      },
+      "ctrl_expressions_mouthlipsblowl": {
+        "A": 0.0,
+        "B": 0.000488,
+        "C": 0.0,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.0,
+        "diff_BC": 0.000488
+      },
+      "ctrl_expressions_mouthlipsblowr": {
+        "A": 0.0,
+        "B": 0.000488,
+        "C": 0.0,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.0,
+        "diff_BC": 0.000488
+      },
+      "ctrl_expressions_mouthlipspursedl": {
+        "A": 0.333007,
+        "B": 0.320587,
+        "C": 0.0,
+        "diff_AB": 0.01242,
+        "diff_AC": 0.333007,
+        "diff_BC": 0.320587
+      },
+      "ctrl_expressions_mouthlipspursedr": {
+        "A": 0.328924,
+        "B": 0.320587,
+        "C": 0.0,
+        "diff_AB": 0.008336,
+        "diff_AC": 0.328924,
+        "diff_BC": 0.320587
+      },
+      "ctrl_expressions_mouthlipspurseul": {
+        "A": 0.36139,
+        "B": 0.320587,
+        "C": 0.0,
+        "diff_AB": 0.040802,
+        "diff_AC": 0.36139,
+        "diff_BC": 0.320587
+      },
+      "ctrl_expressions_mouthlipspurseur": {
+        "A": 0.38142,
+        "B": 0.320587,
+        "C": 0.0,
+        "diff_AB": 0.060833,
+        "diff_AC": 0.38142,
+        "diff_BC": 0.320587
+      },
+      "ctrl_expressions_mouthlipstogetherdl": {
+        "A": 0.283447,
+        "B": 0.0,
+        "C": 0.19943,
+        "diff_AB": 0.283447,
+        "diff_AC": 0.084017,
+        "diff_BC": 0.19943
+      },
+      "ctrl_expressions_mouthlipstogetherdr": {
+        "A": 0.280273,
+        "B": 0.0,
+        "C": 0.19943,
+        "diff_AB": 0.280273,
+        "diff_AC": 0.080843,
+        "diff_BC": 0.19943
+      },
+      "ctrl_expressions_mouthlipstogetherul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.19943,
+        "diff_AB": 0.0,
+        "diff_AC": 0.19943,
+        "diff_BC": 0.19943
+      },
+      "ctrl_expressions_mouthlipstogetherur": {
+        "A": 0.001557,
+        "B": 0.0,
+        "C": 0.19943,
+        "diff_AB": 0.001557,
+        "diff_AC": 0.197873,
+        "diff_BC": 0.19943
+      },
+      "ctrl_expressions_mouthlipstowardsdl": {
+        "A": 0.063531,
+        "B": 0.132082,
+        "C": 0.0,
+        "diff_AB": 0.068551,
+        "diff_AC": 0.063531,
+        "diff_BC": 0.132082
+      },
+      "ctrl_expressions_mouthlipstowardsdr": {
+        "A": 0.082858,
+        "B": 0.132082,
+        "C": 0.0,
+        "diff_AB": 0.049224,
+        "diff_AC": 0.082858,
+        "diff_BC": 0.132082
+      },
+      "ctrl_expressions_mouthlipstowardsul": {
+        "A": 0.030844,
+        "B": 0.132082,
+        "C": 0.0,
+        "diff_AB": 0.101238,
+        "diff_AC": 0.030844,
+        "diff_BC": 0.132082
+      },
+      "ctrl_expressions_mouthlipstowardsur": {
+        "A": 0.054026,
+        "B": 0.132082,
+        "C": 0.0,
+        "diff_AB": 0.078056,
+        "diff_AC": 0.054026,
+        "diff_BC": 0.132082
+      },
+      "ctrl_expressions_mouthlowerlipdepressl": {
+        "A": 0.000246,
+        "B": 0.000246,
+        "C": 0.614397,
+        "diff_AB": 0.0,
+        "diff_AC": 0.614152,
+        "diff_BC": 0.614152
+      },
+      "ctrl_expressions_mouthlowerlipdepressr": {
+        "A": 0.00147,
+        "B": 0.00147,
+        "C": 0.638508,
+        "diff_AB": 0.0,
+        "diff_AC": 0.637037,
+        "diff_BC": 0.637037
+      },
+      "ctrl_expressions_mouthlowerliprollinl": {
+        "A": 0.121094,
+        "B": 0.115234,
+        "C": 0.0,
+        "diff_AB": 0.005859,
+        "diff_AC": 0.121094,
+        "diff_BC": 0.115234
+      },
+      "ctrl_expressions_mouthlowerliprollinr": {
+        "A": 0.109375,
+        "B": 0.115234,
+        "C": 0.0,
+        "diff_AB": 0.005859,
+        "diff_AC": 0.109375,
+        "diff_BC": 0.115234
+      },
+      "ctrl_expressions_mouthpressdl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressdr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthright": {
+        "A": 0.005502,
+        "B": 0.005502,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.005502,
+        "diff_BC": 0.005502
+      },
+      "ctrl_expressions_mouthstretchl": {
+        "A": 0.013997,
+        "B": 0.013997,
+        "C": 0.394645,
+        "diff_AB": 0.0,
+        "diff_AC": 0.380647,
+        "diff_BC": 0.380647
+      },
+      "ctrl_expressions_mouthstretchr": {
+        "A": 0.001383,
+        "B": 0.001383,
+        "C": 0.432661,
+        "diff_AB": 0.0,
+        "diff_AC": 0.431278,
+        "diff_BC": 0.431278
+      },
+      "ctrl_expressions_mouthupperlipraisel": {
+        "A": 0.141022,
+        "B": 0.141022,
+        "C": 0.007195,
+        "diff_AB": 0.0,
+        "diff_AC": 0.133827,
+        "diff_BC": 0.133827
+      },
+      "ctrl_expressions_mouthupperlipraiser": {
+        "A": 0.146831,
+        "B": 0.146831,
+        "C": 0.008458,
+        "diff_AB": 0.0,
+        "diff_AC": 0.138373,
+        "diff_BC": 0.138373
+      },
+      "ctrl_expressions_mouthupperliprollinl": {
+        "A": 0.339355,
+        "B": 0.339355,
+        "C": 0.091712,
+        "diff_AB": 0.0,
+        "diff_AC": 0.247643,
+        "diff_BC": 0.247643
+      },
+      "ctrl_expressions_mouthupperliprollinr": {
+        "A": 0.339355,
+        "B": 0.339355,
+        "C": 0.091712,
+        "diff_AB": 0.0,
+        "diff_AC": 0.247643,
+        "diff_BC": 0.247643
+      },
+      "ctrl_expressions_nosewrinklel": {
+        "A": 0.005391,
+        "B": 0.005391,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.005391,
+        "diff_BC": 0.005391
+      },
+      "ctrl_expressions_nosewrinkler": {
+        "A": 0.03976,
+        "B": 0.03976,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.03976,
+        "diff_BC": 0.03976
+      },
+      "ctrl_expressions_tonguedown": {
+        "A": 0.982861,
+        "B": 0.685842,
+        "C": 5e-06,
+        "diff_AB": 0.297019,
+        "diff_AC": 0.982856,
+        "diff_BC": 0.685837
+      },
+      "ctrl_expressions_tongueout": {
+        "A": 0.0,
+        "B": 0.638514,
+        "C": 5e-06,
+        "diff_AB": 0.638514,
+        "diff_AC": 5e-06,
+        "diff_BC": 0.638509
+      },
+      "ctrl_expressions_tongueright": {
+        "A": 0.0,
+        "B": 0.058122,
+        "C": 0.0,
+        "diff_AB": 0.058122,
+        "diff_AC": 0.0,
+        "diff_BC": 0.058122
+      },
+      "ctrl_expressions_tonguewide": {
+        "A": 1.0,
+        "B": 0.521439,
+        "C": 4e-06,
+        "diff_AB": 0.478561,
+        "diff_AC": 0.999996,
+        "diff_BC": 0.521435
+      }
+    },
+    "362": {
+      "ctrl_expressions_browdownl": {
+        "A": 0.020589,
+        "B": 0.020589,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.020589,
+        "diff_BC": 0.020589
+      },
+      "ctrl_expressions_browdownr": {
+        "A": 0.018066,
+        "B": 0.018066,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.018066,
+        "diff_BC": 0.018066
+      },
+      "ctrl_expressions_browlaterall": {
+        "A": 0.004883,
+        "B": 0.06823,
+        "C": 0.230353,
+        "diff_AB": 0.063347,
+        "diff_AC": 0.22547,
+        "diff_BC": 0.162123
+      },
+      "ctrl_expressions_browlateralr": {
+        "A": 0.002767,
+        "B": 0.0,
+        "C": 0.200419,
+        "diff_AB": 0.002767,
+        "diff_AC": 0.197652,
+        "diff_BC": 0.200419
+      },
+      "ctrl_expressions_browraiseinl": {
+        "A": 0.42334,
+        "B": 0.801806,
+        "C": 0.546214,
+        "diff_AB": 0.378466,
+        "diff_AC": 0.122874,
+        "diff_BC": 0.255592
+      },
+      "ctrl_expressions_browraiseinr": {
+        "A": 0.385661,
+        "B": 0.751553,
+        "C": 0.546986,
+        "diff_AB": 0.365892,
+        "diff_AC": 0.161325,
+        "diff_BC": 0.204567
+      },
+      "ctrl_expressions_browraiseouterl": {
+        "A": 0.996094,
+        "B": 0.801804,
+        "C": 0.345795,
+        "diff_AB": 0.194289,
+        "diff_AC": 0.650299,
+        "diff_BC": 0.45601
+      },
+      "ctrl_expressions_browraiseouterr": {
+        "A": 0.933268,
+        "B": 0.751553,
+        "C": 0.346567,
+        "diff_AB": 0.181715,
+        "diff_AC": 0.586702,
+        "diff_BC": 0.404986
+      },
+      "ctrl_expressions_eyeblinkl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyeblinkr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyecheekraisel": {
+        "A": 0.000977,
+        "B": 0.000977,
+        "C": 0.050613,
+        "diff_AB": 0.0,
+        "diff_AC": 0.049636,
+        "diff_BC": 0.049636
+      },
+      "ctrl_expressions_eyecheekraiser": {
+        "A": 0.011475,
+        "B": 0.011475,
+        "C": 0.052904,
+        "diff_AB": 0.0,
+        "diff_AC": 0.041429,
+        "diff_BC": 0.041429
+      },
+      "ctrl_expressions_eyelookdownl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookdownr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookleftl": {
+        "A": 0.33733,
+        "B": 0.33733,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.33733,
+        "diff_BC": 0.33733
+      },
+      "ctrl_expressions_eyelookleftr": {
+        "A": 0.304625,
+        "B": 0.304625,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.304625,
+        "diff_BC": 0.304625
+      },
+      "ctrl_expressions_eyelookrightl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.229757,
+        "diff_AB": 0.0,
+        "diff_AC": 0.229757,
+        "diff_BC": 0.229757
+      },
+      "ctrl_expressions_eyelookrightr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.163575,
+        "diff_AB": 0.0,
+        "diff_AC": 0.163575,
+        "diff_BC": 0.163575
+      },
+      "ctrl_expressions_eyelookupl": {
+        "A": 0.561854,
+        "B": 0.561854,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.561854,
+        "diff_BC": 0.561854
+      },
+      "ctrl_expressions_eyelookupr": {
+        "A": 0.558441,
+        "B": 0.558441,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.558441,
+        "diff_BC": 0.558441
+      },
+      "ctrl_expressions_eyesquintinnerl": {
+        "A": 0.231201,
+        "B": 0.231201,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.231201,
+        "diff_BC": 0.231201
+      },
+      "ctrl_expressions_eyesquintinnerr": {
+        "A": 0.289185,
+        "B": 0.289185,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.289185,
+        "diff_BC": 0.289185
+      },
+      "ctrl_expressions_eyewidenl": {
+        "A": 0.273193,
+        "B": 0.273193,
+        "C": 0.124934,
+        "diff_AB": 0.0,
+        "diff_AC": 0.14826,
+        "diff_BC": 0.14826
+      },
+      "ctrl_expressions_eyewidenr": {
+        "A": 0.205566,
+        "B": 0.205566,
+        "C": 0.125155,
+        "diff_AB": 0.0,
+        "diff_AC": 0.080411,
+        "diff_BC": 0.080411
+      },
+      "ctrl_expressions_jawchinraisedl": {
+        "A": 0.000856,
+        "B": 0.000806,
+        "C": 0.175786,
+        "diff_AB": 5e-05,
+        "diff_AC": 0.17493,
+        "diff_BC": 0.17498
+      },
+      "ctrl_expressions_jawchinraisedr": {
+        "A": 0.000756,
+        "B": 0.000806,
+        "C": 0.175786,
+        "diff_AB": 5e-05,
+        "diff_AC": 0.17503,
+        "diff_BC": 0.17498
+      },
+      "ctrl_expressions_jawchinraiseul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.134493,
+        "diff_AB": 0.0,
+        "diff_AC": 0.134493,
+        "diff_BC": 0.134493
+      },
+      "ctrl_expressions_jawchinraiseur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.134493,
+        "diff_AB": 0.0,
+        "diff_AC": 0.134493,
+        "diff_BC": 0.134493
+      },
+      "ctrl_expressions_jawfwd": {
+        "A": 0.007127,
+        "B": 0.007127,
+        "C": 0.005363,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001764,
+        "diff_BC": 0.001764
+      },
+      "ctrl_expressions_jawleft": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.005399,
+        "diff_AB": 0.0,
+        "diff_AC": 0.005399,
+        "diff_BC": 0.005399
+      },
+      "ctrl_expressions_jawopen": {
+        "A": 0.568359,
+        "B": 0.419025,
+        "C": 0.0,
+        "diff_AB": 0.149334,
+        "diff_AC": 0.568359,
+        "diff_BC": 0.419025
+      },
+      "ctrl_expressions_jawright": {
+        "A": 0.050293,
+        "B": 0.050293,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.050293,
+        "diff_BC": 0.050293
+      },
+      "ctrl_expressions_mouthcheekblowl": {
+        "A": 0.000977,
+        "B": 0.000488,
+        "C": 0.01702,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.016044,
+        "diff_BC": 0.016532
+      },
+      "ctrl_expressions_mouthcheekblowr": {
+        "A": 0.000977,
+        "B": 0.000488,
+        "C": 0.01702,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.016044,
+        "diff_BC": 0.016532
+      },
+      "ctrl_expressions_mouthcornerdepressl": {
+        "A": 0.161051,
+        "B": 0.161051,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.161051,
+        "diff_BC": 0.161051
+      },
+      "ctrl_expressions_mouthcornerdepressr": {
+        "A": 0.179036,
+        "B": 0.179036,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.179036,
+        "diff_BC": 0.179036
+      },
+      "ctrl_expressions_mouthcornerpulll": {
+        "A": 0.000651,
+        "B": 0.000651,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000651,
+        "diff_BC": 0.000651
+      },
+      "ctrl_expressions_mouthcornerpullr": {
+        "A": 0.000407,
+        "B": 0.000407,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000407,
+        "diff_BC": 0.000407
+      },
+      "ctrl_expressions_mouthdimplel": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.011022,
+        "diff_AB": 0.0,
+        "diff_AC": 0.011022,
+        "diff_BC": 0.011022
+      },
+      "ctrl_expressions_mouthdimpler": {
+        "A": 0.0,
+        "B": 1e-06,
+        "C": 0.014918,
+        "diff_AB": 1e-06,
+        "diff_AC": 0.014918,
+        "diff_BC": 0.014917
+      },
+      "ctrl_expressions_mouthfunneldl": {
+        "A": 0.554063,
+        "B": 0.377218,
+        "C": 0.010901,
+        "diff_AB": 0.176845,
+        "diff_AC": 0.543162,
+        "diff_BC": 0.366317
+      },
+      "ctrl_expressions_mouthfunneldr": {
+        "A": 0.609874,
+        "B": 0.377218,
+        "C": 0.010901,
+        "diff_AB": 0.232656,
+        "diff_AC": 0.598973,
+        "diff_BC": 0.366317
+      },
+      "ctrl_expressions_mouthfunnelul": {
+        "A": 0.165539,
+        "B": 0.377218,
+        "C": 0.010901,
+        "diff_AB": 0.211679,
+        "diff_AC": 0.154638,
+        "diff_BC": 0.366317
+      },
+      "ctrl_expressions_mouthfunnelur": {
+        "A": 0.179397,
+        "B": 0.377218,
+        "C": 0.010901,
+        "diff_AB": 0.197821,
+        "diff_AC": 0.168496,
+        "diff_BC": 0.366317
+      },
+      "ctrl_expressions_mouthleft": {
+        "A": 0.016711,
+        "B": 0.016711,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.016711,
+        "diff_BC": 0.016711
+      },
+      "ctrl_expressions_mouthlipsblowl": {
+        "A": 0.0,
+        "B": 0.000488,
+        "C": 0.01702,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.01702,
+        "diff_BC": 0.016532
+      },
+      "ctrl_expressions_mouthlipsblowr": {
+        "A": 0.0,
+        "B": 0.000488,
+        "C": 0.01702,
+        "diff_AB": 0.000488,
+        "diff_AC": 0.01702,
+        "diff_BC": 0.016532
+      },
+      "ctrl_expressions_mouthlipspursedl": {
+        "A": 0.110797,
+        "B": 0.184135,
+        "C": 0.014496,
+        "diff_AB": 0.073337,
+        "diff_AC": 0.096301,
+        "diff_BC": 0.169638
+      },
+      "ctrl_expressions_mouthlipspursedr": {
+        "A": 0.113335,
+        "B": 0.184135,
+        "C": 0.014496,
+        "diff_AB": 0.070799,
+        "diff_AC": 0.098839,
+        "diff_BC": 0.169638
+      },
+      "ctrl_expressions_mouthlipspurseul": {
+        "A": 0.295213,
+        "B": 0.184135,
+        "C": 0.014496,
+        "diff_AB": 0.111078,
+        "diff_AC": 0.280717,
+        "diff_BC": 0.169638
+      },
+      "ctrl_expressions_mouthlipspurseur": {
+        "A": 0.277104,
+        "B": 0.184135,
+        "C": 0.014496,
+        "diff_AB": 0.092969,
+        "diff_AC": 0.262608,
+        "diff_BC": 0.169638
+      },
+      "ctrl_expressions_mouthlipstogetherdl": {
+        "A": 0.000409,
+        "B": 0.252094,
+        "C": 0.0,
+        "diff_AB": 0.251685,
+        "diff_AC": 0.000409,
+        "diff_BC": 0.252094
+      },
+      "ctrl_expressions_mouthlipstogetherdr": {
+        "A": 0.0,
+        "B": 0.252094,
+        "C": 0.0,
+        "diff_AB": 0.252094,
+        "diff_AC": 0.0,
+        "diff_BC": 0.252094
+      },
+      "ctrl_expressions_mouthlipstogetherul": {
+        "A": 0.27417,
+        "B": 0.252094,
+        "C": 0.0,
+        "diff_AB": 0.022076,
+        "diff_AC": 0.27417,
+        "diff_BC": 0.252094
+      },
+      "ctrl_expressions_mouthlipstogetherur": {
+        "A": 0.275879,
+        "B": 0.252094,
+        "C": 0.0,
+        "diff_AB": 0.023785,
+        "diff_AC": 0.275879,
+        "diff_BC": 0.252094
+      },
+      "ctrl_expressions_mouthlipstowardsdl": {
+        "A": 0.001714,
+        "B": 0.075863,
+        "C": 0.005972,
+        "diff_AB": 0.074149,
+        "diff_AC": 0.004258,
+        "diff_BC": 0.069891
+      },
+      "ctrl_expressions_mouthlipstowardsdr": {
+        "A": 0.001587,
+        "B": 0.075863,
+        "C": 0.005972,
+        "diff_AB": 0.074276,
+        "diff_AC": 0.004385,
+        "diff_BC": 0.069891
+      },
+      "ctrl_expressions_mouthlipstowardsul": {
+        "A": 0.068013,
+        "B": 0.075863,
+        "C": 0.005972,
+        "diff_AB": 0.007851,
+        "diff_AC": 0.06204,
+        "diff_BC": 0.069891
+      },
+      "ctrl_expressions_mouthlipstowardsur": {
+        "A": 0.086725,
+        "B": 0.075863,
+        "C": 0.005972,
+        "diff_AB": 0.010862,
+        "diff_AC": 0.080753,
+        "diff_BC": 0.069891
+      },
+      "ctrl_expressions_mouthlowerlipdepressl": {
+        "A": 0.993646,
+        "B": 0.993646,
+        "C": 0.006364,
+        "diff_AB": 0.0,
+        "diff_AC": 0.987282,
+        "diff_BC": 0.987282
+      },
+      "ctrl_expressions_mouthlowerlipdepressr": {
+        "A": 0.992237,
+        "B": 0.992237,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.992237,
+        "diff_BC": 0.992237
+      },
+      "ctrl_expressions_mouthlowerliprollinl": {
+        "A": 0.080566,
+        "B": 0.053223,
+        "C": 0.013716,
+        "diff_AB": 0.027344,
+        "diff_AC": 0.066851,
+        "diff_BC": 0.039507
+      },
+      "ctrl_expressions_mouthlowerliprollinr": {
+        "A": 0.025879,
+        "B": 0.053223,
+        "C": 0.013716,
+        "diff_AB": 0.027344,
+        "diff_AC": 0.012163,
+        "diff_BC": 0.039507
+      },
+      "ctrl_expressions_mouthpressdl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.021149,
+        "diff_AB": 0.0,
+        "diff_AC": 0.021149,
+        "diff_BC": 0.021149
+      },
+      "ctrl_expressions_mouthpressdr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.019123,
+        "diff_AB": 0.0,
+        "diff_AC": 0.019123,
+        "diff_BC": 0.019123
+      },
+      "ctrl_expressions_mouthpressul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.021149,
+        "diff_AB": 0.0,
+        "diff_AC": 0.021149,
+        "diff_BC": 0.021149
+      },
+      "ctrl_expressions_mouthpressur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.019123,
+        "diff_AB": 0.0,
+        "diff_AC": 0.019123,
+        "diff_BC": 0.019123
+      },
+      "ctrl_expressions_mouthright": {
+        "A": 0.002451,
+        "B": 0.002451,
+        "C": 0.001644,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000808,
+        "diff_BC": 0.000808
+      },
+      "ctrl_expressions_mouthstretchl": {
+        "A": 0.120768,
+        "B": 0.120768,
+        "C": 0.038868,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0819,
+        "diff_BC": 0.0819
+      },
+      "ctrl_expressions_mouthstretchr": {
+        "A": 0.13387,
+        "B": 0.13387,
+        "C": 0.067184,
+        "diff_AB": 0.0,
+        "diff_AC": 0.066687,
+        "diff_BC": 0.066687
+      },
+      "ctrl_expressions_mouthupperlipraisel": {
+        "A": 0.00585,
+        "B": 0.00585,
+        "C": 0.022532,
+        "diff_AB": 0.0,
+        "diff_AC": 0.016682,
+        "diff_BC": 0.016682
+      },
+      "ctrl_expressions_mouthupperlipraiser": {
+        "A": 0.006312,
+        "B": 0.006312,
+        "C": 0.020673,
+        "diff_AB": 0.0,
+        "diff_AC": 0.014361,
+        "diff_BC": 0.014361
+      },
+      "ctrl_expressions_mouthupperliprollinl": {
+        "A": 0.0,
+        "B": 0.026558,
+        "C": 0.006844,
+        "diff_AB": 0.026558,
+        "diff_AC": 0.006844,
+        "diff_BC": 0.019714
+      },
+      "ctrl_expressions_mouthupperliprollinr": {
+        "A": 0.0,
+        "B": 0.026558,
+        "C": 0.006844,
+        "diff_AB": 0.026558,
+        "diff_AC": 0.006844,
+        "diff_BC": 0.019714
+      },
+      "ctrl_expressions_nosewrinklel": {
+        "A": 0.102564,
+        "B": 0.102564,
+        "C": 0.083379,
+        "diff_AB": 0.0,
+        "diff_AC": 0.019185,
+        "diff_BC": 0.019185
+      },
+      "ctrl_expressions_nosewrinkler": {
+        "A": 0.131255,
+        "B": 0.131255,
+        "C": 0.069315,
+        "diff_AB": 0.0,
+        "diff_AC": 0.06194,
+        "diff_BC": 0.06194
+      },
+      "ctrl_expressions_tonguedown": {
+        "A": 0.0,
+        "B": 0.299136,
+        "C": 2e-06,
+        "diff_AB": 0.299136,
+        "diff_AC": 2e-06,
+        "diff_BC": 0.299134
+      },
+      "ctrl_expressions_tongueout": {
+        "A": 0.0,
+        "B": 0.278493,
+        "C": 2e-06,
+        "diff_AB": 0.278493,
+        "diff_AC": 2e-06,
+        "diff_BC": 0.278491
+      },
+      "ctrl_expressions_tongueright": {
+        "A": 0.0,
+        "B": 0.025351,
+        "C": 0.0,
+        "diff_AB": 0.025351,
+        "diff_AC": 0.0,
+        "diff_BC": 0.02535
+      },
+      "ctrl_expressions_tonguewide": {
+        "A": 1.0,
+        "B": 0.22743,
+        "C": 2e-06,
+        "diff_AB": 0.77257,
+        "diff_AC": 0.999998,
+        "diff_BC": 0.227429
+      }
+    },
+    "725": {
+      "ctrl_expressions_browdownl": {
+        "A": 0.012044,
+        "B": 0.012044,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.012044,
+        "diff_BC": 0.012044
+      },
+      "ctrl_expressions_browdownr": {
+        "A": 0.008301,
+        "B": 0.008301,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.008301,
+        "diff_BC": 0.008301
+      },
+      "ctrl_expressions_browlaterall": {
+        "A": 0.006917,
+        "B": 0.072025,
+        "C": 0.902815,
+        "diff_AB": 0.065108,
+        "diff_AC": 0.895897,
+        "diff_BC": 0.83079
+      },
+      "ctrl_expressions_browlateralr": {
+        "A": 0.005534,
+        "B": 0.00415,
+        "C": 0.855561,
+        "diff_AB": 0.001384,
+        "diff_AC": 0.850028,
+        "diff_BC": 0.851411
+      },
+      "ctrl_expressions_browraiseinl": {
+        "A": 1.0,
+        "B": 1.002076,
+        "C": 1.615329,
+        "diff_AB": 0.002076,
+        "diff_AC": 0.615329,
+        "diff_BC": 0.613253
+      },
+      "ctrl_expressions_browraiseinr": {
+        "A": 1.0,
+        "B": 1.002075,
+        "C": 1.615762,
+        "diff_AB": 0.002075,
+        "diff_AC": 0.615762,
+        "diff_BC": 0.613687
+      },
+      "ctrl_expressions_browraiseouterl": {
+        "A": 1.0,
+        "B": 0.997924,
+        "C": 0.759766,
+        "diff_AB": 0.002076,
+        "diff_AC": 0.240234,
+        "diff_BC": 0.238158
+      },
+      "ctrl_expressions_browraiseouterr": {
+        "A": 1.0,
+        "B": 0.997925,
+        "C": 0.760201,
+        "diff_AB": 0.002075,
+        "diff_AC": 0.239799,
+        "diff_BC": 0.237724
+      },
+      "ctrl_expressions_eyeblinkl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyeblinkr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyecheekraisel": {
+        "A": 0.00179,
+        "B": 0.00179,
+        "C": 0.004216,
+        "diff_AB": 0.0,
+        "diff_AC": 0.002426,
+        "diff_BC": 0.002426
+      },
+      "ctrl_expressions_eyecheekraiser": {
+        "A": 0.006999,
+        "B": 0.006999,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.006999,
+        "diff_BC": 0.006999
+      },
+      "ctrl_expressions_eyelookdownl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookdownr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookleftl": {
+        "A": 0.219335,
+        "B": 0.219335,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.219335,
+        "diff_BC": 0.219335
+      },
+      "ctrl_expressions_eyelookleftr": {
+        "A": 0.181895,
+        "B": 0.181895,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.181895,
+        "diff_BC": 0.181895
+      },
+      "ctrl_expressions_eyelookrightl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.553478,
+        "diff_AB": 0.0,
+        "diff_AC": 0.553478,
+        "diff_BC": 0.553478
+      },
+      "ctrl_expressions_eyelookrightr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.419806,
+        "diff_AB": 0.0,
+        "diff_AC": 0.419806,
+        "diff_BC": 0.419806
+      },
+      "ctrl_expressions_eyelookupl": {
+        "A": 0.268388,
+        "B": 0.268388,
+        "C": 0.339662,
+        "diff_AB": 0.0,
+        "diff_AC": 0.071275,
+        "diff_BC": 0.071275
+      },
+      "ctrl_expressions_eyelookupr": {
+        "A": 0.263885,
+        "B": 0.263885,
+        "C": 0.384239,
+        "diff_AB": 0.0,
+        "diff_AC": 0.120354,
+        "diff_BC": 0.120354
+      },
+      "ctrl_expressions_eyesquintinnerl": {
+        "A": 0.203125,
+        "B": 0.203125,
+        "C": 0.1545,
+        "diff_AB": 0.0,
+        "diff_AC": 0.048625,
+        "diff_BC": 0.048625
+      },
+      "ctrl_expressions_eyesquintinnerr": {
+        "A": 0.219116,
+        "B": 0.219116,
+        "C": 0.153497,
+        "diff_AB": 0.0,
+        "diff_AC": 0.065619,
+        "diff_BC": 0.065619
+      },
+      "ctrl_expressions_eyewidenl": {
+        "A": 0.630615,
+        "B": 0.630615,
+        "C": 0.287379,
+        "diff_AB": 0.0,
+        "diff_AC": 0.343237,
+        "diff_BC": 0.343237
+      },
+      "ctrl_expressions_eyewidenr": {
+        "A": 0.580811,
+        "B": 0.580811,
+        "C": 0.288836,
+        "diff_AB": 0.0,
+        "diff_AC": 0.291974,
+        "diff_BC": 0.291974
+      },
+      "ctrl_expressions_jawchinraisedl": {
+        "A": 0.167769,
+        "B": 0.171788,
+        "C": 0.0,
+        "diff_AB": 0.004018,
+        "diff_AC": 0.167769,
+        "diff_BC": 0.171788
+      },
+      "ctrl_expressions_jawchinraisedr": {
+        "A": 0.175806,
+        "B": 0.171788,
+        "C": 0.0,
+        "diff_AB": 0.004018,
+        "diff_AC": 0.175806,
+        "diff_BC": 0.171788
+      },
+      "ctrl_expressions_jawchinraiseul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawchinraiseur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawfwd": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.043648,
+        "diff_AB": 0.0,
+        "diff_AC": 0.043648,
+        "diff_BC": 0.043648
+      },
+      "ctrl_expressions_jawleft": {
+        "A": 0.070068,
+        "B": 0.070068,
+        "C": 0.010255,
+        "diff_AB": 0.0,
+        "diff_AC": 0.059813,
+        "diff_BC": 0.059813
+      },
+      "ctrl_expressions_jawopen": {
+        "A": 0.289673,
+        "B": 0.124999,
+        "C": 0.184534,
+        "diff_AB": 0.164674,
+        "diff_AC": 0.105139,
+        "diff_BC": 0.059535
+      },
+      "ctrl_expressions_jawright": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthcheekblowl": {
+        "A": 0.000977,
+        "B": 0.001099,
+        "C": 0.0,
+        "diff_AB": 0.000122,
+        "diff_AC": 0.000977,
+        "diff_BC": 0.001099
+      },
+      "ctrl_expressions_mouthcheekblowr": {
+        "A": 0.003418,
+        "B": 0.001099,
+        "C": 0.0,
+        "diff_AB": 0.002319,
+        "diff_AC": 0.003418,
+        "diff_BC": 0.001099
+      },
+      "ctrl_expressions_mouthcornerdepressl": {
+        "A": 0.091227,
+        "B": 0.091227,
+        "C": 0.344009,
+        "diff_AB": 0.0,
+        "diff_AC": 0.252782,
+        "diff_BC": 0.252782
+      },
+      "ctrl_expressions_mouthcornerdepressr": {
+        "A": 0.246094,
+        "B": 0.246094,
+        "C": 0.292489,
+        "diff_AB": 0.0,
+        "diff_AC": 0.046395,
+        "diff_BC": 0.046395
+      },
+      "ctrl_expressions_mouthcornerpulll": {
+        "A": 0.001302,
+        "B": 0.001302,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001302,
+        "diff_BC": 0.001302
+      },
+      "ctrl_expressions_mouthcornerpullr": {
+        "A": 0.00057,
+        "B": 0.00057,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.00057,
+        "diff_BC": 0.00057
+      },
+      "ctrl_expressions_mouthdimplel": {
+        "A": 0.074829,
+        "B": 0.074829,
+        "C": 0.008845,
+        "diff_AB": 0.0,
+        "diff_AC": 0.065984,
+        "diff_BC": 0.065984
+      },
+      "ctrl_expressions_mouthdimpler": {
+        "A": 0.007874,
+        "B": 0.007875,
+        "C": 0.006344,
+        "diff_AB": 2e-06,
+        "diff_AC": 0.001529,
+        "diff_BC": 0.001531
+      },
+      "ctrl_expressions_mouthfunneldl": {
+        "A": 0.025367,
+        "B": 0.182096,
+        "C": 0.326881,
+        "diff_AB": 0.156729,
+        "diff_AC": 0.301514,
+        "diff_BC": 0.144785
+      },
+      "ctrl_expressions_mouthfunneldr": {
+        "A": 0.030115,
+        "B": 0.182096,
+        "C": 0.326881,
+        "diff_AB": 0.151981,
+        "diff_AC": 0.296766,
+        "diff_BC": 0.144785
+      },
+      "ctrl_expressions_mouthfunnelul": {
+        "A": 0.03299,
+        "B": 0.182096,
+        "C": 0.326881,
+        "diff_AB": 0.149107,
+        "diff_AC": 0.293891,
+        "diff_BC": 0.144785
+      },
+      "ctrl_expressions_mouthfunnelur": {
+        "A": 0.052689,
+        "B": 0.182096,
+        "C": 0.326881,
+        "diff_AB": 0.129407,
+        "diff_AC": 0.274192,
+        "diff_BC": 0.144785
+      },
+      "ctrl_expressions_mouthleft": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthlipsblowl": {
+        "A": 0.0,
+        "B": 0.001099,
+        "C": 0.0,
+        "diff_AB": 0.001099,
+        "diff_AC": 0.0,
+        "diff_BC": 0.001099
+      },
+      "ctrl_expressions_mouthlipsblowr": {
+        "A": 0.0,
+        "B": 0.001099,
+        "C": 0.0,
+        "diff_AB": 0.001099,
+        "diff_AC": 0.0,
+        "diff_BC": 0.001099
+      },
+      "ctrl_expressions_mouthlipspursedl": {
+        "A": 0.157822,
+        "B": 0.242149,
+        "C": 0.062347,
+        "diff_AB": 0.084328,
+        "diff_AC": 0.095474,
+        "diff_BC": 0.179802
+      },
+      "ctrl_expressions_mouthlipspursedr": {
+        "A": 0.187798,
+        "B": 0.242149,
+        "C": 0.062347,
+        "diff_AB": 0.054352,
+        "diff_AC": 0.12545,
+        "diff_BC": 0.179802
+      },
+      "ctrl_expressions_mouthlipspurseul": {
+        "A": 0.280873,
+        "B": 0.242149,
+        "C": 0.062347,
+        "diff_AB": 0.038724,
+        "diff_AC": 0.218526,
+        "diff_BC": 0.179802
+      },
+      "ctrl_expressions_mouthlipspurseur": {
+        "A": 0.251771,
+        "B": 0.242149,
+        "C": 0.062347,
+        "diff_AB": 0.009621,
+        "diff_AC": 0.189424,
+        "diff_BC": 0.179802
+      },
+      "ctrl_expressions_mouthlipstogetherdl": {
+        "A": 0.132812,
+        "B": 0.73221,
+        "C": 1.0,
+        "diff_AB": 0.599398,
+        "diff_AC": 0.867188,
+        "diff_BC": 0.26779
+      },
+      "ctrl_expressions_mouthlipstogetherdr": {
+        "A": 0.130127,
+        "B": 0.73221,
+        "C": 1.0,
+        "diff_AB": 0.602083,
+        "diff_AC": 0.869873,
+        "diff_BC": 0.26779
+      },
+      "ctrl_expressions_mouthlipstogetherul": {
+        "A": 0.401123,
+        "B": 0.73221,
+        "C": 1.0,
+        "diff_AB": 0.331087,
+        "diff_AC": 0.598877,
+        "diff_BC": 0.26779
+      },
+      "ctrl_expressions_mouthlipstogetherur": {
+        "A": 0.405518,
+        "B": 0.73221,
+        "C": 1.0,
+        "diff_AB": 0.326693,
+        "diff_AC": 0.594482,
+        "diff_BC": 0.26779
+      },
+      "ctrl_expressions_mouthlipstowardsdl": {
+        "A": 0.100299,
+        "B": 0.099766,
+        "C": 0.025687,
+        "diff_AB": 0.000534,
+        "diff_AC": 0.074612,
+        "diff_BC": 0.074078
+      },
+      "ctrl_expressions_mouthlipstowardsdr": {
+        "A": 0.164218,
+        "B": 0.099766,
+        "C": 0.025687,
+        "diff_AB": 0.064453,
+        "diff_AC": 0.138531,
+        "diff_BC": 0.074078
+      },
+      "ctrl_expressions_mouthlipstowardsul": {
+        "A": 0.134899,
+        "B": 0.099766,
+        "C": 0.025687,
+        "diff_AB": 0.035134,
+        "diff_AC": 0.109212,
+        "diff_BC": 0.074078
+      },
+      "ctrl_expressions_mouthlipstowardsur": {
+        "A": 0.218903,
+        "B": 0.099766,
+        "C": 0.025687,
+        "diff_AB": 0.119138,
+        "diff_AC": 0.193216,
+        "diff_BC": 0.074078
+      },
+      "ctrl_expressions_mouthlowerlipdepressl": {
+        "A": 0.004818,
+        "B": 0.004818,
+        "C": 0.143437,
+        "diff_AB": 0.0,
+        "diff_AC": 0.138619,
+        "diff_BC": 0.138619
+      },
+      "ctrl_expressions_mouthlowerlipdepressr": {
+        "A": 0.014909,
+        "B": 0.014909,
+        "C": 0.168625,
+        "diff_AB": 0.0,
+        "diff_AC": 0.153716,
+        "diff_BC": 0.153716
+      },
+      "ctrl_expressions_mouthlowerliprollinl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.003174,
+        "diff_AB": 0.0,
+        "diff_AC": 0.003174,
+        "diff_BC": 0.003174
+      },
+      "ctrl_expressions_mouthlowerliprollinr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.003174,
+        "diff_AB": 0.0,
+        "diff_AC": 0.003174,
+        "diff_BC": 0.003174
+      },
+      "ctrl_expressions_mouthpressdl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressdr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthright": {
+        "A": 0.074101,
+        "B": 0.074101,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.074101,
+        "diff_BC": 0.074101
+      },
+      "ctrl_expressions_mouthstretchl": {
+        "A": 0.185303,
+        "B": 0.185303,
+        "C": 0.302927,
+        "diff_AB": 0.0,
+        "diff_AC": 0.117625,
+        "diff_BC": 0.117625
+      },
+      "ctrl_expressions_mouthstretchr": {
+        "A": 0.225505,
+        "B": 0.225505,
+        "C": 0.285503,
+        "diff_AB": 0.0,
+        "diff_AC": 0.059998,
+        "diff_BC": 0.059998
+      },
+      "ctrl_expressions_mouthupperlipraisel": {
+        "A": 0.000491,
+        "B": 0.000491,
+        "C": 0.002351,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001861,
+        "diff_BC": 0.001861
+      },
+      "ctrl_expressions_mouthupperlipraiser": {
+        "A": 0.007624,
+        "B": 0.007624,
+        "C": 0.002994,
+        "diff_AB": 0.0,
+        "diff_AC": 0.00463,
+        "diff_BC": 0.00463
+      },
+      "ctrl_expressions_mouthupperliprollinl": {
+        "A": 0.003418,
+        "B": 0.001709,
+        "C": 0.032307,
+        "diff_AB": 0.001709,
+        "diff_AC": 0.028889,
+        "diff_BC": 0.030598
+      },
+      "ctrl_expressions_mouthupperliprollinr": {
+        "A": 0.0,
+        "B": 0.001709,
+        "C": 0.032307,
+        "diff_AB": 0.001709,
+        "diff_AC": 0.032307,
+        "diff_BC": 0.030598
+      },
+      "ctrl_expressions_nosewrinklel": {
+        "A": 0.009893,
+        "B": 0.009893,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.009893,
+        "diff_BC": 0.009893
+      },
+      "ctrl_expressions_nosewrinkler": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_tonguedown": {
+        "A": 0.0,
+        "B": 0.126767,
+        "C": 4.9e-05,
+        "diff_AB": 0.126767,
+        "diff_AC": 4.9e-05,
+        "diff_BC": 0.126718
+      },
+      "ctrl_expressions_tongueout": {
+        "A": 0.0,
+        "B": 0.118019,
+        "C": 4.6e-05,
+        "diff_AB": 0.118019,
+        "diff_AC": 4.6e-05,
+        "diff_BC": 0.117974
+      },
+      "ctrl_expressions_tongueright": {
+        "A": 0.0,
+        "B": 0.010743,
+        "C": 4e-06,
+        "diff_AB": 0.010743,
+        "diff_AC": 4e-06,
+        "diff_BC": 0.010739
+      },
+      "ctrl_expressions_tonguewide": {
+        "A": 0.423778,
+        "B": 0.09638,
+        "C": 3.7e-05,
+        "diff_AB": 0.327398,
+        "diff_AC": 0.42374,
+        "diff_BC": 0.096342
+      }
+    },
+    "956": {
+      "ctrl_expressions_browdownl": {
+        "A": 0.005208,
+        "B": 0.005208,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.005208,
+        "diff_BC": 0.005208
+      },
+      "ctrl_expressions_browdownr": {
+        "A": 0.005371,
+        "B": 0.005371,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.005371,
+        "diff_BC": 0.005371
+      },
+      "ctrl_expressions_browlaterall": {
+        "A": 0.012533,
+        "B": 0.093331,
+        "C": 0.914079,
+        "diff_AB": 0.080798,
+        "diff_AC": 0.901546,
+        "diff_BC": 0.820748
+      },
+      "ctrl_expressions_browlateralr": {
+        "A": 0.014974,
+        "B": 0.009169,
+        "C": 0.861191,
+        "diff_AB": 0.005805,
+        "diff_AC": 0.846217,
+        "diff_BC": 0.852022
+      },
+      "ctrl_expressions_browraiseinl": {
+        "A": 1.0,
+        "B": 1.004585,
+        "C": 1.626714,
+        "diff_AB": 0.004585,
+        "diff_AC": 0.626714,
+        "diff_BC": 0.622129
+      },
+      "ctrl_expressions_browraiseinr": {
+        "A": 1.0,
+        "B": 1.004584,
+        "C": 1.629843,
+        "diff_AB": 0.004584,
+        "diff_AC": 0.629843,
+        "diff_BC": 0.625258
+      },
+      "ctrl_expressions_browraiseouterl": {
+        "A": 1.0,
+        "B": 0.995415,
+        "C": 0.765522,
+        "diff_AB": 0.004585,
+        "diff_AC": 0.234478,
+        "diff_BC": 0.229893
+      },
+      "ctrl_expressions_browraiseouterr": {
+        "A": 1.0,
+        "B": 0.995416,
+        "C": 0.768652,
+        "diff_AB": 0.004584,
+        "diff_AC": 0.231348,
+        "diff_BC": 0.226764
+      },
+      "ctrl_expressions_eyeblinkl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyeblinkr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyecheekraisel": {
+        "A": 0.025798,
+        "B": 0.025798,
+        "C": 0.104045,
+        "diff_AB": 0.0,
+        "diff_AC": 0.078247,
+        "diff_BC": 0.078247
+      },
+      "ctrl_expressions_eyecheekraiser": {
+        "A": 0.27002,
+        "B": 0.27002,
+        "C": 0.067795,
+        "diff_AB": 0.0,
+        "diff_AC": 0.202225,
+        "diff_BC": 0.202225
+      },
+      "ctrl_expressions_eyelookdownl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookdownr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookleftl": {
+        "A": 0.026541,
+        "B": 0.026541,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.026541,
+        "diff_BC": 0.026541
+      },
+      "ctrl_expressions_eyelookleftr": {
+        "A": 0.012053,
+        "B": 0.012053,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.012053,
+        "diff_BC": 0.012053
+      },
+      "ctrl_expressions_eyelookrightl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.042057,
+        "diff_AB": 0.0,
+        "diff_AC": 0.042057,
+        "diff_BC": 0.042057
+      },
+      "ctrl_expressions_eyelookrightr": {
+        "A": 0.00575,
+        "B": 0.00575,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.00575,
+        "diff_BC": 0.00575
+      },
+      "ctrl_expressions_eyelookupl": {
+        "A": 0.314724,
+        "B": 0.314724,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.314724,
+        "diff_BC": 0.314724
+      },
+      "ctrl_expressions_eyelookupr": {
+        "A": 0.306625,
+        "B": 0.306625,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.306625,
+        "diff_BC": 0.306625
+      },
+      "ctrl_expressions_eyesquintinnerl": {
+        "A": 0.802734,
+        "B": 0.802734,
+        "C": 0.174946,
+        "diff_AB": 0.0,
+        "diff_AC": 0.627789,
+        "diff_BC": 0.627789
+      },
+      "ctrl_expressions_eyesquintinnerr": {
+        "A": 1.0,
+        "B": 0.999999,
+        "C": 0.17296,
+        "diff_AB": 1e-06,
+        "diff_AC": 0.82704,
+        "diff_BC": 0.827039
+      },
+      "ctrl_expressions_eyewidenl": {
+        "A": 0.291992,
+        "B": 0.291992,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.291992,
+        "diff_BC": 0.291992
+      },
+      "ctrl_expressions_eyewidenr": {
+        "A": 0.016602,
+        "B": 0.016602,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.016602,
+        "diff_BC": 0.016602
+      },
+      "ctrl_expressions_jawchinraisedl": {
+        "A": 0.005577,
+        "B": 0.00565,
+        "C": 0.0,
+        "diff_AB": 7.3e-05,
+        "diff_AC": 0.005577,
+        "diff_BC": 0.00565
+      },
+      "ctrl_expressions_jawchinraisedr": {
+        "A": 0.005723,
+        "B": 0.00565,
+        "C": 0.0,
+        "diff_AB": 7.3e-05,
+        "diff_AC": 0.005723,
+        "diff_BC": 0.00565
+      },
+      "ctrl_expressions_jawchinraiseul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawchinraiseur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawfwd": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.062784,
+        "diff_AB": 0.0,
+        "diff_AC": 0.062784,
+        "diff_BC": 0.062784
+      },
+      "ctrl_expressions_jawleft": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.04613,
+        "diff_AB": 0.0,
+        "diff_AC": 0.04613,
+        "diff_BC": 0.04613
+      },
+      "ctrl_expressions_jawopen": {
+        "A": 0.531982,
+        "B": 0.154881,
+        "C": 0.165778,
+        "diff_AB": 0.377101,
+        "diff_AC": 0.366205,
+        "diff_BC": 0.010896
+      },
+      "ctrl_expressions_jawright": {
+        "A": 0.02832,
+        "B": 0.02832,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.02832,
+        "diff_BC": 0.02832
+      },
+      "ctrl_expressions_mouthcheekblowl": {
+        "A": 0.001465,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.00061,
+        "diff_AC": 0.001465,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthcheekblowr": {
+        "A": 0.001953,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.001099,
+        "diff_AC": 0.001953,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthcornerdepressl": {
+        "A": 0.195882,
+        "B": 0.195882,
+        "C": 0.008364,
+        "diff_AB": 0.0,
+        "diff_AC": 0.187518,
+        "diff_BC": 0.187518
+      },
+      "ctrl_expressions_mouthcornerdepressr": {
+        "A": 0.196777,
+        "B": 0.196777,
+        "C": 0.040212,
+        "diff_AB": 0.0,
+        "diff_AC": 0.156565,
+        "diff_BC": 0.156565
+      },
+      "ctrl_expressions_mouthcornerpulll": {
+        "A": 0.000977,
+        "B": 0.000977,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000977,
+        "diff_BC": 0.000977
+      },
+      "ctrl_expressions_mouthcornerpullr": {
+        "A": 0.00708,
+        "B": 0.00708,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.00708,
+        "diff_BC": 0.00708
+      },
+      "ctrl_expressions_mouthdimplel": {
+        "A": 0.160522,
+        "B": 0.160522,
+        "C": 0.05002,
+        "diff_AB": 0.0,
+        "diff_AC": 0.110503,
+        "diff_BC": 0.110503
+      },
+      "ctrl_expressions_mouthdimpler": {
+        "A": 0.125732,
+        "B": 0.125754,
+        "C": 0.042033,
+        "diff_AB": 2.1e-05,
+        "diff_AC": 0.0837,
+        "diff_BC": 0.083721
+      },
+      "ctrl_expressions_mouthfunneldl": {
+        "A": 0.062071,
+        "B": 0.326141,
+        "C": 0.137884,
+        "diff_AB": 0.26407,
+        "diff_AC": 0.075812,
+        "diff_BC": 0.188258
+      },
+      "ctrl_expressions_mouthfunneldr": {
+        "A": 0.068658,
+        "B": 0.326141,
+        "C": 0.137884,
+        "diff_AB": 0.257484,
+        "diff_AC": 0.069226,
+        "diff_BC": 0.188258
+      },
+      "ctrl_expressions_mouthfunnelul": {
+        "A": 0.001698,
+        "B": 0.326141,
+        "C": 0.137884,
+        "diff_AB": 0.324443,
+        "diff_AC": 0.136185,
+        "diff_BC": 0.188258
+      },
+      "ctrl_expressions_mouthfunnelur": {
+        "A": 0.000862,
+        "B": 0.326141,
+        "C": 0.137884,
+        "diff_AB": 0.325279,
+        "diff_AC": 0.137022,
+        "diff_BC": 0.188258
+      },
+      "ctrl_expressions_mouthleft": {
+        "A": 1.6e-05,
+        "B": 1.6e-05,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 1.6e-05,
+        "diff_BC": 1.6e-05
+      },
+      "ctrl_expressions_mouthlipsblowl": {
+        "A": 0.0,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.000854,
+        "diff_AC": 0.0,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthlipsblowr": {
+        "A": 0.0,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.000854,
+        "diff_AC": 0.0,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthlipspursedl": {
+        "A": 0.518675,
+        "B": 0.433699,
+        "C": 0.0,
+        "diff_AB": 0.084976,
+        "diff_AC": 0.518675,
+        "diff_BC": 0.433699
+      },
+      "ctrl_expressions_mouthlipspursedr": {
+        "A": 0.538625,
+        "B": 0.433699,
+        "C": 0.0,
+        "diff_AB": 0.104926,
+        "diff_AC": 0.538625,
+        "diff_BC": 0.433699
+      },
+      "ctrl_expressions_mouthlipspurseul": {
+        "A": 0.521879,
+        "B": 0.433699,
+        "C": 0.0,
+        "diff_AB": 0.08818,
+        "diff_AC": 0.521879,
+        "diff_BC": 0.433699
+      },
+      "ctrl_expressions_mouthlipspurseur": {
+        "A": 0.43203,
+        "B": 0.433699,
+        "C": 0.0,
+        "diff_AB": 0.001669,
+        "diff_AC": 0.43203,
+        "diff_BC": 0.433699
+      },
+      "ctrl_expressions_mouthlipstogetherdl": {
+        "A": 0.237061,
+        "B": 1.0,
+        "C": 1.0,
+        "diff_AB": 0.762939,
+        "diff_AC": 0.762939,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthlipstogetherdr": {
+        "A": 0.234741,
+        "B": 1.0,
+        "C": 1.0,
+        "diff_AB": 0.765259,
+        "diff_AC": 0.765259,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthlipstogetherul": {
+        "A": 0.736816,
+        "B": 1.0,
+        "C": 1.0,
+        "diff_AB": 0.263184,
+        "diff_AC": 0.263184,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthlipstogetherur": {
+        "A": 0.741699,
+        "B": 1.0,
+        "C": 1.0,
+        "diff_AB": 0.258301,
+        "diff_AC": 0.258301,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthlipstowardsdl": {
+        "A": 0.002804,
+        "B": 0.178684,
+        "C": 0.0,
+        "diff_AB": 0.175879,
+        "diff_AC": 0.002804,
+        "diff_BC": 0.178684
+      },
+      "ctrl_expressions_mouthlipstowardsdr": {
+        "A": 0.005191,
+        "B": 0.178684,
+        "C": 0.0,
+        "diff_AB": 0.173493,
+        "diff_AC": 0.005191,
+        "diff_BC": 0.178684
+      },
+      "ctrl_expressions_mouthlipstowardsul": {
+        "A": 0.008092,
+        "B": 0.178684,
+        "C": 0.0,
+        "diff_AB": 0.170592,
+        "diff_AC": 0.008092,
+        "diff_BC": 0.178684
+      },
+      "ctrl_expressions_mouthlipstowardsur": {
+        "A": 0.027741,
+        "B": 0.178684,
+        "C": 0.0,
+        "diff_AB": 0.150943,
+        "diff_AC": 0.027741,
+        "diff_BC": 0.178684
+      },
+      "ctrl_expressions_mouthlowerlipdepressl": {
+        "A": 0.003161,
+        "B": 0.003161,
+        "C": 0.228912,
+        "diff_AB": 0.0,
+        "diff_AC": 0.225751,
+        "diff_BC": 0.225751
+      },
+      "ctrl_expressions_mouthlowerlipdepressr": {
+        "A": 0.003745,
+        "B": 0.003745,
+        "C": 0.247294,
+        "diff_AB": 0.0,
+        "diff_AC": 0.243549,
+        "diff_BC": 0.243549
+      },
+      "ctrl_expressions_mouthlowerliprollinl": {
+        "A": 0.060059,
+        "B": 0.030029,
+        "C": 0.08107,
+        "diff_AB": 0.030029,
+        "diff_AC": 0.021012,
+        "diff_BC": 0.051041
+      },
+      "ctrl_expressions_mouthlowerliprollinr": {
+        "A": 0.0,
+        "B": 0.030029,
+        "C": 0.08107,
+        "diff_AB": 0.030029,
+        "diff_AC": 0.08107,
+        "diff_BC": 0.051041
+      },
+      "ctrl_expressions_mouthpressdl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressdr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthright": {
+        "A": 0.050589,
+        "B": 0.050589,
+        "C": 0.001876,
+        "diff_AB": 0.0,
+        "diff_AC": 0.048714,
+        "diff_BC": 0.048714
+      },
+      "ctrl_expressions_mouthstretchl": {
+        "A": 0.279053,
+        "B": 0.279053,
+        "C": 0.185592,
+        "diff_AB": 0.0,
+        "diff_AC": 0.09346,
+        "diff_BC": 0.09346
+      },
+      "ctrl_expressions_mouthstretchr": {
+        "A": 0.318034,
+        "B": 0.318034,
+        "C": 0.190733,
+        "diff_AB": 0.0,
+        "diff_AC": 0.127301,
+        "diff_BC": 0.127301
+      },
+      "ctrl_expressions_mouthupperlipraisel": {
+        "A": 0.001383,
+        "B": 0.001383,
+        "C": 0.007825,
+        "diff_AB": 0.0,
+        "diff_AC": 0.006443,
+        "diff_BC": 0.006443
+      },
+      "ctrl_expressions_mouthupperlipraiser": {
+        "A": 0.00052,
+        "B": 0.00052,
+        "C": 0.005043,
+        "diff_AB": 0.0,
+        "diff_AC": 0.004522,
+        "diff_BC": 0.004522
+      },
+      "ctrl_expressions_mouthupperliprollinl": {
+        "A": 0.027344,
+        "B": 0.014985,
+        "C": 0.125182,
+        "diff_AB": 0.012359,
+        "diff_AC": 0.097838,
+        "diff_BC": 0.110197
+      },
+      "ctrl_expressions_mouthupperliprollinr": {
+        "A": 0.0,
+        "B": 0.014985,
+        "C": 0.125182,
+        "diff_AB": 0.014985,
+        "diff_AC": 0.125182,
+        "diff_BC": 0.110197
+      },
+      "ctrl_expressions_nosewrinklel": {
+        "A": 0.008042,
+        "B": 0.008042,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.008042,
+        "diff_BC": 0.008042
+      },
+      "ctrl_expressions_nosewrinkler": {
+        "A": 0.047454,
+        "B": 0.047454,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.047454,
+        "diff_BC": 0.047454
+      },
+      "ctrl_expressions_tonguedown": {
+        "A": 0.0,
+        "B": 0.298406,
+        "C": 1e-06,
+        "diff_AB": 0.298406,
+        "diff_AC": 1e-06,
+        "diff_BC": 0.298405
+      },
+      "ctrl_expressions_tongueout": {
+        "A": 0.0,
+        "B": 0.277814,
+        "C": 1e-06,
+        "diff_AB": 0.277814,
+        "diff_AC": 1e-06,
+        "diff_BC": 0.277813
+      },
+      "ctrl_expressions_tongueright": {
+        "A": 0.0,
+        "B": 0.025289,
+        "C": 0.0,
+        "diff_AB": 0.025289,
+        "diff_AC": 0.0,
+        "diff_BC": 0.025289
+      },
+      "ctrl_expressions_tonguewide": {
+        "A": 0.99756,
+        "B": 0.226875,
+        "C": 1e-06,
+        "diff_AB": 0.770685,
+        "diff_AC": 0.997559,
+        "diff_BC": 0.226874
+      }
+    },
+    "1087": {
+      "ctrl_expressions_browdownl": {
+        "A": 0.004557,
+        "B": 0.004557,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.004557,
+        "diff_BC": 0.004557
+      },
+      "ctrl_expressions_browdownr": {
+        "A": 0.007894,
+        "B": 0.007894,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.007894,
+        "diff_BC": 0.007894
+      },
+      "ctrl_expressions_browlaterall": {
+        "A": 0.006836,
+        "B": 0.071527,
+        "C": 0.996676,
+        "diff_AB": 0.064691,
+        "diff_AC": 0.98984,
+        "diff_BC": 0.925149
+      },
+      "ctrl_expressions_browlateralr": {
+        "A": 0.009766,
+        "B": 0.005534,
+        "C": 0.943418,
+        "diff_AB": 0.004232,
+        "diff_AC": 0.933652,
+        "diff_BC": 0.937884
+      },
+      "ctrl_expressions_browraiseinl": {
+        "A": 1.0,
+        "B": 1.002768,
+        "C": 1.802133,
+        "diff_AB": 0.002768,
+        "diff_AC": 0.802133,
+        "diff_BC": 0.799365
+      },
+      "ctrl_expressions_browraiseinr": {
+        "A": 1.0,
+        "B": 1.002767,
+        "C": 1.802666,
+        "diff_AB": 0.002767,
+        "diff_AC": 0.802666,
+        "diff_BC": 0.799899
+      },
+      "ctrl_expressions_browraiseouterl": {
+        "A": 1.0,
+        "B": 0.997232,
+        "C": 0.858714,
+        "diff_AB": 0.002768,
+        "diff_AC": 0.141286,
+        "diff_BC": 0.138518
+      },
+      "ctrl_expressions_browraiseouterr": {
+        "A": 1.0,
+        "B": 0.997233,
+        "C": 0.859248,
+        "diff_AB": 0.002767,
+        "diff_AC": 0.140752,
+        "diff_BC": 0.137985
+      },
+      "ctrl_expressions_eyeblinkl": {
+        "A": 0.720703,
+        "B": 0.720703,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.720703,
+        "diff_BC": 0.720703
+      },
+      "ctrl_expressions_eyeblinkr": {
+        "A": 0.767578,
+        "B": 0.767578,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.767578,
+        "diff_BC": 0.767578
+      },
+      "ctrl_expressions_eyecheekraisel": {
+        "A": 0.000814,
+        "B": 0.000814,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000814,
+        "diff_BC": 0.000814
+      },
+      "ctrl_expressions_eyecheekraiser": {
+        "A": 0.09847,
+        "B": 0.09847,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.09847,
+        "diff_BC": 0.09847
+      },
+      "ctrl_expressions_eyelookdownl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookdownr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_eyelookleftl": {
+        "A": 0.156612,
+        "B": 0.156612,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.156612,
+        "diff_BC": 0.156612
+      },
+      "ctrl_expressions_eyelookleftr": {
+        "A": 0.198798,
+        "B": 0.198798,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.198798,
+        "diff_BC": 0.198798
+      },
+      "ctrl_expressions_eyelookrightl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.357019,
+        "diff_AB": 0.0,
+        "diff_AC": 0.357019,
+        "diff_BC": 0.357019
+      },
+      "ctrl_expressions_eyelookrightr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.259495,
+        "diff_AB": 0.0,
+        "diff_AC": 0.259495,
+        "diff_BC": 0.259495
+      },
+      "ctrl_expressions_eyelookupl": {
+        "A": 0.331534,
+        "B": 0.331534,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.331534,
+        "diff_BC": 0.331534
+      },
+      "ctrl_expressions_eyelookupr": {
+        "A": 0.32082,
+        "B": 0.32082,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.32082,
+        "diff_BC": 0.32082
+      },
+      "ctrl_expressions_eyesquintinnerl": {
+        "A": 0.077637,
+        "B": 0.077637,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.077637,
+        "diff_BC": 0.077637
+      },
+      "ctrl_expressions_eyesquintinnerr": {
+        "A": 0.288452,
+        "B": 0.288452,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.288452,
+        "diff_BC": 0.288452
+      },
+      "ctrl_expressions_eyewidenl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.649296,
+        "diff_AB": 0.0,
+        "diff_AC": 0.649296,
+        "diff_BC": 0.649296
+      },
+      "ctrl_expressions_eyewidenr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.651459,
+        "diff_AB": 0.0,
+        "diff_AC": 0.651459,
+        "diff_BC": 0.651459
+      },
+      "ctrl_expressions_jawchinraisedl": {
+        "A": 0.019745,
+        "B": 0.020171,
+        "C": 0.0,
+        "diff_AB": 0.000425,
+        "diff_AC": 0.019745,
+        "diff_BC": 0.020171
+      },
+      "ctrl_expressions_jawchinraisedr": {
+        "A": 0.020596,
+        "B": 0.020171,
+        "C": 0.0,
+        "diff_AB": 0.000425,
+        "diff_AC": 0.020596,
+        "diff_BC": 0.020171
+      },
+      "ctrl_expressions_jawchinraiseul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawchinraiseur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawfwd": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.006618,
+        "diff_AB": 0.0,
+        "diff_AC": 0.006618,
+        "diff_BC": 0.006618
+      },
+      "ctrl_expressions_jawleft": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_jawopen": {
+        "A": 0.61499,
+        "B": 0.151111,
+        "C": 0.942967,
+        "diff_AB": 0.463879,
+        "diff_AC": 0.327977,
+        "diff_BC": 0.791856
+      },
+      "ctrl_expressions_jawright": {
+        "A": 0.172363,
+        "B": 0.172363,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.172363,
+        "diff_BC": 0.172363
+      },
+      "ctrl_expressions_mouthcheekblowl": {
+        "A": 0.000977,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.000122,
+        "diff_AC": 0.000977,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthcheekblowr": {
+        "A": 0.002441,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.001587,
+        "diff_AC": 0.002441,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthcornerdepressl": {
+        "A": 0.171794,
+        "B": 0.171794,
+        "C": 0.612552,
+        "diff_AB": 0.0,
+        "diff_AC": 0.440758,
+        "diff_BC": 0.440758
+      },
+      "ctrl_expressions_mouthcornerdepressr": {
+        "A": 0.184733,
+        "B": 0.184733,
+        "C": 0.618031,
+        "diff_AB": 0.0,
+        "diff_AC": 0.433298,
+        "diff_BC": 0.433298
+      },
+      "ctrl_expressions_mouthcornerpulll": {
+        "A": 0.000977,
+        "B": 0.000977,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000977,
+        "diff_BC": 0.000977
+      },
+      "ctrl_expressions_mouthcornerpullr": {
+        "A": 0.001058,
+        "B": 0.001058,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001058,
+        "diff_BC": 0.001058
+      },
+      "ctrl_expressions_mouthdimplel": {
+        "A": 0.041504,
+        "B": 0.041504,
+        "C": 0.107229,
+        "diff_AB": 0.0,
+        "diff_AC": 0.065726,
+        "diff_BC": 0.065726
+      },
+      "ctrl_expressions_mouthdimpler": {
+        "A": 0.022339,
+        "B": 0.022342,
+        "C": 0.112566,
+        "diff_AB": 3e-06,
+        "diff_AC": 0.090227,
+        "diff_BC": 0.090224
+      },
+      "ctrl_expressions_mouthfunneldl": {
+        "A": 0.02676,
+        "B": 0.404888,
+        "C": 1.178586,
+        "diff_AB": 0.378128,
+        "diff_AC": 1.151826,
+        "diff_BC": 0.773698
+      },
+      "ctrl_expressions_mouthfunneldr": {
+        "A": 0.026429,
+        "B": 0.404888,
+        "C": 1.178586,
+        "diff_AB": 0.378459,
+        "diff_AC": 1.152157,
+        "diff_BC": 0.773698
+      },
+      "ctrl_expressions_mouthfunnelul": {
+        "A": 0.001144,
+        "B": 0.404888,
+        "C": 1.178586,
+        "diff_AB": 0.403744,
+        "diff_AC": 1.177442,
+        "diff_BC": 0.773698
+      },
+      "ctrl_expressions_mouthfunnelur": {
+        "A": 0.000259,
+        "B": 0.404888,
+        "C": 1.178586,
+        "diff_AB": 0.404629,
+        "diff_AC": 1.178327,
+        "diff_BC": 0.773698
+      },
+      "ctrl_expressions_mouthleft": {
+        "A": 0.000123,
+        "B": 0.000123,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000123,
+        "diff_BC": 0.000123
+      },
+      "ctrl_expressions_mouthlipsblowl": {
+        "A": 0.0,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.000854,
+        "diff_AC": 0.0,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthlipsblowr": {
+        "A": 0.0,
+        "B": 0.000854,
+        "C": 0.0,
+        "diff_AB": 0.000854,
+        "diff_AC": 0.0,
+        "diff_BC": 0.000854
+      },
+      "ctrl_expressions_mouthlipspursedl": {
+        "A": 0.612171,
+        "B": 0.538415,
+        "C": 0.571266,
+        "diff_AB": 0.073756,
+        "diff_AC": 0.040905,
+        "diff_BC": 0.032851
+      },
+      "ctrl_expressions_mouthlipspursedr": {
+        "A": 0.61561,
+        "B": 0.538415,
+        "C": 0.571266,
+        "diff_AB": 0.077195,
+        "diff_AC": 0.044344,
+        "diff_BC": 0.032851
+      },
+      "ctrl_expressions_mouthlipspurseul": {
+        "A": 0.660282,
+        "B": 0.538415,
+        "C": 0.571266,
+        "diff_AB": 0.121867,
+        "diff_AC": 0.089016,
+        "diff_BC": 0.032851
+      },
+      "ctrl_expressions_mouthlipspurseur": {
+        "A": 0.585962,
+        "B": 0.538415,
+        "C": 0.571266,
+        "diff_AB": 0.047547,
+        "diff_AC": 0.014696,
+        "diff_BC": 0.032851
+      },
+      "ctrl_expressions_mouthlipstogetherdl": {
+        "A": 0.062561,
+        "B": 1.0,
+        "C": 0.720688,
+        "diff_AB": 0.937439,
+        "diff_AC": 0.658127,
+        "diff_BC": 0.279312
+      },
+      "ctrl_expressions_mouthlipstogetherdr": {
+        "A": 0.061737,
+        "B": 1.0,
+        "C": 0.720688,
+        "diff_AB": 0.938263,
+        "diff_AC": 0.658951,
+        "diff_BC": 0.279312
+      },
+      "ctrl_expressions_mouthlipstogetherul": {
+        "A": 0.678711,
+        "B": 1.0,
+        "C": 0.720688,
+        "diff_AB": 0.321289,
+        "diff_AC": 0.041977,
+        "diff_BC": 0.279312
+      },
+      "ctrl_expressions_mouthlipstogetherur": {
+        "A": 0.683105,
+        "B": 1.0,
+        "C": 0.720688,
+        "diff_AB": 0.316895,
+        "diff_AC": 0.037582,
+        "diff_BC": 0.279312
+      },
+      "ctrl_expressions_mouthlipstowardsdl": {
+        "A": 0.009675,
+        "B": 0.221827,
+        "C": 0.235362,
+        "diff_AB": 0.212152,
+        "diff_AC": 0.225687,
+        "diff_BC": 0.013535
+      },
+      "ctrl_expressions_mouthlipstowardsdr": {
+        "A": 0.021466,
+        "B": 0.221827,
+        "C": 0.235362,
+        "diff_AB": 0.200361,
+        "diff_AC": 0.213896,
+        "diff_BC": 0.013535
+      },
+      "ctrl_expressions_mouthlipstowardsul": {
+        "A": 0.022244,
+        "B": 0.221827,
+        "C": 0.235362,
+        "diff_AB": 0.199583,
+        "diff_AC": 0.213118,
+        "diff_BC": 0.013535
+      },
+      "ctrl_expressions_mouthlipstowardsur": {
+        "A": 0.056339,
+        "B": 0.221827,
+        "C": 0.235362,
+        "diff_AB": 0.165488,
+        "diff_AC": 0.179023,
+        "diff_BC": 0.013535
+      },
+      "ctrl_expressions_mouthlowerlipdepressl": {
+        "A": 0.002738,
+        "B": 0.002738,
+        "C": 0.701399,
+        "diff_AB": 0.0,
+        "diff_AC": 0.698661,
+        "diff_BC": 0.698661
+      },
+      "ctrl_expressions_mouthlowerlipdepressr": {
+        "A": 0.003921,
+        "B": 0.003921,
+        "C": 0.711146,
+        "diff_AB": 0.0,
+        "diff_AC": 0.707225,
+        "diff_BC": 0.707225
+      },
+      "ctrl_expressions_mouthlowerliprollinl": {
+        "A": 0.169922,
+        "B": 0.104492,
+        "C": 0.173119,
+        "diff_AB": 0.06543,
+        "diff_AC": 0.003197,
+        "diff_BC": 0.068627
+      },
+      "ctrl_expressions_mouthlowerliprollinr": {
+        "A": 0.039062,
+        "B": 0.104492,
+        "C": 0.173119,
+        "diff_AB": 0.06543,
+        "diff_AC": 0.134057,
+        "diff_BC": 0.068627
+      },
+      "ctrl_expressions_mouthpressdl": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressdr": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressul": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthpressur": {
+        "A": 0.0,
+        "B": 0.0,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.0,
+        "diff_BC": 0.0
+      },
+      "ctrl_expressions_mouthright": {
+        "A": 0.027514,
+        "B": 0.027514,
+        "C": 0.040618,
+        "diff_AB": 0.0,
+        "diff_AC": 0.013104,
+        "diff_BC": 0.013104
+      },
+      "ctrl_expressions_mouthstretchl": {
+        "A": 0.178467,
+        "B": 0.178467,
+        "C": 0.490763,
+        "diff_AB": 0.0,
+        "diff_AC": 0.312296,
+        "diff_BC": 0.312296
+      },
+      "ctrl_expressions_mouthstretchr": {
+        "A": 0.228923,
+        "B": 0.228923,
+        "C": 0.5075,
+        "diff_AB": 0.0,
+        "diff_AC": 0.278578,
+        "diff_BC": 0.278578
+      },
+      "ctrl_expressions_mouthupperlipraisel": {
+        "A": 0.001617,
+        "B": 0.001617,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001617,
+        "diff_BC": 0.001617
+      },
+      "ctrl_expressions_mouthupperlipraiser": {
+        "A": 0.000211,
+        "B": 0.000211,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.000211,
+        "diff_BC": 0.000211
+      },
+      "ctrl_expressions_mouthupperliprollinl": {
+        "A": 0.045898,
+        "B": 0.052142,
+        "C": 0.436331,
+        "diff_AB": 0.006243,
+        "diff_AC": 0.390432,
+        "diff_BC": 0.384189
+      },
+      "ctrl_expressions_mouthupperliprollinr": {
+        "A": 0.02002,
+        "B": 0.052142,
+        "C": 0.436331,
+        "diff_AB": 0.032122,
+        "diff_AC": 0.416311,
+        "diff_BC": 0.384189
+      },
+      "ctrl_expressions_nosewrinklel": {
+        "A": 0.002238,
+        "B": 0.002238,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.002238,
+        "diff_BC": 0.002238
+      },
+      "ctrl_expressions_nosewrinkler": {
+        "A": 0.001707,
+        "B": 0.001707,
+        "C": 0.0,
+        "diff_AB": 0.0,
+        "diff_AC": 0.001707,
+        "diff_BC": 0.001707
+      },
+      "ctrl_expressions_tonguedown": {
+        "A": 0.036602,
+        "B": 0.014668,
+        "C": 0.0,
+        "diff_AB": 0.021934,
+        "diff_AC": 0.036602,
+        "diff_BC": 0.014668
+      },
+      "ctrl_expressions_tongueout": {
+        "A": 0.0,
+        "B": 0.013656,
+        "C": 0.0,
+        "diff_AB": 0.013656,
+        "diff_AC": 0.0,
+        "diff_BC": 0.013656
+      },
+      "ctrl_expressions_tongueright": {
+        "A": 0.0,
+        "B": 0.001243,
+        "C": 0.0,
+        "diff_AB": 0.001243,
+        "diff_AC": 0.0,
+        "diff_BC": 0.001243
+      },
+      "ctrl_expressions_tonguewide": {
+        "A": 0.000893,
+        "B": 0.011152,
+        "C": 0.0,
+        "diff_AB": 0.010259,
+        "diff_AC": 0.000893,
+        "diff_BC": 0.011152
+      }
+    }
+  }
+}

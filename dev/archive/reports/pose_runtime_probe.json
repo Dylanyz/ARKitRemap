@@ -1,0 +1,15 @@
+{
+  "inst_type": "AnimSingleNodeInstance",
+  "active_before": "ERR:AnimSingleNodeInstance: Failed to convert parameter 'curve_type' when calling function 'AnimInstance.GetActiveCurveNames' on 'AnimSingleNodeInstance_0'\n  TypeError: NativizeProperty: Cannot nativize 'RawCurveTrackTypes' as 'CurveType' (EnumProperty)\n    TypeError: NativizeEnumEntry: Cannot nativize 'RawCurveTrackTypes' as 'AnimCurveType'",
+  "before_JawOpen": 0.0,
+  "before_ctrl_expressions_jaw_open": 0.0,
+  "before_ctrl_expressions_mouthstretchl": 0.0,
+  "set_preview_curve_override": "ok",
+  "active_after": "ERR:AnimSingleNodeInstance: Failed to convert parameter 'curve_type' when calling function 'AnimInstance.GetActiveCurveNames' on 'AnimSingleNodeInstance_0'\n  TypeError: NativizeProperty: Cannot nativize 'RawCurveTrackTypes' as 'CurveType' (EnumProperty)\n    TypeError: NativizeEnumEntry: Cannot nativize 'RawCurveTrackTypes' as 'AnimCurveType'",
+  "after_JawOpen": 0.0,
+  "after_ctrl_expressions_jaw_open": 0.0,
+  "after_ctrl_expressions_mouthstretchl": 0.0,
+  "comp_JawOpen": null,
+  "comp_ctrl_expressions_jaw_open": null,
+  "comp_ctrl_expressions_mouthstretchl": null
+}

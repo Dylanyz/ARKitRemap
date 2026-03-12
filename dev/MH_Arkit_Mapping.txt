@@ -1,0 +1,240 @@
+WHAT THIS IS:
+a rough mapping document handmade by a youtuber for WHAT SEEMS to be the right mapping to HIS SUBJECTIVE EyeBlinkLeft
+THIS IS NOT an accurate mapping document provided by epic games.
+It is for reference ONLY.
+
+This is the video link(transcript below):
+https://www.youtube.com/watch?v=EF0tNFFY00Y
+
+
+
+Unreal MetaHuman ARKit - Counterparts
+
+--------------------------------------------------------------------------------
+EyeBlinkLeft	ctrl_expressions_eyeblinkl
+EyeLookDownLeft	ctrl_expressions_eyelookdownl
+EyeLookOutLeft       ctrl_expressions_eyelookleftl   
+EyeLookInLeft          ctrl_expressions_eyelookrightl  
+EyeLookUpLeft	ctrl_expressions_eyelookupl
+EyeSquintLeft	ctrl_expressions_eyesquintinnerl
+EyeWideLeft	ctrl_expressions_eyewidenl
+EyeBlinkRight	ctrl_expressions_eyeblinkr
+EyeLookDownRight	ctrl_expressions_eyelookdownr
+EyeLookInRight	ctrl_expressions_eyelookleftr       
+EyeLookOutRight	ctrl_expressions_eyelookrightr      
+EyeLookUpRight	ctrl_expressions_eyelookupr
+EyeSquintRight	ctrl_expressions_eyesquintinnerr
+EyeWideRight	ctrl_expressions_eyewidenr
+JawForward	ctrl_expressions_jawfwd
+JawLeft	                  ctrl_expressions_jawleft
+JawRight	                  ctrl_expressions_jawright
+JawOpen	                  ctrl_expressions_jawOpen    
+MouthClose	ctrl_expressions_mouthlipspurseul                          
+MouthFunnel	ctrl_expressions_mouthfunnelul
+MouthPucker	ctrl_expressions_mouthlipspurseur
+MouthLeft	ctrl_expressions_mouthleft
+MouthRight	ctrl_expressions_mouthright
+MouthSmileLeft	ctrl_expressions_mouthcornerpulll
+MouthSmileRight	ctrl_expressions_mouthcornerpullr
+MouthFrownLeft	ctrl_expressions_mouthcornerdepressl
+MouthFrownRight	ctrl_expressions_mouthcornerdepressr
+MouthDimpleLeft	ctrl_expressions_mouthdimplel
+MouthDimpleRight	ctrl_expressions_mouthdimpler
+MouthStretchLeft	ctrl_expressions_mouthstretchl
+MouthStretchRight	ctrl_expressions_mouthstretchr
+MouthRollLower	ctrl_expressions_mouthlowerliprollinl
+MouthRollUpper	ctrl_expressions_mouthupperliprollinl
+MouthShrugLower	ctrl_expressions_jawchinraisedl 
+MouthShrugUpper	ctrl_expressions_jawchinraiseul   
+MouthPressLeft	ctrl_expressions_mouthpressdl
+MouthPressRight	ctrl_expressions_mouthpressdr
+MouthLowerDownLeft	ctrl_expressions_mouthlowerlipdepressl
+MouthLowerDownRight	ctrl_expressions_mouthlowerlipdepressr
+MouthUpperUpLeft	ctrl_expressions_mouthupperlipraisel
+MouthUpperUpRight	ctrl_expressions_mouthupperlipraiser
+BrowDownLeft	ctrl_expressions_browdownl
+BrowDownRight	ctrl_expressions_browdownr
+BrowInnerUp	ctrl_expressions_browlaterall
+BrowOuterUpLeft	ctrl_expressions_browraiseouterl
+BrowOuterUpRight	ctrl_expressions_browraiseouterr
+CheekPuff	ctrl_expressions_mouthcheekblowl
+CheekSquintLeft	ctrl_expressions_eyecheekraisel
+CheekSquintRight	ctrl_expressions_eyecheekraiser
+NoseSneerLeft	ctrl_expressions_nosewrinklel
+NoseSneerRight	ctrl_expressions_nosewrinkler
+TongueOut	ctrl_expressions_tongueout
+
+------------------------------------------------------------------------------------
+Credits:
+- Csaba Kiss
+- Tomhalpin8 > Unreal Engine Forums
+
+
+Source video transcript:
+Title: How to Use Unreal Engine 5.6 Facial Mocap with ARKit Shapekeys + Blender Workflow
+URL: https://www.youtube.com/watch?v=EF0tNFFY00Y
+
+(0:01) Facial animation is entering a new era  and not just for metahumans whether I'm  
+(0:07) in Blender or Unreal Engine with my method  it's just going to work thanks to Unreal's  
+(0:15) 5.6 new facial motion capture feature  all I need is one single mono video  
+(0:24) that's right no depth sensor no iPhone just a  simple 5-year-old Android phone with a front  
+(0:33) camera what you see here is the raw footage no  cleanup has happened no fancy pipelines involved  
+(0:42) the only thing I changed is that I redubbed it  with a female vocal voice this character driven  
+(0:49) by the original 52 ARKit shape keys with  a few more helping shape keys for wrinkles
+(1:04) i always finding new ways to build  bridges between Blender and Unreal  
+(1:09) and with a little trickery this  is exactly what I did here as well  
+(1:15) if you want to learn it by yourself how  to do this the full breakdown starts now
+(1:28) Hello and welcome back everyone so the first  thing you need is obviously Unreal's new 5.6  
+(1:33) version then just grab any camera phone or digital  doesn't matter and film yourself doing whatever  
+(1:37) you want just heads up it only recognizes faces so  don't bother recording anything else even though  
+(1:42) it has a head or you can just grab something  from the internet..
+(1:55) now once you uploaded or downloaded  that file to your PC put it into a  
+(1:58) folder in the plugins look for  metauman and tick in everything
+(2:05) and the most important one is the metauman  animator death now you will need to restart  
+(2:09) the first thing you need to understand is  this whole thing is built for metahumans  
+(2:13) with their complicated weight-based face rig  wrinkles and everything so we need to use a  
+(2:17) little trick to get around that but whatever  we do we will need a metauman in the scene i  
+(2:21) not recommend messing up your original project  with a random metahuman, what I recommend is just  
+(2:25) do a separate project just for this facial  mocap animation retargeting in 5.6 you can  
+(2:30) create metaumans inside the engine it's no  longer needed to be on the browser version  
+(2:34) there are bunch of tutorials on this already so  I'm not getting into that deeply the point is to  
+(2:39) get a random meta human in the scene doesn't  matter which one after open this up you can  
+(2:44) just enable this missing stuff then it's going  to need another restart you can do a bunch of  
+(2:51) things here but we just want one random one  we select one from the preset under assembly  
+(2:57) I chose the EU optimized version and we need to  generate the rig for it so we can click on this
+(3:06) then we still need textures so we can download  it with any size now just click around these  
+(3:12) tabs because that green assembly button sometimes  disappear and this is how you get it back here we  
+(3:16) can rename the asset and choose where to place it  once it's done hit assemble and it will appear in  
+(3:22) your content browser after it created it in Unreal  go to tools and open up live link hub so this is  
+(3:27) where all the live realtime streaming stuff are  should happen but we are looking for a capture  
+(3:32) manager in this case just in case hit this one as  well in the tools panel then go to add device mono  
+(3:42) video ingest and then we will select it and go to  our take directory so this is where we are taking  
+(3:48) our footage from our phone and send it over to  the PC and put it into a folder don't surprise  
+(3:52) if you don't see any clip here that's perfectly  normal once you selected that folder you can grab  
+(3:57) multiple clips or just a single clip and add it  to the queue don't bother either if the footage  
+(4:02) looks weird it's still going to work now I added  it to the queue and hit start and this is going  
+(4:07) to ingest the footage into your project so we  can then use it for the meta human performance  
+(4:12) if it gives you an error and it stops around 99%  or any random number in the progress you can try  
+(4:18) to re render your footage in Premiere Pro or any  other software then just use that or simply make a  
+(4:24) duplicate and rename it i don't know why but it's  always work for me if I encounter any issue once  
+(4:30) we are done with this a new capture folder will  show up now let's create a mocap folder inside the  
+(4:36) folder right click metahuman, metahuman performance  we will open that up first thing we will do is  
+(4:43) go over to the input type and instead of depth footage we are going to select monocular footage  
+(4:51) then we will go to our footage capture data and  select our clip and here we have our clip and  
+(4:57) with that my ugly face so in the details panel  for visualization mesh we should select the meta  
+(5:03) human that we have in the scene then we can go to  the head movement mode and disable it or leave it  
+(5:09) on control usually you don't want to track the  head movement because you should use the head  
+(5:14) movement from the body motion capture which I do  with quick magic but I'm going to show you how  
+(5:19) to get the head and neck motion because in some  cases you might want that but on its own it's  
+(5:24) not going to work perfectly for that we will need  to cheat a little and I will get back to it later  
+(5:29) for now let's do it with disabled head movement  last thing we can do is to go to advanced and  
+(5:35) here we can enable natural pose calibration  it's not necessary but I started my face in  
+(5:40) a natural pose so I will have a reference so I  can enter that frame for better results but as I  
+(5:46) said it's optional i'm going to use zero or maybe  frame one next we are just going to hit process
+(5:58) and it's already done i mean if you ever tried  normal mocha with just Android with a CSV file  
+(6:05) it's always so jittery but look at that this is  awesome really really minimal jitter and can be  
+(6:10) easily smoothed out later obviously there are some  limitation on what this camera angle can handle
+(6:29) but anyway the only thing we need to do  is to export the animation now depending  
+(6:34) on the head movement if we want it or not  we can export that as well but it won't  
+(6:40) uh behave as it should let's just start  with the head movement turned off i just  
+(6:44) made a tiny mistake so I didn't selected  our own metal human skeletal mesh and left  
+(6:48) it on the rig when I exported so to  fix that I'm going to export it again
+(6:57) but now I select the right skeletal mesh and  now it's working perfectly now let's import  
+(7:05) or migrate our own custom character to this  project now in optimal case your own character  
+(7:10) should have at least two separate rigs one  for the head and one for the full body now  
+(7:14) if that's not the case it's not a problem i just  mentioned that to avoid any confusion because the  
+(7:19) character is modular and I have separate rigs you can check my optimization video about that  
+(7:23) if you are curious on the exported animation  asset right click and retarget the animation  
+(7:28) to your own skeleton mesh in my case this is  the head skeleton mesh export the animation
+(7:37) and surprise surprise we don't see anything happen  but this is how it should be because I only wanted  
+(7:43) the curves and the length of the animation now  I have all that the only thing we need to do is  
+(7:48) to rename the curves to our own morph target  curves which you should already have here in  
+(7:54) your skeleton if you have the ARKitshape keys ,if  you don't have that well you have to create it  
+(7:59) manually then sign in morph target for them now to  rename the curves we need to know which curves are  
+(8:05) the ARKit ones and that can be really confusing  but luckily I created a full TXT file for  
+(8:11) you that you can download in the description for  a simple copy and paste shout out to tomhalpin8
+(8:16) I was creating this on my own when I stuck with  the mouth and I just came across with this thread  
+(8:22) which was super handy so huge thanks again so you  just hit F2 and copy the corresponding ARKit name  
+(8:28) and as you can see the blink already works now  we need to do this on all 52 let's speed this  
+(8:34) up now it can be annoying but it took me a total  of 6 minutes to do it it's way faster alternative  
+(8:39) than removing the jitter by hand there are many  alternatives to automate this process but they  
+(8:46) are all time consuming so I'm not getting into  that but if someone has a simple Python script  
+(8:50) for that I'm sure everyone would be happily  accept that including me and once you rewrote  
+(8:58) it it works brilliantly however one thing is good  to mention here and that is the mouth so as you  
+(9:04) can see it's a bit weird what I found is that it  works way better without the mouth close curve so  
+(9:10) I'm going to delete this whole curve If you don't  want to delete it you have to at least smooth it  
+(9:15) out at least this is my experience but maybe it's  just me that can't articulate in real life i don't  
+(9:22) know left some out so I'm going to delete these  remaining ones and now if I look it back it looks  
+(9:31) way better now for people that follow the wrinkle  tutorial fairly ask what about the wrinkle curves  
+(9:38) well we don't want to work extra minutes on this  so we will do it in a lazy way that brings us to  
+(9:43) the blender part which we start with exporting  this animation so right click on the asset asset  
+(9:49) actions export and use the following settings  for the export make sure you export the source  
+(9:56) mesh obviously morph targets and then preview mesh  as well we need this because we need the head the  
+(10:04) head must be visible in Blender in order to get  the shape keys and for both here select bake all
+(10:17) there is nothing else we need to do here so we can  hit export now in the blender we can import this  
+(10:24) FBX and we can see it working as it should if  it doesn't then either you use the wrong export  
+(10:29) settings or perhaps you imported the metauman  animation not your skeletal mesh animation
+(10:37) you can see that it is exported everything both  the rig the head mesh and the shape keys as well  
+(10:43) now since we use faceit addon we have a super  handy stuff here which I didn't talk about yet  
+(10:48) so under mocap there is a section shape key  retargeter we can basically copy shape key  
+(10:53) based animations back to our character at any  time so even if you have a totally different  
+(10:58) looking head mesh monster for example but  it has the same shape keys you can still get  
+(11:02) that animation from that character to this  one we should not forget that we are still  
+(11:06) using the control rig as the main animation  source for the shape keys therefore we want  
+(11:11) to retarget that whole shape key action  to the control rig itself to do that at  
+(11:16) the source object select the mesh you just  imported from Unreal not the rig the mesh
+(11:24) for target select control rig targets select your  original mesh and hit initialize retargeting we  
+(11:34) can hit okay and now we can see that it has found  all the shape key data now hit retarget action we  
+(11:40) can leave the source as is and we can give a new  action name to this check bake to control rig but  
+(11:47) we don't need to set up anything here and now we  can hit okay and we are not done yet here select  
+(11:53) the Unreal skeleton action that is automatically  generated then you can give a name to a new  
+(12:00) control rig action then hit okay and again okay  and now we have the animation on our character
+(12:11) we can now hide the unreal one
+(12:16) and it's working it's awesome
+(12:22) and with this we trigger the lazy part since if  you remember or if you will check the wrinkle  
+(12:26) tutorial the drivers are set to copy the other  shape key movements so now if we will export  
+(12:31) the animation it's just going to bring all  the new curves with it here you can easily  
+(12:37) tweak modify or smooth out anything if you want  now let's quickly export this we will selecting  
+(12:43) the head parts and the rig then export use a  usual Unreal export version uncheck this 2
+(12:52) then in Unreal I imported with setting the  corresponding head rig check in only animation  
+(12:58) and make sure morph targets enabled open the  animation and now we can see that the wrinkles  
+(13:05) are working perfectly because as you can see  thanks to the wrinkle system it just brings the  
+(13:12) needed curves with it automatically and basically  that's it isn't that easy and awesome the only  
+(13:18) part that takes time is the renaming other than  that we get a clean almost jitterless Mocap
+(13:23) in under a few minutes basically which you can  easily tweak inside Blender or Unreal through  
+(13:28) curves or anything basically now the only thing  left is the head motion now as I said typically  
+(13:33) you don't want to uh do this way it should come  from the source of the body mo cap but if you  
+(13:39) need that there is a cheat way it's a bit weird  one now in the performance switch this to control  
+(13:44) rig i found that you don't need to reprocess  it you can just export it as is so you export  
+(13:52) the asset with the head movement and now you want  to retarget this animation to your own rig as you  
+(13:58) can see it's behaving here in the retargeter as it  should also we don't bother with these warnings so  
+(14:05) let's export this new retargeted asset and open  it up so it was looking cool in the viewport it  
+(14:10) should work right well it should but it won't if  you look at it it doesn't do anything nothing in  
+(14:16) the curves nowhere there is basically no animation  data that the head movement ever existed now I had  
+(14:23) a hard time wrap around my head for this one to be  honest and I believe it's kind of buggy but we get  
+(14:29) around that for that let's add a level sequence up  here and we are going to bake this animation you  
+(14:36) will get it in a second if it did not open it up  look here at the outliners and click on this open  
+(14:43) level sequence now let's find the meta human body  skeletal mesh and drag and drop it into the scene
+(14:54) and add it to the sequencer just like I do
+(14:59) we can close this and now what we want is to  add the animation which we got from the meta  
+(15:04) human performance now still nothing will happen  and that's because the control rig blocks the  
+(15:09) animation currently i don't get into the  detail the easiest is just to delete it  
+(15:14) we don't need it here and now we can just see  that it is moving around you can't see the neck  
+(15:20) but it does what it should now let's find the end  of the animation right there now right click and  
+(15:28) go and find big animation sequence name it you  can leave the export settings as is export now  
+(15:36) find that animation check if it is working and now  retarget this animation to the head skeleton mesh  
+(15:45) and now if we open it up it works perfectly  obviously the shape keys are currently not  
+(15:51) because you have to rename them here again  but this time we don't need to struggle with  
+(15:55) it since the shapekey curves are the same so we can  just simply open the imported animation and copy  
+(16:01) all the curves from it then open this new one  and just paste it which I just did off screen  
+(16:09) however I did not copy the wrinkle once because  I'm going to export this to Blender anyway now  
+(16:16) in Blender same method you can use it again  the shape key retargeter if you need to but  
+(16:21) don't forget that this just retargets the shape  keys for bone movement we have to use Rokoko
+(16:29) just select the source mesh my target is my main  body rig add the bone list set both to rest and  
+(16:38) hit retarget and now it working as it should for  extra I can just delete the key frames on the  
+(16:44) bones that basically has zero movement and create  something or blend it with a different animation
+(16:52) so back in an Unreal here's the animation you can  add the notify here for sound for redubbing it's  
+(16:57) for just demonstration purposes you should not  do this in a game now let's see what we have  
+(17:03) look at how easy they made this it's crazy
+(17:11) also why I'm always naked in these videos hm that  AI voice is killing me anyways thanks for watching  
+(17:19) i hope it helped if it did please leave a like  subscribe and I will see you guys in the next one!

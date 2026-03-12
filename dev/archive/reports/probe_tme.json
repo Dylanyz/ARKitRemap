@@ -1,0 +1,32 @@
+{
+  "has_ToolMenuEntry": true,
+  "attrs": [
+    "_post_init",
+    "_wrapper_meta_data",
+    "assign",
+    "cast",
+    "copy",
+    "export_text",
+    "get_editor_property",
+    "get_label",
+    "get_tool_tip",
+    "import_text",
+    "insert_position",
+    "name",
+    "owner",
+    "script_object",
+    "set_editor_properties",
+    "set_editor_property",
+    "set_icon",
+    "set_label",
+    "set_string_command",
+    "set_tool_tip",
+    "should_close_window_after_menu_selection",
+    "static_struct",
+    "style_name_override",
+    "to_tuple",
+    "tutorial_highlight_name",
+    "type",
+    "user_interface_action_type"
+  ]
+}

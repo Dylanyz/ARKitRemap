@@ -1,0 +1,19 @@
+# Build artifacts
+dist/
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE (keep .cursor/ for agent integration)
+.vscode/
+*.swp
+*.swo
+*~

@@ -1,0 +1,63 @@
+{
+  "assetPath": "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping.PA_MetaHuman_ARKit_Mapping",
+  "poseAssetClass": "PoseAsset",
+  "poseAssetMethodsLikePoseOrCurve": [
+    "get_base_pose_name",
+    "get_pose_names",
+    "rename_pose",
+    "set_base_pose_name",
+    "update_pose_from_animation"
+  ],
+  "poseAssetEditorProperties": [
+    "get_editor_property",
+    "is_editor_property_overridden",
+    "reset_editor_property",
+    "set_editor_property"
+  ],
+  "sourceAnimationPath": "/Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping.AS_MetaHuman_ARKit_Mapping",
+  "sourceAnimationClass": "AnimSequence",
+  "sourceAnimationMethodsLikeCurveOrData": [
+    "_wrapper_meta_data",
+    "add_asset_user_data_of_class",
+    "data_model",
+    "data_model_interface",
+    "find_meta_data_by_class",
+    "get_asset_user_data_of_class",
+    "has_asset_user_data_of_class",
+    "update_retarget_source_asset_data"
+  ],
+  "sourceAnimationEditorProperties": [
+    "get_editor_property",
+    "is_editor_property_overridden",
+    "reset_editor_property",
+    "set_editor_property"
+  ],
+  "animationLibraryProbe": {
+    "get_animation_curve_names(anim)": {
+      "ok": false,
+      "error": "get_animation_curve_names() required argument 'curve_type' (pos 2) not found"
+    },
+    "get_animation_curve_names(anim, RCT_FLOAT)": {
+      "ok": true,
+      "count": 1172,
+      "first10": [
+        "ctrl_expressions_browdownl",
+        "ctrl_expressions_browdownr",
+        "ctrl_expressions_browlaterall",
+        "ctrl_expressions_browlateralr",
+        "ctrl_expressions_browraiseinl",
+        "ctrl_expressions_browraiseinr",
+        "ctrl_expressions_browraiseouterl",
+        "ctrl_expressions_browraiseouterr",
+        "ctrl_expressions_earupl",
+        "ctrl_expressions_earupr"
+      ]
+    },
+    "get_float_keys_for_first_curve_from_get_animation_curve_names(anim, RCT_FLOAT)": {
+      "curve": "ctrl_expressions_browdownl",
+      "ok": true,
+      "returnType": "list_or_tuple",
+      "len": 2
+    }
+  }
+}
