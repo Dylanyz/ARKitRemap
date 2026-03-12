@@ -9,7 +9,7 @@ ARKit Remap converts MetaHuman Animator (MHA) facial performances into Apple ARK
 # Demo
 
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
-> This video shows two examples. *I think I reversed the input video by accident... I'll fix it if someone wants.*
+> This video shows two examples. *Not sure why ARKit on the right is reversing the eye directions...*
 ### Example 1. Character rigged with FaceIt. 
 
 *No manual corrections, just the basic workflow.*
