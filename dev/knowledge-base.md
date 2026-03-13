@@ -9,8 +9,8 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 | Date | Change | Source |
 |------|--------|--------|
 | 2026-03-12 | Added `import_arkit_animsequence_as_livelinkface.py` helper to convert a remapped ARKit `AnimSequence` into a Live Link Face-imported `LevelSequence` for direct MetaHuman ARKit-pipeline playback. Verified on `/Game/3_FaceAnims/arkit-remap-demo/AS_arkitremap-demo-main_ARKit`: wrote CSV at ~59.94 fps, imported `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal`, and confirmed subject name `arkitremap-demo-main_ARKit`. | MetaHuman ARKit playback helper |
-| 2026-03-12 | Release-prep cleanup pass: added `.cursor/arkit-remap/README.md` as the workspace entry point, refreshed `release/README.md` and `PUBLISH_TO_PUBLIC_REPO.md` for the Python-first package, corrected stale LipsPurse / clamp references in active docs, and began moving deprecated probes/one-off diagnostics into archive locations. | Release preparation + workspace cleanup |
-| 2026-03-12 | **Apples-to-Apples visual comparison completed (A vs B).** Built `forward_remap_to_mh.py` (transposes PoseAsset weights, ARKit→ctrl_expressions, MouthClose→LipsTogether). Round-trip test: remap allkeys→ARKit→forward back to ctrl_expressions. Visual review on MetaHuman at frames 0/276/956/1087 confirms B tracks A well. Numerics: eye/nose MSE=0 (perfect 1:1 round-trip); jaw MSE=0.013 (purse comp); mouth MSE=0.043 (LipsTogether path); brow MSE=0.019; tongue MSE=0.105 (shared contributors). Top round-trip error: `mouthlipstogether` (0.45 MSE) from MouthClose lossy derivation. Real iPhone ARKit forward-pass (C) was attempted but broken: template duplication leaves ~220 residual ctrl_expressions curves from A that contaminate C's output. Fixing C would require clearing ALL curves from template or using PoseAsset node at runtime — deferred as low priority since A vs B is the actionable comparison. Reports: `.cursor/arkit-remap/reports/apples_comparison_*.{json,md}`. Scripts: `forward_remap_to_mh.py`, `run_apples_pipeline.py`, `compare_apples.py`. | Apples-to-apples MH comparison |
+| 2026-03-12 | Release-prep cleanup pass: added `dev/README.md` as the workspace entry point, refreshed `release/README.md` and `PUBLISH_TO_PUBLIC_REPO.md` for the Python-first package, corrected stale LipsPurse / clamp references in active docs, and began moving deprecated probes/one-off diagnostics into archive locations. | Release preparation + workspace cleanup |
+| 2026-03-12 | **Apples-to-Apples visual comparison completed (A vs B).** Built `forward_remap_to_mh.py` (transposes PoseAsset weights, ARKit→ctrl_expressions, MouthClose→LipsTogether). Round-trip test: remap allkeys→ARKit→forward back to ctrl_expressions. Visual review on MetaHuman at frames 0/276/956/1087 confirms B tracks A well. Numerics: eye/nose MSE=0 (perfect 1:1 round-trip); jaw MSE=0.013 (purse comp); mouth MSE=0.043 (LipsTogether path); brow MSE=0.019; tongue MSE=0.105 (shared contributors). Top round-trip error: `mouthlipstogether` (0.45 MSE) from MouthClose lossy derivation. Real iPhone ARKit forward-pass (C) was attempted but broken: template duplication leaves ~220 residual ctrl_expressions curves from A that contaminate C's output. Fixing C would require clearing ALL curves from template or using PoseAsset node at runtime — deferred as low priority since A vs B is the actionable comparison. Reports: `dev/reports/apples_comparison_*.{json,md}`. Scripts: `forward_remap_to_mh.py`, `run_apples_pipeline.py`, `compare_apples.py`. | Apples-to-apples MH comparison |
 | 2026-03-12 | Unified "visual opening" model with calibrated params. Definitive alignment: ARKit baked frame 20724 @ 60fps = MHA frame 0 (offset 345.4s). 3D grid search across 1450 matched frame pairs found real ARKit has mouthClose > jawOpen 25% of the time, so forward constraint relaxed to 1.5× (`forwardConstraintRatio`). Calibrated: `lipsPurseWeight=0.735`, `forwardConstraintRatio=1.5`, `jawFactor=0.75` retained. Frame 956 mouthClose: 0.140→**0.202** (ref 0.203, error 0.0004). | Definitive alignment + calibration |
 | 2026-03-12 | JawOpen purse compensation: reduces JawOpen when LipsPurse is active. On MetaHuman, LipsPurse physically counteracts JawOpen at the mesh level; FaceIt characters treat them independently, so high JawOpen (~0.53) stays visible. New post-pass: `adjustedJawOpen = max(0, jawOpen - factor * mean(LipsPurse))`. With factor=0.75 at frame 956: JawOpen 0.53→0.15 (real ARKit ~0.1). Runs after MouthClose computation so MouthClose retains original JawOpen signal. Combined with MouthClose LipsPurse fix, closed-mouth frames now produce jawOpen≈0.15 + mouthClose≈0.14 instead of jawOpen≈0.53 + mouthClose≈0.006. | Continued mouth-not-closing fix |
 | 2026-03-12 | MouthClose derivation fix: added LipsPurse curves as contributor (lipsPurseWeight now calibrated to 0.735). MHA achieves mouth closure through LipsPurse (~0.5) even at high JawOpen (~0.53), but the old formula only used LipsTowards (~0.01), producing near-zero MouthClose on closed-mouth frames. New formula: `lip_closure = mean(LipsTowards) + lipsPurseWeight * mean(LipsPurse)`. Frame 956 of AS_MP_VecDemo1-allkeys: MouthClose improved from 0.006 → 0.140 (weight=0.5) → **0.202** (weight=0.735, ref 0.203). | Mouth-not-closing diagnostic investigation + calibration |
@@ -20,9 +20,9 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 | 2026-03-12 | Added Section D.3: Face_ControlBoard_CtrlRig. Documents the MetaHuman face Control Rig (curve layer vs control layer, Get/Set Curve Value, Remap/Interpolate nodes). Relevance: pipeline stays on curve layer; non-linearity risk supports Item 12; mesh curves (UNK 1) unchanged. Asset added to Asset Index. | Face_ControlBoard_CtrlRig MCP analysis |
 | 2026-03-12 | Context-menu launcher updated: `Run ARKit Remap` now opens a smoothing selection dialog for the current run (`None`, `One-Euro`, `EMA`) and passes a one-shot runtime override into `arkit_remap.py` without modifying the payload file. UI note: the entry currently appears in the main Content Browser context menu rather than under `Asset Actions`. Epic/MetaHuman note added: these smoothing modes are custom remapper post-process options, not Epic's built-in MetaHuman smoothing mode. | Context-menu smoothing prompt |
 | 2026-03-12 | Major pipeline update: (1) minWeight threshold filter removes browlaterall 0.031 artifact from 10+ targets, (2) coupled 2x2 least-squares solve for MouthPucker↔MouthFunnel and MouthRollLower↔MouthRollUpper eliminates cross-contamination (Funnel error: 125%→0%, RollUpper error: 53%→0%), (3) MouthClose clampMax raised from 0.3 to 0.5, (4) clamp-boundary alerting in QA reports, (5) optional temporal smoothing via 1-euro filter or EMA, (6) round-trip validation framework created. See improvement log. | Architecture QA improvement implementation |
-| 2026-03-12 | Python ARKit remap run logs now default to `.cursor/arkit-remap/reports/run-logs/` instead of the parent `reports/` folder. Updated script, release mirror, and canonical docs to match. | Run-log path update |
+| 2026-03-12 | Python ARKit remap run logs now default to `dev/reports/run-logs/` instead of the parent `reports/` folder. Updated script, release mirror, and canonical docs to match. | Run-log path update |
 | 2026-03-12 | UNKNOWN 1 resolved: PoseAsset DOES have negative weights, confirmed via Editor UI. Negative values (-0.079874) found on `head_lod0_mesh__*` curves (e.g., MouthPressRight suppresses chin-raise shapes). Extraction only captured `ctrl_expressions_*` curves, which remain all-positive. Follow-up: verify MHA bakes don't contain mesh-level curves. Report and scorecard updated. | User confirmation via Editor |
-| 2026-03-12 | Deep QA analysis completed: 7 substantive gaps identified (browlaterall 0.031 artifact, Pucker↔Funnel cross-contamination, MouthClose clamp too conservative, no round-trip validation, EyeSquint outer missing, RollLower/Upper cross-coupling, community mapping discrepancies). 5 improvement opportunities documented. Report at `.cursor/arkit-remap/reports/2026-03-12_architecture-qa-deep-analysis.md` | Architecture QA deep analysis |
+| 2026-03-12 | Deep QA analysis completed: 7 substantive gaps identified (browlaterall 0.031 artifact, Pucker↔Funnel cross-contamination, MouthClose clamp too conservative, no round-trip validation, EyeSquint outer missing, RollLower/Upper cross-coupling, community mapping discrepancies). 5 improvement opportunities documented. Report at `dev/reports/2026-03-12_architecture-qa-deep-analysis.md` | Architecture QA deep analysis |
 | 2026-03-12 | MouthClose derivation fixed: replaced broken `ctrl_expressions_mouth_lips_together_ul` source with `mean(ctrl_expressions_mouthlipstowards{ul,ur,dl,dr}) * JawOpen`. Empirically validated on AS_MP_VecDemo1-allkeys (min=0.0004, max=0.3, mean=0.092). Pipeline now outputs 52/52 ARKit curves. | MouthClose reverse engineering plan |
 | 2026-03-12 | Added Python ARKit Remap v2 pipeline (Section E.6). Replaces Blueprint AnimModifier as primary remap method. Marked AM_ArKitRemap / AM_ArKitRemap_v02 as legacy/fallback. | Python pipeline documentation |
 | 2026-03-11 | Documented working hypothesis that `MouthClose` is not a direct PoseAsset output and is likely derived in `ABP_MH_LiveLink` post-PoseAsset graph math (`SafeDivide(MouthClose, JawOpen)` -> lips-together controls) | MouthClose derivation hypothesis |
@@ -178,7 +178,7 @@ This PoseAsset is the core mapping layer. It takes a pose with ARKit-named curve
 - Canonical extraction workspace:
   - `.cursor/arkit-remap/mapping-pose-asset`
 - Canonical index for humans/agents:
-  - `.cursor/arkit-remap/mapping-pose-asset/AGENT_INDEX.md`
+  - `dev/mapping-pose-asset/AGENT_INDEX.md`
 
 **What was extracted (concise):**
 
@@ -191,13 +191,13 @@ This PoseAsset is the core mapping layer. It takes a pose with ARKit-named curve
 **Where the mapping records live:**
 
 - Adjusted mapping dataset (recommended for remap logic):  
-  `.cursor/arkit-remap/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.posemap.json`
+  `dev/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.posemap.json`
 - Raw mapping dataset (audit/debug):  
-  `.cursor/arkit-remap/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.posemap.raw.json`
+  `dev/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.posemap.raw.json`
 - Derived reverse mapping table (weighted reverse input):  
-  `.cursor/arkit-remap/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.reverse_map.json`
+  `dev/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.reverse_map.json`
 - Linearity verification dataset (runtime probe + source-animation fractional sample):  
-  `.cursor/arkit-remap/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.linearity_verification.json`
+  `dev/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.linearity_verification.json`
 
 Each mapping record is represented as:
 - `arkitPoseName`
@@ -275,7 +275,7 @@ This asset is the MetaHuman face Control Rig. It was analyzed via MCP `get_detai
 4. **Brow findings are supported, not contradicted:** Brows appear mostly direct in the Control Board. That supports the conclusion that `browlaterall` contamination is primarily a PoseAsset/shared-weight issue, not a Control-Rig-induced transform artifact.
 5. **Two curve layers (UNK 1) still stand:** The PoseAsset uses both `ctrl_expressions_*` and `head_lod0_mesh__*`. The Control Board only showed `CTRL_expressions_*`; no mesh-level curves were found here. The most likely remaining location for mesh-layer behavior is elsewhere in the face runtime stack (for example around RigLogic), so UNK 1 remains the correct follow-up.
 
-*Sources: MCP `get_detailed_blueprint_summary` on `Face_ControlBoard_CtrlRig`, MCP `get_asset_summary` on `ABP_Face_PostProcess` and `CR_MetaHuman_HeadMovement_IK_Proc`, 2026-03-12. Summary also recorded in `.cursor/plans/arkit-remap-improvementlog.md` (Insights from Face_ControlBoard_CtrlRig).*
+*Sources: MCP `get_detailed_blueprint_summary` on `Face_ControlBoard_CtrlRig`, MCP `get_asset_summary` on `ABP_Face_PostProcess` and `CR_MetaHuman_HeadMovement_IK_Proc`, 2026-03-12. Summary also recorded in `plans/arkit-remap-improvementlog.md` (Insights from Face_ControlBoard_CtrlRig).*
 
 ---
 
@@ -402,13 +402,13 @@ Key improvements over v01:
 
 How PoseAsset and extracted data were used:
 - Primary input came from extracted PoseAsset derivative artifacts:
-  - `.cursor/arkit-remap/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.reverse_map.json`
-  - `.cursor/arkit-remap/mapping-pose-asset/reports/PA_MetaHuman_ARKit_Mapping_reverse_map_validation.md`
+  - `dev/mapping-pose-asset/data/PA_MetaHuman_ARKit_Mapping.reverse_map.json`
+  - `dev/mapping-pose-asset/reports/PA_MetaHuman_ARKit_Mapping_reverse_map_validation.md`
 - Reverse-map class splits (`arkit52`, `extended_pose`, `other_targets`) informed implementation boundaries.
 - Missing ARKit core target metadata (`MouthClose`) directly motivated explicit MouthClose logic rather than waiting for inferred contributor extraction.
 - Compact implementation payload was generated for v02 execution planning:
-  - `.cursor/arkit-remap/mapping-pose-asset/data/AM_ArKitRemap_v02.mapping_payload.json`
-  - `.cursor/arkit-remap/mapping-pose-asset/reports/AM_ArKitRemap_v02_mapping_payload_summary.md`
+  - `dev/mapping-pose-asset/data/AM_ArKitRemap_v02.mapping_payload.json`
+  - `dev/mapping-pose-asset/reports/AM_ArKitRemap_v02_mapping_payload_summary.md`
 
 Current v02 status and remaining work:
 - v02 is improved over v01 through weighted + calibrated + explicit-mouth architecture.
@@ -425,26 +425,26 @@ Blueprint AnimModifier approach as the primary method for converting MHA
 
 | Artifact | Path |
 |----------|------|
-| Remap script | `.cursor/arkit-remap/scripts/arkit_remap.py` |
-| Mapping payload | `.cursor/arkit-remap/mapping-pose-asset/data/AM_ArKitRemap_v02.mapping_payload.json` |
-| Coupled solve verification | `.cursor/arkit-remap/scripts/coupled_solve.py` |
-| Round-trip validation | `.cursor/arkit-remap/scripts/roundtrip_validation.py` |
-| Mouth calibration script | `.cursor/arkit-remap/scripts/calibrate_mouth_params.py` |
-| Relaxed-constraint calibration | `.cursor/arkit-remap/scripts/calibrate_with_relaxed_constraint.py` |
-| Param-set comparison | `.cursor/arkit-remap/scripts/compare_param_sets.py` |
-| Frame alignment probe | `.cursor/arkit-remap/scripts/probe_frame_alignment.py` |
-| Mouth pair validation | `.cursor/arkit-remap/scripts/validate_mouth_pair.py` |
-| ABP post-PoseAsset verification | `.cursor/arkit-remap/scripts/verify_abp_post_poseasset.py` |
-| PoseAsset linearity verification | `.cursor/arkit-remap/mapping-pose-asset/scripts/verify_pose_asset_linearity.py` |
-| Context-menu launcher | `.cursor/arkit-remap/scripts/arkit_remap_menu.py` |
-| Context-menu registration | `.cursor/arkit-remap/scripts/init_unreal.py` |
-| QA run logs | `.cursor/arkit-remap/reports/run-logs/` |
-| Release package | `.cursor/arkit-remap/release/` |
-| Forward remap (ARKit→MH) | `.cursor/arkit-remap/scripts/forward_remap_to_mh.py` |
-| LLF playback importer | `.cursor/arkit-remap/scripts/import_arkit_animsequence_as_livelinkface.py` |
-| Apples pipeline orchestrator | `.cursor/arkit-remap/scripts/run_apples_pipeline.py` |
-| Apples comparison script | `.cursor/arkit-remap/scripts/compare_apples.py` |
-| Comparison data (JSON+MD) | `.cursor/arkit-remap/reports/apples_comparison_*.{json,md}` |
+| Remap script | `dev/scripts/arkit_remap.py` |
+| Mapping payload | `dev/mapping-pose-asset/data/AM_ArKitRemap_v02.mapping_payload.json` |
+| Coupled solve verification | `dev/scripts/coupled_solve.py` |
+| Round-trip validation | `dev/scripts/roundtrip_validation.py` |
+| Mouth calibration script | `dev/scripts/calibrate_mouth_params.py` |
+| Relaxed-constraint calibration | `dev/scripts/calibrate_with_relaxed_constraint.py` |
+| Param-set comparison | `dev/scripts/compare_param_sets.py` |
+| Frame alignment probe | `dev/scripts/probe_frame_alignment.py` |
+| Mouth pair validation | `dev/scripts/validate_mouth_pair.py` |
+| ABP post-PoseAsset verification | `dev/scripts/verify_abp_post_poseasset.py` |
+| PoseAsset linearity verification | `dev/mapping-pose-asset/scripts/verify_pose_asset_linearity.py` |
+| Context-menu launcher | `dev/scripts/arkit_remap_menu.py` |
+| Context-menu registration | `dev/scripts/init_unreal.py` |
+| QA run logs | `dev/reports/run-logs/` |
+| Release package | `release/` |
+| Forward remap (ARKit→MH) | `dev/scripts/forward_remap_to_mh.py` |
+| LLF playback importer | `dev/scripts/import_arkit_animsequence_as_livelinkface.py` |
+| Apples pipeline orchestrator | `dev/scripts/run_apples_pipeline.py` |
+| Apples comparison script | `dev/scripts/compare_apples.py` |
+| Comparison data (JSON+MD) | `dev/reports/apples_comparison_*.{json,md}` |
 
 #### How to run
 
@@ -464,7 +464,7 @@ Blueprint AnimModifier approach as the primary method for converting MHA
 
 When the target is a **MetaHuman** (not FaceIt) and you want the remapped ARKit
 animation to flow through `ABP_MH_LiveLink` exactly like a normal Live Link Face
-import, use `.cursor/arkit-remap/scripts/import_arkit_animsequence_as_livelinkface.py`.
+import, use `dev/scripts/import_arkit_animsequence_as_livelinkface.py`.
 
 What it does:
 
@@ -605,12 +605,12 @@ asset basename when deriving the runtime subject name.
   the current payload: all 51 targets round-trip perfectly across isolation,
   shared-mouth pair, shared-brow pair, brow trio, speech combo, and full
   activation scenarios. Report:
-  `.cursor/arkit-remap/reports/roundtrip_validation_2026-03-12T030820.json`
+  `dev/reports/roundtrip_validation_2026-03-12T030820.json`
 
 - **In-editor validation:** remap run completed successfully on
   `/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys`, writing
   `/Game/3_FaceAnims/VEC_MHA/AgenticPy/AS_MP_VecDemo1-allkeys_ARKit` and QA log
-  `.cursor/arkit-remap/reports/run-logs/arkit_remap_run_2026-03-12T030845.md`.
+  `dev/reports/run-logs/arkit_remap_run_2026-03-12T030845.md`.
   Observed brow ranges on that clip:
   - `BrowInnerUp`: max `0.0115`
   - `BrowOuterUpLeft`: max `1.0000`
@@ -769,7 +769,7 @@ The extraction workflow is now established and should be reused, not reinvented.
 ### J.0 Current canonical workflow (use this first)
 
 - Workspace: `.cursor/arkit-remap/mapping-pose-asset`
-- Start here: `.cursor/arkit-remap/mapping-pose-asset/AGENT_INDEX.md`
+- Start here: `dev/mapping-pose-asset/AGENT_INDEX.md`
 - Regeneration order:
   1. `scripts/extract_pose_asset_mapping.py`
   2. `scripts/introspect_pose_asset.py`
@@ -811,7 +811,7 @@ The extraction workflow is now established and should be reused, not reinvented.
 
 ### J.0.3 Index and knowledge sync protocol
 
-- Treat `.cursor/arkit-remap/mapping-pose-asset/AGENT_INDEX.md` as the canonical navigation index.
+- Treat `dev/mapping-pose-asset/AGENT_INDEX.md` as the canonical navigation index.
 - When adding/changing artifacts under `mapping-pose-asset`, update all three in the same pass:
   1. `mapping-pose-asset/AGENT_INDEX.md`,
   2. this KB (Section D/J navigation + usage),
