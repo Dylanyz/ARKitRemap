@@ -175,6 +175,17 @@ All parameters are tunable in `arkit_remap_payload.json`:
 
 ---
 
+## Developer Workflows
+
+For developers working on validation, MetaHuman preview, or Live Link ingestion workflows, there is also a helper at [`dev/scripts/import_arkit_animsequence_as_livelinkface.py`](dev/scripts/import_arkit_animsequence_as_livelinkface.py).
+
+Use it when you already have a remapped `*_ARKit` `AnimSequence` and want to:
+
+- convert it into a Live Link Face-style CSV
+- import that CSV as a `LevelSequence`
+- preview the remapped ARKit result on a MetaHuman through `ABP_MH_LiveLink`
+
+This is a development utility and is not part of the packaged [`release/`](release/) install flow.
 ## Deep Dive: Research and Knowledge Base
 
 This tool was built through extensive reverse engineering of Epic's MetaHuman animation pipeline. The full research is available in this repo:
