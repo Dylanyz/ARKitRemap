@@ -8,6 +8,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-03-12 | Added `import_arkit_animsequence_as_livelinkface.py` helper to convert a remapped ARKit `AnimSequence` into a Live Link Face-imported `LevelSequence` for direct MetaHuman ARKit-pipeline playback. Verified on `/Game/3_FaceAnims/arkit-remap-demo/AS_arkitremap-demo-main_ARKit`: wrote CSV at ~59.94 fps, imported `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal`, and confirmed subject name `arkitremap-demo-main_ARKit`. | MetaHuman ARKit playback helper |
 | 2026-03-12 | Release-prep cleanup pass: added `.cursor/arkit-remap/README.md` as the workspace entry point, refreshed `release/README.md` and `PUBLISH_TO_PUBLIC_REPO.md` for the Python-first package, corrected stale LipsPurse / clamp references in active docs, and began moving deprecated probes/one-off diagnostics into archive locations. | Release preparation + workspace cleanup |
 | 2026-03-12 | **Apples-to-Apples visual comparison completed (A vs B).** Built `forward_remap_to_mh.py` (transposes PoseAsset weights, ARKit→ctrl_expressions, MouthClose→LipsTogether). Round-trip test: remap allkeys→ARKit→forward back to ctrl_expressions. Visual review on MetaHuman at frames 0/276/956/1087 confirms B tracks A well. Numerics: eye/nose MSE=0 (perfect 1:1 round-trip); jaw MSE=0.013 (purse comp); mouth MSE=0.043 (LipsTogether path); brow MSE=0.019; tongue MSE=0.105 (shared contributors). Top round-trip error: `mouthlipstogether` (0.45 MSE) from MouthClose lossy derivation. Real iPhone ARKit forward-pass (C) was attempted but broken: template duplication leaves ~220 residual ctrl_expressions curves from A that contaminate C's output. Fixing C would require clearing ALL curves from template or using PoseAsset node at runtime — deferred as low priority since A vs B is the actionable comparison. Reports: `.cursor/arkit-remap/reports/apples_comparison_*.{json,md}`. Scripts: `forward_remap_to_mh.py`, `run_apples_pipeline.py`, `compare_apples.py`. | Apples-to-apples MH comparison |
 | 2026-03-12 | Unified "visual opening" model with calibrated params. Definitive alignment: ARKit baked frame 20724 @ 60fps = MHA frame 0 (offset 345.4s). 3D grid search across 1450 matched frame pairs found real ARKit has mouthClose > jawOpen 25% of the time, so forward constraint relaxed to 1.5× (`forwardConstraintRatio`). Calibrated: `lipsPurseWeight=0.735`, `forwardConstraintRatio=1.5`, `jawFactor=0.75` retained. Frame 956 mouthClose: 0.140→**0.202** (ref 0.203, error 0.0004). | Definitive alignment + calibration |
@@ -59,6 +60,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 | PA_MetaHuman_ARKit_Mapping | PoseAsset | `/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping` | Stores per-ARKit-curve to MHA weighted mappings. Used by ABP_MH_LiveLink AnimGraph. Opaque to MCP summary tool. |
 | Face_ControlBoard_CtrlRig | Control Rig Blueprint | `/Game/MetaHumans/Common/Face/Face_ControlBoard_CtrlRig` | MetaHuman face Control Rig: maps CTRL_expressions curves to rig controls (CTRL_L_* / CTRL_C_*). Summarizable via MCP. See Section D.3. |
 | AM_ArKitRemap | AnimationModifier | `/Game/3_FaceAnims/AM_ArKitRemap` | Our reverse converter. Applied to baked MHA animation sequences to produce ARKit-named curves for FaceIt characters. |
+| arkitremap-demo-main_ARKit_cal | LevelSequence | `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal` | Live Link Face-imported playback asset generated from the remapped ARKit AnimSequence. Publishes subject `arkitremap-demo-main_ARKit` so `ABP_MH_LiveLink` can consume the remap through the standard MetaHuman ARKit path. |
 | metahuman_base_skel | Skeleton | `/Game/MetaHumans/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel` | MetaHuman skeleton referenced by ABP_MH_LiveLink. |
 | MH_Arkit_Mapping.txt | Reference file | `.cursor/arkit-remap/MH_Arkit_Mapping.txt` | Community-sourced 1:1 mapping table (52 entries). Not authoritative; for reference only. Credits: Csaba Kiss, Tomhalpin8. |
 
@@ -439,6 +441,7 @@ Blueprint AnimModifier approach as the primary method for converting MHA
 | QA run logs | `.cursor/arkit-remap/reports/run-logs/` |
 | Release package | `.cursor/arkit-remap/release/` |
 | Forward remap (ARKit→MH) | `.cursor/arkit-remap/scripts/forward_remap_to_mh.py` |
+| LLF playback importer | `.cursor/arkit-remap/scripts/import_arkit_animsequence_as_livelinkface.py` |
 | Apples pipeline orchestrator | `.cursor/arkit-remap/scripts/run_apples_pipeline.py` |
 | Apples comparison script | `.cursor/arkit-remap/scripts/compare_apples.py` |
 | Comparison data (JSON+MD) | `.cursor/arkit-remap/reports/apples_comparison_*.{json,md}` |
@@ -456,6 +459,28 @@ Blueprint AnimModifier approach as the primary method for converting MHA
      - `One-Euro` = adaptive smoothing, recommended default for noisy MHA capture
      - `EMA` = simpler fixed smoothing, useful when tuning or debugging smoothing behavior
      The choice is a one-shot runtime override and does not edit the payload JSON.
+
+#### MetaHuman playback helper
+
+When the target is a **MetaHuman** (not FaceIt) and you want the remapped ARKit
+animation to flow through `ABP_MH_LiveLink` exactly like a normal Live Link Face
+import, use `.cursor/arkit-remap/scripts/import_arkit_animsequence_as_livelinkface.py`.
+
+What it does:
+
+- reads the ARKit-named curves from a remapped `AnimSequence`
+- writes a Live Link Face-style CSV with the 52 blendshape columns plus the
+  9 head/eye rotation columns (zero-filled if absent)
+- imports that CSV with `LiveLinkFaceImporterFactory` into a `LevelSequence`
+
+Verified demo output:
+
+- Source anim: `/Game/3_FaceAnims/arkit-remap-demo/AS_arkitremap-demo-main_ARKit`
+- Imported sequence: `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal`
+- Subject name used by `ABP_MH_LiveLink`: `arkitremap-demo-main_ARKit`
+
+Usage note: the Live Link Face importer strips the `_cal` suffix from the CSV /
+asset basename when deriving the runtime subject name.
 
 #### Key APIs and internals
 
