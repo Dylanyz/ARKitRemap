@@ -74,7 +74,23 @@ If you copied the optional files (`init_unreal.py`, `arkit_remap_menu.py`, `temp
 
 ---
 
-## What It Does
+## ELI5
+
+Theres 2 facial systems. 
+ 1. Unreal Engine metahumans
+ 2. ArKit (made by apple)
+Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
+
+ArKit is really easy to apply to any character or creature, but you need an iPhone to record it, and its alot less good quality.
+
+Unreal Engine has a converter to apply ArKit animations onto Metahumans. But doesn't provide the reverse. That's what this tool does.
+
+I mapped out the pipeline of how Unreal converts ArKit onto Metahumans and reversed it so it can go the other way around.
+So now I am not limited to an iPhone, and I get the higher quality animations.
+
+---
+
+## What the Tool Does
 
 ```
 Your webcam video
