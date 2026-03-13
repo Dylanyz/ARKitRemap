@@ -62,7 +62,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 | AM_ArKitRemap | AnimationModifier | `/Game/3_FaceAnims/AM_ArKitRemap` | Our reverse converter. Applied to baked MHA animation sequences to produce ARKit-named curves for FaceIt characters. |
 | arkitremap-demo-main_ARKit_cal | LevelSequence | `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal` | Live Link Face-imported playback asset generated from the remapped ARKit AnimSequence. Publishes subject `arkitremap-demo-main_ARKit` so `ABP_MH_LiveLink` can consume the remap through the standard MetaHuman ARKit path. |
 | metahuman_base_skel | Skeleton | `/Game/MetaHumans/Common/Female/Medium/NormalWeight/Body/metahuman_base_skel` | MetaHuman skeleton referenced by ABP_MH_LiveLink. |
-| MH_Arkit_Mapping.txt | Reference file | `.cursor/arkit-remap/MH_Arkit_Mapping.txt` | Community-sourced 1:1 mapping table (52 entries). Not authoritative; for reference only. Credits: Csaba Kiss, Tomhalpin8. |
+| MH_Arkit_Mapping.txt | Reference file | `dev/MH_Arkit_Mapping.txt` | Community-sourced 1:1 mapping table (52 entries). Not authoritative; for reference only. Credits: Csaba Kiss, Tomhalpin8. |
 
 ---
 
@@ -176,7 +176,7 @@ This PoseAsset is the core mapping layer. It takes a pose with ARKit-named curve
 **Status:** extracted and available in a dedicated workspace.
 
 - Canonical extraction workspace:
-  - `.cursor/arkit-remap/mapping-pose-asset`
+  - `dev/mapping-pose-asset`
 - Canonical index for humans/agents:
   - `dev/mapping-pose-asset/AGENT_INDEX.md`
 
@@ -222,7 +222,7 @@ Working hypothesis (2026-03-11, **confirmed 2026-03-12**):
 
 ### D.2 Community-sourced 1:1 mapping (reference only)
 
-A community-sourced mapping table exists at `.cursor/arkit-remap/MH_Arkit_Mapping.txt`. This was compiled from a YouTube video by Csaba Kiss and forum posts by Tomhalpin8. **This is subjective/approximate and NOT from Epic.** It maps each of the 52 ARKit names to a single "best guess" MHA curve. Notable entries:
+A community-sourced mapping table exists at `dev/MH_Arkit_Mapping.txt`. This was compiled from a YouTube video by Csaba Kiss and forum posts by Tomhalpin8. **This is subjective/approximate and NOT from Epic.** It maps each of the 52 ARKit names to a single "best guess" MHA curve. Notable entries:
 
 - MouthClose -> ctrl_expressions_mouthlipspurseul (note: this is Lips Purse, not Lips Together)
 - MouthPucker -> ctrl_expressions_mouthlipspurseur
@@ -768,7 +768,7 @@ The extraction workflow is now established and should be reused, not reinvented.
 
 ### J.0 Current canonical workflow (use this first)
 
-- Workspace: `.cursor/arkit-remap/mapping-pose-asset`
+- Workspace: `dev/mapping-pose-asset`
 - Start here: `dev/mapping-pose-asset/AGENT_INDEX.md`
 - Regeneration order:
   1. `scripts/extract_pose_asset_mapping.py`
