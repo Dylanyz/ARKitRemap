@@ -81,7 +81,7 @@ Theres 2 facial systems.
  2. ArKit (made by apple)
 Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
 
-ArKit is really easy to apply to any character or creature, but you need an iPhone to record it, and its alot less good quality.
+ArKit is really easy to apply to any character or creature([FaceIt](https://faceit-doc.readthedocs.io/)), but you need an iPhone to record it, and its alot less good quality.
 
 Unreal Engine has a converter to apply ArKit animations onto Metahumans. But doesn't provide the reverse. That's what this tool does.
 
