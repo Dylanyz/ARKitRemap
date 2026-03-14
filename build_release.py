@@ -3,14 +3,14 @@
 Run from the repo root:
     python build_release.py
 
-Produces: dist/ARKitRemap-v2.0.0.zip
+Produces: dist/ARKitRemap-v2.1.0.zip
 """
 
 import os
 import zipfile
 from pathlib import Path
 
-VERSION = "2.0.0"
+VERSION = "2.1.0"
 
 RELEASE_DIR = Path("release")
 DIST_DIR = Path("dist")
