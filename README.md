@@ -15,6 +15,9 @@ https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 
 > This video shows two examples. *Not sure why ARKit on the right is reversing the eye directions...*
 
+<details>
+<summary>demo video details</summary>
+
 ### Example 1. Character rigged with FaceIt.
 
 *No manual corrections, just the basic workflow.*
@@ -31,56 +34,72 @@ https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 
 Right: Straight ArKit curves from Live Link Face iOS. *These are also converted to MHA curves through Epic's pipeline*
 
+</details>
 ---
 
-## Quick Start
+<details>
+<summary>## Package contents</summary>
 
-### 1. Download
+- `arkit_remap.py`
+  Main remap script.
+- `arkit_remap_payload.json`
+  Mapping payload and calibration config.
+- `init_unreal.py`
+  Optional startup script that registers both right-click menu entries.
+- `arkit_remap_menu.py`
+  Context-menu launcher for Run ARKit Remap (smoothing prompt).
+- `arkit_csv_export.py`
+  Context-menu launcher for Convert to CSV (export + optional UE import).
+- `temporal_smoothing.py`
+  Optional runtime helper used when smoothing is enabled.
 
-Grab the latest release zip from [**Releases**](https://github.com/Dylanyz/ARKitRemap/releases).
+</details>
 
-### 2. Install
+## Installation
 
-Copy the contents of the zip into your Unreal project's `Content/Python/` folder:
+1. Copy all the package files into your project's
+   `Content/Python/` folder.
+2. Enable Unreal's **Python Editor Script Plugin**.
+- If you want to re-import your CSVs back into the engine, also enable the
+   **Live Link Face Importer** plugin.
+3. Restart the editor
+> If you don't want context menus, only copy `arkit_remap.py` and `arkit_remap_payload.json`. Then run with `py import arkit_remap`
 
-```
-YourProject/
-  Content/
-    Python/
-      arkit_remap.py              ← required
-      arkit_remap_payload.json    ← required
-      init_unreal.py              ← optional (right-click menu)
-      arkit_remap_menu.py         ← optional (right-click menu)
-      temporal_smoothing.py       ← optional (smoothing filters)
-```
+## Usage
 
-Make sure the **Python Editor Script Plugin** is enabled in your project (Edit → Plugins → search "Python").
+1. Select one or more `AnimSequence` assets.
+2. Right-click and choose **Run ARKit Remap** to remap, or **ARKitRemap - Convert to CSV** to export.
 
-### 3. Run
+The **Run ARKit Remap** prompt:
 
-1. Select one or more **AnimSequence** assets in the Content Browser (these should be your MHA-baked performances).
-2. In the **Output Log**, type:
+- `Yes` = EMA smoothing (recommended)
+- `No` = One-Euro smoothing
+- `Cancel` = No smoothing
+- `X` = Close window and cancel
 
-```
-py import arkit_remap
-```
+This override affects only the current run.
 
-That's it. Each selected sequence gets a `*_ARKit` duplicate with all 52 ARKit curves written.
+### Convert to CSV (export for Blender / other DCCs)
 
-### Optional: Right-Click Menu
+The **ARKitRemap - Convert to CSV** context menu entry exports the remapped ARKit
+blendshape curves to a Live Link Face-style CSV. Primary use case is bringing
+the animation data into Blender via FaceIt's CSV import, or any other tool that
+consumes ARKit CSV data.
 
-If you copied the optional files (`init_unreal.py`, `arkit_remap_menu.py`, `temporal_smoothing.py`), restart the editor. You'll get a **Run ARKit Remap** entry when you right-click AnimSequence assets. It opens a smoothing prompt before running:
+On click a prompt appears:
 
+- `Yes` = CSV only — saves `<name>.csv` beside the source asset in `Content/`.
+- `No` = CSV + import to Content Browser — also runs `LiveLinkFaceImporterFactory`
+  and creates a `<name>_CSV` LevelSequence in the same folder.
+  Requires the **Live Link Face Importer** plugin to be enabled in UE.
+- `X` = Close window and cancel
 
-| Choice     | Mode              | When to use                                           |
-| ------------ | ------------------- | ------------------------------------------------------- |
-| **Yes**    | EMA (recommended) | Simple, predictable smoothing. Best default.          |
-| **No**     | One-Euro          | Adaptive smoothing. Use if EMA leaves too much noise. |
-| **Cancel** | None              | Raw output. Best for QA or already-clean animations.  |
+CSV format: `Timecode`, `BlendshapeCount`, 52 ARKit blendshape columns, 9 head/eye
+rotation columns (zero-filled). Compatible with FaceIt's CSV import.
 
 ---
 
-## ELI5
+## ELI5 What the tool does
 
 Theres 2 facial systems.
 
