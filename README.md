@@ -16,7 +16,7 @@ https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 > This video shows two examples. *Not sure why ARKit on the right is reversing the eye directions...*
 
 <details>
-<summary>demo video details</summary>
+<summary>demo video details/examples</summary>
 
 ### Example 1. Character rigged with FaceIt.
 
@@ -38,7 +38,7 @@ Right: Straight ArKit curves from Live Link Face iOS. *These are also converted 
 ---
 
 <details>
-<summary>## Package contents</summary>
+<summary> ## Package contents </summary>
 
 - `arkit_remap.py`
   Main remap script.
