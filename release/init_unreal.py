@@ -1,9 +1,11 @@
 """ARKit Remap - Editor Startup / Context Menu Registration
 
-Registers a "Run ARKit Remap" entry in the Content Browser right-click
-menu. In current UE behavior it appears in the main context menu rather
-than under the "Asset Actions" subsection. The launcher prompts for
-smoothing mode before executing the remap.
+Registers two entries in the Content Browser right-click menu:
+  1. "Run ARKit Remap" — remap with smoothing prompt
+  2. "ARKitRemap - Convert to CSV" — export ARKit curves to CSV
+
+In current UE behavior they appear in the main context menu rather
+than under the "Asset Actions" subsection.
 
 Run once per editor session (e.g. via startup scripts or remote execution).
 """
@@ -49,8 +51,34 @@ def register_context_menu():
     )
 
     menu.add_menu_entry("GetAssetActions", entry)
+
+    csv_entry = unreal.ToolMenuEntry(
+        name="ARKitRemap_CSV",
+        type=unreal.MultiBlockType.MENU_ENTRY,
+    )
+    csv_entry.set_label("ARKitRemap - Convert to CSV")
+    csv_entry.set_tool_tip(
+        "Export ARKit blendshape curves from selected AnimSequence(s) "
+        "to Live Link Face-style CSV"
+    )
+
+    csv_cmd = (
+        "import unreal, os; "
+        "_p = os.path.join(unreal.Paths.project_dir(), "
+        "'Content', 'Python', 'arkit_csv_export.py'); "
+        "exec(open(_p).read()) if os.path.isfile(_p) else "
+        "unreal.log_error('[ARKit CSV Export] Script not found: ' + _p)"
+    )
+    csv_entry.set_string_command(
+        type=unreal.ToolMenuStringCommandType.PYTHON,
+        custom_type="",
+        string=csv_cmd,
+    )
+
+    menu.add_menu_entry("GetAssetActions", csv_entry)
+
     tool_menus.refresh_all_widgets()
-    unreal.log(f"{TAG} Registered 'Run ARKit Remap' in the Content Browser context menu.")
+    unreal.log(f"{TAG} Registered context menu entries (Remap, CSV Export).")
     return True
 
 

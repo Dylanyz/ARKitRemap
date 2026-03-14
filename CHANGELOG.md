@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.1.0 — 2026-03-13
+
+### What's New
+
+- **"ARKitRemap - Convert to CSV" context menu entry** — right-click AnimSequence(s) in Content Browser to export ARKit blendshape curves to Live Link Face-style CSV files. Outputs to `{ProjectDir}/Saved/ARKitRemap/`. Supports batch export of multiple sequences at once.
+
+### Files Added
+
+- `arkit_csv_export.py` — CSV export logic, registered as second context-menu entry alongside the existing remap option.
+
+---
+
 ## v2.0.0 — 2026-03-12
 
 Complete rewrite from Blueprint AnimModifier to Python pipeline. This is a major upgrade in quality, speed, and configurability.

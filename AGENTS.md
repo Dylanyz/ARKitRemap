@@ -19,6 +19,7 @@ MHA-to-ARKit facial curve remapping pipeline for Unreal Engine. Converts MetaHum
 | Mapping payload + calibration | `release/arkit_remap_payload.json` |
 | Smoothing filters | `release/temporal_smoothing.py` |
 | Context menu launcher | `release/arkit_remap_menu.py` |
+| CSV export (context menu) | `release/arkit_csv_export.py` |
 | Menu registration (UE startup) | `release/init_unreal.py` |
 | Technical reference | `dev/knowledge-base.md` |
 | Improvement log + backlog | `plans/arkit-remap-improvementlog.md` |

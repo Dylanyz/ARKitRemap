@@ -48,6 +48,7 @@ Reverse (primary — Python pipeline):
 | Mapping payload | `release/arkit_remap_payload.json` |
 | Temporal smoothing module | `release/temporal_smoothing.py` |
 | Context-menu launcher | `release/arkit_remap_menu.py` |
+| CSV export (context menu) | `release/arkit_csv_export.py` |
 | Context-menu registration | `release/init_unreal.py` |
 | Dev scripts (calibration etc.) | `dev/scripts/` |
 | Coupled solve verification | `dev/scripts/coupled_solve.py` |
@@ -64,6 +65,7 @@ Reverse (primary — Python pipeline):
 3. Run via **either**:
    - UE Output Log: `py import arkit_remap`
    - Right-click → **Run ARKit Remap** (opens smoothing prompt: EMA recommended, One-Euro, or None)
+   - Right-click → **ARKitRemap - Convert to CSV** (exports ARKit curves to `{ProjectDir}/Saved/ARKitRemap/`)
 
 **Key technical points:**
 - Uses `sum(weight²)` normalization (least-squares inverse projection).

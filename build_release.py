@@ -21,6 +21,7 @@ RELEASE_FILES = [
     "arkit_remap_payload.json",
     "init_unreal.py",
     "arkit_remap_menu.py",
+    "arkit_csv_export.py",
     "temporal_smoothing.py",
     "README.md",
 ]

@@ -8,6 +8,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-03-13 | Added `arkit_csv_export.py` to release package and registered "ARKitRemap - Convert to CSV" context-menu entry in `init_unreal.py`. Exports ARKit blendshape curves from selected AnimSequence(s) to Live Link Face-style CSV in `{ProjectDir}/Saved/ARKitRemap/`. Adapted core logic from `import_arkit_animsequence_as_livelinkface.py` dev helper (CSV-only, no LiveLinkFace import step). | CSV export context menu |
 | 2026-03-12 | Added `import_arkit_animsequence_as_livelinkface.py` helper to convert a remapped ARKit `AnimSequence` into a Live Link Face-imported `LevelSequence` for direct MetaHuman ARKit-pipeline playback. Verified on `/Game/3_FaceAnims/arkit-remap-demo/AS_arkitremap-demo-main_ARKit`: wrote CSV at ~59.94 fps, imported `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal`, and confirmed subject name `arkitremap-demo-main_ARKit`. | MetaHuman ARKit playback helper |
 | 2026-03-12 | Release-prep cleanup pass: added `dev/README.md` as the workspace entry point, refreshed `release/README.md` and `PUBLISH_TO_PUBLIC_REPO.md` for the Python-first package, corrected stale LipsPurse / clamp references in active docs, and began moving deprecated probes/one-off diagnostics into archive locations. | Release preparation + workspace cleanup |
 | 2026-03-12 | **Apples-to-Apples visual comparison completed (A vs B).** Built `forward_remap_to_mh.py` (transposes PoseAsset weights, ARKit→ctrl_expressions, MouthClose→LipsTogether). Round-trip test: remap allkeys→ARKit→forward back to ctrl_expressions. Visual review on MetaHuman at frames 0/276/956/1087 confirms B tracks A well. Numerics: eye/nose MSE=0 (perfect 1:1 round-trip); jaw MSE=0.013 (purse comp); mouth MSE=0.043 (LipsTogether path); brow MSE=0.019; tongue MSE=0.105 (shared contributors). Top round-trip error: `mouthlipstogether` (0.45 MSE) from MouthClose lossy derivation. Real iPhone ARKit forward-pass (C) was attempted but broken: template duplication leaves ~220 residual ctrl_expressions curves from A that contaminate C's output. Fixing C would require clearing ALL curves from template or using PoseAsset node at runtime — deferred as low priority since A vs B is the actionable comparison. Reports: `dev/reports/apples_comparison_*.{json,md}`. Scripts: `forward_remap_to_mh.py`, `run_apples_pipeline.py`, `compare_apples.py`. | Apples-to-apples MH comparison |
@@ -437,6 +438,7 @@ Blueprint AnimModifier approach as the primary method for converting MHA
 | ABP post-PoseAsset verification | `dev/scripts/verify_abp_post_poseasset.py` |
 | PoseAsset linearity verification | `dev/mapping-pose-asset/scripts/verify_pose_asset_linearity.py` |
 | Context-menu launcher | `dev/scripts/arkit_remap_menu.py` |
+| CSV export (context menu) | `release/arkit_csv_export.py` |
 | Context-menu registration | `dev/scripts/init_unreal.py` |
 | QA run logs | `dev/reports/run-logs/` |
 | Release package | `release/` |
@@ -459,6 +461,10 @@ Blueprint AnimModifier approach as the primary method for converting MHA
      - `One-Euro` = adaptive smoothing, recommended default for noisy MHA capture
      - `EMA` = simpler fixed smoothing, useful when tuning or debugging smoothing behavior
      The choice is a one-shot runtime override and does not edit the payload JSON.
+   - Right-click selected assets → **ARKitRemap - Convert to CSV**
+     Exports ARKit blendshape curves to Live Link Face-style CSV files in
+     `{ProjectDir}/Saved/ARKitRemap/`. CSV-only (no LiveLinkFace import).
+     Supports batch export of multiple sequences.
 
 #### MetaHuman playback helper
 
