@@ -1,3 +1,20 @@
+"""
+Convert animation sequence to CSV
+Use scripts/import_arkit_animsequence_as_livelinkface.py when you already have a *_ARKit AnimSequence and want to:
+
+visualize the remapped ARKit result on a MetaHuman using the stock Live Link ARKit pipeline
+generate Live Link Face-style CSV data for a setup that consumes CSV/subject playback instead of a raw AnimSequence
+What the helper does:
+
+reads ARKit float curves from a remapped AnimSequence
+writes a Live Link Face-style CSV with the 52 blendshape columns plus the 9 head and eye rotation columns
+zero-fills missing ARKit channels and currently writes zero rotations
+imports the CSV with LiveLinkFaceImporterFactory into a playable LevelSequence
+Important naming note:
+
+if the imported asset basename ends with _cal, the resulting Live Link subject is the same basename without _cal
+"""
+
 import csv
 import math
 import os
