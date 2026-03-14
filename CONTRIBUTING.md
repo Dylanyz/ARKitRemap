@@ -209,3 +209,9 @@ Check the [improvement log](plans/arkit-remap-improvementlog.md) for the current
 ## Code of Conduct
 
 Be kind, be constructive, share what you learn. This project started as a side project to solve a real problem — contributions that improve quality for everyone are welcome.
+
+## Liscence
+
+By submitting a contribution, you agree that your contribution is licensed under the project’s MPL-2.0 license.
+Modified MPL-covered files that are distributed must stay under MPL 2.0
+I ask that you credit this original repo and the author: Dylan Gitalis
