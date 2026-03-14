@@ -65,7 +65,7 @@ Reverse (primary — Python pipeline):
 3. Run via **either**:
    - UE Output Log: `py import arkit_remap`
    - Right-click → **Run ARKit Remap** (opens smoothing prompt: EMA recommended, One-Euro, or None)
-   - Right-click → **ARKitRemap - Convert to CSV** (exports ARKit curves to `{ProjectDir}/Saved/ARKitRemap/`)
+   - Right-click → **ARKitRemap - Convert to CSV** — exports ARKit blendshape curves to Live Link Face-style CSV. Primary use case: bring the animation into Blender via FaceIt's CSV import, or any other DCC/tool that consumes ARKit CSV data. Prompts: Yes = CSV only (saved beside source asset); No = CSV + import as `<name>_CSV` LevelSequence via `LiveLinkFaceImporterFactory` (requires Live Link Face Importer plugin).
 
 **Key technical points:**
 - Uses `sum(weight²)` normalization (least-squares inverse projection).

@@ -4,11 +4,22 @@
 
 ### What's New
 
-- **"ARKitRemap - Convert to CSV" context menu entry** — right-click AnimSequence(s) in Content Browser to export ARKit blendshape curves to Live Link Face-style CSV files. Outputs to `{ProjectDir}/Saved/ARKitRemap/`. Supports batch export of multiple sequences at once.
+- **"ARKitRemap - Convert to CSV" context menu entry** — right-click any remapped `*_ARKit` AnimSequence in the Content Browser and choose **ARKitRemap - Convert to CSV**. Primary use case is exporting the remapped ARKit blendshape data out of UE for use in Blender (FaceIt shape key import), other DCCs, or any tool that consumes Live Link Face-style CSV.
+- On click, a prompt asks whether you want CSV-only (save beside source asset) or CSV + import back into UE as a LevelSequence (`<name>_CSV`) via `LiveLinkFaceImporterFactory`.
+- Batch export: works on multiple selected AnimSequences at once.
+- If `LiveLinkFaceImporterFactory` is unavailable (plugin not enabled), the prompt warns and falls back to CSV-only automatically.
+
+### CSV format
+
+Live Link Face-style: `Timecode`, `BlendshapeCount`, 52 ARKit blendshape columns, 9 head/eye rotation columns (zero-filled). Compatible with FaceIt's CSV import and standard Live Link Face tooling.
 
 ### Files Added
 
-- `arkit_csv_export.py` — CSV export logic, registered as second context-menu entry alongside the existing remap option.
+- `arkit_csv_export.py` — CSV export + optional LevelSequence import, registered as second context-menu entry in `init_unreal.py`.
+
+### Files Changed
+
+- `init_unreal.py` — registers both context menu entries (Remap + CSV Export).
 
 ---
 

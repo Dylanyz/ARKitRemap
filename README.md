@@ -2,7 +2,10 @@
 
 **Use MetaHuman Animator with any character.** No iPhone required — just a webcam.
 
-ARKit Remap converts MetaHuman Animator (MHA) facial performances into Apple ARKit 52-blendshape curves, so they can drive characters rigged with [FaceIt](https://faceit-doc.readthedocs.io/) or any other ARKit-compatible facial rig.
+Converts **MetaHuman Animator (MHA)** facial performances into **Apple ARKit 52-blendshape** curves so they can drive
+**[FaceIt](https://faceit-doc.readthedocs.io/)** or other ARKit-compatible facial rigs.
+
+*Also includes* easy .CSV convert, to export for Blender/FaceIt/wherever!
 
 > MHA(MetaHuman Animator) gives you studio-quality facial capture from monocular video, but outputs its own proprietary curve format (~130+ `CTRL_expressions` curves). FaceIt characters expect the 52 standard ARKit blendshapes. This tool bridges the gap using weighted reverse mapping extracted from Epic's own PoseAsset data.
 

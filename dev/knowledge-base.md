@@ -8,6 +8,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-03-13 | Updated `arkit_csv_export.py`: added Yes/No prompt for CSV-only vs CSV+import mode, `LiveLinkFaceImporterFactory` availability check, renamed imported asset suffix to `_CSV`. Clarified primary use case as Blender/DCC export. | CSV export iteration |
 | 2026-03-13 | Added `arkit_csv_export.py` to release package and registered "ARKitRemap - Convert to CSV" context-menu entry in `init_unreal.py`. Exports ARKit blendshape curves from selected AnimSequence(s) to Live Link Face-style CSV in `{ProjectDir}/Saved/ARKitRemap/`. Adapted core logic from `import_arkit_animsequence_as_livelinkface.py` dev helper (CSV-only, no LiveLinkFace import step). | CSV export context menu |
 | 2026-03-12 | Added `import_arkit_animsequence_as_livelinkface.py` helper to convert a remapped ARKit `AnimSequence` into a Live Link Face-imported `LevelSequence` for direct MetaHuman ARKit-pipeline playback. Verified on `/Game/3_FaceAnims/arkit-remap-demo/AS_arkitremap-demo-main_ARKit`: wrote CSV at ~59.94 fps, imported `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal`, and confirmed subject name `arkitremap-demo-main_ARKit`. | MetaHuman ARKit playback helper |
 | 2026-03-12 | Release-prep cleanup pass: added `dev/README.md` as the workspace entry point, refreshed `release/README.md` and `PUBLISH_TO_PUBLIC_REPO.md` for the Python-first package, corrected stale LipsPurse / clamp references in active docs, and began moving deprecated probes/one-off diagnostics into archive locations. | Release preparation + workspace cleanup |
@@ -462,8 +463,15 @@ Blueprint AnimModifier approach as the primary method for converting MHA
      - `EMA` = simpler fixed smoothing, useful when tuning or debugging smoothing behavior
      The choice is a one-shot runtime override and does not edit the payload JSON.
    - Right-click selected assets → **ARKitRemap - Convert to CSV**
-     Exports ARKit blendshape curves to Live Link Face-style CSV files in
-     `{ProjectDir}/Saved/ARKitRemap/`. CSV-only (no LiveLinkFace import).
+     Primary use case: export the remapped ARKit blendshape data out of UE for
+     use in Blender (FaceIt CSV import), other DCCs, or any tool that consumes
+     Live Link Face-style CSV.
+     A prompt asks:
+     - `Yes` = CSV only — saves `<name>.csv` beside the source asset in `Content/`.
+     - `No` = CSV + import — also imports via `LiveLinkFaceImporterFactory` as a
+       `LevelSequence` named `<name>_CSV` in the same Content Browser folder.
+       Requires the **Live Link Face Importer** plugin to be enabled.
+     If the plugin is unavailable the prompt warns and forces CSV-only.
      Supports batch export of multiple sequences.
 
 #### MetaHuman playback helper
