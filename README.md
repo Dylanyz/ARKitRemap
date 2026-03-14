@@ -9,8 +9,10 @@ ARKit Remap converts MetaHuman Animator (MHA) facial performances into Apple ARK
 # Demo
 
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
+
 > This video shows two examples. *Not sure why ARKit on the right is reversing the eye directions...*
-### Example 1. Character rigged with FaceIt. 
+
+### Example 1. Character rigged with FaceIt.
 
 *No manual corrections, just the basic workflow.*
 
@@ -66,20 +68,22 @@ That's it. Each selected sequence gets a `*_ARKit` duplicate with all 52 ARKit c
 
 If you copied the optional files (`init_unreal.py`, `arkit_remap_menu.py`, `temporal_smoothing.py`), restart the editor. You'll get a **Run ARKit Remap** entry when you right-click AnimSequence assets. It opens a smoothing prompt before running:
 
-| Choice | Mode | When to use |
-|--------|------|-------------|
-| **Yes** | EMA (recommended) | Simple, predictable smoothing. Best default. |
-| **No** | One-Euro | Adaptive smoothing. Use if EMA leaves too much noise. |
-| **Cancel** | None | Raw output. Best for QA or already-clean animations. |
+
+| Choice     | Mode              | When to use                                           |
+| ------------ | ------------------- | ------------------------------------------------------- |
+| **Yes**    | EMA (recommended) | Simple, predictable smoothing. Best default.          |
+| **No**     | One-Euro          | Adaptive smoothing. Use if EMA leaves too much noise. |
+| **Cancel** | None              | Raw output. Best for QA or already-clean animations.  |
 
 ---
 
 ## ELI5
 
-Theres 2 facial systems. 
- 1. Unreal Engine metahumans
- 2. ArKit (made by apple)
-Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
+Theres 2 facial systems.
+
+1. Unreal Engine metahumans
+2. ArKit (made by apple)
+   Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
 
 ArKit is really easy to apply to any character or creature([FaceIt](https://faceit-doc.readthedocs.io/)), but you need an iPhone to record it, and its alot less good quality.
 
@@ -142,31 +146,43 @@ MetaHuman Animator outputs ~130+ proprietary `CTRL_expressions` curves. FaceIt a
 Epic ships a PoseAsset (`PA_MetaHuman_ARKit_Mapping`) that maps between ARKit and MHA curves using weighted combinations. We extracted those weights and built a reverse pipeline:
 
 1. **Weighted least-squares synthesis** — each ARKit curve is reconstructed from multiple MHA source curves using the formula:
+
    ```
    arkitValue = Σ(weight × sourceValue) / Σ(weight²)
    ```
+
    This `sum(weight²)` normalization produces physically plausible blendshape values.
-
 2. **Coupled and grouped solves** — targets that share source curves (like MouthPucker/MouthFunnel, or the brow trio) are solved jointly via small linear systems instead of independently, eliminating cross-contamination artifacts.
-
 3. **Unified mouth-pair model** — MouthClose and JawOpen are computed together because MetaHuman represents "closed mouth" differently than ARKit. MHA uses high JawOpen + LipsPurse; ARKit uses low JawOpen + high MouthClose. The model translates between these representations with calibrated parameters fitted against real iPhone ARKit ground truth.
-
 4. **minWeight filtering** — removes trace contributors (like `browlaterall` at 0.031) that would pollute unrelated targets.
 
 ### Calibration
 
 All parameters are tunable in `arkit_remap_payload.json`:
 
-| Parameter | Default | What it controls |
-|-----------|---------|-----------------|
-| `mouthClose.lipsPurseWeight` | 0.735 | How much LipsPurse contributes to MouthClose derivation |
-| `mouthClose.forwardConstraintRatio` | 1.5 | Max ratio of MouthClose to JawOpen |
-| `mouthClose.clampMax` | 0.5 | Upper clamp for MouthClose output |
-| `jawPurseCompensation.factor` | 0.75 | How much JawOpen is reduced when lips are pursed |
-| `calibrationDefaults.minWeight` | 0.05 | Threshold for filtering trace contributors |
-| `smoothing.enabled` | false | Enable/disable temporal smoothing |
 
----
+| Parameter                           | Default | What it controls                                        |
+| ------------------------------------- | --------- | --------------------------------------------------------- |
+| `mouthClose.lipsPurseWeight`        | 0.735   | How much LipsPurse contributes to MouthClose derivation |
+| `mouthClose.forwardConstraintRatio` | 1.5     | Max ratio of MouthClose to JawOpen                      |
+| `mouthClose.clampMax`               | 0.5     | Upper clamp for MouthClose output                       |
+| `jawPurseCompensation.factor`       | 0.75    | How much JawOpen is reduced when lips are pursed        |
+| `calibrationDefaults.minWeight`     | 0.05    | Threshold for filtering trace contributors              |
+| `smoothing.enabled`                 | false   | Enable/disable temporal smoothing                       |
+
+#### Remap tuning process
+
+I basically tried to use the **pose_mapping asset** as the main basis for the remap. Cause that is Epic's mapping for arkit->MHA. So I extracted all that information and it's [in the repo](https://github.com/Dylanyz/ARKitRemap/tree/main/dev/mapping-pose-asset).
+
+Then the parameters were tweaked and improved by having AI compare the data of the same facial take between:
+
+1)**MHA solve** | 2)**arkit remap**(MHA converted to arkit) | 3)**raw arkit** from live link face |
+
+> All from the same take and phone (i used the reference video from live link face as mono video input for MHA).
+
+I also took screenshots at various points that the mouth open or close didn't line up to get it to correct it. Through doing that, I think subjectivity came into play(which I don't want- I want an exact reversing of Epic's arkit->MHA pipeline).
+
+Also, this was just one small take, and there may have been errors with lining up the timing. So I think with more data for the AI agent to cross reference between those three assets of the same take, and rebuilding from that and the pose mapping asset, we can get the remap payload json even more accurate.
 
 ## Compatibility
 
@@ -214,6 +230,7 @@ Want to improve the remap quality, add new features, or help with research? See 
 - Where to find everything
 
 ---
+
 You made it this far!! Check out my YouTube videos using this tool in Unreal Engine :) https://YouTube.com/@madricetv
 
 ## License
