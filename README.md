@@ -38,10 +38,9 @@ Right: Straight ArKit curves from Live Link Face iOS. *These are also converted 
 
 ---
 
-<details>
-<summary> 
 ## Package contents 
-</summary>
+
+<details><summary>expand</summary>
 
 - `arkit_remap.py`
   Main remap script.
@@ -71,7 +70,9 @@ Right: Straight ArKit curves from Live Link Face iOS. *These are also converted 
 ## Usage
 
 1. Select one or more `AnimSequence` assets.
-2. Right-click and choose **Run ARKit Remap** to remap, or **ARKitRemap - Convert to CSV** to export.
+2. Right-click and choose 
+- **Run ARKit Remap** to remap MetaHuman animation to ArKit
+- **ARKitRemap - Convert to CSV** to export an AnimSequence as CSV.
 
 The **Run ARKit Remap** prompt:
 
@@ -82,7 +83,10 @@ The **Run ARKit Remap** prompt:
 
 This override affects only the current run.
 
+
+
 ### Convert to CSV (export for Blender / other DCCs)
+<details><summary>expand</summary>
 
 The **ARKitRemap - Convert to CSV** context menu entry exports the remapped ARKit
 blendshape curves to a Live Link Face-style CSV. Primary use case is bringing
@@ -99,27 +103,10 @@ On click a prompt appears:
 
 CSV format: `Timecode`, `BlendshapeCount`, 52 ARKit blendshape columns, 9 head/eye
 rotation columns (zero-filled). Compatible with FaceIt's CSV import.
-
+</details>
 ---
 
 ## ELI5 What the tool does
-
-Theres 2 facial systems.
-
-1. Unreal Engine metahumans
-2. ArKit (made by apple)
-   Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
-
-ArKit is really easy to apply to any character or creature([FaceIt](https://faceit-doc.readthedocs.io/)), but you need an iPhone to record it, and its alot less good quality.
-
-Unreal Engine has a converter to apply ArKit animations onto Metahumans. But doesn't provide the reverse. That's what this tool does.
-
-I mapped out the pipeline of how Unreal converts ArKit onto Metahumans and reversed it so it can go the other way around.
-So now I am not limited to an iPhone, and I get the higher quality animations.
-
----
-
-## What the Tool Does
 
 ```
 Your webcam video
@@ -134,6 +121,21 @@ ARKit Remap  ← this tool
     ↓
 Your FaceIt character comes alive
 ```
+
+Theres 2 facial systems.
+
+1. Unreal Engine metahumans
+2. ArKit (made by apple)
+   Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
+
+ArKit is really easy to apply to any character or creature([FaceIt](https://faceit-doc.readthedocs.io/)), but you need an iPhone to record it, and its alot less good quality.
+
+Unreal Engine has a converter to apply ArKit animations onto Metahumans. But doesn't provide the reverse. That's what this tool does.
+
+I mapped out the pipeline of how Unreal converts ArKit onto Metahumans and reversed it so it can go the other way around.
+So now I am not limited to an iPhone, and I get the higher quality animations.
+
+- - -
 
 The tool:
 
