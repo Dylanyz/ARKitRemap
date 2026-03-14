@@ -256,6 +256,16 @@ Want to improve the remap quality, add new features, or help with research? See 
 - How to use AI agents (Cursor) with the included skills and rules
 - Where to find everything
 
+## License
+
+This project is licensed under the Mozilla Public License 2.0 (`MPL-2.0`).
+This project was developed for use with Unreal Engine / MetaHuman workflows. Users are responsible for complying with Epic's applicable license terms.
+You can use, modify, and sell this project, including inside a larger closed-source tool. But if you modify files from this project and distribute them, you must make those modified files’ source code available under MPL 2.0 and keep the original license/copyright notices intact. 
+
+You can do that by pushing to this repo or making the source available yourself.
+
+I also ask that you credit this original repo and the author: Dylan Gitalis, so that it can grow and build with more contributors.
+
 ---
 
 You made it this far!! Check out my YouTube videos using this tool in Unreal Engine :) https://YouTube.com/@madricetv
