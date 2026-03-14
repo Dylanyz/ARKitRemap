@@ -65,5 +65,4 @@ def run():
         exec(compile(f.read(), script_path, "exec"), exec_globals)
 
 
-if __name__ == "__main__":
-    run()
+run()
