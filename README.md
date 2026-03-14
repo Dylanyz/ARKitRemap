@@ -35,10 +35,13 @@ https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 Right: Straight ArKit curves from Live Link Face iOS. *These are also converted to MHA curves through Epic's pipeline*
 
 </details>
+
 ---
 
 <details>
-<summary> ## Package contents </summary>
+<summary> 
+## Package contents 
+</summary>
 
 - `arkit_remap.py`
   Main remap script.
