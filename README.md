@@ -41,6 +41,9 @@ Right: Straight ArKit curves from Live Link Face iOS. *These are also converted 
 https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
 
 > Film use case- arkit from iOS vs the MHA remapped with this tool (EMA smoothing)
+
+> *not applied to the metahuman*
+
 > Watch the film [here](www.youtube.com/@madricetv/)
 
 ---
