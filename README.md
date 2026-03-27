@@ -9,7 +9,7 @@ Converts **MetaHuman Animator (MHA)** facial performances into **Apple ARKit 52-
 
 > MHA(MetaHuman Animator) gives you studio-quality facial capture from monocular video, but outputs its own proprietary curve format (~130+ `CTRL_expressions` curves). FaceIt characters expect the 52 standard ARKit blendshapes. This tool bridges the gap using weighted reverse mapping extracted from Epic's own PoseAsset data.
 
-# Demo
+# Demos
 
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 
@@ -35,6 +35,13 @@ https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 Right: Straight ArKit curves from Live Link Face iOS. *These are also converted to MHA curves through Epic's pipeline*
 
 </details>
+
+## Demo2 
+
+https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
+
+> Film use case- arkit from iOS vs the MHA remapped with this tool (EMA smoothing)
+> Watch the film [here](www.youtube.com/@madricetv/)
 
 ---
 
