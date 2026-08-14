@@ -1,0 +1,954 @@
+{
+  "take": "20260814_DefaultSlate_2",
+  "alignment": {
+    "lagFrames": 0,
+    "lagSeconds": 0.0,
+    "jawOpenCorr": 0.9581
+  },
+  "solve": {
+    "frames": 1472,
+    "meanRelResidual": 0.45193,
+    "p95RelResidual": 0.74139,
+    "unmatchedMhaCurves": []
+  },
+  "referenceOrientation": {
+    "note": "Blip mono video is mirrored (selfie convention); MHA solve is therefore a mirror image of the ARKit stream. Headline metrics use the L/R-swapped iPhone reference.",
+    "meanPearsonMirroredRef": 0.5756,
+    "meanPearsonAsRecordedRef": 0.5257
+  },
+  "activeCurveMeanPearson": 0.5756,
+  "iphoneCurvesWithNoSolverOutput": [
+    "MouthClose",
+    "HeadYaw",
+    "HeadPitch",
+    "HeadRoll",
+    "LeftEyeYaw",
+    "LeftEyePitch",
+    "LeftEyeRoll",
+    "RightEyeYaw",
+    "RightEyePitch",
+    "RightEyeRoll"
+  ],
+  "perCurve": {
+    "EyeBlinkLeft": {
+      "pearson": 0.7657,
+      "rmse": 0.1623,
+      "solvedP95": 0.7009,
+      "iphoneP95": 0.8927,
+      "solvedMax": 0.8673,
+      "iphoneMax": 0.9725,
+      "active": true
+    },
+    "EyeLookDownLeft": {
+      "pearson": 0.8296,
+      "rmse": 0.1264,
+      "solvedP95": 0.4447,
+      "iphoneP95": 0.2186,
+      "solvedMax": 0.8473,
+      "iphoneMax": 0.4443,
+      "active": true
+    },
+    "EyeLookInLeft": {
+      "pearson": 0.9869,
+      "rmse": 0.0442,
+      "solvedP95": 0.8829,
+      "iphoneP95": 0.9617,
+      "solvedMax": 0.9982,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookOutLeft": {
+      "pearson": 0.9864,
+      "rmse": 0.0521,
+      "solvedP95": 0.9897,
+      "iphoneP95": 1.0,
+      "solvedMax": 1.0,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookUpLeft": {
+      "pearson": 0.7911,
+      "rmse": 0.1342,
+      "solvedP95": 0.512,
+      "iphoneP95": 0.5041,
+      "solvedMax": 0.999,
+      "iphoneMax": 0.9321,
+      "active": true
+    },
+    "EyeSquintLeft": {
+      "pearson": 0.6865,
+      "rmse": 0.2145,
+      "solvedP95": 0.5784,
+      "iphoneP95": 0.9041,
+      "solvedMax": 0.6606,
+      "iphoneMax": 0.9383,
+      "active": true
+    },
+    "EyeWideLeft": {
+      "pearson": 0.653,
+      "rmse": 0.2699,
+      "solvedP95": 0.7147,
+      "iphoneP95": 0.8738,
+      "solvedMax": 0.92,
+      "iphoneMax": 0.9606,
+      "active": true
+    },
+    "EyeBlinkRight": {
+      "pearson": 0.8681,
+      "rmse": 0.1279,
+      "solvedP95": 0.6848,
+      "iphoneP95": 0.8928,
+      "solvedMax": 0.8748,
+      "iphoneMax": 0.9725,
+      "active": true
+    },
+    "EyeLookDownRight": {
+      "pearson": 0.8291,
+      "rmse": 0.1283,
+      "solvedP95": 0.4517,
+      "iphoneP95": 0.2185,
+      "solvedMax": 0.8572,
+      "iphoneMax": 0.4443,
+      "active": true
+    },
+    "EyeLookInRight": {
+      "pearson": 0.9464,
+      "rmse": 0.0974,
+      "solvedP95": 0.9937,
+      "iphoneP95": 1.0,
+      "solvedMax": 1.0,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookOutRight": {
+      "pearson": 0.9901,
+      "rmse": 0.036,
+      "solvedP95": 0.8521,
+      "iphoneP95": 0.8854,
+      "solvedMax": 0.9988,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookUpRight": {
+      "pearson": 0.7957,
+      "rmse": 0.1323,
+      "solvedP95": 0.5083,
+      "iphoneP95": 0.503,
+      "solvedMax": 0.9988,
+      "iphoneMax": 0.9382,
+      "active": true
+    },
+    "EyeSquintRight": {
+      "pearson": 0.5819,
+      "rmse": 0.2356,
+      "solvedP95": 0.4803,
+      "iphoneP95": 0.9043,
+      "solvedMax": 0.6226,
+      "iphoneMax": 0.9384,
+      "active": true
+    },
+    "EyeWideRight": {
+      "pearson": 0.7181,
+      "rmse": 0.2311,
+      "solvedP95": 0.7855,
+      "iphoneP95": 0.8739,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.9607,
+      "active": true
+    },
+    "JawForward": {
+      "pearson": 0.0335,
+      "rmse": 0.0866,
+      "solvedP95": 0.0642,
+      "iphoneP95": 0.1779,
+      "solvedMax": 0.181,
+      "iphoneMax": 0.4516,
+      "active": true
+    },
+    "JawLeft": {
+      "pearson": 0.0,
+      "rmse": 0.0349,
+      "solvedP95": 0.0762,
+      "iphoneP95": 0.0274,
+      "solvedMax": 0.291,
+      "iphoneMax": 0.0499,
+      "active": true
+    },
+    "JawRight": {
+      "pearson": 0.0861,
+      "rmse": 0.0422,
+      "solvedP95": 0.0967,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.2644,
+      "iphoneMax": 0.0148,
+      "active": true
+    },
+    "JawOpen": {
+      "pearson": 0.9581,
+      "rmse": 0.0919,
+      "solvedP95": 1.0,
+      "iphoneP95": 0.9613,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.9954,
+      "active": true
+    },
+    "MouthFunnel": {
+      "pearson": 0.2354,
+      "rmse": 0.1333,
+      "solvedP95": 0.3352,
+      "iphoneP95": 0.2051,
+      "solvedMax": 0.7171,
+      "iphoneMax": 0.4529,
+      "active": true
+    },
+    "MouthPucker": {
+      "pearson": 0.885,
+      "rmse": 0.0785,
+      "solvedP95": 0.2603,
+      "iphoneP95": 0.1881,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.757,
+      "active": true
+    },
+    "MouthLeft": {
+      "pearson": -0.0991,
+      "rmse": 0.0911,
+      "solvedP95": 0.0829,
+      "iphoneP95": 0.0876,
+      "solvedMax": 0.4753,
+      "iphoneMax": 0.472,
+      "active": true
+    },
+    "MouthRight": {
+      "pearson": -0.1401,
+      "rmse": 0.064,
+      "solvedP95": 0.049,
+      "iphoneP95": 0.075,
+      "solvedMax": 0.3222,
+      "iphoneMax": 0.4347,
+      "active": true
+    },
+    "MouthSmileLeft": {
+      "pearson": 0.9086,
+      "rmse": 0.1572,
+      "solvedP95": 0.6342,
+      "iphoneP95": 0.8961,
+      "solvedMax": 0.7338,
+      "iphoneMax": 0.9373,
+      "active": true
+    },
+    "MouthSmileRight": {
+      "pearson": 0.8164,
+      "rmse": 0.2031,
+      "solvedP95": 0.656,
+      "iphoneP95": 0.8861,
+      "solvedMax": 0.8012,
+      "iphoneMax": 0.9351,
+      "active": true
+    },
+    "MouthFrownLeft": {
+      "pearson": 0.5664,
+      "rmse": 0.1751,
+      "solvedP95": 0.4607,
+      "iphoneP95": 0.1928,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.5666,
+      "active": true
+    },
+    "MouthFrownRight": {
+      "pearson": 0.5682,
+      "rmse": 0.1677,
+      "solvedP95": 0.4347,
+      "iphoneP95": 0.1663,
+      "solvedMax": 0.9749,
+      "iphoneMax": 0.5674,
+      "active": true
+    },
+    "MouthDimpleLeft": {
+      "pearson": 0.211,
+      "rmse": 0.1308,
+      "solvedP95": 0.3215,
+      "iphoneP95": 0.0946,
+      "solvedMax": 0.6372,
+      "iphoneMax": 0.3925,
+      "active": true
+    },
+    "MouthDimpleRight": {
+      "pearson": 0.1576,
+      "rmse": 0.131,
+      "solvedP95": 0.3132,
+      "iphoneP95": 0.1133,
+      "solvedMax": 0.6124,
+      "iphoneMax": 0.4314,
+      "active": true
+    },
+    "MouthStretchLeft": {
+      "pearson": 0.4725,
+      "rmse": 0.2265,
+      "solvedP95": 0.6098,
+      "iphoneP95": 0.486,
+      "solvedMax": 0.7971,
+      "iphoneMax": 0.7164,
+      "active": true
+    },
+    "MouthStretchRight": {
+      "pearson": 0.4558,
+      "rmse": 0.2351,
+      "solvedP95": 0.614,
+      "iphoneP95": 0.4645,
+      "solvedMax": 0.8359,
+      "iphoneMax": 0.6892,
+      "active": true
+    },
+    "MouthRollLower": {
+      "pearson": 0.7418,
+      "rmse": 0.0602,
+      "solvedP95": 0.1396,
+      "iphoneP95": 0.0163,
+      "solvedMax": 0.7868,
+      "iphoneMax": 0.6569,
+      "active": true
+    },
+    "MouthRollUpper": {
+      "pearson": 0.0299,
+      "rmse": 0.1129,
+      "solvedP95": 0.2114,
+      "iphoneP95": 0.1623,
+      "solvedMax": 0.267,
+      "iphoneMax": 0.8356,
+      "active": true
+    },
+    "MouthShrugLower": {
+      "pearson": 0.4718,
+      "rmse": 0.0402,
+      "solvedP95": 0.0895,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.3684,
+      "iphoneMax": 0.1551,
+      "active": true
+    },
+    "MouthShrugUpper": {
+      "pearson": 0.6143,
+      "rmse": 0.0953,
+      "solvedP95": 0.2773,
+      "iphoneP95": 0.3035,
+      "solvedMax": 0.3673,
+      "iphoneMax": 0.3891,
+      "active": true
+    },
+    "MouthPressLeft": {
+      "pearson": 0.0445,
+      "rmse": 0.0491,
+      "solvedP95": 0.0312,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.5708,
+      "iphoneMax": 0.023,
+      "active": true
+    },
+    "MouthPressRight": {
+      "pearson": 0.1377,
+      "rmse": 0.0529,
+      "solvedP95": 0.0697,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.5526,
+      "iphoneMax": 0.0271,
+      "active": true
+    },
+    "MouthLowerDownLeft": {
+      "pearson": 0.7346,
+      "rmse": 0.2339,
+      "solvedP95": 0.6286,
+      "iphoneP95": 0.8925,
+      "solvedMax": 0.7608,
+      "iphoneMax": 0.9099,
+      "active": true
+    },
+    "MouthLowerDownRight": {
+      "pearson": 0.7592,
+      "rmse": 0.2307,
+      "solvedP95": 0.6073,
+      "iphoneP95": 0.8911,
+      "solvedMax": 0.7971,
+      "iphoneMax": 0.9083,
+      "active": true
+    },
+    "MouthUpperUpLeft": {
+      "pearson": 0.6443,
+      "rmse": 0.1294,
+      "solvedP95": 0.3576,
+      "iphoneP95": 0.4151,
+      "solvedMax": 0.5334,
+      "iphoneMax": 0.6159,
+      "active": true
+    },
+    "MouthUpperUpRight": {
+      "pearson": 0.5998,
+      "rmse": 0.118,
+      "solvedP95": 0.334,
+      "iphoneP95": 0.3982,
+      "solvedMax": 0.4533,
+      "iphoneMax": 0.6051,
+      "active": true
+    },
+    "BrowDownLeft": {
+      "pearson": 0.9394,
+      "rmse": 0.1695,
+      "solvedP95": 1.0,
+      "iphoneP95": 0.7883,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8553,
+      "active": true
+    },
+    "BrowDownRight": {
+      "pearson": 0.9609,
+      "rmse": 0.1497,
+      "solvedP95": 1.0,
+      "iphoneP95": 0.7881,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8553,
+      "active": true
+    },
+    "BrowInnerUp": {
+      "pearson": -0.1965,
+      "rmse": 0.3494,
+      "solvedP95": 0.089,
+      "iphoneP95": 0.8074,
+      "solvedMax": 0.159,
+      "iphoneMax": 0.9562,
+      "active": true
+    },
+    "BrowOuterUpLeft": {
+      "pearson": 0.9319,
+      "rmse": 0.1563,
+      "solvedP95": 0.9505,
+      "iphoneP95": 0.7176,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8923,
+      "active": true
+    },
+    "BrowOuterUpRight": {
+      "pearson": 0.9195,
+      "rmse": 0.1518,
+      "solvedP95": 0.9252,
+      "iphoneP95": 0.7171,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8923,
+      "active": true
+    },
+    "CheekPuff": {
+      "pearson": 0.4968,
+      "rmse": 0.0201,
+      "solvedP95": 0.0347,
+      "iphoneP95": 0.0018,
+      "solvedMax": 0.0889,
+      "iphoneMax": 0.2736,
+      "active": true
+    },
+    "CheekSquintLeft": {
+      "pearson": 0.8553,
+      "rmse": 0.2715,
+      "solvedP95": 0.9123,
+      "iphoneP95": 0.2961,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.4164,
+      "active": true
+    },
+    "CheekSquintRight": {
+      "pearson": 0.6673,
+      "rmse": 0.237,
+      "solvedP95": 0.7836,
+      "iphoneP95": 0.2799,
+      "solvedMax": 0.9287,
+      "iphoneMax": 0.3923,
+      "active": true
+    },
+    "NoseSneerLeft": {
+      "pearson": 0.7574,
+      "rmse": 0.1376,
+      "solvedP95": 0.5167,
+      "iphoneP95": 0.728,
+      "solvedMax": 0.602,
+      "iphoneMax": 0.8324,
+      "active": true
+    },
+    "NoseSneerRight": {
+      "pearson": 0.7443,
+      "rmse": 0.1461,
+      "solvedP95": 0.5703,
+      "iphoneP95": 0.695,
+      "solvedMax": 0.6254,
+      "iphoneMax": 0.822,
+      "active": true
+    },
+    "TongueOut": {
+      "pearson": -0.0432,
+      "rmse": 0.0854,
+      "solvedP95": 0.1542,
+      "iphoneP95": 0.0009,
+      "solvedMax": 0.4355,
+      "iphoneMax": 0.4928,
+      "active": true
+    }
+  },
+  "perCurveAsRecordedRef": {
+    "EyeBlinkLeft": {
+      "pearson": 0.7652,
+      "rmse": 0.1626,
+      "solvedP95": 0.7009,
+      "iphoneP95": 0.8928,
+      "solvedMax": 0.8673,
+      "iphoneMax": 0.9725,
+      "active": true
+    },
+    "EyeLookDownLeft": {
+      "pearson": 0.8295,
+      "rmse": 0.1264,
+      "solvedP95": 0.4447,
+      "iphoneP95": 0.2185,
+      "solvedMax": 0.8473,
+      "iphoneMax": 0.4443,
+      "active": true
+    },
+    "EyeLookInLeft": {
+      "pearson": -0.2229,
+      "rmse": 0.4274,
+      "solvedP95": 0.8829,
+      "iphoneP95": 1.0,
+      "solvedMax": 0.9982,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookOutLeft": {
+      "pearson": -0.1417,
+      "rmse": 0.4108,
+      "solvedP95": 0.9897,
+      "iphoneP95": 0.8854,
+      "solvedMax": 1.0,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookUpLeft": {
+      "pearson": 0.793,
+      "rmse": 0.1338,
+      "solvedP95": 0.512,
+      "iphoneP95": 0.503,
+      "solvedMax": 0.999,
+      "iphoneMax": 0.9382,
+      "active": true
+    },
+    "EyeSquintLeft": {
+      "pearson": 0.6936,
+      "rmse": 0.213,
+      "solvedP95": 0.5784,
+      "iphoneP95": 0.9043,
+      "solvedMax": 0.6606,
+      "iphoneMax": 0.9384,
+      "active": true
+    },
+    "EyeWideLeft": {
+      "pearson": 0.6446,
+      "rmse": 0.2714,
+      "solvedP95": 0.7147,
+      "iphoneP95": 0.8739,
+      "solvedMax": 0.92,
+      "iphoneMax": 0.9607,
+      "active": true
+    },
+    "EyeBlinkRight": {
+      "pearson": 0.8678,
+      "rmse": 0.1279,
+      "solvedP95": 0.6848,
+      "iphoneP95": 0.8927,
+      "solvedMax": 0.8748,
+      "iphoneMax": 0.9725,
+      "active": true
+    },
+    "EyeLookDownRight": {
+      "pearson": 0.8292,
+      "rmse": 0.1283,
+      "solvedP95": 0.4517,
+      "iphoneP95": 0.2186,
+      "solvedMax": 0.8572,
+      "iphoneMax": 0.4443,
+      "active": true
+    },
+    "EyeLookInRight": {
+      "pearson": -0.1807,
+      "rmse": 0.4261,
+      "solvedP95": 0.9937,
+      "iphoneP95": 0.9617,
+      "solvedMax": 1.0,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookOutRight": {
+      "pearson": -0.1338,
+      "rmse": 0.4098,
+      "solvedP95": 0.8521,
+      "iphoneP95": 1.0,
+      "solvedMax": 0.9988,
+      "iphoneMax": 1.0,
+      "active": true
+    },
+    "EyeLookUpRight": {
+      "pearson": 0.7939,
+      "rmse": 0.1327,
+      "solvedP95": 0.5083,
+      "iphoneP95": 0.5041,
+      "solvedMax": 0.9988,
+      "iphoneMax": 0.9321,
+      "active": true
+    },
+    "EyeSquintRight": {
+      "pearson": 0.6107,
+      "rmse": 0.2301,
+      "solvedP95": 0.4803,
+      "iphoneP95": 0.9041,
+      "solvedMax": 0.6226,
+      "iphoneMax": 0.9383,
+      "active": true
+    },
+    "EyeWideRight": {
+      "pearson": 0.731,
+      "rmse": 0.2267,
+      "solvedP95": 0.7855,
+      "iphoneP95": 0.8738,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.9606,
+      "active": true
+    },
+    "JawForward": {
+      "pearson": 0.0335,
+      "rmse": 0.0866,
+      "solvedP95": 0.0642,
+      "iphoneP95": 0.1779,
+      "solvedMax": 0.181,
+      "iphoneMax": 0.4516,
+      "active": true
+    },
+    "JawLeft": {
+      "pearson": -0.0208,
+      "rmse": 0.0351,
+      "solvedP95": 0.0762,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.291,
+      "iphoneMax": 0.0148,
+      "active": true
+    },
+    "JawRight": {
+      "pearson": 0.2624,
+      "rmse": 0.0392,
+      "solvedP95": 0.0967,
+      "iphoneP95": 0.0274,
+      "solvedMax": 0.2644,
+      "iphoneMax": 0.0499,
+      "active": true
+    },
+    "JawOpen": {
+      "pearson": 0.9581,
+      "rmse": 0.0919,
+      "solvedP95": 1.0,
+      "iphoneP95": 0.9613,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.9954,
+      "active": true
+    },
+    "MouthFunnel": {
+      "pearson": 0.2354,
+      "rmse": 0.1333,
+      "solvedP95": 0.3352,
+      "iphoneP95": 0.2051,
+      "solvedMax": 0.7171,
+      "iphoneMax": 0.4529,
+      "active": true
+    },
+    "MouthPucker": {
+      "pearson": 0.885,
+      "rmse": 0.0785,
+      "solvedP95": 0.2603,
+      "iphoneP95": 0.1881,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.757,
+      "active": true
+    },
+    "MouthLeft": {
+      "pearson": 0.8055,
+      "rmse": 0.0349,
+      "solvedP95": 0.0829,
+      "iphoneP95": 0.075,
+      "solvedMax": 0.4753,
+      "iphoneMax": 0.4347,
+      "active": true
+    },
+    "MouthRight": {
+      "pearson": 0.9528,
+      "rmse": 0.0289,
+      "solvedP95": 0.049,
+      "iphoneP95": 0.0876,
+      "solvedMax": 0.3222,
+      "iphoneMax": 0.472,
+      "active": true
+    },
+    "MouthSmileLeft": {
+      "pearson": 0.8782,
+      "rmse": 0.1683,
+      "solvedP95": 0.6342,
+      "iphoneP95": 0.8861,
+      "solvedMax": 0.7338,
+      "iphoneMax": 0.9351,
+      "active": true
+    },
+    "MouthSmileRight": {
+      "pearson": 0.7679,
+      "rmse": 0.2213,
+      "solvedP95": 0.656,
+      "iphoneP95": 0.8961,
+      "solvedMax": 0.8012,
+      "iphoneMax": 0.9373,
+      "active": true
+    },
+    "MouthFrownLeft": {
+      "pearson": 0.577,
+      "rmse": 0.1772,
+      "solvedP95": 0.4607,
+      "iphoneP95": 0.1663,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.5674,
+      "active": true
+    },
+    "MouthFrownRight": {
+      "pearson": 0.557,
+      "rmse": 0.1659,
+      "solvedP95": 0.4347,
+      "iphoneP95": 0.1928,
+      "solvedMax": 0.9749,
+      "iphoneMax": 0.5666,
+      "active": true
+    },
+    "MouthDimpleLeft": {
+      "pearson": 0.1831,
+      "rmse": 0.1325,
+      "solvedP95": 0.3215,
+      "iphoneP95": 0.1133,
+      "solvedMax": 0.6372,
+      "iphoneMax": 0.4314,
+      "active": true
+    },
+    "MouthDimpleRight": {
+      "pearson": 0.1821,
+      "rmse": 0.1294,
+      "solvedP95": 0.3132,
+      "iphoneP95": 0.0946,
+      "solvedMax": 0.6124,
+      "iphoneMax": 0.3925,
+      "active": true
+    },
+    "MouthStretchLeft": {
+      "pearson": 0.4429,
+      "rmse": 0.2313,
+      "solvedP95": 0.6098,
+      "iphoneP95": 0.4645,
+      "solvedMax": 0.7971,
+      "iphoneMax": 0.6892,
+      "active": true
+    },
+    "MouthStretchRight": {
+      "pearson": 0.4597,
+      "rmse": 0.2339,
+      "solvedP95": 0.614,
+      "iphoneP95": 0.486,
+      "solvedMax": 0.8359,
+      "iphoneMax": 0.7164,
+      "active": true
+    },
+    "MouthRollLower": {
+      "pearson": 0.7418,
+      "rmse": 0.0602,
+      "solvedP95": 0.1396,
+      "iphoneP95": 0.0163,
+      "solvedMax": 0.7868,
+      "iphoneMax": 0.6569,
+      "active": true
+    },
+    "MouthRollUpper": {
+      "pearson": 0.0299,
+      "rmse": 0.1129,
+      "solvedP95": 0.2114,
+      "iphoneP95": 0.1623,
+      "solvedMax": 0.267,
+      "iphoneMax": 0.8356,
+      "active": true
+    },
+    "MouthShrugLower": {
+      "pearson": 0.4718,
+      "rmse": 0.0402,
+      "solvedP95": 0.0895,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.3684,
+      "iphoneMax": 0.1551,
+      "active": true
+    },
+    "MouthShrugUpper": {
+      "pearson": 0.6143,
+      "rmse": 0.0953,
+      "solvedP95": 0.2773,
+      "iphoneP95": 0.3035,
+      "solvedMax": 0.3673,
+      "iphoneMax": 0.3891,
+      "active": true
+    },
+    "MouthPressLeft": {
+      "pearson": 0.0796,
+      "rmse": 0.049,
+      "solvedP95": 0.0312,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.5708,
+      "iphoneMax": 0.0271,
+      "active": true
+    },
+    "MouthPressRight": {
+      "pearson": 0.1227,
+      "rmse": 0.0529,
+      "solvedP95": 0.0697,
+      "iphoneP95": 0.0,
+      "solvedMax": 0.5526,
+      "iphoneMax": 0.023,
+      "active": true
+    },
+    "MouthLowerDownLeft": {
+      "pearson": 0.7302,
+      "rmse": 0.2289,
+      "solvedP95": 0.6286,
+      "iphoneP95": 0.8911,
+      "solvedMax": 0.7608,
+      "iphoneMax": 0.9083,
+      "active": true
+    },
+    "MouthLowerDownRight": {
+      "pearson": 0.7554,
+      "rmse": 0.2382,
+      "solvedP95": 0.6073,
+      "iphoneP95": 0.8925,
+      "solvedMax": 0.7971,
+      "iphoneMax": 0.9099,
+      "active": true
+    },
+    "MouthUpperUpLeft": {
+      "pearson": 0.6532,
+      "rmse": 0.1274,
+      "solvedP95": 0.3576,
+      "iphoneP95": 0.3982,
+      "solvedMax": 0.5334,
+      "iphoneMax": 0.6051,
+      "active": true
+    },
+    "MouthUpperUpRight": {
+      "pearson": 0.5736,
+      "rmse": 0.1225,
+      "solvedP95": 0.334,
+      "iphoneP95": 0.4151,
+      "solvedMax": 0.4533,
+      "iphoneMax": 0.6159,
+      "active": true
+    },
+    "BrowDownLeft": {
+      "pearson": 0.9394,
+      "rmse": 0.1695,
+      "solvedP95": 1.0,
+      "iphoneP95": 0.7881,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8553,
+      "active": true
+    },
+    "BrowDownRight": {
+      "pearson": 0.9609,
+      "rmse": 0.1496,
+      "solvedP95": 1.0,
+      "iphoneP95": 0.7883,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8553,
+      "active": true
+    },
+    "BrowInnerUp": {
+      "pearson": -0.1965,
+      "rmse": 0.3494,
+      "solvedP95": 0.089,
+      "iphoneP95": 0.8074,
+      "solvedMax": 0.159,
+      "iphoneMax": 0.9562,
+      "active": true
+    },
+    "BrowOuterUpLeft": {
+      "pearson": 0.9356,
+      "rmse": 0.1538,
+      "solvedP95": 0.9505,
+      "iphoneP95": 0.7171,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8923,
+      "active": true
+    },
+    "BrowOuterUpRight": {
+      "pearson": 0.9231,
+      "rmse": 0.1499,
+      "solvedP95": 0.9252,
+      "iphoneP95": 0.7176,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.8923,
+      "active": true
+    },
+    "CheekPuff": {
+      "pearson": 0.4968,
+      "rmse": 0.0201,
+      "solvedP95": 0.0347,
+      "iphoneP95": 0.0018,
+      "solvedMax": 0.0889,
+      "iphoneMax": 0.2736,
+      "active": true
+    },
+    "CheekSquintLeft": {
+      "pearson": 0.8615,
+      "rmse": 0.2712,
+      "solvedP95": 0.9123,
+      "iphoneP95": 0.2799,
+      "solvedMax": 1.0,
+      "iphoneMax": 0.3923,
+      "active": true
+    },
+    "CheekSquintRight": {
+      "pearson": 0.622,
+      "rmse": 0.2414,
+      "solvedP95": 0.7836,
+      "iphoneP95": 0.2961,
+      "solvedMax": 0.9287,
+      "iphoneMax": 0.4164,
+      "active": true
+    },
+    "NoseSneerLeft": {
+      "pearson": 0.7594,
+      "rmse": 0.1345,
+      "solvedP95": 0.5167,
+      "iphoneP95": 0.695,
+      "solvedMax": 0.602,
+      "iphoneMax": 0.822,
+      "active": true
+    },
+    "NoseSneerRight": {
+      "pearson": 0.7416,
+      "rmse": 0.1485,
+      "solvedP95": 0.5703,
+      "iphoneP95": 0.728,
+      "solvedMax": 0.6254,
+      "iphoneMax": 0.8324,
+      "active": true
+    },
+    "TongueOut": {
+      "pearson": -0.0432,
+      "rmse": 0.0854,
+      "solvedP95": 0.1542,
+      "iphoneP95": 0.0009,
+      "solvedMax": 0.4355,
+      "iphoneMax": 0.4928,
+      "active": true
+    }
+  }
+}
