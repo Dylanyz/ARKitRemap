@@ -8,6 +8,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-08-12 | Added Section K: UE 5.8 RigMapper System. Full survey of Epic's RigMapper plugin (definition data model + JSON format, anim graph node, IK Retargeter ops, editor subsystem batch converters, Utilities asset actions + BPI_RigMapper interface, shipped MH/CD/FN definition assets and the Raw→Links→Baked authoring pattern), plus OpenRigLogic context. This is the foundation for ARKit Remap V3 (definition-based, replacing the v2 Python pipeline). | UE 5.8 RigMapper + OpenRigLogic investigation (Claude Code session) |
 | 2026-03-13 | Updated `arkit_csv_export.py`: added Yes/No prompt for CSV-only vs CSV+import mode, `LiveLinkFaceImporterFactory` availability check, renamed imported asset suffix to `_CSV`. Clarified primary use case as Blender/DCC export. | CSV export iteration |
 | 2026-03-13 | Added `arkit_csv_export.py` to release package and registered "ARKitRemap - Convert to CSV" context-menu entry in `init_unreal.py`. Exports ARKit blendshape curves from selected AnimSequence(s) to Live Link Face-style CSV in `{ProjectDir}/Saved/ARKitRemap/`. Adapted core logic from `import_arkit_animsequence_as_livelinkface.py` dev helper (CSV-only, no LiveLinkFace import step). | CSV export context menu |
 | 2026-03-12 | Added `import_arkit_animsequence_as_livelinkface.py` helper to convert a remapped ARKit `AnimSequence` into a Live Link Face-imported `LevelSequence` for direct MetaHuman ARKit-pipeline playback. Verified on `/Game/3_FaceAnims/arkit-remap-demo/AS_arkitremap-demo-main_ARKit`: wrote CSV at ~59.94 fps, imported `/Game/3_FaceAnims/arkit-remap-demo/arkitremap-demo-main_ARKit_cal`, and confirmed subject name `arkitremap-demo-main_ARKit`. | MetaHuman ARKit playback helper |
@@ -51,6 +52,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 - [H. Scrutiny and Gap Analysis](#h-scrutiny-and-gap-analysis)
 - [I. Quality Issues and Improvement Roadmap](#i-quality-issues-and-improvement-roadmap)
 - [J. Ways to Extract PA Data](#j-ways-to-extract-pa-data)
+- [K. UE 5.8 RigMapper System (V3 foundation)](#k-ue-58-rigmapper-system-v3-foundation)
 
 ---
 
@@ -859,3 +861,104 @@ In a test AnimBlueprint using the PA node, log curve names and values after the 
 Check Epic docs for PoseAsset internals, ARKit mapping docs, or community projects that have already extracted this data.
 
 **Recommended order:** J.1 (editor UI) -> J.2 (Python) -> J.3 (C++) -> J.4 (.uasset parsing)
+
+---
+
+## K. UE 5.8 RigMapper System (V3 foundation)
+
+Surveyed 2026-08-12 from engine source + live asset inspection (UE 5.8.1). This is Epic's official curve-remapping framework and the foundation for ARKit Remap V3, which replaces the v2 Python write-pipeline with a `RigMapperDefinition` asset.
+
+**Plugin locations (engine):**
+
+| Plugin | Path | Contents |
+|---|---|---|
+| RigMapper | `Engine/Plugins/Experimental/Animation/RigMapper` | Runtime + editor modules, definition assets, utilities |
+| RigMapperOp | `Engine/Plugins/Experimental/Animation/RigMapperOp` | IK Retargeter ops (Single / UserData RigMapper) |
+| RigLogic | `Engine/Plugins/Animation/RigLogic` | MetaHuman runtime rig eval (open-sourced as OpenRigLogic) |
+| OpenRigLogicSampleContent_5.8 | `Engine/Plugins/Marketplace/...` (from Fab) | `Sample.dna` + `faceboard.json` (2D picker-board GUI definition, MH.6, 175 controls — not a curve mapping) |
+
+### K.1 Data model: URigMapperDefinition
+
+A `UDataAsset` (`RigMapperDefinition.h`) with:
+
+- `Inputs: TArray<FString>` — expected input curve names
+- `Features` — the node graph, 4 typed arrays:
+  - **WeightedSum** (`ws:`): `Inputs: TMap<FString,double>` (name→weight, referencing input curves or other features) + clamp `Range` (`bHasLowerBound/LowerBound/bHasUpperBound/UpperBound`)
+  - **SDK** (`sdk:`, set-driven-key): single `Input` + `Keys: [{In,Out}]` piecewise-linear response curve — Epic's idiom for all nonlinear shaping
+  - **Multiply** (`mul:`): `Inputs: TArray<FString>` multiplied together (the corrective-combination primitive)
+  - **MathOp** (new in 5.8): `Operation` in Min/Max/Abs/Negate/Floor/Ceil/Round/Divide/Multiply/Sum/Clamp/Lerp/Average, inputs are node names or constants
+- `Outputs: TMap<FString,FString>` — output curve name → source node (feature name or direct input passthrough)
+- `NullOutputs: TArray<FString>` — outputs explicitly emitted as null
+- `bValidated` — set by editor validation only (not settable via API)
+
+**JSON round-trip is built in and BlueprintCallable:** `LoadFromJsonFile` / `LoadFromJsonString` / `ExportAsJsonString` / `ExportAsJsonFile`. The definition can therefore live in this repo as versioned JSON and be instantiated into any project in one call. Also useful: `LoadInputsFromSkeletalMesh` / `LoadOutputsFromSkeletalMesh` (populate name lists from a mesh's actual curves — ground truth instead of guessed names).
+
+`URigMapperLinkedDefinitions` chains definitions: `SourceDefinitions` array + `BakeDefinitions()` → flattened `BakedDefinition`. `URigMapperDefinitionUserData` is an `UAssetUserData` holding a definitions array that can be stamped on a SkeletalMesh — both the anim node and retarget ops can auto-discover definitions from it ("tag your character once").
+
+### K.2 Evaluation semantics: FRigMapperProcessor
+
+`RigMapperProcessor.h` — batch evaluator used by every consumer. Values are `TArray<TOptional<float>>`: **missing input curves propagate as unset, not 0.0** (behavioral difference vs. v2 Python, which treated absent as 0 — test explicitly). Definitions are cached in a singleton keyed by asset path; editor edits invalidate the cache (5.8 fixed live re-evaluation). Supports multi-definition chains and frame interpolation (`EvaluateFrames_Interp`).
+
+### K.3 Live path: FAnimNode_RigMapper
+
+Anim graph node ("Rig Mapper" in AnimBP): `SourcePose` link → evaluates definition stack over pose curves → sets output curves on the pose. Key properties: `Definitions` array, `Alpha` (pin shown by default — lerps output curves against input values), `LODThreshold`. If the target SkeletalMesh carries `URigMapperDefinitionUserData`, the node uses it to override its definitions. Output curves drive same-named morph targets automatically (standard UE curve→morph binding), so MHA-space curves in → ARKit-named curves out → ARKit character animates. This is the V3 live-preview path (Live Link Pose node → Rig Mapper node), mirroring the MetaHuman "use live link" toggle UX.
+
+### K.4 Retargeter path: RigMapperOp plugin (5.8 restructure)
+
+Ops are instanced structs under the singleton **"Remap Curves"** parent op (`FIKRetargetCurveRemapOp`); child ops stack in priority order:
+
+- **Single RigMapper** (`FIKRetargetRigMapperOp`): one `Definition` + `bOverrideFromUserDataDefinitions`; multiple can be stacked
+- **UserData RigMapper** (`FIKRetargetRigMapperUserDataOp`): evaluates the target mesh's UserData definitions array in order (the 5.7-compat path)
+- Shared setting `bCopyAllSourceCurves` (false → only remapped curves on output; also applies to exported animations)
+- Both have Python/BP controllers (`UIKRetargetRigMapperOpController` / `...UserDataOpController`) with Get/SetSettings
+- Ops do nothing in `Run()` (bone pass); curve work happens in `ProcessAnimSequenceCurves` (export/bake) and `AnimGraphEvaluateAnyThread` (live retarget preview)
+
+### K.5 Batch conversion: URigMapperEditorSubsystem
+
+BlueprintCallable static functions (Python-scriptable, `RigMapperEditorSubsystem.h`) that convert through a definitions stack between any of: **AnimSequence, CSV (`curve_name, frame_number, value` header), ControlRig section** — each direction with in-place and `*New` (create asset) variants, plus `ConvertAnimSequenceToCsv`, `ConvertCsv` (file→file), Get/SetAnimSequenceRate. This supersedes v2's `arkit_remap.py` curve-writing machinery AND `arkit_csv_export.py` (different CSV schema than Live Link Face format, though — FaceIt CSV import may still want the LLF layout).
+
+### K.6 Utilities content (`/RigMapper/Utilities/`)
+
+| Asset | What it does |
+|---|---|
+| `BP_AnimSequence_AssetActions_ConvertUsingRigMapper` | Right-click AnimSequence(s) → "Convert Selected Using RigMapper". Params: Definitions array, Target Mesh, Output Suffix. Loops selection, calls `ConvertAnimSequenceNew`, saves beside source with suffix. **This is v2's right-click UX, engine-native.** |
+| `BP_RigMapperDefinition_AssetActions` | Right-click a definition → LoadFromJson / ExportToJson / ValidateAssets |
+| `BP_RigMapperLinkedDefinitions_AssetActions` | Right-click linked definitions → BakeDefinitions |
+| `BPI_RigMapper` | Blueprint Interface: `EnableRigMapper`, `OverrideDefinitions` — Epic's runtime toggle contract for characters using the anim node. V3's character BPs should implement it. |
+
+### K.7 Shipped definitions (`/RigMapper/Definitions/`) — and what's NOT there
+
+Structure = Epic's authoring pattern, worth copying:
+
+- `Raw/` — 12 hand-authored single-hop defs
+- `Links/` — 4 `RML_*` chains (e.g. `RML_MHH_FNL` = MHH→FNM→FNH→FNL)
+- `Baked/` — 4 flattened results of baking those chains
+
+Rig families are **control-board namespaces**, not curve spaces:
+
+| Family | Namespace | Example names |
+|---|---|---|
+| MH | MetaHuman Maya faceboard GUI controls (`.tx`/`.ty` attrs) | `CTRL_L_brow_down.ty`, `CTRL_C_jaw.tx` |
+| CD | Alternate/legacy board variant | `CTRL_L_mouth_corner.tx`, `CTRL_C_tongue_move.tx` |
+| FN | Faceware-style | `L_Brow.L_Brow_Up_Down`, `Mouth.phoneme_ch/fv/mbp/oo`, `L_Lipcorner.L_Smile_Frown` |
+
+H/M/L suffixes = fidelity tiers. Authoring conventions observed in the shipped defs: outputs map to `ws:`/`sdk:`/`mul:` features or pass an input straight through; `ws:dummy` = zeroed sink output; `_corrected` suffix = intermediate fix-up feature.
+
+**None of the shipped defs touch ARKit-52 or `CTRL_expressions_*` (MHA's baked space).** Verified likewise: zero ARKit references in the OpenRigLogic repo and the RigLogic whitepaper. Epic's only ARKit data remains `PA_MetaHuman_ARKit_Mapping` (Section D). Our `RM_MHA_to_ARKit` definition is the only asset in this problem space.
+
+### K.8 OpenRigLogic (github.com/EpicGames/OpenRigLogic)
+
+MIT, branch `5.8` = production. DNA read/write + RigLogic runtime evaluation as C++ libs with SWIG Python bindings: load a DNA, `setRawControl(i, v)`, `calculate()`, read `getJointOutputs()` / `getBlendShapeOutputs()` / `getAnimatedMapOutputs()`. Enables offline, numerical evaluation of the actual MetaHuman rig — the basis for the V3 "quality track": build the 52 ARKit basis deformations via the forward PA mapping, evaluate MHA control vectors, solve bounded least-squares for best ARKit weights per sample, then fit the definition's WS/SDK features to those samples (replacing v2's hand calibration).
+
+### K.9 V3 relevance summary
+
+The v2 Python pipeline's roles migrate as follows:
+
+| v2 component | V3 replacement |
+|---|---|
+| `arkit_remap.py` (curve write pipeline) | `URigMapperEditorSubsystem.ConvertAnimSequence*` + right-click asset action |
+| `arkit_remap_payload.json` (weights) | `RM_MHA_to_ARKit` definition JSON (WS/SDK/Multiply/MathOp features) |
+| Mouth-pair model (Python) | `mul:` (LipsTowards×JawOpen product) + `ws:` (means) + `sdk:` (response shaping) features — natively expressible |
+| Temporal smoothing | Not in RigMapper (static per-frame graph). Live path relies on MHA solve smoothness; baked path can keep `temporal_smoothing.py` as optional post-step |
+| CSV export | Subsystem CSV (note different schema than Live Link Face CSV) |
+| Live preview | New in V3: AnimBP with Live Link Pose → Rig Mapper node, `BPI_RigMapper` toggle |
