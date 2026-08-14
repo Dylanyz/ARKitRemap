@@ -39,13 +39,15 @@ Solve:  for any MHA frame with controls c:
 **P0 COMPLETE (2026-08-14).**
 
 ### P1 — OpenRigLogic harness (offline Python, no UE needed)
-- [ ] Build OpenRigLogic `5.8` branch Python bindings (dna + riglogic modules; needs CMake, SWIG, MSVC, Python dev headers).
-- [ ] Load head DNA; enumerate raw/GUI control names, blendshape channels, joints; map MHA curve names ↔ DNA raw control indices.
-- [ ] Evaluate the 52 ARKit basis deformations `B_j`; assess conditioning/overlap (which shapes share deformation mass — brows, mouth region).
-- [ ] Sanity probes: PSD/corrective activation behavior, linearity ranges.
+- [x] Bindings: no build needed — the Poly Hammer Character DNA addon ships prebuilt RigLogic 13.2.5 py313 bindings; they run standalone under Blender 5.2's bundled python.exe (the P1 reference interpreter). scipy installed repo-locally to `v3/.pydeps` (gitignored) via `pip install --target`. Bootstrap/paths: `v3/scripts/p1_env.py`.
+- [x] Harness (2026-08-14): `v3/scripts/riglogic_harness.py` — loads archetype DNA, evaluates raw-control vectors → joint outputs (870×9 flat: t cm / r deg euler / s, deltas from rest) + 82 animated maps. Name audit: **251/251 live MHA `CTRL_expressions_*` curves ↔ DNA raw controls, both directions clean** (case-insensitive; PA extraction lowercased FNames). Remaining 12 raw controls are neck/head `.q*` quat channels (bone-driven, not curves).
+- [x] Basis (2026-08-14): `v3/scripts/build_basis.py` → `v3/data/arkit_basis_joints.npz` (B 51×7830 + control vectors + animated-map deltas) + `v3/reports/p1_basis_report.{json,md}`. B_j = RigLogic(raw pose j) − RigLogic(raw Default), evaluated through the real rig (gotcha: `raw[pose]` records are nested `{frame, curves}`). **Conditioning: full rank 51, condition number 21.8, σ 122.6→5.6** — comfortably invertible. 15 cosine>0.5 overlap pairs, all anatomically expected (Smile/Dimple .85, Funnel/Pucker .84, RollLower/Press .76, EyeSquint/CheekSquint .67, UpperUp/NoseSneer .62, Blink/LookDown .57, LookUp/EyeWide .55).
+- [x] Sanity probes (2026-08-14): rig is near-linear along basis directions — JawOpen/MouthSmileLeft/EyeBlinkLeft deformation norm deviates 0.000 from linear ramp; CheekPuff worst at 1.8% (PSD correctives). Solved self-weight tracks scale.
+
+**P1 COMPLETE (2026-08-14).**
 
 ### P2 — Inverse solve + definition fitting
-- [ ] Bounded least-squares per-frame solver (`c → w*`), validated on synthetic poses (feed pure ARKit basis poses through — should recover identity).
+- [x] Bounded least-squares per-frame solver (2026-08-14): `v3/scripts/inverse_solver.py` (`InverseSolver`, scipy BVLS on the joint-space basis, w∈[0,1]^51). Identity validation: **51/51 basis poses recovered exactly** (self weight 1.0, crosstalk 0.0, residual 0.0) — `v3/reports/p1_solver_validation.{json,md}`.
 - [ ] Sample set: real MHA takes (MDR_58_tester has several) + synthetic control sweeps.
 - [ ] Fit a sparse WS/SDK/MathOp feature graph per ARKit output from the samples; MouthClose/JawOpen handled by inverting the ABP formula exactly, not by tuned constants.
 - [ ] Export `v3/RM_MHA_to_ARKit.json` (RigMapperDefinition JSON schema).

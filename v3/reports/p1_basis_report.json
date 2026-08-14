@@ -1,0 +1,465 @@
+{
+  "liveCurveAudit": {
+    "liveExpressionCurves": 251,
+    "matchedToDna": 251,
+    "liveCurvesWithNoDnaControl": [],
+    "dnaControlsNotInLiveStream": []
+  },
+  "baseline": {
+    "defaultControlCount": 2,
+    "unmatchedCurves": [],
+    "jointNorm": 0.0
+  },
+  "poses": {
+    "EyeBlinkLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 49.76630682419387,
+      "activeJointCount": 128
+    },
+    "EyeLookDownLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 64.17898420742698,
+      "activeJointCount": 128
+    },
+    "EyeLookInLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 39.362263733317896,
+      "activeJointCount": 124
+    },
+    "EyeLookOutLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 44.091257656371575,
+      "activeJointCount": 124
+    },
+    "EyeLookUpLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 38.96362591152587,
+      "activeJointCount": 125
+    },
+    "EyeSquintLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 20.404038072881598,
+      "activeJointCount": 123
+    },
+    "EyeWideLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 16.082986648965974,
+      "activeJointCount": 123
+    },
+    "EyeBlinkRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 49.61368220356567,
+      "activeJointCount": 128
+    },
+    "EyeLookDownRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 64.11549045344564,
+      "activeJointCount": 128
+    },
+    "EyeLookInRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 39.22909337447465,
+      "activeJointCount": 124
+    },
+    "EyeLookOutRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 44.24794768557999,
+      "activeJointCount": 124
+    },
+    "EyeLookUpRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 39.052856581117275,
+      "activeJointCount": 125
+    },
+    "EyeSquintRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 20.424457607076988,
+      "activeJointCount": 123
+    },
+    "EyeWideRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 17.133018587394467,
+      "activeJointCount": 123
+    },
+    "JawForward": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 29.95168473446569,
+      "activeJointCount": 484
+    },
+    "JawLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 34.99039586669404,
+      "activeJointCount": 590
+    },
+    "JawRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 31.93917324102795,
+      "activeJointCount": 589
+    },
+    "JawOpen": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 58.34956319800791,
+      "activeJointCount": 667
+    },
+    "MouthFunnel": {
+      "controlCount": 6,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 49.24163564824101,
+      "activeJointCount": 482
+    },
+    "MouthPucker": {
+      "controlCount": 14,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 40.186286380387266,
+      "activeJointCount": 482
+    },
+    "MouthLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 94.12989121732555,
+      "activeJointCount": 496
+    },
+    "MouthRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 94.51197033705833,
+      "activeJointCount": 496
+    },
+    "MouthSmileLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 38.67675237856295,
+      "activeJointCount": 459
+    },
+    "MouthSmileRight": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 37.662598882117635,
+      "activeJointCount": 458
+    },
+    "MouthFrownLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 18.905999159401514,
+      "activeJointCount": 255
+    },
+    "MouthFrownRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 18.30054346200169,
+      "activeJointCount": 255
+    },
+    "MouthDimpleLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 24.70885888189545,
+      "activeJointCount": 436
+    },
+    "MouthDimpleRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 24.918527700464537,
+      "activeJointCount": 437
+    },
+    "MouthStretchLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 26.32623540339457,
+      "activeJointCount": 479
+    },
+    "MouthStretchRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 25.53390642106313,
+      "activeJointCount": 479
+    },
+    "MouthRollLower": {
+      "controlCount": 6,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 60.22387010101489,
+      "activeJointCount": 260
+    },
+    "MouthRollUpper": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 54.50081092755262,
+      "activeJointCount": 163
+    },
+    "MouthShrugLower": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 26.53742449029845,
+      "activeJointCount": 287
+    },
+    "MouthShrugUpper": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 13.866926122668977,
+      "activeJointCount": 445
+    },
+    "MouthPressLeft": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 54.07650572774775,
+      "activeJointCount": 318
+    },
+    "MouthPressRight": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 54.335369372828595,
+      "activeJointCount": 318
+    },
+    "MouthLowerDownLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 12.586869805262225,
+      "activeJointCount": 232
+    },
+    "MouthLowerDownRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 12.494242757318395,
+      "activeJointCount": 232
+    },
+    "MouthUpperUpLeft": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 27.33911360041399,
+      "activeJointCount": 302
+    },
+    "MouthUpperUpRight": {
+      "controlCount": 3,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 28.07901140307048,
+      "activeJointCount": 302
+    },
+    "BrowDownLeft": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 8.687512903052298,
+      "activeJointCount": 145
+    },
+    "BrowDownRight": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 8.183178926501014,
+      "activeJointCount": 251
+    },
+    "BrowInnerUp": {
+      "controlCount": 6,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 21.88624380404336,
+      "activeJointCount": 365
+    },
+    "BrowOuterUpLeft": {
+      "controlCount": 5,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 21.38666052426382,
+      "activeJointCount": 226
+    },
+    "BrowOuterUpRight": {
+      "controlCount": 5,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 21.877228655931155,
+      "activeJointCount": 319
+    },
+    "CheekPuff": {
+      "controlCount": 7,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 55.64706728992493,
+      "activeJointCount": 611
+    },
+    "CheekSquintLeft": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 21.755875914806012,
+      "activeJointCount": 338
+    },
+    "CheekSquintRight": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 22.24757281075277,
+      "activeJointCount": 431
+    },
+    "NoseSneerLeft": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 27.390472692267206,
+      "activeJointCount": 383
+    },
+    "NoseSneerRight": {
+      "controlCount": 4,
+      "unmatchedCurves": [],
+      "jointDeltaNorm": 27.855117242605314,
+      "activeJointCount": 458
+    },
+    "TongueOut": {
+      "controlCount": 8,
+      "unmatchedCurves": [
+        "ctrl_expressions_tonguerolldown"
+      ],
+      "jointDeltaNorm": 44.60632797781926,
+      "activeJointCount": 161
+    }
+  },
+  "conditioning": {
+    "singularValues": [
+      122.646,
+      101.7932,
+      81.846,
+      81.7012,
+      74.6804,
+      58.9863,
+      58.7136,
+      58.7085,
+      54.6821,
+      51.2042,
+      46.2113,
+      44.6064,
+      42.0864,
+      42.0539,
+      40.3665,
+      39.0272,
+      38.5786,
+      32.4296,
+      30.6513,
+      30.1504,
+      28.9179,
+      26.1251,
+      25.2135,
+      23.8232,
+      22.7622,
+      22.4384,
+      21.6719,
+      19.3447,
+      18.988,
+      18.0688,
+      17.5572,
+      16.5864,
+      15.9893,
+      15.6685,
+      15.2159,
+      12.9624,
+      12.792,
+      11.9879,
+      11.8274,
+      9.826,
+      9.625,
+      8.9442,
+      8.6952,
+      8.3063,
+      8.1466,
+      7.8205,
+      7.3982,
+      6.9217,
+      6.5767,
+      6.0792,
+      5.6356
+    ],
+    "conditionNumber": 21.76267239154411,
+    "rankAt1e-3RelTol": 51,
+    "minPoseNorm": {
+      "pose": "BrowDownRight",
+      "norm": 8.183178926501013
+    },
+    "maxPoseNorm": {
+      "pose": "MouthRight",
+      "norm": 94.51197033705844
+    },
+    "overlappingPairs": [
+      {
+        "a": "MouthSmileLeft",
+        "b": "MouthDimpleLeft",
+        "cosine": 0.8459
+      },
+      {
+        "a": "MouthSmileRight",
+        "b": "MouthDimpleRight",
+        "cosine": 0.8417
+      },
+      {
+        "a": "MouthFunnel",
+        "b": "MouthPucker",
+        "cosine": 0.8396
+      },
+      {
+        "a": "MouthRollLower",
+        "b": "MouthPressRight",
+        "cosine": 0.7653
+      },
+      {
+        "a": "MouthRollLower",
+        "b": "MouthPressLeft",
+        "cosine": 0.7603
+      },
+      {
+        "a": "EyeSquintLeft",
+        "b": "CheekSquintLeft",
+        "cosine": 0.6705
+      },
+      {
+        "a": "EyeSquintRight",
+        "b": "CheekSquintRight",
+        "cosine": 0.665
+      },
+      {
+        "a": "MouthUpperUpRight",
+        "b": "NoseSneerRight",
+        "cosine": 0.6278
+      },
+      {
+        "a": "MouthUpperUpLeft",
+        "b": "NoseSneerLeft",
+        "cosine": 0.6122
+      },
+      {
+        "a": "EyeBlinkRight",
+        "b": "EyeLookDownRight",
+        "cosine": 0.5712
+      },
+      {
+        "a": "EyeBlinkLeft",
+        "b": "EyeLookDownLeft",
+        "cosine": 0.566
+      },
+      {
+        "a": "EyeLookUpRight",
+        "b": "EyeWideRight",
+        "cosine": 0.5473
+      },
+      {
+        "a": "EyeLookUpLeft",
+        "b": "EyeWideLeft",
+        "cosine": 0.5466
+      },
+      {
+        "a": "MouthSmileRight",
+        "b": "MouthUpperUpRight",
+        "cosine": 0.5191
+      },
+      {
+        "a": "MouthSmileLeft",
+        "b": "MouthUpperUpLeft",
+        "cosine": 0.5138
+      }
+    ]
+  }
+}

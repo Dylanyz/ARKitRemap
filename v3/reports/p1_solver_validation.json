@@ -1,0 +1,1022 @@
+{
+  "identity": {
+    "recovered": 51,
+    "total": 51,
+    "meanSelfWeight": 1.0,
+    "meanCrosstalkL1": 0.0,
+    "failures": [],
+    "rows": [
+      {
+        "pose": "EyeBlinkLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeBlinkLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookDownLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookDownLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookInLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookInLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookOutLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookOutLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookUpLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookUpLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeSquintLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeSquintLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeWideLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeWideLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeBlinkRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeBlinkRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookDownRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookDownRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookInRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookInRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookOutRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookOutRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeLookUpRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeLookUpRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeSquintRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeSquintRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "EyeWideRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "EyeWideRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "JawForward",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "JawForward",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "JawLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "JawLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "JawRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "JawRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "JawOpen",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "JawOpen",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthFunnel",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthFunnel",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthPucker",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthPucker",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthSmileLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthSmileLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthSmileRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthSmileRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthFrownLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthFrownLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthFrownRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthFrownRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthDimpleLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthDimpleLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthDimpleRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthDimpleRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthStretchLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthStretchLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthStretchRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthStretchRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthRollLower",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthRollLower",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthRollUpper",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthRollUpper",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "MouthRollLower",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthShrugLower",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthShrugLower",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthShrugUpper",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthShrugUpper",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthPressLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthPressLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthPressRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthPressRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthLowerDownLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthLowerDownLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthLowerDownRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthLowerDownRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthUpperUpLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthUpperUpLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "MouthUpperUpRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "MouthUpperUpRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "BrowDownLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "BrowDownLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "BrowDownRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "BrowDownRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "BrowDownRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "BrowInnerUp",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "BrowInnerUp",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "BrowOuterUpLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "BrowOuterUpLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "BrowOuterUpRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "BrowOuterUpRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "CheekPuff",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "CheekPuff",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "CheekSquintLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "CheekSquintLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "CheekSquintRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "CheekSquintRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "NoseSneerLeft",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "NoseSneerLeft",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "TongueOut",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "NoseSneerRight",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "NoseSneerRight",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "TongueOut",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      },
+      {
+        "pose": "TongueOut",
+        "selfWeight": 1.0,
+        "topWeight": {
+          "name": "TongueOut",
+          "value": 1.0
+        },
+        "secondWeight": {
+          "name": "NoseSneerRight",
+          "value": 0.0
+        },
+        "crosstalkL1": 0.0,
+        "relResidual": 0.0,
+        "recovered": true
+      }
+    ]
+  },
+  "linearity": [
+    {
+      "pose": "JawOpen",
+      "maxNormDeviationFromLinear": 0.0,
+      "steps": [
+        {
+          "t": 0.0,
+          "normRatio": 0.0,
+          "selfWeight": 0.0
+        },
+        {
+          "t": 0.1,
+          "normRatio": 0.1,
+          "selfWeight": 0.1
+        },
+        {
+          "t": 0.2,
+          "normRatio": 0.2,
+          "selfWeight": 0.2
+        },
+        {
+          "t": 0.3,
+          "normRatio": 0.3,
+          "selfWeight": 0.3
+        },
+        {
+          "t": 0.4,
+          "normRatio": 0.4,
+          "selfWeight": 0.4
+        },
+        {
+          "t": 0.5,
+          "normRatio": 0.5,
+          "selfWeight": 0.5
+        },
+        {
+          "t": 0.6,
+          "normRatio": 0.6,
+          "selfWeight": 0.6
+        },
+        {
+          "t": 0.7,
+          "normRatio": 0.7,
+          "selfWeight": 0.7
+        },
+        {
+          "t": 0.8,
+          "normRatio": 0.8,
+          "selfWeight": 0.8
+        },
+        {
+          "t": 0.9,
+          "normRatio": 0.9,
+          "selfWeight": 0.9
+        },
+        {
+          "t": 1.0,
+          "normRatio": 1.0,
+          "selfWeight": 1.0
+        }
+      ]
+    },
+    {
+      "pose": "MouthSmileLeft",
+      "maxNormDeviationFromLinear": 0.0,
+      "steps": [
+        {
+          "t": 0.0,
+          "normRatio": 0.0,
+          "selfWeight": 0.0
+        },
+        {
+          "t": 0.1,
+          "normRatio": 0.1,
+          "selfWeight": 0.1
+        },
+        {
+          "t": 0.2,
+          "normRatio": 0.2,
+          "selfWeight": 0.2
+        },
+        {
+          "t": 0.3,
+          "normRatio": 0.3,
+          "selfWeight": 0.3
+        },
+        {
+          "t": 0.4,
+          "normRatio": 0.4,
+          "selfWeight": 0.4
+        },
+        {
+          "t": 0.5,
+          "normRatio": 0.5,
+          "selfWeight": 0.5
+        },
+        {
+          "t": 0.6,
+          "normRatio": 0.6,
+          "selfWeight": 0.6
+        },
+        {
+          "t": 0.7,
+          "normRatio": 0.7,
+          "selfWeight": 0.7
+        },
+        {
+          "t": 0.8,
+          "normRatio": 0.8,
+          "selfWeight": 0.8
+        },
+        {
+          "t": 0.9,
+          "normRatio": 0.9,
+          "selfWeight": 0.9
+        },
+        {
+          "t": 1.0,
+          "normRatio": 1.0,
+          "selfWeight": 1.0
+        }
+      ]
+    },
+    {
+      "pose": "EyeBlinkLeft",
+      "maxNormDeviationFromLinear": 0.0,
+      "steps": [
+        {
+          "t": 0.0,
+          "normRatio": 0.0,
+          "selfWeight": 0.0
+        },
+        {
+          "t": 0.1,
+          "normRatio": 0.1,
+          "selfWeight": 0.1
+        },
+        {
+          "t": 0.2,
+          "normRatio": 0.2,
+          "selfWeight": 0.2
+        },
+        {
+          "t": 0.3,
+          "normRatio": 0.3,
+          "selfWeight": 0.3
+        },
+        {
+          "t": 0.4,
+          "normRatio": 0.4,
+          "selfWeight": 0.4
+        },
+        {
+          "t": 0.5,
+          "normRatio": 0.5,
+          "selfWeight": 0.5
+        },
+        {
+          "t": 0.6,
+          "normRatio": 0.6,
+          "selfWeight": 0.6
+        },
+        {
+          "t": 0.7,
+          "normRatio": 0.7,
+          "selfWeight": 0.7
+        },
+        {
+          "t": 0.8,
+          "normRatio": 0.8,
+          "selfWeight": 0.8
+        },
+        {
+          "t": 0.9,
+          "normRatio": 0.9,
+          "selfWeight": 0.9
+        },
+        {
+          "t": 1.0,
+          "normRatio": 1.0,
+          "selfWeight": 1.0
+        }
+      ]
+    },
+    {
+      "pose": "CheekPuff",
+      "maxNormDeviationFromLinear": 0.0179,
+      "steps": [
+        {
+          "t": 0.0,
+          "normRatio": 0.0,
+          "selfWeight": 0.0
+        },
+        {
+          "t": 0.1,
+          "normRatio": 0.1058,
+          "selfWeight": 0.081
+        },
+        {
+          "t": 0.2,
+          "normRatio": 0.2064,
+          "selfWeight": 0.1662
+        },
+        {
+          "t": 0.3,
+          "normRatio": 0.3033,
+          "selfWeight": 0.2556
+        },
+        {
+          "t": 0.4,
+          "normRatio": 0.3978,
+          "selfWeight": 0.3493
+        },
+        {
+          "t": 0.5,
+          "normRatio": 0.4914,
+          "selfWeight": 0.4472
+        },
+        {
+          "t": 0.6,
+          "normRatio": 0.5857,
+          "selfWeight": 0.5493
+        },
+        {
+          "t": 0.7,
+          "normRatio": 0.6821,
+          "selfWeight": 0.6556
+        },
+        {
+          "t": 0.8,
+          "normRatio": 0.7824,
+          "selfWeight": 0.7662
+        },
+        {
+          "t": 0.9,
+          "normRatio": 0.8879,
+          "selfWeight": 0.881
+        },
+        {
+          "t": 1.0,
+          "normRatio": 1.0,
+          "selfWeight": 1.0
+        }
+      ]
+    }
+  ]
+}
