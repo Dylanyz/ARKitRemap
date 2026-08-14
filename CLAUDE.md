@@ -1,6 +1,12 @@
-# ARKit Remap — Agent Instructions
+# ARKit Remap
 
-MHA-to-ARKit facial curve remapping pipeline for Unreal Engine. Converts MetaHuman Animator `CTRL_expressions` curves into 52 ARKit blendshapes for FaceIt-rigged characters.
+MHA-to-ARKit facial curve remapping pipeline for Unreal Engine. Converts MetaHuman Animator `CTRL_expressions` curves into the 52 ARKit blendshapes for any ARKit-52-rigged character (FaceIt is the documented example).
+
+This repo is set up for **Claude Code**. The `arkit-remap` skill in `.claude/skills/` carries the full pipeline context and loads on demand.
+
+## ⚠️ V3 is the active workstream — v2 is legacy
+
+**Read `plans/arkit-remap-v3-plan.md` first.** V3 rebuilds the mapping from scratch on UE 5.8's RigMapper system + OpenRigLogic (see `dev/knowledge-base.md` Section K). Hard rule from Dylan: **v2's mapping numbers (payload weights, calibration constants) were AI-guessed and must NOT feed V3.** V2 material below is process/reference knowledge only.
 
 ## Project structure
 
@@ -50,7 +56,7 @@ Keep these in sync after any pipeline changes:
 
 1. `dev/knowledge-base.md` Section E.6 — update behavior/coverage description
 2. `dev/knowledge-base.md` Revision Log — add a dated entry
-3. Skill files (`.cursor/skills/arkit-remap/SKILL.md` and `.agent/skills/arkit-remap/SKILL.md`)
+3. `.claude/skills/arkit-remap/SKILL.md` — if workflow or packaging changed
 4. `dev/mapping-pose-asset/AGENT_INDEX.md` — if payload or script paths changed
 5. `CHANGELOG.md` — for user-visible changes
 
@@ -70,7 +76,7 @@ Produces `dist/ARKitRemap-v<version>.zip` from `release/` contents.
 - Unified mouth-pair model: MouthClose derived from LipsTowards + LipsPurse, JawOpen purse-compensated
 - minWeight filter (0.05) removes trace contributor artifacts
 - EMA smoothing recommended over One-Euro
-- Tested on UE 5.7
+- Tested on UE 5.7 (v2); V3 targets UE 5.8
 
 ## Deep dive
 

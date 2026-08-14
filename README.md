@@ -257,13 +257,13 @@ This tool was built through extensive reverse engineering of Epic's MetaHuman an
 
 ## Contributing
 
-Using agents like Cursor or Antigravity? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and ask it to clone(download) the development files to your computer. The whole project is already setup for the agents to work with.
+Using **Claude Code**? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and ask it to clone(download) the development files to your computer. The repo ships a `CLAUDE.md` and an `arkit-remap` skill, so Claude Code picks up the full project context automatically.
 
 Want to improve the remap quality, add new features, or help with research? See **[CONTRIBUTING.md](CONTRIBUTING.md)** for:
 
 - Repository structure guide
 - How to set up the dev environment
-- How to use AI agents (Cursor) with the included skills and rules
+- How to use Claude Code with the included skill
 - Where to find everything
 
 ## License

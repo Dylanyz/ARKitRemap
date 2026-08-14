@@ -1,6 +1,6 @@
 # Contributing to ARKit Remap
 
-Using agents like Cursor or Antigravity? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and ask it to clone(download) the development files to your computer. The whole project is already setup for the agents to work with.
+Using **Claude Code**? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and ask it to clone(download) the development files to your computer. The whole project is already set up for Claude Code to work with.
 
 Welcome! This project benefits from both human contributors and AI agent workflows. This guide covers the repo layout, how to get started, and how to work effectively — whether you're coding by hand or using an AI assistant.
 
@@ -42,20 +42,11 @@ ARKitRemap/
 │   ├── arkit-remap-next-steps_f8a2c301.plan.md
 │   └── pose_asset_extraction_methods_research.md
 │
-├── AGENTS.md                 Universal agent instructions (works with all AI tools)
-├── GEMINI.md                 Antigravity-native entry point
-├── .cursor/                  Cursor IDE agent integration
-│   ├── rules/
-│   │   └── arkit-remap.mdc      Trigger rules for ARKit remap context
+├── CLAUDE.md                 Claude Code project instructions (entry point)
+├── .claude/                  Claude Code integration
 │   └── skills/
 │       └── arkit-remap/
-│           └── SKILL.md          Agent skill with full pipeline context
-├── .agent/                   Antigravity IDE agent integration
-│   ├── rules/
-│   │   └── arkit-remap.md       Same rules, Antigravity format
-│   └── skills/
-│       └── arkit-remap/
-│           └── SKILL.md          Same skill, Antigravity discovery path
+│           └── SKILL.md          Skill with full pipeline context
 │
 ├── legacy/                   Legacy Blueprint AnimModifier (.uasset)
 │   └── AM_ArKitRemap.uasset
@@ -111,17 +102,12 @@ Some scripts (like `roundtrip_validation.py` and `coupled_solve.py`) are pure Py
 
 ## Working with AI Agents
 
-This repo is set up for productive AI-assisted development with multiple tools. Agent instructions and skills are provided for both **Cursor** and **Google Antigravity**, plus a universal `AGENTS.md` that works with any tool supporting the standard (Codex, Copilot, Windsurf, Jules, Aider, etc.).
+This repo is set up for productive AI-assisted development with **Claude Code**:
 
-### Quick setup by tool
+- `CLAUDE.md` at the root is loaded automatically when you open the repo — structure, key files, run/test/release workflows, and sync protocols.
+- `.claude/skills/arkit-remap/SKILL.md` is discovered automatically and loads full pipeline context when the conversation touches the remap (mention "ARKit remap", "MHA to ARKit", etc.).
 
-| Tool | What happens when you open the repo |
-|------|------|
-| **Cursor** | `.cursor/rules/` and `.cursor/skills/` are auto-detected. Mentioning "ARKit remap" triggers the skill. |
-| **Antigravity** | `AGENTS.md` is loaded automatically. `.agent/skills/` and `.agent/rules/` are discovered. `GEMINI.md` also available. |
-| **Codex / Copilot / Windsurf / others** | `AGENTS.md` at the root is auto-detected. Full project context in one file. |
-
-No manual configuration needed for any of these — just open the repo.
+No manual configuration needed — just open the repo in Claude Code.
 
 ### What the agent gets
 
@@ -144,19 +130,12 @@ All agent configurations provide:
 
 ### Adding new rules or skills
 
-For Cursor:
 ```
-.cursor/rules/your-rule.mdc
-.cursor/skills/your-skill/SKILL.md
-```
-
-For Antigravity:
-```
-.agent/rules/your-rule.md
-.agent/skills/your-skill/SKILL.md
+.claude/skills/your-skill/SKILL.md    on-demand context, triggered by topic
+CLAUDE.md                             always-loaded project instructions
 ```
 
-For universal compatibility, add instructions to `AGENTS.md`.
+Keep `CLAUDE.md` lean (it loads every session); put deep context in skills.
 
 ---
 
