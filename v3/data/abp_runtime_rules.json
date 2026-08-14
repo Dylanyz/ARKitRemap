@@ -1,0 +1,78 @@
+{
+ "metadata": {
+  "extractedFrom": "/Game/MetaHumans/Common/Animation/ABP_MH_LiveLink",
+  "engineVersion": "5.8.1-56057345+++UE5+Release-5.8",
+  "extractedOn": "2026-08-14",
+  "method": "Epic unreal-mcp BlueprintTools (get_connected_subgraph on AnimGraph root, read_graph_dsl on EventGraph) + unreal-py node struct export_text + generated-class CDO read",
+  "purpose": "Mechanical record of every runtime formula ABP_MH_LiveLink applies AROUND PA_MetaHuman_ARKit_Mapping. These are the rules V3 must invert/account for beyond the PoseAsset table itself (see v3/data/pa_mapping.json)."
+ },
+ "animGraphChainProcessedBranch": [
+  "UseCachedPose 'BodyPose' (from CopyPoseFromMesh: use_attached_parent=True, copy_curves=True)",
+  "LiveLinkPose (subject = LLink_Face_Subj, bDoLiveLinkEvaluation=True)",
+  "PoseBlendNode PA_MetaHuman_ARKit_Mapping (ARKit curves -> ctrl_expressions weights)",
+  "ModifyCurve BLEND: CurveMap = CustomControlValues (user override map, default empty)",
+  "ModifyCurve BLEND alpha=1: mouthClose block (see mouthCloseRule)",
+  "Slot 'DefaultSlot'",
+  "ModifyCurve BLEND alpha=JawOpenAlpha: CTRL_expressions_jawOpen = 1.0",
+  "ModifyCurve BLEND alpha=TeethShowAlpha: 8 teeth-show curves = 1.0 (see teethShowCurves)",
+  "LayeredBoneBlend (BasePose=BodyPose, BlendWeights_0=1.0, curve_blend_option=OVERRIDE, mode=BRANCH_FILTER, layer_setup=[{}] i.e. branch filter configured in editor)",
+  "ModifyCurve BLEND alpha=1: HeadControlSwitch = 1.0",
+  "ModifyCurve BLEND alpha=1: HeadRoll/HeadYaw/HeadPitch from ARKit_HeadRotation (see headRotationRule)",
+  "BlendPosesByBool (bActiveValue=IsMHFDS, blend times 0.1s): TRUE -> raw LiveLinkPose passthrough (MHFDS/MHA input needs NO mapping), FALSE -> the processed chain above",
+  "OutputPose"
+ ],
+ "mouthCloseRule": {
+  "formula": "LipsTogether = Clamp(SafeDivide(GetCurveValue('MouthClose'), GetCurveValue('JawOpen')), 0.0, 1.0)",
+  "writtenTo": [
+   "CTRL_expressions_mouthLipsTogetherDL",
+   "CTRL_expressions_mouthLipsTogetherDR",
+   "CTRL_expressions_mouthLipsTogetherUL",
+   "CTRL_expressions_mouthLipsTogetherUR"
+  ],
+  "applyMode": "Blend, alpha 1.0",
+  "note": "SafeDivide returns 0 when divisor is 0. This is the ONLY place MouthClose influences the MetaHuman - there is no MouthClose pose in the PoseAsset. V3 reverse rule must synthesize ARKit MouthClose from lipsTogether* (and jawOpen) curves."
+ },
+ "jawOpenOverride": {
+  "curve": "CTRL_expressions_jawOpen",
+  "value": 1.0,
+  "alphaVariable": "JawOpenAlpha",
+  "alphaDefault": 0.0,
+  "note": "Manual/runtime override only - inactive by default, not part of the mapping."
+ },
+ "teethShowOverride": {
+  "curves": [
+   "CTRL_expressions_mouthLowerLipDepressL",
+   "CTRL_expressions_mouthLowerLipDepressR",
+   "CTRL_expressions_mouthUpperLipRaiseL",
+   "CTRL_expressions_mouthUpperLipRaiseR",
+   "CTRL_expressions_mouthCornerPullL",
+   "CTRL_expressions_mouthCornerPullR",
+   "CTRL_expressions_mouthStretchL",
+   "CTRL_expressions_mouthStretchR"
+  ],
+  "value": 1.0,
+  "alphaVariable": "TeethShowAlpha",
+  "alphaDefault": 0.0,
+  "note": "Manual/runtime override only - inactive by default."
+ },
+ "headRotationRule": {
+  "eventGraph": "IsMHFDS = bool(LiveLinkGetPropertyValue(frame, 'CTRL_expressions_mouthUp')) OR ForceMHFDS; if (!IsMHFDS AND LLink_Face_Head): ARKit_HeadRotation = MakeRotator(Roll=headYaw*50.0, Pitch=headRoll*50.0, Yaw=headPitch*-50.0)",
+  "eventGraphRawDsl": "(bind _output_get (SetIsMHFDS (or (GetPropertyValue _dataresult \"CTRL_expressions_mouthUp\") (GetForceMHFDS)))) (if (and (not _output_get) (GetLLink_Face_Head)) (SetARKit_HeadRotation (MakeRotator (* headYaw 50.000000) (* headRoll 50.000000) (* headPitch -50.000000))))",
+  "makeRotatorArgOrder": "UE KismetMathLibrary.MakeRotator(Roll, Pitch, Yaw) - so the ARKit head channels are CROSS-ASSIGNED into rotator slots (headYaw->Roll slot, headRoll->Pitch slot, headPitch->negated Yaw slot). v2 KB paraphrased this differently; this is the literal 5.8 wiring.",
+  "animGraphConsumption": "ARKit_HeadRotation -> ToQuaternion -> Euler(Quat) -> BreakVector: X -> HeadRoll curve, Z -> HeadYaw curve, Y -> HeadPitch curve (Blend, alpha 1). HeadControlSwitch set to 1.0 immediately before.",
+  "note": "Head is out of scope for the V3 remap definition (body mocap owns the head), but recorded for the live-preview ABP template."
+ },
+ "mhfdsSwitch": {
+  "detection": "presence/truthiness of CTRL_expressions_mouthUp property on the Live Link frame (Basic role), OR ForceMHFDS variable",
+  "meaning": "TRUE = subject already streams MetaHuman-space curves (MHA real-time / MHFDS) -> PoseAsset mapping is BYPASSED entirely; FALSE = ARKit-space subject (Live Link Face) -> full processed chain",
+  "blendTimeSeconds": 0.1,
+  "v3Relevance": "Confirms MHA real-time subjects stream CTRL_expressions_* curves (the sniff tests for CTRL_expressions_mouthUp). Final on-wire curve-name verification still pending a live stream test."
+ },
+ "classDefaults": {
+  "JawOpenAlpha": 0.0,
+  "TeethShowAlpha": 0.0,
+  "LLink_Face_Head": true,
+  "ForceMHFDS": false,
+  "note": "IsMHFDS=true and LLink_Face_Subj='testtzest' in the project's saved asset are Dylan's local instance state, not Epic defaults."
+ }
+}
