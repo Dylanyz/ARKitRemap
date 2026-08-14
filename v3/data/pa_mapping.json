@@ -1,0 +1,1799 @@
+{
+ "metadata": {
+  "extractedFrom": {
+   "poseAsset": "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping",
+   "sourceAnimation": "/Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping"
+  },
+  "engineVersion": "5.8.1-56057345+++UE5+Release-5.8",
+  "extractionScript": "v3/scripts/extract_pa_mapping.py",
+  "fps": 24.0,
+  "poseToTimeRule": "pose index i <-> frame i (time i/24) for indices 0..51",
+  "poseIndexLayout": "0=Default, 1..51=ARKit (no MouthClose pose), 52=Pose_4 (on-grid), 53..65=Pose_5..Pose_17 (unassigned, see offGridSamples)",
+  "baselineRule": "adjusted[pose][curve] = raw[pose][curve] - raw[Default][curve]",
+  "zeroPolicy": "exact zeros omitted in raw; |v|<=1e-9 omitted in adjusted"
+ },
+ "summary": {
+  "poseCount": 66,
+  "gridPoseCount": 53,
+  "curveCount": 1172,
+  "nonzeroRawRecords": 570,
+  "nonzeroAdjustedRecords": 422,
+  "offGridSampleTimes": 25,
+  "warnings": []
+ },
+ "poseNames": [
+  "Default",
+  "EyeBlinkLeft",
+  "EyeLookDownLeft",
+  "EyeLookInLeft",
+  "EyeLookOutLeft",
+  "EyeLookUpLeft",
+  "EyeSquintLeft",
+  "EyeWideLeft",
+  "EyeBlinkRight",
+  "EyeLookDownRight",
+  "EyeLookInRight",
+  "EyeLookOutRight",
+  "EyeLookUpRight",
+  "EyeSquintRight",
+  "EyeWideRight",
+  "JawForward",
+  "JawLeft",
+  "JawRight",
+  "JawOpen",
+  "MouthFunnel",
+  "MouthPucker",
+  "MouthLeft",
+  "MouthRight",
+  "MouthSmileLeft",
+  "MouthSmileRight",
+  "MouthFrownLeft",
+  "MouthFrownRight",
+  "MouthDimpleLeft",
+  "MouthDimpleRight",
+  "MouthStretchLeft",
+  "MouthStretchRight",
+  "MouthRollLower",
+  "MouthRollUpper",
+  "MouthShrugLower",
+  "MouthShrugUpper",
+  "MouthPressLeft",
+  "MouthPressRight",
+  "MouthLowerDownLeft",
+  "MouthLowerDownRight",
+  "MouthUpperUpLeft",
+  "MouthUpperUpRight",
+  "BrowDownLeft",
+  "BrowDownRight",
+  "BrowInnerUp",
+  "BrowOuterUpLeft",
+  "BrowOuterUpRight",
+  "CheekPuff",
+  "CheekSquintLeft",
+  "CheekSquintRight",
+  "NoseSneerLeft",
+  "NoseSneerRight",
+  "TongueOut",
+  "Pose_4",
+  "Pose_5",
+  "Pose_6",
+  "Pose_7",
+  "Pose_8",
+  "Pose_9",
+  "Pose_10",
+  "Pose_11",
+  "Pose_12",
+  "Pose_13",
+  "Pose_14",
+  "Pose_15",
+  "Pose_16",
+  "Pose_17"
+ ],
+ "raw": {
+  "Default": {
+   "frame": 0,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "EyeBlinkLeft": {
+   "frame": 1,
+   "curves": {
+    "ctrl_expressions_eyeblinkl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm1_color_head_wm1_blink_l": 1.0,
+    "head_cm1_color_head_wm1_squintinner_l": 0.30000001192092896
+   }
+  },
+  "EyeLookDownLeft": {
+   "frame": 2,
+   "curves": {
+    "ctrl_expressions_eyelookdownl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm1_color_head_wm1_blink_l": 1.0
+   }
+  },
+  "EyeLookInLeft": {
+   "frame": 3,
+   "curves": {
+    "ctrl_expressions_eyelookrightl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0
+   }
+  },
+  "EyeLookOutLeft": {
+   "frame": 4,
+   "curves": {
+    "ctrl_expressions_eyelookleftl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0
+   }
+  },
+  "EyeLookUpLeft": {
+   "frame": 5,
+   "curves": {
+    "ctrl_expressions_eyelookupl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__eye_lookup_l": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+    "cartilage_lod0_mesh__eye_lookup_l": 1.0
+   }
+  },
+  "EyeSquintLeft": {
+   "frame": 6,
+   "curves": {
+    "ctrl_expressions_eyesquintinnerl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm1_color_head_wm1_squintinner_l": 0.800000011920929,
+    "head_lod0_mesh__eye_squintinner_l": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "cartilage_lod0_mesh__eye_squintinner_l": 1.0,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "EyeWideLeft": {
+   "frame": 7,
+   "curves": {
+    "ctrl_expressions_eyewidenl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__eye_widen_l": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+    "cartilage_lod0_mesh__eye_widen_l": 1.0
+   }
+  },
+  "EyeBlinkRight": {
+   "frame": 8,
+   "curves": {
+    "ctrl_expressions_eyeblinkr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm1_color_head_wm1_blink_r": 1.0,
+    "head_cm1_color_head_wm1_squintinner_r": 0.30000001192092896
+   }
+  },
+  "EyeLookDownRight": {
+   "frame": 9,
+   "curves": {
+    "ctrl_expressions_eyelookdownr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm1_color_head_wm1_blink_r": 1.0
+   }
+  },
+  "EyeLookInRight": {
+   "frame": 10,
+   "curves": {
+    "ctrl_expressions_eyelookleftr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__eye_lookleft_r": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "cartilage_lod0_mesh__eye_lookleft_r": 1.0,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "EyeLookOutRight": {
+   "frame": 11,
+   "curves": {
+    "ctrl_expressions_eyelookrightr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__eye_lookright_r": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "cartilage_lod0_mesh__eye_lookright_r": 1.0,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "EyeLookUpRight": {
+   "frame": 12,
+   "curves": {
+    "ctrl_expressions_eyelookupr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__eye_lookup_r": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "cartilage_lod0_mesh__eye_lookup_r": 1.0,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "EyeSquintRight": {
+   "frame": 13,
+   "curves": {
+    "ctrl_expressions_eyesquintinnerr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm1_color_head_wm1_squintinner_r": 0.800000011920929,
+    "head_lod0_mesh__eye_squintinner_r": 1.0,
+    "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+    "cartilage_lod0_mesh__eye_squintinner_r": 1.0
+   }
+  },
+  "EyeWideRight": {
+   "frame": 14,
+   "curves": {
+    "ctrl_expressions_eyewidenr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0
+   }
+  },
+  "JawForward": {
+   "frame": 15,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_jawfwd": 0.9990000128746033
+   }
+  },
+  "JawLeft": {
+   "frame": 16,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_jawleft": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__jaw_left": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "JawRight": {
+   "frame": 17,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_jawright": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__jaw_right": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "JawOpen": {
+   "frame": 18,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_jawopen": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm1_color_head_wm1_jawopen": 1.0,
+    "head_lod0_mesh__jaw_open": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthFunnel": {
+   "frame": 19,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthfunnelul": 1.0,
+    "ctrl_expressions_mouthfunnelur": 1.0,
+    "ctrl_expressions_mouthfunneldl": 1.0,
+    "ctrl_expressions_mouthfunneldr": 1.0
+   }
+  },
+  "MouthPucker": {
+   "frame": 20,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthlipspurseul": 1.0,
+    "ctrl_expressions_mouthlipspurseur": 1.0,
+    "ctrl_expressions_mouthlipspursedl": 1.0,
+    "ctrl_expressions_mouthlipspursedr": 1.0,
+    "ctrl_expressions_mouthlipstowardsul": 0.41200000047683716,
+    "ctrl_expressions_mouthlipstowardsur": 0.41200000047683716,
+    "ctrl_expressions_mouthlipstowardsdl": 0.41200000047683716,
+    "ctrl_expressions_mouthlipstowardsdr": 0.41200000047683716,
+    "ctrl_expressions_mouthfunnelul": 0.7519999742507935,
+    "ctrl_expressions_mouthfunnelur": 0.7519999742507935,
+    "ctrl_expressions_mouthfunneldl": 0.7519999742507935,
+    "ctrl_expressions_mouthfunneldr": 0.7519999742507935,
+    "head_cm1_color_head_wm13_lips_ul": 0.6240000128746033,
+    "head_cm1_color_head_wm13_lips_ur": 0.6240000128746033,
+    "head_cm1_color_head_wm13_lips_dl": 0.6240000128746033,
+    "head_cm1_color_head_wm13_lips_dr": 0.6240000128746033,
+    "head_cm1_color_head_wm1_purse_ul": 0.5299999713897705,
+    "head_cm1_color_head_wm1_purse_ur": 0.5299999713897705,
+    "head_cm1_color_head_wm1_purse_dl": 0.5299999713897705,
+    "head_cm1_color_head_wm1_purse_dr": 0.5299999713897705
+   }
+  },
+  "MouthLeft": {
+   "frame": 21,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthleft": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm3_color_head_wm3_cheekraiseinner_l": 0.5,
+    "head_cm3_color_head_wm3_cheekraiseouter_l": 0.5,
+    "head_cm3_color_head_wm3_smile_l": 1.0,
+    "head_cm1_color_head_wm13_lips_ul": 0.5,
+    "head_cm1_color_head_wm13_lips_ur": 0.5,
+    "head_cm1_color_head_wm13_lips_dl": 0.5,
+    "head_cm1_color_head_wm13_lips_dr": 0.5,
+    "head_lod0_mesh__mouth_left": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthRight": {
+   "frame": 22,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthright": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm3_color_head_wm3_cheekraiseinner_r": 0.5,
+    "head_cm3_color_head_wm3_cheekraiseouter_r": 0.5,
+    "head_cm1_color_head_wm13_lips_ul": 0.5,
+    "head_cm1_color_head_wm13_lips_ur": 0.5,
+    "head_cm1_color_head_wm13_lips_dl": 0.5,
+    "head_cm1_color_head_wm13_lips_dr": 0.5,
+    "head_cm3_color_head_wm3_smile_r": 1.0,
+    "head_lod0_mesh__mouth_right": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthSmileLeft": {
+   "frame": 23,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthcornerpulll": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm3_color_head_wm3_cheekraiseinner_l": 0.800000011920929,
+    "head_cm3_color_head_wm3_cheekraiseouter_l": 0.800000011920929,
+    "head_cm3_color_head_wm3_smile_l": 1.0,
+    "head_cm3_color_head_wm13_lips_ul": 1.0,
+    "head_cm3_color_head_wm13_lips_dl": 1.0,
+    "head_lod0_mesh__mouth_cornerpull_left": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthSmileRight": {
+   "frame": 24,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthcornerpullr": 1.0,
+    "ctrl_expressions_mouthdimpler": 0.003000000026077032,
+    "head_cm3_color_head_wm3_cheekraiseinner_r": 0.800000011920929,
+    "head_cm3_color_head_wm3_cheekraiseouter_r": 0.800000011920929,
+    "head_cm3_color_head_wm3_smile_r": 1.0,
+    "head_cm3_color_head_wm13_lips_ur": 1.0,
+    "head_cm3_color_head_wm13_lips_dr": 1.0
+   }
+  },
+  "MouthFrownLeft": {
+   "frame": 25,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthcornerdepressl": 1.0
+   }
+  },
+  "MouthFrownRight": {
+   "frame": 26,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthcornerdepressr": 1.0
+   }
+  },
+  "MouthDimpleLeft": {
+   "frame": 27,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthdimplel": 1.0,
+    "head_cm3_color_head_wm3_smile_l": 0.4000000059604645,
+    "head_cm3_color_head_wm13_lips_ul": 0.5,
+    "head_cm3_color_head_wm13_lips_dl": 0.5
+   }
+  },
+  "MouthDimpleRight": {
+   "frame": 28,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthdimpler": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm3_color_head_wm3_smile_r": 0.4000000059604645,
+    "head_cm3_color_head_wm13_lips_ur": 0.5,
+    "head_cm3_color_head_wm13_lips_dr": 0.5,
+    "head_lod0_mesh__mouth_dimple_right": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthStretchLeft": {
+   "frame": 29,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthstretchl": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm3_color_head_wm13_lips_ul": 1.0,
+    "head_cm3_color_head_wm13_lips_dl": 1.0,
+    "head_cm2_color_head_wm2_mouthstretch_l": 1.0,
+    "head_lod0_mesh__mouth_stretch_left": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthStretchRight": {
+   "frame": 30,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthstretchr": 1.0,
+    "head_cm3_color_head_wm13_lips_ur": 1.0,
+    "head_cm3_color_head_wm13_lips_dr": 1.0,
+    "head_cm2_color_head_wm2_mouthstretch_r": 1.0
+   }
+  },
+  "MouthRollLower": {
+   "frame": 31,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthupperliprollinl": 0.49900001287460327,
+    "ctrl_expressions_mouthupperliprollinr": 0.49900001287460327,
+    "ctrl_expressions_mouthlowerliprollinl": 1.0,
+    "ctrl_expressions_mouthlowerliprollinr": 1.0
+   }
+  },
+  "MouthRollUpper": {
+   "frame": 32,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthupperliprollinl": 0.9980000257492065,
+    "ctrl_expressions_mouthupperliprollinr": 0.9980000257492065
+   }
+  },
+  "MouthShrugLower": {
+   "frame": 33,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_jawchinraisedl": 1.0,
+    "ctrl_expressions_jawchinraisedr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm1_color_head_wm1_chinraise_l": 1.0,
+    "head_cm1_color_head_wm1_chinraise_r": 1.0,
+    "head_wm1_normal_head_wm1_chinraise_r": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__jaw_lowerchinraise_l": 1.0,
+    "head_lod0_mesh__jaw_lowerchinraise_r": 1.0,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthShrugUpper": {
+   "frame": 34,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_jawchinraiseul": 1.0,
+    "ctrl_expressions_jawchinraiseur": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__jlowerchinraise_jupperchinraise_l": 1.0,
+    "head_lod0_mesh__jlowerchinraise_jupperchinraise_r": 1.0,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthPressLeft": {
+   "frame": 35,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthpressul": 1.0,
+    "ctrl_expressions_mouthpressdl": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__mouth_press_ul": 1.0,
+    "head_lod0_mesh__mouth_press_dl": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthPressRight": {
+   "frame": 36,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthpressur": 1.0,
+    "ctrl_expressions_mouthpressdr": 1.0
+   }
+  },
+  "MouthLowerDownLeft": {
+   "frame": 37,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthlowerlipdepressl": 1.0
+   }
+  },
+  "MouthLowerDownRight": {
+   "frame": 38,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthlowerlipdepressr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__mouth_lowerlipdepress_right": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthUpperUpLeft": {
+   "frame": 39,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthupperlipraisel": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__mouth_upperlipraise_left": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "MouthUpperUpRight": {
+   "frame": 40,
+   "curves": {
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthupperlipraiser": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_lod0_mesh__mouth_upperlipraise_right": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "BrowDownLeft": {
+   "frame": 41,
+   "curves": {
+    "ctrl_expressions_browdownl": 1.0,
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm2_color_head_wm2_browsdown_l": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_lod0_mesh__brow_down_l": 1.0,
+    "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+    "head_lod0_mesh__bdown_blateral__browlower_l": 0.03140466287732124,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "BrowDownRight": {
+   "frame": 42,
+   "curves": {
+    "ctrl_expressions_browdownr": 1.0,
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm2_color_head_wm2_browsdown_r": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052
+   }
+  },
+  "BrowInnerUp": {
+   "frame": 43,
+   "curves": {
+    "ctrl_expressions_browlaterall": 1.0,
+    "ctrl_expressions_browlateralr": 1.0,
+    "ctrl_expressions_browraiseinl": 1.0,
+    "ctrl_expressions_browraiseinr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 1.0,
+    "head_cm2_color_head_wm2_browslateral_r": 1.0,
+    "head_cm1_color_head_wm1_browsraiseinner_l": 1.0,
+    "head_cm1_color_head_wm1_browsraiseinner_r": 1.0
+   }
+  },
+  "BrowOuterUpLeft": {
+   "frame": 44,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_browraiseinl": 1.0,
+    "ctrl_expressions_browraiseouterl": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_cm1_color_head_wm1_browsraiseinner_l": 1.0,
+    "head_cm1_color_head_wm1_browsraiseouter_l": 1.0
+   }
+  },
+  "BrowOuterUpRight": {
+   "frame": 45,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_browraiseinr": 1.0,
+    "ctrl_expressions_browraiseouterr": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_cm1_color_head_wm1_browsraiseinner_r": 1.0,
+    "head_cm1_color_head_wm1_browsraiseouter_r": 1.0,
+    "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+    "head_lod0_mesh__brow_raisein_r": 1.0,
+    "head_lod0_mesh__brow_raiseouter_right": 1.0,
+    "head_lod0_mesh__brow_raise_r": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "CheekPuff": {
+   "frame": 46,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_mouthcheekblowl": 1.0,
+    "ctrl_expressions_mouthcheekblowr": 1.0,
+    "ctrl_expressions_mouthlipsblowl": 1.0,
+    "ctrl_expressions_mouthlipsblowr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+    "head_lod0_mesh__cheek_blow_left": 1.0,
+    "head_lod0_mesh__cheek_blow_right": 1.0,
+    "head_lod0_mesh__cheek_blow_cor": 1.0,
+    "head_lod0_mesh__cblow_mlipsblow_l": 1.0,
+    "head_lod0_mesh__cblow_mlipsblow_r": 1.0,
+    "head_lod0_mesh__mouth_lipsblow_l": 1.0,
+    "head_lod0_mesh__mouth_lipsblow_r": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "CheekSquintLeft": {
+   "frame": 47,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_eyecheekraisel": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_cm3_color_head_wm3_cheekraiseinner_l": 0.800000011920929,
+    "head_cm3_color_head_wm3_cheekraiseouter_l": 0.800000011920929,
+    "head_cm3_color_head_wm3_cheekraiseupper_l": 0.800000011920929
+   }
+  },
+  "CheekSquintRight": {
+   "frame": 48,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_eyecheekraiser": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_cm3_color_head_wm3_cheekraiseinner_r": 0.800000011920929,
+    "head_cm3_color_head_wm3_cheekraiseouter_r": 0.800000011920929,
+    "head_cm3_color_head_wm3_cheekraiseupper_r": 0.800000011920929
+   }
+  },
+  "NoseSneerLeft": {
+   "frame": 49,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinklel": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "head_cm2_color_head_wm2_browsdown_l": 0.20000000298023224,
+    "head_cm2_color_head_wm2_browslateral_l": 0.3310000002384186,
+    "head_cm2_color_head_wm2_nosewrinkler_l": 1.0
+   }
+  },
+  "NoseSneerRight": {
+   "frame": 50,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinkler": 1.0,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm2_color_head_wm2_browsdown_r": 0.20000000298023224,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_cm2_color_head_wm2_browslateral_r": 0.30000001192092896,
+    "head_cm2_color_head_wm2_nosewrinkler_r": 1.0,
+    "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+    "head_lod0_mesh__nose_wrinkle_right": 1.0,
+    "head_lod0_mesh__nose_wrinklefull_r": 1.0,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "TongueOut": {
+   "frame": 51,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_tonguedown": 0.8259999752044678,
+    "ctrl_expressions_tongueright": 0.07000000029802322,
+    "ctrl_expressions_tongueout": 0.7689999938011169,
+    "ctrl_expressions_tonguerolldown": 0.24731922149658203,
+    "ctrl_expressions_tonguewide": 0.628000020980835,
+    "ctrl_riglogic_offon": 1.0,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+    "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+    "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+    "teeth_lod0_mesh__tongue_wide": 0.6277746558189392,
+    "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+    "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+    "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+    "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+    "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+    "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+   }
+  },
+  "Pose_4": {
+   "frame": 52,
+   "curves": {
+    "ctrl_expressions_browlaterall": 0.03099999949336052,
+    "ctrl_expressions_nosewrinkleupperl": 1.0,
+    "ctrl_expressions_nosewrinkleupperr": 1.0,
+    "ctrl_expressions_tonguedown": 0.8259999752044678,
+    "ctrl_expressions_tongueright": 0.07000000029802322,
+    "ctrl_expressions_tongueout": 0.7689999938011169,
+    "ctrl_expressions_tonguewide": 0.628000020980835,
+    "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052
+   }
+  }
+ },
+ "adjusted": {
+  "EyeBlinkLeft": {
+   "ctrl_expressions_eyeblinkl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm1_blink_l": 1.0,
+   "head_cm1_color_head_wm1_squintinner_l": 0.30000001192092896,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "EyeLookDownLeft": {
+   "ctrl_expressions_eyelookdownl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm1_blink_l": 1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "EyeLookInLeft": {
+   "ctrl_expressions_eyelookrightl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "EyeLookOutLeft": {
+   "ctrl_expressions_eyelookleftl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "EyeLookUpLeft": {
+   "cartilage_lod0_mesh__eye_lookup_l": 1.0,
+   "ctrl_expressions_eyelookupl": 1.0,
+   "head_lod0_mesh__eye_lookup_l": 1.0
+  },
+  "EyeSquintLeft": {
+   "cartilage_lod0_mesh__eye_squintinner_l": 1.0,
+   "ctrl_expressions_eyesquintinnerl": 1.0,
+   "head_cm1_color_head_wm1_squintinner_l": 0.800000011920929,
+   "head_lod0_mesh__eye_squintinner_l": 1.0
+  },
+  "EyeWideLeft": {
+   "cartilage_lod0_mesh__eye_widen_l": 1.0,
+   "ctrl_expressions_eyewidenl": 1.0,
+   "head_lod0_mesh__eye_widen_l": 1.0
+  },
+  "EyeBlinkRight": {
+   "ctrl_expressions_eyeblinkr": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm1_blink_r": 1.0,
+   "head_cm1_color_head_wm1_squintinner_r": 0.30000001192092896,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "EyeLookDownRight": {
+   "ctrl_expressions_eyelookdownr": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm1_blink_r": 1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "EyeLookInRight": {
+   "cartilage_lod0_mesh__eye_lookleft_r": 1.0,
+   "ctrl_expressions_eyelookleftr": 1.0,
+   "head_lod0_mesh__eye_lookleft_r": 1.0
+  },
+  "EyeLookOutRight": {
+   "cartilage_lod0_mesh__eye_lookright_r": 1.0,
+   "ctrl_expressions_eyelookrightr": 1.0,
+   "head_lod0_mesh__eye_lookright_r": 1.0
+  },
+  "EyeLookUpRight": {
+   "cartilage_lod0_mesh__eye_lookup_r": 1.0,
+   "ctrl_expressions_eyelookupr": 1.0,
+   "head_lod0_mesh__eye_lookup_r": 1.0
+  },
+  "EyeSquintRight": {
+   "cartilage_lod0_mesh__eye_squintinner_r": 1.0,
+   "ctrl_expressions_eyesquintinnerr": 1.0,
+   "head_cm1_color_head_wm1_squintinner_r": 0.800000011920929,
+   "head_lod0_mesh__eye_squintinner_r": 1.0
+  },
+  "EyeWideRight": {
+   "ctrl_expressions_eyewidenr": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "JawForward": {
+   "ctrl_expressions_jawfwd": 0.9990000128746033,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "JawLeft": {
+   "ctrl_expressions_jawleft": 1.0,
+   "head_lod0_mesh__jaw_left": 0.9999999999999964
+  },
+  "JawRight": {
+   "ctrl_expressions_jawright": 1.0,
+   "head_lod0_mesh__jaw_right": 1.0
+  },
+  "JawOpen": {
+   "ctrl_expressions_jawopen": 1.0,
+   "head_cm1_color_head_wm1_jawopen": 1.0,
+   "head_lod0_mesh__jaw_open": 1.0
+  },
+  "MouthFunnel": {
+   "ctrl_expressions_mouthfunneldl": 1.0,
+   "ctrl_expressions_mouthfunneldr": 1.0,
+   "ctrl_expressions_mouthfunnelul": 1.0,
+   "ctrl_expressions_mouthfunnelur": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthPucker": {
+   "ctrl_expressions_mouthfunneldl": 0.7519999742507935,
+   "ctrl_expressions_mouthfunneldr": 0.7519999742507935,
+   "ctrl_expressions_mouthfunnelul": 0.7519999742507935,
+   "ctrl_expressions_mouthfunnelur": 0.7519999742507935,
+   "ctrl_expressions_mouthlipspursedl": 1.0,
+   "ctrl_expressions_mouthlipspursedr": 1.0,
+   "ctrl_expressions_mouthlipspurseul": 1.0,
+   "ctrl_expressions_mouthlipspurseur": 1.0,
+   "ctrl_expressions_mouthlipstowardsdl": 0.41200000047683716,
+   "ctrl_expressions_mouthlipstowardsdr": 0.41200000047683716,
+   "ctrl_expressions_mouthlipstowardsul": 0.41200000047683716,
+   "ctrl_expressions_mouthlipstowardsur": 0.41200000047683716,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm13_lips_dl": 0.6240000128746033,
+   "head_cm1_color_head_wm13_lips_dr": 0.6240000128746033,
+   "head_cm1_color_head_wm13_lips_ul": 0.6240000128746033,
+   "head_cm1_color_head_wm13_lips_ur": 0.6240000128746033,
+   "head_cm1_color_head_wm1_purse_dl": 0.5299999713897705,
+   "head_cm1_color_head_wm1_purse_dr": 0.5299999713897705,
+   "head_cm1_color_head_wm1_purse_ul": 0.5299999713897705,
+   "head_cm1_color_head_wm1_purse_ur": 0.5299999713897705,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthLeft": {
+   "ctrl_expressions_mouthleft": 1.0,
+   "head_cm1_color_head_wm13_lips_dl": 0.5,
+   "head_cm1_color_head_wm13_lips_dr": 0.5,
+   "head_cm1_color_head_wm13_lips_ul": 0.5,
+   "head_cm1_color_head_wm13_lips_ur": 0.5,
+   "head_cm3_color_head_wm3_cheekraiseinner_l": 0.5,
+   "head_cm3_color_head_wm3_cheekraiseouter_l": 0.5,
+   "head_cm3_color_head_wm3_smile_l": 1.0,
+   "head_lod0_mesh__mouth_left": 1.0
+  },
+  "MouthRight": {
+   "ctrl_expressions_mouthright": 1.0,
+   "head_cm1_color_head_wm13_lips_dl": 0.5,
+   "head_cm1_color_head_wm13_lips_dr": 0.5,
+   "head_cm1_color_head_wm13_lips_ul": 0.5,
+   "head_cm1_color_head_wm13_lips_ur": 0.5,
+   "head_cm3_color_head_wm3_cheekraiseinner_r": 0.5,
+   "head_cm3_color_head_wm3_cheekraiseouter_r": 0.5,
+   "head_cm3_color_head_wm3_smile_r": 1.0,
+   "head_lod0_mesh__mouth_right": 1.0
+  },
+  "MouthSmileLeft": {
+   "ctrl_expressions_mouthcornerpulll": 1.0,
+   "head_cm3_color_head_wm13_lips_dl": 1.0,
+   "head_cm3_color_head_wm13_lips_ul": 1.0,
+   "head_cm3_color_head_wm3_cheekraiseinner_l": 0.800000011920929,
+   "head_cm3_color_head_wm3_cheekraiseouter_l": 0.800000011920929,
+   "head_cm3_color_head_wm3_smile_l": 1.0,
+   "head_lod0_mesh__mouth_cornerpull_left": 1.0
+  },
+  "MouthSmileRight": {
+   "ctrl_expressions_mouthcornerpullr": 1.0,
+   "ctrl_expressions_mouthdimpler": 0.003000000026077032,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm3_color_head_wm13_lips_dr": 1.0,
+   "head_cm3_color_head_wm13_lips_ur": 1.0,
+   "head_cm3_color_head_wm3_cheekraiseinner_r": 0.800000011920929,
+   "head_cm3_color_head_wm3_cheekraiseouter_r": 0.800000011920929,
+   "head_cm3_color_head_wm3_smile_r": 1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthFrownLeft": {
+   "ctrl_expressions_mouthcornerdepressl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthFrownRight": {
+   "ctrl_expressions_mouthcornerdepressr": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthDimpleLeft": {
+   "ctrl_expressions_mouthdimplel": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm3_color_head_wm13_lips_dl": 0.5,
+   "head_cm3_color_head_wm13_lips_ul": 0.5,
+   "head_cm3_color_head_wm3_smile_l": 0.4000000059604645,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthDimpleRight": {
+   "ctrl_expressions_mouthdimpler": 1.0,
+   "head_cm3_color_head_wm13_lips_dr": 0.5,
+   "head_cm3_color_head_wm13_lips_ur": 0.5,
+   "head_cm3_color_head_wm3_smile_r": 0.4000000059604645,
+   "head_lod0_mesh__mouth_dimple_right": 1.0
+  },
+  "MouthStretchLeft": {
+   "ctrl_expressions_mouthstretchl": 1.0,
+   "head_cm2_color_head_wm2_mouthstretch_l": 1.0,
+   "head_cm3_color_head_wm13_lips_dl": 1.0,
+   "head_cm3_color_head_wm13_lips_ul": 1.0,
+   "head_lod0_mesh__mouth_stretch_left": 1.0
+  },
+  "MouthStretchRight": {
+   "ctrl_expressions_mouthstretchr": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm2_color_head_wm2_mouthstretch_r": 1.0,
+   "head_cm3_color_head_wm13_lips_dr": 1.0,
+   "head_cm3_color_head_wm13_lips_ur": 1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthRollLower": {
+   "ctrl_expressions_mouthlowerliprollinl": 1.0,
+   "ctrl_expressions_mouthlowerliprollinr": 1.0,
+   "ctrl_expressions_mouthupperliprollinl": 0.49900001287460327,
+   "ctrl_expressions_mouthupperliprollinr": 0.49900001287460327,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthRollUpper": {
+   "ctrl_expressions_mouthupperliprollinl": 0.9980000257492065,
+   "ctrl_expressions_mouthupperliprollinr": 0.9980000257492065,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthShrugLower": {
+   "ctrl_expressions_jawchinraisedl": 1.0,
+   "ctrl_expressions_jawchinraisedr": 1.0,
+   "head_cm1_color_head_wm1_chinraise_l": 1.0,
+   "head_cm1_color_head_wm1_chinraise_r": 1.0,
+   "head_lod0_mesh__jaw_lowerchinraise_l": 1.0,
+   "head_lod0_mesh__jaw_lowerchinraise_r": 1.0,
+   "head_wm1_normal_head_wm1_chinraise_r": 1.0
+  },
+  "MouthShrugUpper": {
+   "ctrl_expressions_jawchinraiseul": 1.0,
+   "ctrl_expressions_jawchinraiseur": 1.0,
+   "head_lod0_mesh__jlowerchinraise_jupperchinraise_l": 1.0,
+   "head_lod0_mesh__jlowerchinraise_jupperchinraise_r": 1.0
+  },
+  "MouthPressLeft": {
+   "ctrl_expressions_mouthpressdl": 1.0,
+   "ctrl_expressions_mouthpressul": 1.0,
+   "head_lod0_mesh__mouth_press_dl": 1.0,
+   "head_lod0_mesh__mouth_press_ul": 1.0
+  },
+  "MouthPressRight": {
+   "ctrl_expressions_mouthpressdr": 1.0,
+   "ctrl_expressions_mouthpressur": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthLowerDownLeft": {
+   "ctrl_expressions_mouthlowerlipdepressl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "MouthLowerDownRight": {
+   "ctrl_expressions_mouthlowerlipdepressr": 1.0,
+   "head_lod0_mesh__mouth_lowerlipdepress_right": 1.0
+  },
+  "MouthUpperUpLeft": {
+   "ctrl_expressions_mouthupperlipraisel": 1.0,
+   "head_lod0_mesh__mouth_upperlipraise_left": 1.0
+  },
+  "MouthUpperUpRight": {
+   "ctrl_expressions_mouthupperlipraiser": 1.0,
+   "head_lod0_mesh__mouth_upperlipraise_right": 1.0
+  },
+  "BrowDownLeft": {
+   "ctrl_expressions_browdownl": 1.0,
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "head_cm2_color_head_wm2_browsdown_l": 1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__bdown_blateral__browlower_l": 0.03140466287732124,
+   "head_lod0_mesh__brow_down_l": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124
+  },
+  "BrowDownRight": {
+   "ctrl_expressions_browdownr": 1.0,
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm2_color_head_wm2_browsdown_r": 1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "BrowInnerUp": {
+   "ctrl_expressions_browlaterall": 1.0,
+   "ctrl_expressions_browlateralr": 1.0,
+   "ctrl_expressions_browraiseinl": 1.0,
+   "ctrl_expressions_browraiseinr": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm1_browsraiseinner_l": 1.0,
+   "head_cm1_color_head_wm1_browsraiseinner_r": 1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 1.0,
+   "head_cm2_color_head_wm2_browslateral_r": 1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "BrowOuterUpLeft": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_browraiseinl": 1.0,
+   "ctrl_expressions_browraiseouterl": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm1_color_head_wm1_browsraiseinner_l": 1.0,
+   "head_cm1_color_head_wm1_browsraiseouter_l": 1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "BrowOuterUpRight": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_browraiseinr": 1.0,
+   "ctrl_expressions_browraiseouterr": 1.0,
+   "head_cm1_color_head_wm1_browsraiseinner_r": 1.0,
+   "head_cm1_color_head_wm1_browsraiseouter_r": 1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__brow_raise_r": 1.0,
+   "head_lod0_mesh__brow_raisein_r": 1.0,
+   "head_lod0_mesh__brow_raiseouter_right": 1.0
+  },
+  "CheekPuff": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_mouthcheekblowl": 1.0,
+   "ctrl_expressions_mouthcheekblowr": 1.0,
+   "ctrl_expressions_mouthlipsblowl": 1.0,
+   "ctrl_expressions_mouthlipsblowr": 1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__cblow_mlipsblow_l": 1.0,
+   "head_lod0_mesh__cblow_mlipsblow_r": 1.0,
+   "head_lod0_mesh__cheek_blow_cor": 1.0,
+   "head_lod0_mesh__cheek_blow_left": 1.0,
+   "head_lod0_mesh__cheek_blow_right": 1.0,
+   "head_lod0_mesh__mouth_lipsblow_l": 1.0,
+   "head_lod0_mesh__mouth_lipsblow_r": 1.0
+  },
+  "CheekSquintLeft": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_eyecheekraisel": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_cm3_color_head_wm3_cheekraiseinner_l": 0.800000011920929,
+   "head_cm3_color_head_wm3_cheekraiseouter_l": 0.800000011920929,
+   "head_cm3_color_head_wm3_cheekraiseupper_l": 0.800000011920929,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "CheekSquintRight": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_eyecheekraiser": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_cm3_color_head_wm3_cheekraiseinner_r": 0.800000011920929,
+   "head_cm3_color_head_wm3_cheekraiseouter_r": 0.800000011920929,
+   "head_cm3_color_head_wm3_cheekraiseupper_r": 0.800000011920929,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "NoseSneerLeft": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_nosewrinklel": 1.0,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm2_color_head_wm2_browsdown_l": 0.20000000298023224,
+   "head_cm2_color_head_wm2_browslateral_l": 0.3310000002384186,
+   "head_cm2_color_head_wm2_nosewrinkler_l": 1.0,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  },
+  "NoseSneerRight": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_nosewrinkler": 1.0,
+   "head_cm2_color_head_wm2_browsdown_r": 0.20000000298023224,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_cm2_color_head_wm2_browslateral_r": 0.30000001192092896,
+   "head_cm2_color_head_wm2_nosewrinkler_r": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__nose_wrinkle_right": 1.0,
+   "head_lod0_mesh__nose_wrinklefull_r": 1.0
+  },
+  "TongueOut": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_tonguedown": 0.8259999752044678,
+   "ctrl_expressions_tongueout": 0.7689999938011169,
+   "ctrl_expressions_tongueright": 0.07000000029802322,
+   "ctrl_expressions_tonguerolldown": 0.24731922149658203,
+   "ctrl_expressions_tonguewide": 0.628000020980835,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "teeth_lod0_mesh__tongue_wide": 0.6277746558189392
+  },
+  "Pose_4": {
+   "ctrl_expressions_browlaterall": 0.03099999949336052,
+   "ctrl_expressions_tonguedown": 0.8259999752044678,
+   "ctrl_expressions_tongueout": 0.7689999938011169,
+   "ctrl_expressions_tongueright": 0.07000000029802322,
+   "ctrl_expressions_tonguewide": 0.628000020980835,
+   "ctrl_riglogic_offon": -1.0,
+   "head_cm2_color_head_wm2_browslateral_l": 0.03099999949336052,
+   "head_lod0_mesh__head_tiltleft_u": -2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": -6.2267004885541155e-09,
+   "head_lod0_mesh__head_turndown_m": -6.466438495777993e-09,
+   "head_lod0_mesh__head_turndown_u": -5.039913375526339e-09,
+   "head_lod0_mesh__head_turnright_u": -1.1097915475488662e-08,
+   "head_lod0_mesh__head_turnup_d": -1.1407972344557038e-08
+  }
+ },
+ "offGridSamples": {
+  "0.053104": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_blink_l": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_blink_l": 1.0
+  },
+  "0.106208": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_lookdown_l": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_lookdown_l": 1.0
+  },
+  "0.159313": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_lookright_l": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_lookright_l": 1.0
+  },
+  "0.345046": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_lookleft_l": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_lookleft_l": 1.0
+  },
+  "0.609142": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_lookdown_r": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "cartilage_lod0_mesh__eye_lookdown_r": 1.0,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "0.796567": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jaw_fwd": 0.9986480474472046,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.008988": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_funnel_ul": 1.0,
+   "head_lod0_mesh__mouth_funnel_ur": 1.0,
+   "head_lod0_mesh__mouth_funnel_dl": 1.0,
+   "head_lod0_mesh__mouth_funnel_dr": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.062092": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_lipspurse_ul": 1.0,
+   "head_lod0_mesh__mouth_lipspurse_ur": 1.0,
+   "head_lod0_mesh__mouth_lipspurse_dl": 1.0,
+   "head_lod0_mesh__mouth_lipspurse_dr": 1.0,
+   "head_lod0_mesh__mouth_lipstowards_ul": 0.4122420847415924,
+   "head_lod0_mesh__mouth_lipstowards_ur": 0.4122420847415924,
+   "head_lod0_mesh__mouth_lipstowards_dl": 0.4122420847415924,
+   "head_lod0_mesh__mouth_lipstowards_dr": 0.4122420847415924,
+   "head_lod0_mesh__mouth_funnel_ul": 0.7519335150718689,
+   "head_lod0_mesh__mouth_funnel_ur": 0.7519335150718689,
+   "head_lod0_mesh__mouth_funnel_dl": 0.7519335150718689,
+   "head_lod0_mesh__mouth_funnel_dr": 0.7519335150718689,
+   "head_lod0_mesh__mpurse_mtowards__pucker_ul": 0.4122420847415924,
+   "head_lod0_mesh__mpurse_mtowards__pucker_ur": 0.4122420847415924,
+   "head_lod0_mesh__mpurse_mtowards__pucker_dl": 0.4122420847415924,
+   "head_lod0_mesh__mpurse_mtowards__pucker_dr": 0.4122420847415924,
+   "head_lod0_mesh__mpurse_mfunnel_ul": 0.7519335150718689,
+   "head_lod0_mesh__mpurse_mfunnel_ur": 0.7519335150718689,
+   "head_lod0_mesh__mpurse_mfunnel_dl": 0.7519335150718689,
+   "head_lod0_mesh__mpurse_mfunnel_dr": 0.7519335150718689,
+   "head_lod0_mesh__mfunnel_mtowards_ul": 0.3099786341190338,
+   "head_lod0_mesh__mfunnel_mtowards_ur": 0.3099786341190338,
+   "head_lod0_mesh__mfunnel_mtowards_dl": 0.3099786341190338,
+   "head_lod0_mesh__mfunnel_mtowards_dr": 0.3099786341190338,
+   "head_lod0_mesh__mpurse_mtowards_mfunnel__oh_ul": 0.3099786341190338,
+   "head_lod0_mesh__mpurse_mtowards_mfunnel__oh_ur": 0.3099786341190338,
+   "head_lod0_mesh__mpurse_mtowards_mfunnel__oh_dl": 0.3099786341190338,
+   "head_lod0_mesh__mpurse_mtowards_mfunnel__oh_dr": 0.3099786341190338,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.120971": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_blink_r": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "cartilage_lod0_mesh__eye_blink_r": 1.0,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.274508": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_cornerpull_right": 1.0,
+   "head_lod0_mesh__mouth_dimple_right": 0.002542593516409397,
+   "head_lod0_mesh__mcornerpull_mdimple_r": 0.002542593516409397,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.327613": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_cornerdepress_l": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.539179": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__eye_widen_r": 1.0,
+   "head_lod0_mesh__jaw_left": 3.552713678800501e-15,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_widen_r": 1.0
+  },
+  "1.759742": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_cornerdepress_r": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.827421": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_dimple_left": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "1.964871": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_lowerlipdepress_left": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "2.030471": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_stretch_right": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "2.230392": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__brow_down_r": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "2.3366": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__brow_raisein_l": 1.0,
+   "head_lod0_mesh__brow_raiseouter_left": 1.0,
+   "head_lod0_mesh__brow_raise_l": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "2.495917": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__eye_cheekraise_l": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_cheekraise_l": 1.0
+  },
+  "2.602125": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__nose_wrinkle_left": 1.0,
+   "head_lod0_mesh__nose_wrinklefull_l": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "2.760375": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_upperliprollin_l": 0.997620701789856,
+   "head_lod0_mesh__mouth_upperliprollin_r": 0.997620701789856,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "3.105425": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_press_ur": 1.0,
+   "head_lod0_mesh__mouth_press_dr": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "3.408183": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__mouth_upperliprollin_l": 0.498810350894928,
+   "head_lod0_mesh__mouth_upperliprollin_r": 0.498810350894928,
+   "head_lod0_mesh__mouth_lowerliprollin_l": 1.0,
+   "head_lod0_mesh__mouth_lowerliprollin_r": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  },
+  "4.140563": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 0.03140466287732124,
+   "head_lod0_mesh__eye_cheekraise_r": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09,
+   "cartilage_lod0_mesh__eye_cheekraise_r": 1.0
+  },
+  "6.025221": {
+   "ctrl_riglogic_offon": 1.0,
+   "head_lod0_mesh__brow_lateral_l": 1.0,
+   "head_lod0_mesh__brow_lateral_r": 1.0,
+   "head_lod0_mesh__brow_raisein_l": 1.0,
+   "head_lod0_mesh__brow_raisein_r": 1.0,
+   "head_lod0_mesh__jleft_jopen_cor": 8.881784197001252e-16,
+   "head_lod0_mesh__head_turnup_d": 1.1407972344557038e-08,
+   "head_lod0_mesh__head_turndown_u": 5.039913375526339e-09,
+   "head_lod0_mesh__head_turndown_m": 6.466438495777993e-09,
+   "head_lod0_mesh__head_turnright_u": 1.1097915475488662e-08,
+   "head_lod0_mesh__head_tiltleft_u": 2.0662966448981024e-08,
+   "head_lod0_mesh__head_tiltright_d": 6.2267004885541155e-09
+  }
+ }
+}
