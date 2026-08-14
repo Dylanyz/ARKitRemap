@@ -1,0 +1,164 @@
+{
+  "take": "20260814_DefaultSlate_3",
+  "actionOrder": "L block then R block: wink, look, smirk, mouth-slide, jaw-shift",
+  "alignment": {
+    "lagFrames": 0,
+    "blinkSumCorr": 0.922
+  },
+  "iphoneEvents": {
+    "wink": {
+      "leftLabelPeakFrame": 626,
+      "rightLabelPeakFrame": 998,
+      "leftLabelPeak": 0.951,
+      "rightLabelPeak": 0.907,
+      "firstBlockLabel": "Left"
+    },
+    "gaze": {
+      "leftLabelPeakFrame": 539,
+      "rightLabelPeakFrame": 1096,
+      "leftLabelPeak": 1.439,
+      "rightLabelPeak": 1.71,
+      "firstBlockLabel": "Left"
+    },
+    "smirk": {
+      "leftLabelPeakFrame": 635,
+      "rightLabelPeakFrame": 1198,
+      "leftLabelPeak": 0.266,
+      "rightLabelPeak": 0.194,
+      "firstBlockLabel": "Left"
+    },
+    "mouthSlide": {
+      "leftLabelPeakFrame": 1331,
+      "rightLabelPeakFrame": 776,
+      "leftLabelPeak": 0.62,
+      "rightLabelPeak": 0.449,
+      "firstBlockLabel": "Right"
+    },
+    "jawShift": {
+      "verdict": "no clear one-sided events",
+      "peakLeft": 0.11,
+      "peakRight": 0.1
+    }
+  },
+  "mhaEvents": {
+    "wink": {
+      "leftLabelPeakFrame": 1023,
+      "rightLabelPeakFrame": 420,
+      "leftLabelPeak": 0.933,
+      "rightLabelPeak": 0.973,
+      "firstBlockLabel": "Right"
+    },
+    "gaze": {
+      "leftLabelPeakFrame": 1095,
+      "rightLabelPeakFrame": 535,
+      "leftLabelPeak": 2.0,
+      "rightLabelPeak": 1.871,
+      "firstBlockLabel": "Right"
+    },
+    "smirk": {
+      "leftLabelPeakFrame": 1203,
+      "rightLabelPeakFrame": 637,
+      "leftLabelPeak": 0.764,
+      "rightLabelPeak": 0.711,
+      "firstBlockLabel": "Right"
+    },
+    "mouthSlide": {
+      "leftLabelPeakFrame": 1301,
+      "rightLabelPeakFrame": 796,
+      "leftLabelPeak": 1.0,
+      "rightLabelPeak": 1.0,
+      "firstBlockLabel": "Right"
+    },
+    "jawShift": {
+      "leftLabelPeakFrame": 1395,
+      "rightLabelPeakFrame": 894,
+      "leftLabelPeak": 1.0,
+      "rightLabelPeak": 0.445,
+      "firstBlockLabel": "Right"
+    }
+  },
+  "solvedEvents": {
+    "wink": {
+      "leftLabelPeakFrame": 1029,
+      "rightLabelPeakFrame": 420,
+      "leftLabelPeak": 0.596,
+      "rightLabelPeak": 0.732,
+      "firstBlockLabel": "Right"
+    },
+    "gaze": {
+      "leftLabelPeakFrame": 1086,
+      "rightLabelPeakFrame": 530,
+      "leftLabelPeak": 1.0,
+      "rightLabelPeak": 0.929,
+      "firstBlockLabel": "Right"
+    },
+    "smirk": {
+      "leftLabelPeakFrame": 1203,
+      "rightLabelPeakFrame": 627,
+      "leftLabelPeak": 0.708,
+      "rightLabelPeak": 0.623,
+      "firstBlockLabel": "Right"
+    },
+    "mouthSlide": {
+      "leftLabelPeakFrame": 1320,
+      "rightLabelPeakFrame": 830,
+      "leftLabelPeak": 0.999,
+      "rightLabelPeak": 0.997,
+      "firstBlockLabel": "Right"
+    },
+    "jawShift": {
+      "leftLabelPeakFrame": 1405,
+      "rightLabelPeakFrame": 882,
+      "leftLabelPeak": 0.906,
+      "rightLabelPeak": 0.406,
+      "firstBlockLabel": "Right"
+    }
+  },
+  "solvedVsIphoneCorr": {
+    "wink": {
+      "sameLabel": 0.626,
+      "swappedLabel": 0.945
+    },
+    "gaze": {
+      "sameLabel": -0.053,
+      "swappedLabel": 0.964
+    },
+    "smirk": {
+      "sameLabel": 0.402,
+      "swappedLabel": 0.731
+    },
+    "mouthSlide": {
+      "sameLabel": 0.95,
+      "swappedLabel": -0.194
+    },
+    "jawShift": {
+      "sameLabel": 0.192,
+      "swappedLabel": -0.148
+    }
+  },
+  "verdicts": {
+    "wink": {
+      "appleNaming": "performer-relative",
+      "mhaMirroredVsIphone": true,
+      "solvedFirstBlockLabel": "Right"
+    },
+    "gaze": {
+      "appleNaming": "performer-relative",
+      "mhaMirroredVsIphone": true,
+      "solvedFirstBlockLabel": "Right"
+    },
+    "smirk": {
+      "appleNaming": "performer-relative",
+      "mhaMirroredVsIphone": true,
+      "solvedFirstBlockLabel": "Right"
+    },
+    "mouthSlide": {
+      "appleNaming": "observer-relative",
+      "mhaMirroredVsIphone": false,
+      "solvedFirstBlockLabel": "Right"
+    },
+    "jawShift": {
+      "solvedFirstBlockLabel": "Right"
+    }
+  }
+}

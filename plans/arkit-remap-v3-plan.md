@@ -71,6 +71,15 @@ Solve:  for any MHA frame with controls c:
 - OpenRigLogic docs: https://EpicGames.github.io/OpenRigLogic + `docs/design/design.md` in the repo (RigLogic 4 design: PSD → linear → conditional stages)
 - RigLogic whitepaper PDF (DNA format, runtime strategy)
 
+## Resolved conventions (2026-08-14, asymmetry calibration take)
+
+Blip take `20260814_DefaultSlate_3` (wink/look/smirk/mouth-slide/jaw-shift, left block then right block; UE asset `/Game/ARKitRemap/arkittest/mirror-test/as_mirrortest`). Analysis: `v3/scripts/mirror_convention_analysis.py` → `v3/reports/p2_convention_verdicts.{json,md}`.
+
+- **Apple ARKit naming is performer-relative for eyes/brows/smile** (EyeBlinkLeft fires on a performer-left wink) **but observer-relative for MouthLeft/MouthRight** (MouthLeft fires on a performer-RIGHT mouth slide — Apple's documented-in-the-wild quirk, confirmed on-device). JawLeft/JawRight: unverdicted, Apple's lateral-jaw signal is too weak to form events (p95 ≈ 0.03 in both takes).
+- **Blip mono video is mirrored** (selfie convention) — proven three ways (gaze swap +0.98, smile asymmetry −0.80, calibration-take event order). MHA output from Blip video is therefore mirror-space; ARKit CSV is true face space. Take-2's MouthLeft/Right "contradiction" was a double flip: mirror × Apple's observer-relative mouth naming cancel out.
+- **Definition-export rule:** RM_MHA_to_ARKit must cross-wire MouthLeft/MouthRight to Apple's convention (solved performer-left slide → emit `MouthRight`); ARKit-rigged consumer characters are sculpted to Apple's actual behavior. Jaw: default to the same cross-wiring for consistency unless a stronger-signal test says otherwise.
+- **Ingest rule for ground-truth work:** either unmirror the video before MHA, or L/R-swap the ARKit reference when scoring (what `solve_take.py` does).
+
 ## Open questions
 
 - DNA per-character vs archetype: does the remap definition need per-character fitting, or is the archetype rig close enough? (Expectation: archetype is fine — RigLogic behavior is shared; DNA differences are mostly geometry/joint placement.)
