@@ -31,10 +31,10 @@ Solve:  for any MHA frame with controls c:
 ## Phases
 
 ### P0 — Ground truth extraction
-- [ ] Fresh, scripted extraction of `PA_MetaHuman_ARKit_Mapping` from the 5.8 asset (pose names, per-pose curve weights, baseline handling). Output: `v3/data/pa_mapping.json` + extraction script committed.
+- [x] Fresh, scripted extraction of `PA_MetaHuman_ARKit_Mapping` (2026-08-14): `v3/data/pa_mapping.json` + `v3/scripts/extract_pa_mapping.py`. Verified pose↔frame rule (24fps grid; 0=Default, 1..51=ARKit, 52=Pose_4; Pose_5..17 off-grid, dumped unassigned). 1172 curves, 570 raw / 422 adjusted nonzero records. Confirms: NO MouthClose pose; Default carries nosewrinkleupper offsets + `ctrl_riglogic_offon` switch (exclude from fitting).
 - [ ] Record `ABP_MH_LiveLink` runtime formulas from the 5.8 asset (MouthClose block, alphas, MHFDS switch). Output: `v3/data/abp_runtime_rules.json`.
-- [ ] Export a MetaHuman head DNA (e.g. MH_EL04 from MDR_58_tester, or a MetaHuman Creator DCC export). Output: local `.dna` (not committed if large/licensed — document the export steps instead).
-- [ ] Verify MHA real-time Live Link subject curve names (expected: `CTRL_expressions_*` / MHFDS). 30-second live check.
+- [x] Head DNA source found (2026-08-14) — no export needed: engine ships the standard archetype at `UE_5.8/Engine/Plugins/MetaHuman/MetaHumanCoreTechLib/Content/ArchetypeDNA/SKM_Face.dna` (11MB, name "Archetype"). Loads via Poly Hammer bindings in Blender: 263 raw controls (`CTRL_expressions.browDownL` = MHA space with `.`→`_`), 174 GUI controls (`CTRL_L_brow_down.ty` = RigMapper MH-family space!), 545 PSDs, 870 joints, 8 LODs. ⚠️ `getBlendShapeChannelCount()`=0 — verify in P1 whether behavior blendshapes need a different layer/query or the basis is joints+geometry.
+- [ ] Verify MHA real-time Live Link subject curve names (expected: `CTRL_expressions_*` / MHFDS). 30-second live check — needs Dylan streaming a webcam take.
 
 ### P1 — OpenRigLogic harness (offline Python, no UE needed)
 - [ ] Build OpenRigLogic `5.8` branch Python bindings (dna + riglogic modules; needs CMake, SWIG, MSVC, Python dev headers).
