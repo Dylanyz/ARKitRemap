@@ -36,6 +36,7 @@ One small asset does everything: **`RM_MHA_to_ARKit`**, a UE 5.8 **RigMapper Def
 | **Live** | Template AnimBP: your webcam → MHA real-time solve → Live Link → character. Toggle `Use Live Link`, pick a subject, done |
 | **Retargeting** | *Single RigMapper* op inside any IK Retargeter's curve stack |
 | **Set-and-forget** | Stamp the definition onto a character's mesh (Asset User Data) and every RigMapper tool auto-discovers it |
+| **CSV out** | Right-click → *Export Live Link Face CSV* (drop-in Asset Action asset) — real LLF format for Blender/FaceIt and other DCCs; accepts raw MHA sequences too (auto-remaps first) |
 
 Optional **head movement** pass-through (off by default): MHA's head rotation distributed naturally across the neck chain.
 

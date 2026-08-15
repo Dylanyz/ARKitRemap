@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased (v3.1)
+
+- **Live Link Face CSV export, asset-native** (2026-08-15): new drop-in `AAU_ARKitRemap_ExportLLFCSV.uasset` adds right-click → *Scripted Asset Actions → Export Live Link Face CSV* on AnimSequences. Beats v2's CSV tooling: no Python files to install (the exporter ships inside the asset), accepts raw MHA sequences directly (auto-remaps through the definition first), writes spec-true LLF timecodes (60-base fractional frames), keeps v2's optional re-import-as-LevelSequence. Output is `<name>_LLF.csv` — suffixed so drag-drop can never be mistaken for a reimport of the source asset. Source of truth: `v3/ue-python/arkit_llf_csv.py` (also usable headless for pipelines).
+
 ## v3.0.0 — 2026-08-14
 
 **Ground-up rebuild on UE 5.8's engine-native RigMapper system. Supersedes the v2 Python pipeline entirely.**

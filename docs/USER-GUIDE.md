@@ -87,6 +87,19 @@ The component just pushes its values into the mesh's `abp_arkit_remap_live` anim
 
 When you're already retargeting a MetaHuman performance onto another character, the curves can be remapped in the same step: in the retargeter's op stack add **Remap Curves → Single RigMapper**, set Definition = `RM_MHA_to_ARKit`, and (recommended) set `bCopyAllSourceCurves = false` so only the 52 ARKit curves come out.
 
+## 6b. Path D — Export a Live Link Face CSV (Blender / FaceIt / outside UE)
+
+For using MHA captures on ARKit characters **outside Unreal** — FaceIt's CSV import in Blender, or any tool that reads Live Link Face recordings.
+
+One-time install: drop `AAU_ARKitRemap_ExportLLFCSV.uasset` into your project's Content (it's an Asset Action Utility — a self-contained editor tool asset; the only requirement is the Python Editor Script Plugin, which UE enables by default).
+
+1. Select one or more AnimSequences in the Content Browser — **either** remapped ARKit sequences **or raw MHA sequences** (those get auto-remapped through `RM_MHA_to_ARKit` first, and the intermediate `_ARKit` sequence is kept).
+2. Right-click → **Scripted Asset Actions → Export Live Link Face CSV**.
+3. Answer the prompt (also import back into UE as a LevelSequence? — needs the *Live Link Face Importer* plugin).
+4. Each sequence gets a `<name>_LLF.csv` beside it on disk, in the exact format the Live Link Face app records: Timecode + BlendshapeCount + 61 columns in Apple's order, ready for FaceIt's Live Link import.
+
+> Why the `_LLF` suffix: if a CSV has the exact same name as an asset in that folder, dragging it into UE triggers a *reimport* of that asset (with a confusing "not a valid Alembic" error) instead of an import.
+
 ---
 
 ## 7. "Tagging" a character (optional convenience)
