@@ -8,6 +8,8 @@ Converts **MetaHuman Animator (MHA)** facial performances into **Apple ARKit 52-
 
 **V3 is a ground-up rebuild** on UE 5.8's engine-native RigMapper system: the mapping is *solved mathematically in deformation space* against Epic's own MetaHuman rig — zero hand-tuned numbers — and validated against real iPhone ARKit recordings of the same performances.
 
+**disclaimer** this is built with claude code. I have limited time to work on this and just need a solution to get these features for myself, and happy to make it public to share. If you have any difficulty, I recommend pasting this github link into an LLM and asking questions about it, or using an agentic llm (claude code, antigravity, cursor, etc) and asking it to download this repo, install it for you, walk you through the features and how to use it, etc.
+
 📖 **[User Guide](docs/USER-GUIDE.md)** — plain-language setup, concepts, and all three workflows.
 
 ---
