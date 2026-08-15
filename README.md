@@ -2,284 +2,100 @@
 
 **Use MetaHuman Animator with any character.** No iPhone required — just a webcam.
 
-Converts **MetaHuman Animator (MHA)** facial performances into **Apple ARKit 52-blendshape** curves so they can drive
-**[FaceIt](https://faceit-doc.readthedocs.io/)** or other ARKit-compatible facial rigs.
+Converts **MetaHuman Animator (MHA)** facial performances into **Apple ARKit 52-blendshape** curves, so studio-quality video-based capture can drive **[FaceIt](https://faceit-doc.readthedocs.io/)** rigs, Fab characters, or any ARKit-compatible face — baked animation or **live**.
 
-*Also includes* easy .CSV convert, to export for Blender/FaceIt/wherever!
+> MHA gives you the best monocular facial solve available, but it speaks MetaHuman (~250 proprietary `CTRL_expressions` curves). ARKit characters speak Apple's 52 blendshapes. This project is the translator between them.
 
-> MHA(MetaHuman Animator) gives you studio-quality facial capture from monocular video, but outputs its own proprietary curve format (~130+ `CTRL_expressions` curves). FaceIt characters expect the 52 standard ARKit blendshapes. This tool bridges the gap using weighted reverse mapping extracted from Epic's own PoseAsset data.
+**V3 is a ground-up rebuild** on UE 5.8's engine-native RigMapper system: the mapping is *solved mathematically in deformation space* against Epic's own MetaHuman rig — zero hand-tuned numbers — and validated against real iPhone ARKit recordings of the same performances.
 
-# Demos
+📖 **[User Guide](docs/USER-GUIDE.md)** — plain-language setup, concepts, and all three workflows.
+
+---
+
+## Demos
 
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 
-> This video shows two examples. *Not sure why ARKit on the right is reversing the eye directions...*
+> V2-era demo. (That "ARKit reverses the eye directions" mystery on the right? Solved during V3: selfie-style reference video is *mirrored*, while ARKit data is in true face space — the character was right all along. See the [user guide](docs/USER-GUIDE.md#9-current-limitations--roadmap).)
 
-<details>
-<summary>demo video details/examples</summary>
-
-### Example 1. Character rigged with FaceIt.
-
-*No manual corrections, just the basic workflow.*
-
-**Left:** The footage you see ran through metahuman animator(mono video input) and remmapped with ArKit Remap, to create ArKit curves the character can use
-
-**Right:** The straight ArKit curves from Live Link Face iOS
-
-### Example 2. Metahuman
-
-**Left:** The same footage, ran through metahuman animator(mono video input), applied to the Metahuman
-
-**Middle:** The metahuman animator sequence remapped with ArKit Remap to create ArKit curves, then applied to the metahuman. *Note, in doing this, the pipeline needs to convert the arkit curves BACK into metahuman animator curves. Essentially going from MHA -> ArKit -> MHA haha. You would never do this- for visualization purposes.*
-
-Right: Straight ArKit curves from Live Link Face iOS. *These are also converted to MHA curves through Epic's pipeline*
-
-</details>
-
-## Demo2 
+## Demo 2
 
 https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
 
-> Film use case- arkit from iOS vs the MHA remapped with this tool (EMA smoothing)
-
-> *not applied to the metahuman*
-
-> Watch the film [here](www.youtube.com/@madricetv/)
+> Film use case — iOS ARKit vs. MHA remapped with this tool. Watch the film [here](https://www.youtube.com/@madricetv/).
 
 ---
 
-## Package contents 
+## What V3 is
 
-<details><summary>expand</summary>
+One small asset does everything: **`RM_MHA_to_ARKit`**, a UE 5.8 **RigMapper Definition** (versioned in this repo as [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json)). 164 MHA curves in → 52 ARKit curves out. No custom runtime code — it runs on Epic's own RigMapper plugin, which means:
 
-- `arkit_remap.py`
-  Main remap script.
-- `arkit_remap_payload.json`
-  Mapping payload and calibration config.
-- `init_unreal.py`
-  Optional startup script that registers both right-click menu entries.
-- `arkit_remap_menu.py`
-  Context-menu launcher for Run ARKit Remap (smoothing prompt).
-- `arkit_csv_export.py`
-  Context-menu launcher for Convert to CSV (export + optional UE import).
-- `temporal_smoothing.py`
-  Optional runtime helper used when smoothing is enabled.
+| Workflow | How |
+|---|---|
+| **Batch convert** | Right-click any MHA AnimSequence → *Convert Selected Using RigMapper* → ARKit AnimSequence out |
+| **Live** | Template AnimBP: your webcam → MHA real-time solve → Live Link → character. Toggle `Use Live Link`, pick a subject, done |
+| **Retargeting** | *Single RigMapper* op inside any IK Retargeter's curve stack |
+| **Set-and-forget** | Stamp the definition onto a character's mesh (Asset User Data) and every RigMapper tool auto-discovers it |
+
+Optional **head movement** pass-through (off by default): MHA's head rotation distributed naturally across the neck chain.
+
+## How the mapping was built (and why it's trustworthy)
+
+No guessed weights, no eyeballed calibration. The V3 pipeline:
+
+1. **Extracted Epic's ground truth**: the `PA_MetaHuman_ARKit_Mapping` PoseAsset (Epic's own ARKit→MetaHuman table) and the `ABP_MH_LiveLink` runtime formulas, mechanically, with reproducible scripts.
+2. **Evaluated the real rig**: every ARKit shape was pushed through Epic's actual RigLogic engine (the archetype MetaHuman head, 870 joints) to get its true facial deformation.
+3. **Solved the inverse**: for any MHA frame, bounded least-squares finds the ARKit-52 combination whose deformation best matches what the MetaHuman face is actually doing. The static mapping was then fitted to reproduce that solve (R² 0.92) as a sparse weighted-sum graph.
+4. **Validated against reality**: the same performance recorded simultaneously as iPhone ARKit *and* MHA-processed video. The remap's output correlates with the iPhone's own data at 0.96 (jaw), 0.94–0.96 (brows), 0.88 (smile), 0.87 (blink)… full per-curve tables in [`v3/reports/`](v3/reports/).
+5. **MouthClose** — the one shape ARKit has and MetaHuman doesn't — is calibrated against measured iPhone data (r = 0.81), not invented.
+
+**Purity rule**: the core definition contains only what follows from data and math. Any future "to-taste" polish ships as a separate, documented, optional layer — never baked in. Full methodology: [build plan](plans/arkit-remap-v3-plan.md) · [knowledge base](dev/knowledge-base.md) (Section L = everything V3 measured).
+
+## Quality expectations
+
+Honest numbers from the paired-take validation: the performance-carrying shapes (jaw, brows, smile, blink, pucker, gaze) track excellently; subtle mouth detail (dimples, lip rolls) is weaker; and ~half of MHA's fine detail simply exceeds what 52 blendshapes can express — no remap can beat the format's ceiling. Sometimes the result reads *more* expressive than phone ARKit (MHA's solve is better), occasionally less on extreme faces. See [User Guide §8](docs/USER-GUIDE.md#8-quality-what-to-expect).
+
+## Requirements
+
+- **Unreal Engine 5.8** (RigMapper plugin enabled; experimental since 5.7 — built and tested on 5.8)
+- **MetaHuman plugin** for MHA capture (real-time webcam solve needs 5.6+)
+- An ARKit-52 character (FaceIt export, Fab, CC, custom — anything with the standard 52 morph names)
+
+## Getting started
+
+1. Get `RM_MHA_to_ARKit` into your project: create a RigMapper Definition asset and right-click → *Load From Json* → [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json).
+2. Follow the **[User Guide](docs/USER-GUIDE.md)** for your workflow (batch / live / retargeter).
+
+*(Release packaging with ready-made template assets is in progress — the definition JSON above is fully functional today.)*
+
+---
+
+<details>
+<summary><b>V2 (legacy Python pipeline)</b> — superseded by V3</summary>
+
+V2 was a Python-based reverse mapping (`arkit_remap.py` + weight payload) with right-click menus and CSV export for Blender/FaceIt. It worked, but its weights were reverse-engineered with subjective calibration — exactly what V3 eliminates. The V2 files remain in [`release/`](release/) and its history in the [improvement log](plans/arkit-remap-improvementlog.md). The CSV export use case is covered engine-natively in 5.8 by `RigMapperEditorSubsystem.ConvertAnimSequenceToCsv`.
 
 </details>
 
-## Installation
+## Deep dive
 
-1. Copy all the package files into your project's
-   `Content/Python/` folder.
-2. Enable Unreal's **Python Editor Script Plugin**.
-- If you want to re-import your CSVs back into the engine, also enable the
-   **Live Link Face Importer** plugin.
-3. Restart the editor
-> If you don't want context menus, only copy `arkit_remap.py` and `arkit_remap_payload.json`. Then run with `py import arkit_remap`
-
-## Usage
-
-1. Select one or more `AnimSequence` assets.
-2. Right-click and choose 
-- **Run ARKit Remap** to remap MetaHuman animation to ArKit
-- **ARKitRemap - Convert to CSV** to export an AnimSequence as CSV.
-
-The **Run ARKit Remap** prompt:
-
-- `Yes` = EMA smoothing (recommended)
-- `No` = One-Euro smoothing
-- `Cancel` = No smoothing
-- `X` = Close window and cancel
-
-This override affects only the current run.
-
-
-
-### Convert to CSV (export for Blender / other DCCs)
-<details><summary>expand</summary>
-
-The **ARKitRemap - Convert to CSV** context menu entry exports the remapped ARKit
-blendshape curves to a Live Link Face-style CSV. Primary use case is bringing
-the animation data into Blender via FaceIt's CSV import, or any other tool that
-consumes ARKit CSV data.
-
-On click a prompt appears:
-
-- `Yes` = CSV only — saves `<name>.csv` beside the source asset in `Content/`.
-- `No` = CSV + import to Content Browser — also runs `LiveLinkFaceImporterFactory`
-  and creates a `<name>_CSV` LevelSequence in the same folder.
-  Requires the **Live Link Face Importer** plugin to be enabled in UE.
-- `X` = Close window and cancel
-
-CSV format: `Timecode`, `BlendshapeCount`, 52 ARKit blendshape columns, 9 head/eye
-rotation columns (zero-filled). Compatible with FaceIt's CSV import.
-</details>
----
-
-## ELI5 What the tool does
-
-```
-Your webcam video
-    ↓
-MetaHuman Animator (MHA)
-    ↓
-Baked AnimSequence with ~130 CTRL_expressions curves
-    ↓
-ARKit Remap  ← this tool
-    ↓
-52 ARKit blendshape curves
-    ↓
-Your FaceIt character comes alive
-```
-
-Theres 2 facial systems.
-
-1. Unreal Engine metahumans
-2. ArKit (made by apple)
-   Metahumans have the best facial animations and work with any camera, but it has to be a normal human character.
-
-ArKit is really easy to apply to any character or creature([FaceIt](https://faceit-doc.readthedocs.io/)), but you need an iPhone to record it, and its alot less good quality.
-
-Unreal Engine has a converter to apply ArKit animations onto Metahumans. But doesn't provide the reverse. That's what this tool does.
-
-I mapped out the pipeline of how Unreal converts ArKit onto Metahumans and reversed it so it can go the other way around.
-So now I am not limited to an iPhone, and I get the higher quality animations.
-
-- - -
-
-The tool:
-
-- **Duplicates** each selected AnimSequence as `*_ARKit`
-- **Synthesizes** 51 ARKit curves using weighted least-squares from Epic's own PoseAsset mapping data
-- **Derives** MouthClose via a unified mouth-pair model (lip closure + jaw compensation)
-- **Optionally smooths** the output with EMA or One-Euro temporal filters
-- Runs in **under 1 second** per sequence (vs. minutes with the old Blueprint approach)
-- Re-running on the same source clears and rewrites — safe to iterate
-
-### Using with Body Animations
-
-Use a **slot system** to combine face + body:
-
-1. Create an AnimBlueprint for your character
-2. Add a slot in Anim Slot Manager (e.g. "FaceSlot")
-3. Add a **Layered Blend Per Bone** node:
-   - Body slot → Base Pose
-   - Face slot → Blend Poses 0
-   - Set **Bone Name** to `head`, **Blend Depth** to `1`
-4. In Sequencer, right-click the animation section → Animation → Slot → type your slot name
-
-This makes the face animation only affect the head bone and its children.
-
----
-
-## How It Works
-
-### The Problem
-
-MetaHuman Animator outputs ~130+ proprietary `CTRL_expressions` curves. FaceIt and other ARKit rigs expect the standard 52 ARKit blendshapes (eyeBlinkLeft, jawOpen, mouthSmileLeft, etc.). These are completely different naming conventions with different value semantics — it's not a simple rename.
-
-### The Solution
-
-Epic ships a PoseAsset (`PA_MetaHuman_ARKit_Mapping`) that maps between ARKit and MHA curves using weighted combinations. We extracted those weights and built a reverse pipeline:
-
-1. **Weighted least-squares synthesis** — each ARKit curve is reconstructed from multiple MHA source curves using the formula:
-
-   ```
-   arkitValue = Σ(weight × sourceValue) / Σ(weight²)
-   ```
-
-   This `sum(weight²)` normalization produces physically plausible blendshape values.
-2. **Coupled and grouped solves** — targets that share source curves (like MouthPucker/MouthFunnel, or the brow trio) are solved jointly via small linear systems instead of independently, eliminating cross-contamination artifacts.
-3. **Unified mouth-pair model** — MouthClose and JawOpen are computed together because MetaHuman represents "closed mouth" differently than ARKit. MHA uses high JawOpen + LipsPurse; ARKit uses low JawOpen + high MouthClose. The model translates between these representations with calibrated parameters fitted against real iPhone ARKit ground truth.
-4. **minWeight filtering** — removes trace contributors (like `browlaterall` at 0.031) that would pollute unrelated targets.
-
-### Calibration
-
-All parameters are tunable in `arkit_remap_payload.json`:
-
-
-| Parameter                           | Default | What it controls                                        |
-| ------------------------------------- | --------- | --------------------------------------------------------- |
-| `mouthClose.lipsPurseWeight`        | 0.735   | How much LipsPurse contributes to MouthClose derivation |
-| `mouthClose.forwardConstraintRatio` | 1.5     | Max ratio of MouthClose to JawOpen                      |
-| `mouthClose.clampMax`               | 0.5     | Upper clamp for MouthClose output                       |
-| `jawPurseCompensation.factor`       | 0.75    | How much JawOpen is reduced when lips are pursed        |
-| `calibrationDefaults.minWeight`     | 0.05    | Threshold for filtering trace contributors              |
-| `smoothing.enabled`                 | false   | Enable/disable temporal smoothing                       |
-
-#### Remap tuning process
-
-I basically tried to use the **pose_mapping asset** as the main basis for the remap. Cause that is Epic's mapping for arkit->MHA. So I extracted all that information and it's [in the repo](https://github.com/Dylanyz/ARKitRemap/tree/main/dev/mapping-pose-asset).
-
-Then the parameters were tweaked and improved by having AI compare the data of the same facial take between:
-
-1)**MHA solve** | 2)**arkit remap**(MHA converted to arkit) | 3)**raw arkit** from live link face |
-
-> All from the same take and phone (i used the reference video from live link face as mono video input for MHA).
-
-I also took screenshots at various points that the mouth open or close didn't line up to get it to correct it. Through doing that, I think subjectivity came into play(which I don't want- I want an exact reversing of Epic's arkit->MHA pipeline).
-
-Also, this was just one small take, and there may have been errors with lining up the timing. So I think with more data for the AI agent to cross reference between those three assets of the same take, and rebuilding from that and the pose mapping asset, we can get the remap payload json even more accurate.
-
-## Compatibility
-
-- **Unreal Engine:** Tested on UE 5.7
-- **Python:** Uses `unreal.AnimationLibrary` (built into UE's Python environment)
-- **Input:** Any baked MHA AnimSequence with `CTRL_expressions` curves
-- **Output:** 52 ARKit blendshape curves on a duplicated AnimSequence
-- **Target rigs:** FaceIt, or any ARKit-compatible morph target rig
-
-### Known Limitations
-
-- **Eye-look curves** are bone-driven in MetaHuman and don't have clean curve-only inverses. The pipeline writes weighted approximations.
-- **TongueOut** relies on `ctrl_expressions_tonguerolldown`, which is typically absent from MHA captures (produces zero output when missing).
-- The legacy Blueprint AnimModifier (v1) is included in [`legacy/`](legacy/) for reference but is no longer recommended.
-
----
-
-## Videos
-
-- [ARKit vs MHA-to-ARKit comparison](https://youtu.be/oiIFQVm8Pug) (before mouth fix)
-- [How the original AnimModifier worked](https://youtu.be/EF0tNFFY00Y?si=K5xUtGHVuF-Ryord)
-
----
-
-## Deep Dive: Research and Knowledge Base
-
-This tool was built through extensive reverse engineering of Epic's MetaHuman animation pipeline. The full research is available in this repo:
-
-- **[Knowledge Base](dev/knowledge-base.md)** — 800+ line canonical technical reference covering the forward pipeline (ABP_MH_LiveLink), PoseAsset weight extraction, the reverse pipeline math, MouthClose derivation, calibration methodology, and known gaps
-- **[Improvement Log](plans/arkit-remap-improvementlog.md)** — detailed history of every pipeline improvement with before/after metrics
-- **[PoseAsset Extraction Workspace](dev/mapping-pose-asset/)** — scripts and data from extracting Epic's `PA_MetaHuman_ARKit_Mapping` weights
-- **[Archive](dev/archive/)** — deprecated probes, calibration experiments, and superseded approaches kept for reference
-
----
+- **[Knowledge Base](dev/knowledge-base.md)** — the canonical technical reference: Epic's forward pipeline, the RigMapper system survey (Section K), and every V3 empirical finding (Section L: conventions, schemas, gotchas, scores)
+- **[V3 Build Plan](plans/arkit-remap-v3-plan.md)** — the living plan with every decision recorded
+- **[v3/reports/](v3/reports/)** — conditioning, solver validation, ground-truth comparisons, fit quality
+- **[v3/scripts/](v3/scripts/)** — the reproducible pipeline that produced the definition (offline Python on prebuilt RigLogic bindings; not needed to *use* the remap)
 
 ## Contributing
 
-Using **Claude Code**? No setup needed. Just paste (https://github.com/Dylanyz/ARKitRemap) into it and ask it to clone(download) the development files to your computer. The repo ships a `CLAUDE.md` and an `arkit-remap` skill, so Claude Code picks up the full project context automatically.
+Using **Claude Code**? Just point it at this repo — it ships a `CLAUDE.md` and an `arkit-remap` skill, so it picks up full project context automatically. Otherwise see **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
-Want to improve the remap quality, add new features, or help with research? See **[CONTRIBUTING.md](CONTRIBUTING.md)** for:
-
-- Repository structure guide
-- How to set up the dev environment
-- How to use Claude Code with the included skill
-- Where to find everything
+The single most valuable contribution right now: **paired takes** (same performance captured as iPhone ARKit CSV + mono video for MHA) — every additional pair sharpens the MouthClose calibration and the validation suite.
 
 ## License
 
-This project is licensed under the Mozilla Public License 2.0 (`MPL-2.0`).
-This project was developed for use with Unreal Engine / MetaHuman workflows. Users are responsible for complying with Epic's applicable license terms.
-You can use, modify, and sell this project, including inside a larger closed-source tool. But if you modify files from this project and distribute them, you must make those modified files’ source code available under MPL 2.0 and keep the original license/copyright notices intact. 
+Mozilla Public License 2.0 (`MPL-2.0`) — see [LICENSE](LICENSE). Use it, modify it, sell with it; if you distribute modified files from this project, make those files' source available under MPL-2.0 and keep the notices. Please credit the repo and author — **Dylan Gitalis** — so the project can grow.
 
-You can do that by pushing to this repo or making the source available yourself.
-
-I also ask that you credit this original repo and the author: Dylan Gitalis, so that it can grow and build with more contributors.
+Developed for Unreal Engine / MetaHuman workflows; users are responsible for complying with Epic's applicable license terms.
 
 ---
 
-You made it this far!! Check out my YouTube videos using this tool in Unreal Engine :) https://YouTube.com/@madricetv
-
-## License
-
-[MIT](LICENSE) — Dylan G, 2026
+You made it this far!! Check out the films made with this tool: https://YouTube.com/@madricetv
