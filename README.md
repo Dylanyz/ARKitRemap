@@ -31,6 +31,23 @@ https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
 
 ---
 
+## Setup (2 minutes)
+
+**You need:** Unreal Engine **5.8** · the **RigMapper** plugin enabled (Edit → Plugins → search "RigMapper" → check → restart) · an ARKit-52 character (FaceIt export, Fab, CC — anything with the standard 52 morph target names). For capture itself you'll use the MetaHuman plugin (MHA), same as for MetaHumans.
+
+1. **Download** from the [latest release](https://github.com/Dylanyz/ARKitRemap/releases/latest):
+   - `RM_MHA_to_ARKit.uasset` — the remap itself (required)
+   - `AAU_ARKitRemap_ExportLLFCSV.uasset` — CSV export action (optional, for Blender/FaceIt/outside-UE use)
+2. **Copy** them into your project at `Content/ARKitRemap/` (create the folder; with the editor closed, or rescan after). No other dependencies.
+3. **First remap:** right-click any MHA AnimSequence → **Convert Selected Using RigMapper** → set *Definitions* = `RM_MHA_to_ARKit`, *Target Mesh* = your character's skeletal mesh → a new AnimSequence with the 52 ARKit curves appears. Play it on your character. Done.
+
+From there:
+- **Live (webcam → character)**: five-minute AnimBP from [User Guide §5 + Appendix A](docs/USER-GUIDE.md#5-path-b--live-drive-your-character-with-your-face)
+- **CSV for Blender/FaceIt**: right-click AnimSequence → *Scripted Asset Actions → Export Live Link Face CSV* ([guide §6b](docs/USER-GUIDE.md#6b-path-d--export-a-live-link-face-csv-blender--faceit--outside-ue))
+- **Everything explained for newcomers** (concepts, all workflows, quality expectations, FAQ): 📖 **[User Guide](docs/USER-GUIDE.md)**
+
+---
+
 ## What V3 is
 
 One small asset does everything: **`RM_MHA_to_ARKit`**, a UE 5.8 **RigMapper Definition** (versioned in this repo as [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json)). 164 MHA curves in → 52 ARKit curves out. No custom runtime code — it runs on Epic's own RigMapper plugin, which means:
@@ -61,18 +78,7 @@ No guessed weights, no eyeballed calibration. The V3 pipeline:
 
 Honest numbers from the paired-take validation: the performance-carrying shapes (jaw, brows, smile, blink, pucker, gaze) track excellently; subtle mouth detail (dimples, lip rolls) is weaker; and ~half of MHA's fine detail simply exceeds what 52 blendshapes can express — no remap can beat the format's ceiling. Sometimes the result reads *more* expressive than phone ARKit (MHA's solve is better), occasionally less on extreme faces. See [User Guide §8](docs/USER-GUIDE.md#8-quality-what-to-expect).
 
-## Requirements
-
-- **Unreal Engine 5.8** (RigMapper plugin enabled; experimental since 5.7 — built and tested on 5.8)
-- **MetaHuman plugin** for MHA capture (real-time webcam solve needs 5.6+)
-- An ARKit-52 character (FaceIt export, Fab, CC, custom — anything with the standard 52 morph names)
-
-## Getting started
-
-1. Get `RM_MHA_to_ARKit` into your project — either way works:
-   - **Drop-in**: copy [`v3/uassets/RM_MHA_to_ARKit.uasset`](v3/uassets/) to `YourProject/Content/ARKitRemap/` (no dependencies), or
-   - **From source**: create a RigMapper Definition asset → right-click → *Load From Json* → [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json).
-2. Follow the **[User Guide](docs/USER-GUIDE.md)** for your workflow (batch / live / retargeter). The live template AnimBP and Details-panel component are a five-minute build from the guide's Appendix A (they're skeleton-specific, so they can't ship as universal assets).
+Prefer building the definition from source instead of the release uasset? Create a RigMapper Definition asset → right-click → *Load From Json* → [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json) — identical result, human-readable provenance.
 
 ---
 

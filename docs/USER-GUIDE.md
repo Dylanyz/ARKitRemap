@@ -6,6 +6,27 @@ This guide assumes you know your way around the UE editor but explains every con
 
 ---
 
+## 0. Setup (do this first)
+
+**Requirements:** UE **5.8**, an ARKit-52 character in your project, and two plugins:
+
+- **RigMapper** — Edit → Plugins → search "RigMapper" → enable → restart. (This is Epic's experimental curve-remapping plugin; the whole tool runs on it.)
+- **MetaHuman** — you already have this if you're using MetaHuman Animator. Real-time webcam capture needs 5.6+.
+
+**Install (once per project):**
+
+1. Grab the assets from the [latest release](https://github.com/Dylanyz/ARKitRemap/releases/latest):
+   - `RM_MHA_to_ARKit.uasset` — **required**, the remap definition itself
+   - `AAU_ARKitRemap_ExportLLFCSV.uasset` — optional, adds the CSV export right-click action
+2. In Windows Explorer, copy them into `YourProject/Content/ARKitRemap/` (create the folder). Do this with the editor closed, or right-click the Content folder in UE and *Rescan* afterwards.
+3. Verify: you should see `RM_MHA_to_ARKit` in the Content Browser under `Content/ARKitRemap`. Double-clicking it opens Epic's RigMapper definition editor — you never need to touch what's inside.
+
+**Smoke test (30 seconds):** right-click any MHA AnimSequence → **Convert Selected Using RigMapper** → *Definitions* = `RM_MHA_to_ARKit`, *Target Mesh* = your ARKit character's skeletal mesh → play the new sequence on your character. If the face moves, you're fully set up — pick your workflow below.
+
+> Don't have an MHA sequence yet? Process any face video through MetaHuman Performance first (that part is standard MetaHuman Animator workflow — Epic's docs cover it), then export the animation with *Export Face* enabled.
+
+---
+
 ## 1. What this actually does
 
 **MetaHuman Animator (MHA)** turns video of a face (iPhone, webcam, head-mounted cam) into facial animation — but it speaks *MetaHuman*: its output is ~250 animation curves with names like `CTRL_expressions_jawOpen`. Only MetaHuman faces understand those.
