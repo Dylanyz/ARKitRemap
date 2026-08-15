@@ -74,6 +74,12 @@ North star (Dylan, 2026-08-14): **the MetaHuman "Use Live Link" UX, but for ARKi
 - [ ] Guides: how the MetaHuman LiveLink/AnimBP system works; setting up an ARKit-52 character (generic — FaceIt as documented example) for baked + live use.
 - [x] Repo restructure (2026-08-14): `release/` + `build_release.py` → `legacy/v2-python/`; v1 AnimModifier renamed `legacy/v1-animmodifier-AM_ArKitRemap.uasset`. V3 package = `v3/RM_MHA_to_ARKit.json` + drop-in `v3/uassets/RM_MHA_to_ARKit.uasset` (dependency-free, verified) + docs/USER-GUIDE.md (incl. Appendix A per-skeleton ABP/component recipe) + CHANGELOG v3.0.0 entry. ABP/component uassets NOT shipped (skeleton-path-dependent → recipe instead). GitHub release v3.0.0 cut same day (Dylan-authorized; will iterate to 3.1 after his testing).
 
+### v3.2 candidates
+
+- **Template Animation Blueprint** for the live path: UE's Template AnimBPs compile without a skeleton binding — rebuilding `abp_arkit_remap_live` as one (all its nodes are skeleton-agnostic; the Transform Modify Bone refs resolve by name at runtime) would make it a true universal drop-in for any character, removing the Appendix-A rebuild step and the skeleton-bound caveat on the released uasset. Needs testing: template ABPs assigned directly as a mesh's Anim Class, and bone-name resolution for neck_01/neck_02/head on non-mannequin rigs.
+- Head-movement axis-sign verification on a real take (still pending Dylan's live test).
+- Re-stamp CallInEditor metadata helper if the CSV action BP ever gets edited (see memory/KB note).
+
 ### P5 (optional, later) — documented tuning layer
 
 Only if ever needed after real use: a separate stacked definition (RigMapper op priority stack / LinkedDefinitions) holding any by-eye adjustments, each entry documented with what it changes and why. The core V3 definition is never edited by preference (ground rule 5).

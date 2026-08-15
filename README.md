@@ -37,9 +37,10 @@ https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
 
 **You need:** Unreal Engine **5.8** · the **RigMapper** plugin enabled (Edit → Plugins → search "RigMapper" → check → restart) · an ARKit-52 character (FaceIt export, Fab, CC — anything with the standard 52 morph target names). For capture itself you'll use the MetaHuman plugin (MHA), same as for MetaHumans.
 
-1. **Download** from the [latest release](https://github.com/Dylanyz/ARKitRemap/releases/latest):
+1. **Download** from the [releases page](https://github.com/Dylanyz/ARKitRemap/releases):
    - `RM_MHA_to_ARKit.uasset` — the remap itself (required)
    - `AAU_ARKitRemap_ExportLLFCSV.uasset` — CSV export action (optional, for Blender/FaceIt/outside-UE use)
+   - `abp_arkit_remap_live.uasset` + `BC_ARKitRemapLive.uasset` — live-driving template + Details-panel toggles (optional; ⚠️ skeleton-bound example — loads only if your character uses the same UE5-Mannequin skeleton path, otherwise rebuild for your skeleton in ~5 min via [Appendix A](docs/USER-GUIDE.md#appendix-a--rebuilding-the-live-template-on-any-skeleton))
 2. **Copy** them into your project at `Content/ARKitRemap/` (create the folder; with the editor closed, or rescan after). No other dependencies.
 3. **First remap:** right-click any MHA AnimSequence → **Convert Selected Using RigMapper** → set *Definitions* = `RM_MHA_to_ARKit`, *Target Mesh* = your character's skeletal mesh → a new AnimSequence with the 52 ARKit curves appears. Play it on your character. Done.
 

@@ -15,9 +15,10 @@ This guide assumes you know your way around the UE editor but explains every con
 
 **Install (once per project):**
 
-1. Grab the assets from the [latest release](https://github.com/Dylanyz/ARKitRemap/releases/latest):
+1. Grab the assets from the [releases page](https://github.com/Dylanyz/ARKitRemap/releases):
    - `RM_MHA_to_ARKit.uasset` — **required**, the remap definition itself
    - `AAU_ARKitRemap_ExportLLFCSV.uasset` — optional, adds the CSV export right-click action
+   - `abp_arkit_remap_live.uasset` + `BC_ARKitRemapLive.uasset` — optional live-driving template and Details-panel toggles. ⚠️ These are skeleton-bound examples (AnimBPs always are): they only load if your character uses the same UE5-Mannequin skeleton path they were built on. Different skeleton? Rebuild in ~5 minutes with [Appendix A](#appendix-a--rebuilding-the-live-template-on-any-skeleton).
 2. In Windows Explorer, copy them into `YourProject/Content/ARKitRemap/` (create the folder). Do this with the editor closed, or right-click the Content folder in UE and *Rescan* afterwards.
 3. Verify: you should see `RM_MHA_to_ARKit` in the Content Browser under `Content/ARKitRemap`. Double-clicking it opens Epic's RigMapper definition editor — you never need to touch what's inside.
 
