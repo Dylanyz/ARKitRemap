@@ -962,3 +962,61 @@ The v2 Python pipeline's roles migrate as follows:
 | Temporal smoothing | Not in RigMapper (static per-frame graph). Live path relies on MHA solve smoothness; baked path can keep `temporal_smoothing.py` as optional post-step |
 | CSV export | Subsystem CSV (note different schema than Live Link Face CSV) |
 | Live preview | New in V3: AnimBP with Live Link Pose → Rig Mapper node, `BPI_RigMapper` toggle |
+
+---
+
+## L. V3 empirical findings (P1–P3, 2026-08-14)
+
+Everything below was measured, not assumed. Sources: archetype DNA through real RigLogic, the PA extraction, two paired iPhone/MHA takes, and Epic's own asset round-trips. Scripts in `v3/scripts/`, reports in `v3/reports/`.
+
+### L.1 Offline RigLogic harness (no UE, no Blender GUI)
+
+- The Poly Hammer Character DNA addon bundles prebuilt OpenRigLogic py bindings (RigLogic 13.2.5) that run **standalone** under Blender 5.2's bundled `python.exe` (CPython 3.13): `%APPDATA%\Blender Foundation\Blender\5.2\extensions\api_portal_polyhammer_com\character_dna\bindings\windows\x64\py313`. scipy installs repo-locally via `pip install --target v3/.pydeps scipy`.
+- Eval pattern: `riglogic.RigLogic(dnaReader, riglogic.Configuration(), None)` → `riglogic.RigInstance(rigLogic=…, memRes=None)` → `setRawControl(i, v)` → `calculate(inst)` → `getJointOutputs()`.
+- Joint outputs: flat float array, **9 attrs/joint** `[tx ty tz (cm), rx ry rz (deg euler), sx sy sz]`, deltas from rest pose. Archetype: 870 joints → 7830 dims. Archetype rig is joints-only (zero blendshapes; PSDs drive joint rows); 82 animated maps separate.
+- Archetype raw controls: 263 = 251 `CTRL_expressions.*` + 12 neck/head `.q*` quat channels. The 251 map 1:1 (case-insensitive, `.`→`_`) onto the 251 `CTRL_expressions_*` curves in a live MHA stream — verified both directions, zero gaps.
+
+### L.2 ARKit basis + inverse solve quality
+
+- Basis `B_j = RigLogic(PA pose j) − RigLogic(PA Default)` over the 51 ARKit poses (no MouthClose pose): **full rank, condition number 21.8** (σ 122.6→5.6). All cosine>0.5 overlaps anatomically expected (Smile/Dimple .85, Funnel/Pucker .84, RollLower/Press .76, EyeSquint/CheekSquint .67, UpperUp/NoseSneer .62, Blink/LookDown .57, LookUp/Wide .55).
+- Rig is near-linear along basis directions (JawOpen/Smile/Blink dev 0.000 from proportional; CheekPuff worst at 1.8% — PSD correctives).
+- Bounded BVLS (w∈[0,1]^51) recovers all 51 basis poses exactly (self 1.0, crosstalk 0, residual 0). QR-reduce once (A=QR, solve R w ≈ Qᵀd) for ~50 ms/frame.
+- On a real take, ~45% of MHA deformation norm lies **outside the ARKit-52 span** — the format ceiling, not an error. 76/251 controls have zero ARKit-expressible response (pupils, lid press, tongue detail).
+
+### L.3 Conventions (measured on-device, take 20260814_DefaultSlate_3)
+
+- **Apple ARKit naming is performer-relative for eyes/brows/smile but OBSERVER-relative for MouthLeft/MouthRight.** JawLeft/Right unverdictable — Apple's lateral-jaw signal p95 ≈ 0.03.
+- **Blip's saved mono video is mirrored** (selfie convention) → MHA output from it is a mirror-space performance. Proven 3 ways: gaze matches swapped partners (+0.98), smile-asymmetry anti-correlates (−0.80), calibration-take event order.
+- **Wild ARKit rigs are name-consistent** (mouthLeft = character's own left), verified with two Fab rigs + Epic's ABP_MH_LiveLink in a five-way lineup. Apple's mouth quirk therefore must NOT be baked into remap output — corrections apply only reference-side when scoring against Apple CSVs.
+
+### L.4 MouthClose
+
+The obvious inversion of the ABP forward rule (`MouthClose = mean(lipsTogether)×jawOpen`) **fails on MHA-origin curves** (r ≈ −0.07): MHA solves appearance, so its `jawOpen ≈ 0` exactly when lips are pressed; the relation only holds for control sets produced BY the forward ABP. MHA encodes closed-lips-while-jaw-open as `mouthLipsThickU/D*`, `mouthLipsPushU/D*`, `mouthLipsPurse*` (raw r up to +0.76). V3 fits MouthClose against the measured iPhone MouthClose of a paired take over L/R-symmetrized lip-pair sums → r = 0.81, amplitude matched.
+
+### L.5 RigMapperDefinition JSON — real schema (differs from paraphrases)
+
+Verified via `export_as_json_string()` of `/RigMapper/Definitions/Baked/RM_CDL_FNL`:
+
+```json
+{ "inputs": [...],
+  "features": { "<name>": { "type": "weighted_sum|sdk|multiply",
+                             "input_features": ["curveOrNode", ...],
+                             "input_params": [],
+                             "params": { "weights": [...] }        // ws (negatives and >1 legal)
+                                      // { "in_val": [...], "out_val": [...] } sdk
+                                      // {} multiply
+                           } },
+  "parameters": {}, "outputs": { "Out": "nodeOrInputName" }, "null_outputs": [] }
+```
+
+No clamp-range serialization observed. `load_from_json_string(text)` works from Python; `load_from_json_file` needs an `unreal.FilePath` struct, not a str. Round-trip is byte-stable except float formatting (`1.0`→`1`).
+
+### L.6 UE 5.8 Python API notes
+
+- AnimSequence curve access: `unreal.AnimationLibrary.get_animation_curve_names(seq, unreal.RawCurveTrackTypes.RCT_FLOAT)` / `.get_float_keys(seq, name)` — **not** `AnimationBlueprintLibrary` (doesn't exist in 5.8 Python), and `target_frame_rate` is not a readable editor property (`get_sequence_length` + `get_num_frames` instead).
+- Batch remap: `unreal.RigMapperEditorSubsystem.convert_anim_sequence_new(source, target_mesh, [definitions], unreal.DirectoryPath (set "path"), "Name")` → new AnimSequence. Warns `Invalid curve type: RCT_Vector` — benign (float curves only).
+- **"Remove Redundant Curve Keys" on anim export strips within ~1e-3 tolerance — lossy**, not exactly-redundant-only. With Linear interpolation the loss is invisible in practice; use all-keys exports for numeric ground truth.
+
+### L.7 V3 result summary (first take, mirrored-ref scoring)
+
+raw per-frame solve 0.576 → fitted static graph 0.622 → + calibrated MouthClose **0.640** mean Pearson over active curves; definition reproduces the solver at 0.943. Fit: 52 outputs = 47 ws + 4 passthrough + 1 calibrated, 55 nodes, 164 inputs, R² mean 0.92. Weakest: BrowInnerUp (collinear brow decomposition), Dimples, RollUpper, Funnel.

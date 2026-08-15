@@ -11,6 +11,7 @@
    - **OpenRigLogic** (github.com/EpicGames/OpenRigLogic, branch `5.8`) + a real MetaHuman head DNA — numerical evaluation of the actual rig for solving the inverse
 3. **V2 research is still valid as *process* knowledge** (what the pipeline layers are, where MouthClose lives, curve name spaces, pitfalls) — that's `dev/knowledge-base.md`. Its mapping *conclusions* are not.
 4. **The deliverable is a `RigMapperDefinition`** (`RM_MHA_to_ARKit`), authored/versioned as JSON in this repo, consumed via UE 5.8's RigMapper stack (see knowledge base Section K). No custom runtime code.
+5. **Purity principle (Dylan, 2026-08-14, after the first 7-way render):** the core V3 definition contains ONLY what follows from real data and math — engine assets, measured device data, deformation-space solves, documented fits. **No tuning by visual preference against the true data.** If by-eye fine-tuning is ever wanted (e.g. intense-expression polish), it must be a SEPARATE, documented, optional layer — e.g. a second definition stacked in the RigMapper op priority list or a LinkedDefinitions chain — never edits to the core fit. (Expectation: probably unnecessary.)
 
 ## Why the inverse must be solved, not transposed
 
@@ -59,10 +60,19 @@ Solve:  for any MHA frame with controls c:
 - [ ] Comparison harness: same take as (a) V3 definition output vs (b) raw iPhone ARKit reference (Live Link Face recording). Metrics per curve + visual passes. **No v2 output in the comparison baseline** — v2 is not a reference.
 
 ### P4 — Live preview + packaging
+
+North star (Dylan, 2026-08-14): **the MetaHuman "Use Live Link" UX, but for ARKit characters** — pick a subject on the character BP, tick a box, face follows the MHA webcam/phone stream through the remap. Everything should be seamless for an artist: simple retargeting, fast, batchable, live.
+
 - [ ] Template AnimBP: Live Link Pose (MHA subject) → Rig Mapper node → output; Alpha as blend; implement `BPI_RigMapper` (EnableRigMapper / OverrideDefinitions) for the toggle.
+- [ ] "Use Live Link" parity for ARKit character BPs: instance-editable `Use Live Link` / `Live Link Subject` properties on a template character BP (or an actor component) that drive the AnimBP — mirroring how new-5.8 MetaHumans do it via `LiveLinkInstance` (`set_subject` / `enable_live_link_evaluation`). Study the MetaHuman BP's exposed-variable pattern and replicate.
+- [ ] Head movement option: MHA streams HeadYaw/Pitch/Roll + HeadTranslationX/Y/Z (+HeadControlSwitch) — optional pass-through to the ARKit character's head/neck bone in the template ABP (toggle, like the MetaHuman head-movement export option).
 - [ ] UserData stamping helper (one-click "tag this character").
 - [ ] Guides: how the MetaHuman LiveLink/AnimBP system works; setting up an ARKit-52 character (generic — FaceIt as documented example) for baked + live use.
 - [ ] Repo restructure: v2 `release/` + payload → `legacy/`; V3 package = definition JSON + ABP template + guides.
+
+### P5 (optional, later) — documented tuning layer
+
+Only if ever needed after real use: a separate stacked definition (RigMapper op priority stack / LinkedDefinitions) holding any by-eye adjustments, each entry documented with what it changes and why. The core V3 definition is never edited by preference (ground rule 5).
 
 ## Key technical references
 
