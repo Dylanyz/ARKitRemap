@@ -40,7 +40,7 @@ https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
 1. **Download** from the [releases page](https://github.com/Dylanyz/ARKitRemap/releases):
    - `RM_MHA_to_ARKit.uasset` — the remap itself (required)
    - `AAU_ARKitRemap_ExportLLFCSV.uasset` — CSV export action (optional, for Blender/FaceIt/outside-UE use)
-   - `abp_arkit_remap_live.uasset` + `BC_ARKitRemapLive.uasset` — live-driving template + Details-panel toggles (optional; ⚠️ skeleton-bound example — loads only if your character uses the same UE5-Mannequin skeleton path, otherwise rebuild for your skeleton in ~5 min via [Appendix A](docs/USER-GUIDE.md#appendix-a--rebuilding-the-live-template-on-any-skeleton))
+   - `abp_arkit_remap_universal.uasset` + `BC_ARKitRemapLive.uasset` — live-driving template + Details-panel toggles (optional). The template is a **Template Animation Blueprint with no skeleton binding — works on any character**: assign it as the mesh's Anim Class, done.
 2. **Copy** them into your project at `Content/ARKitRemap/` (create the folder; with the editor closed, or rescan after). No other dependencies.
 3. **First remap:** right-click any MHA AnimSequence → **Convert Selected Using RigMapper** → set *Definitions* = `RM_MHA_to_ARKit`, *Target Mesh* = your character's skeletal mesh → a new AnimSequence with the 52 ARKit curves appears. Play it on your character. Done.
 

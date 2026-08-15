@@ -18,7 +18,7 @@ This guide assumes you know your way around the UE editor but explains every con
 1. Grab the assets from the [releases page](https://github.com/Dylanyz/ARKitRemap/releases):
    - `RM_MHA_to_ARKit.uasset` — **required**, the remap definition itself
    - `AAU_ARKitRemap_ExportLLFCSV.uasset` — optional, adds the CSV export right-click action
-   - `abp_arkit_remap_live.uasset` + `BC_ARKitRemapLive.uasset` — optional live-driving template and Details-panel toggles. ⚠️ These are skeleton-bound examples (AnimBPs always are): they only load if your character uses the same UE5-Mannequin skeleton path they were built on. Different skeleton? Rebuild in ~5 minutes with [Appendix A](#appendix-a--rebuilding-the-live-template-on-any-skeleton).
+   - `abp_arkit_remap_universal.uasset` + `BC_ARKitRemapLive.uasset` — optional, for live driving. The template is a **Template Animation Blueprint** (no skeleton binding) — it works on **any** character: set the mesh's Anim Class to it, done.
 2. In Windows Explorer, copy them into `YourProject/Content/ARKitRemap/` (create the folder). Do this with the editor closed, or right-click the Content folder in UE and *Rescan* afterwards.
 3. Verify: you should see `RM_MHA_to_ARKit` in the Content Browser under `Content/ARKitRemap`. Double-clicking it opens Epic's RigMapper definition editor — you never need to touch what's inside.
 
@@ -85,10 +85,10 @@ You have an MHA-exported AnimSequence (from MetaHuman Performance) and want an A
 Requires the MetaHuman plugin's real-time solver (UE 5.6+): connect a webcam or a Live Link Face iPhone as a **MetaHuman Animator Live Link subject** (the video-based one, not raw ARKit — the point is that MHA's solve drives everything).
 
 1. Get your MHA subject streaming (Live Link panel should show it green).
-2. Select your character in the level → Details → **Anim Class** → pick `abp_arkit_remap_live_C`.
-3. That's it. Your face is on the character.
+2. Select your character in the level → Details → **Anim Class** → pick `abp_arkit_remap_universal_C`.
+3. That's it. Your face is on the character — the template has no skeleton binding, so it offers itself to every mesh.
 
-Three settings live on the AnimBP (open `abp_arkit_remap_live` → Class Defaults, or set them per-instance):
+Three settings live on the AnimBP (open `abp_arkit_remap_universal` → Class Defaults, or set them per-instance):
 
 - **Live Link Subject** — which stream to listen to (default: `webcam`).
 - **Use Live Link** — master on/off. Off = character returns to rest pose.
@@ -103,7 +103,7 @@ Want the toggles on the **actor** in the Details panel — like a MetaHuman's "U
 
 The component just pushes its values into the mesh's `abp_arkit_remap_live` anim instance every tick. (That is also exactly how MetaHumans do it: instance-editable variables on the character Blueprint plus a bit of glue feeding the anim instance. If you build your own character BP logic, copy that pattern.)
 
-> **Skeleton note:** an AnimBP only offers itself to meshes using the same skeleton. The shipped template is on the UE5 Mannequin skeleton; for a character on a different skeleton, recreate the template there (see Appendix A) — the definition asset is skeleton-agnostic and does all the real lifting.
+> Appendix A shows how to rebuild the template yourself — only needed if you want a custom variant (different neck distribution, extra logic); the shipped universal template already works on any skeleton.
 
 ## 6. Path C — Inside an IK Retargeter
 
@@ -171,9 +171,9 @@ Check, in order: mesh actually has the 52 ARKit morph targets (open the mesh, Mo
 
 ---
 
-## Appendix A — Rebuilding the live template on any skeleton
+## Appendix A — Rebuilding the live template yourself
 
-The template AnimBP is five minutes of work to recreate for a new skeleton. Create an Animation Blueprint on the character's skeleton, then in the **AnimGraph**:
+The shipped `abp_arkit_remap_universal` works on any skeleton, so you only need this if you want a custom variant. Create an Animation Blueprint (tick **Template** in the creation dialog to keep it skeleton-free, or pick your character's skeleton for a bound one), then in the **AnimGraph**:
 
 1. **Live Link Pose** node — set Subject (or expose it: add a `LiveLinkSubject` variable of type *Live Link Subject Name* and connect it to the pin).
 2. **Rig Mapper** node — drag from Live Link Pose's output; in its Details add `RM_MHA_to_ARKit` to **Definitions**. (If the mesh is [tagged](#7-tagging-a-character-optional-convenience), it picks the definition up automatically.)
