@@ -14,15 +14,20 @@ Converts **MetaHuman Animator (MHA)** facial performances into **Apple ARKit 52-
 
 ## Demos
 
+https://github.com/user-attachments/assets/630d3c59-fbbb-436d-a620-15f4942376bd
+>yes, the first and third metahuman look exactly the same- but the third one is truly running arkit curves, I promise. They just look super identical. Also, pure arkit reverses the eyes for some reason.
+
+<details><summary>Legacy demos (v2)</summary>
+
 https://github.com/user-attachments/assets/a9ddf4c0-bda5-4709-8903-aa86677d77a9
 
 > V2-era demo. (That "ARKit reverses the eye directions" mystery on the right? Solved during V3: selfie-style reference video is *mirrored*, while ARKit data is in true face space — the character was right all along. See the [user guide](docs/USER-GUIDE.md#9-current-limitations--roadmap).)
 
-## Demo 2
-
 https://github.com/user-attachments/assets/ec8414bb-3ba4-49bf-8b5e-8e324259bb63
 
 > Film use case — iOS ARKit vs. MHA remapped with this tool. Watch the film [here](https://www.youtube.com/@madricetv/).
+
+</details>
 
 ---
 
