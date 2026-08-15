@@ -66,12 +66,22 @@ Requires the MetaHuman plugin's real-time solver (UE 5.6+): connect a webcam or 
 2. Select your character in the level → Details → **Anim Class** → pick `abp_arkit_remap_live_C`.
 3. That's it. Your face is on the character.
 
-Two settings live on the AnimBP (open `abp_arkit_remap_live` → Class Defaults, or set them per-instance from your character Blueprint):
+Three settings live on the AnimBP (open `abp_arkit_remap_live` → Class Defaults, or set them per-instance):
 
 - **Live Link Subject** — which stream to listen to (default: `webcam`).
 - **Use Live Link** — master on/off. Off = character returns to rest pose.
+- **Use Head Movement** — off by default. On = MHA's head rotation is applied to the character, distributed down the neck chain (25% neck_01 / 30% neck_02 / 45% head) so the shoulders follow naturally like a MetaHuman. First time you enable it, sanity-check the directions — axis conventions vary between skeletons, and a flipped axis just means negating that component.
 
-> **Skeleton note:** an AnimBP only offers itself to meshes using the same skeleton. The shipped template is on the UE5 Mannequin skeleton; for a character on a different skeleton, recreate the template there — it's four nodes: Live Link Pose → Rig Mapper (Definition = `RM_MHA_to_ARKit`) → Blend Poses by Bool → Output Pose. Two minutes of work; the definition asset is skeleton-agnostic and does all the real lifting.
+### The Details-panel checkboxes (MetaHuman-style)
+
+Want the toggles on the **actor** in the Details panel — like a MetaHuman's "Use Live Link" section — instead of buried in the AnimBP? Add the **`BC_ARKitRemapLive`** component to your character Blueprint:
+
+1. Open your character BP → **Add Component** → `BC_ARKitRemapLive`.
+2. Select the component: `Use Live Link`, `Live Link Subject`, and `Use Head Movement` appear in its Details — editable per placed instance, live-updating.
+
+The component just pushes its values into the mesh's `abp_arkit_remap_live` anim instance every tick. (That is also exactly how MetaHumans do it: instance-editable variables on the character Blueprint plus a bit of glue feeding the anim instance. If you build your own character BP logic, copy that pattern.)
+
+> **Skeleton note:** an AnimBP only offers itself to meshes using the same skeleton. The shipped template is on the UE5 Mannequin skeleton; for a character on a different skeleton, recreate the template there (see Appendix A) — the definition asset is skeleton-agnostic and does all the real lifting.
 
 ## 6. Path C — Inside an IK Retargeter
 
@@ -104,7 +114,7 @@ Philosophy: the mapping contains **zero hand-tuned numbers**. It is entirely der
 
 ## 9. Current limitations / roadmap
 
-- **Head movement**: MHA streams head yaw/pitch/roll + translation; pass-through to the character's neck/head bones is planned as a toggle. For now heads stay still (or come from your body animation).
+- **Head movement**: available as the `Use Head Movement` toggle (off by default) — rotation only, distributed across the neck chain. Head *translation* is not passed through (rarely meaningful on non-MetaHuman rigs). Axis signs may need a per-skeleton check.
 - **Eyes as bones**: characters whose gaze is bone-driven rather than blendshape-driven need their own eye-bone hookup; the remap emits the EyeLook* curves either way.
 - **Tongue**: MHA's video solve barely tracks tongues; `TongueOut` output exists but is weak. Phone-ARKit tongue is better if you need it.
 - **L/R conventions**: the remap is *name-consistent* — `MouthLeft` means the character's own left, matching how community ARKit rigs are actually sculpted. (Fun fact discovered during development: Apple's own `MouthLeft`/`MouthRight` data is inverted relative to its eye/brow naming. The remap does not propagate that quirk.) If a specific character was sculpted with swapped sides, flip the two names in a duplicate of the definition.
@@ -123,3 +133,17 @@ The definition JSON loads anywhere the RigMapper plugin exists (experimental sin
 
 **My character doesn't respond.**
 Check, in order: mesh actually has the 52 ARKit morph targets (open the mesh, Morph Target Preview); curve names match exactly (`EyeBlinkLeft`, not `eyeBlinkLeft`); the Live Link subject is streaming (green in the Live Link panel); the AnimBP is on the mesh's skeleton and assigned; `Use Live Link` is on.
+
+---
+
+## Appendix A — Rebuilding the live template on any skeleton
+
+The template AnimBP is five minutes of work to recreate for a new skeleton. Create an Animation Blueprint on the character's skeleton, then in the **AnimGraph**:
+
+1. **Live Link Pose** node — set Subject (or expose it: add a `LiveLinkSubject` variable of type *Live Link Subject Name* and connect it to the pin).
+2. **Rig Mapper** node — drag from Live Link Pose's output; in its Details add `RM_MHA_to_ARKit` to **Definitions**. (If the mesh is [tagged](#7-tagging-a-character-optional-convenience), it picks the definition up automatically.)
+3. **Blend Poses by Bool** — *True* ← the Rig Mapper chain, *False* ← a **Local Space Ref Pose** node, *Active Value* ← a `UseLiveLink` bool variable. Into **Output Pose**.
+4. *(Optional head movement)* Between the blend and the output: three **Transform (Modify) Bone** nodes (your neck chain bones, e.g. `neck_01`/`neck_02`/`head`), Rotation Mode = *Add to Existing*, rotations fed from Rotator variables that you fill in the **Event Graph**: on *Blueprint Update Animation*, `GetCurveValue` for `HeadRoll`/`HeadPitch`/`HeadYaw` → Make Rotator (scaled ~0.25/0.30/0.45 per bone) when `UseHeadMovement` is true, zero otherwise.
+5. Mark the variables **Instance Editable**, set sensible defaults, compile.
+
+Then either set the character's Anim Class to it directly, or add a `BC_ARKitRemapLive`-style component (its event graph: on Tick → get owner's SkeletalMeshComponent → Get Anim Instance → cast to your AnimBP class → set the three variables from the component's own instance-editable copies).

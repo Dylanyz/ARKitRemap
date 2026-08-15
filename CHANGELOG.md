@@ -1,5 +1,35 @@
 # Changelog
 
+## v3.0.0 — 2026-08-14
+
+**Ground-up rebuild on UE 5.8's engine-native RigMapper system. Supersedes the v2 Python pipeline entirely.**
+
+### The remap
+- New deliverable: **`RM_MHA_to_ARKit`**, a RigMapper Definition (versioned as `v3/RM_MHA_to_ARKit.json`) — 164 MHA input curves → 52 ARKit outputs, 55 feature nodes.
+- **Zero hand-tuned numbers.** The mapping is solved in deformation space: every ARKit shape evaluated through Epic's actual RigLogic rig (archetype MetaHuman head), inverse solved per-frame via bounded least squares, then fitted as a sparse weighted-sum/SDK graph (fit R² 0.92). v2's subjective calibration constants are gone.
+- **Validated against ground truth**: same performance captured simultaneously as iPhone ARKit CSV and MHA-processed video. Definition output vs. iPhone: r = 0.96 (jaw), 0.94–0.96 (brows), ~0.88 (smile), ~0.87 (blink); mean 0.64 over all active curves — *better than the raw per-frame solver* (0.58).
+- **MouthClose** calibrated against measured iPhone data (r = 0.81, amplitude-matched). The naive ABP-formula inversion was proven invalid on MHA-origin curves and discarded.
+- L/R conventions locked by a dedicated calibration take: output is **name-consistent** (matches how real-world ARKit rigs are sculpted); Apple's observer-relative MouthLeft/Right quirk is *not* propagated.
+
+### Workflows
+- **Batch**: right-click Convert (engine's RigMapper action) or `RigMapperEditorSubsystem` scripting.
+- **Live**: `abp_arkit_remap_live` template AnimBP — webcam → MHA real-time solve → Live Link → remap → character. Instance-editable `Use Live Link`, `Live Link Subject`, `Use Head Movement`.
+- **Head movement** (off by default): MHA head rotation distributed across the neck chain (25/30/45).
+- **`BC_ARKitRemapLive`** actor component: MetaHuman-style Details-panel toggles on any character BP.
+- **Character tagging**: stamp the definition on a mesh via `RigMapperDefinitionUserData` for zero-config auto-discovery.
+- **Retargeter**: Single RigMapper op in any IK Retargeter curve stack.
+
+### Docs & repo
+- New plain-language **[User Guide](docs/USER-GUIDE.md)**; README rewritten V3-first.
+- Knowledge base Section L: every empirical finding (schemas, conventions, gotchas, scores).
+- v2 Python pipeline moved to `legacy/v2-python/` (still functional, no longer maintained). v1 AnimModifier renamed within `legacy/`.
+- Full reproducible pipeline in `v3/scripts/` + quality reports in `v3/reports/`.
+
+### Known gaps (v3.0)
+- Head movement axis signs unverified on non-Mannequin skeletons (toggle defaults off).
+- MouthClose calibrated on one paired take — more paired takes will sharpen it.
+- Template AnimBP asset ships on the UE5 Mannequin skeleton; other skeletons use the 5-minute recipe in the guide (Appendix A).
+
 ## v2.1.0 — 2026-03-13
 
 ### What's New

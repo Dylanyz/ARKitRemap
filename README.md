@@ -63,17 +63,17 @@ Honest numbers from the paired-take validation: the performance-carrying shapes 
 
 ## Getting started
 
-1. Get `RM_MHA_to_ARKit` into your project: create a RigMapper Definition asset and right-click → *Load From Json* → [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json).
-2. Follow the **[User Guide](docs/USER-GUIDE.md)** for your workflow (batch / live / retargeter).
-
-*(Release packaging with ready-made template assets is in progress — the definition JSON above is fully functional today.)*
+1. Get `RM_MHA_to_ARKit` into your project — either way works:
+   - **Drop-in**: copy [`v3/uassets/RM_MHA_to_ARKit.uasset`](v3/uassets/) to `YourProject/Content/ARKitRemap/` (no dependencies), or
+   - **From source**: create a RigMapper Definition asset → right-click → *Load From Json* → [`v3/RM_MHA_to_ARKit.json`](v3/RM_MHA_to_ARKit.json).
+2. Follow the **[User Guide](docs/USER-GUIDE.md)** for your workflow (batch / live / retargeter). The live template AnimBP and Details-panel component are a five-minute build from the guide's Appendix A (they're skeleton-specific, so they can't ship as universal assets).
 
 ---
 
 <details>
 <summary><b>V2 (legacy Python pipeline)</b> — superseded by V3</summary>
 
-V2 was a Python-based reverse mapping (`arkit_remap.py` + weight payload) with right-click menus and CSV export for Blender/FaceIt. It worked, but its weights were reverse-engineered with subjective calibration — exactly what V3 eliminates. The V2 files remain in [`release/`](release/) and its history in the [improvement log](plans/arkit-remap-improvementlog.md). The CSV export use case is covered engine-natively in 5.8 by `RigMapperEditorSubsystem.ConvertAnimSequenceToCsv`.
+V2 was a Python-based reverse mapping (`arkit_remap.py` + weight payload) with right-click menus and CSV export for Blender/FaceIt. It worked, but its weights were reverse-engineered with subjective calibration — exactly what V3 eliminates. The V2 files remain in [`legacy/v2-python/`](legacy/v2-python/) and its history in the [improvement log](plans/arkit-remap-improvementlog.md). The CSV export use case is covered engine-natively in 5.8 by `RigMapperEditorSubsystem.ConvertAnimSequenceToCsv`.
 
 </details>
 
