@@ -1,0 +1,676 @@
+{
+  "summary": {
+    "outputs": 52,
+    "nullOutputs": [],
+    "kinds": {
+      "weighted_sum": 47,
+      "passthrough": 4,
+      "iphone-calibrated": 1
+    },
+    "meanR2": 0.9195,
+    "minR2": 0.3678,
+    "inputCurvesUsed": 164,
+    "featureNodes": 55
+  },
+  "perOutput": {
+    "EyeBlinkLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeBlinkL": 0.8136,
+        "CTRL_expressions_eyeParallelLookDirection": 0.0421,
+        "CTRL_expressions_eyeRelaxL": 0.3125,
+        "CTRL_expressions_eyelashesUpINL": 0.3622,
+        "CTRL_expressions_eyelashesUpOUTL": 0.3639
+      },
+      "r2": 0.9738
+    },
+    "EyeLookDownLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeFaceScrunchL": 0.0227,
+        "CTRL_expressions_eyeLookDownL": 0.9659,
+        "CTRL_expressions_eyeLowerLidDownL": 0.3779,
+        "CTRL_expressions_eyeRelaxL": 0.0582
+      },
+      "r2": 0.9969
+    },
+    "EyeLookInLeft": {
+      "kind": "passthrough",
+      "input": "CTRL_expressions_eyeLookRightL",
+      "r2": 0.9984
+    },
+    "EyeLookOutLeft": {
+      "kind": "passthrough",
+      "input": "CTRL_expressions_eyeLookLeftL",
+      "r2": 0.9995
+    },
+    "EyeLookUpLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeFaceScrunchL": 0.056,
+        "CTRL_expressions_eyeLookUpL": 0.995,
+        "CTRL_expressions_eyeLowerLidDownL": 0.4019,
+        "CTRL_expressions_eyeLowerLidUpL": 0.0742
+      },
+      "r2": 0.9989
+    },
+    "EyeSquintLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeLowerLidUpL": 0.3495,
+        "CTRL_expressions_eyeParallelLookDirection": 0.1041,
+        "CTRL_expressions_eyeSquintInnerL": 0.7476,
+        "CTRL_expressions_eyeUpperLidUpL": 0.0546
+      },
+      "r2": 0.922
+    },
+    "EyeWideLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeFaceScrunchL": 1.4051,
+        "CTRL_expressions_eyeLowerLidDownL": 0.4276,
+        "CTRL_expressions_eyeLowerLidUpL": 0.0259,
+        "CTRL_expressions_eyeParallelLookDirection": 0.2013,
+        "sdk:CTRL_expressions_eyeUpperLidUpL:EyeWideLeft": 1.0,
+        "CTRL_expressions_eyeWidenL": 0.9982,
+        "CTRL_expressions_eyelashesUpINL": 0.9101,
+        "CTRL_expressions_eyelashesUpOUTL": 0.9144,
+        "CTRL_expressions_mouthCheekSuckL": 0.026
+      },
+      "r2": 0.9301
+    },
+    "EyeBlinkRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeBlinkR": 0.8583,
+        "CTRL_expressions_eyeRelaxR": 0.314,
+        "CTRL_expressions_eyelashesUpINR": 0.2574,
+        "sdk:CTRL_expressions_eyelashesUpOUTR:EyeBlinkRight": 1.0
+      },
+      "r2": 0.9856
+    },
+    "EyeLookDownRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeFaceScrunchR": 0.1182,
+        "CTRL_expressions_eyeLookDownR": 0.9637,
+        "CTRL_expressions_eyeLowerLidDownR": 0.3524,
+        "CTRL_expressions_eyeRelaxR": 0.0587
+      },
+      "r2": 0.9973
+    },
+    "EyeLookInRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeLookLeftR": 0.9958,
+        "CTRL_expressions_eyeLowerLidUpR": 0.0499
+      },
+      "r2": 0.9994
+    },
+    "EyeLookOutRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeLookRightR": 0.9993,
+        "CTRL_expressions_eyeLowerLidUpR": 0.0534
+      },
+      "r2": 0.9993
+    },
+    "EyeLookUpRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeFaceScrunchR": 0.1455,
+        "CTRL_expressions_eyeLookUpR": 0.9941,
+        "CTRL_expressions_eyeLowerLidDownR": 0.3687,
+        "CTRL_expressions_eyeLowerLidUpR": 0.0652,
+        "CTRL_expressions_eyelashesUpOUTR": 0.0315
+      },
+      "r2": 0.999
+    },
+    "EyeSquintRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeLowerLidUpR": 0.4039,
+        "CTRL_expressions_eyeParallelLookDirection": 0.0891,
+        "CTRL_expressions_eyeSquintInnerR": 0.8645,
+        "CTRL_expressions_eyeUpperLidUpR": 0.0615,
+        "CTRL_expressions_noseNostrilDepressR": 0.1035
+      },
+      "r2": 0.9464
+    },
+    "EyeWideRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeFaceScrunchR": 1.1587,
+        "CTRL_expressions_eyeLowerLidDownR": 0.3856,
+        "CTRL_expressions_eyeParallelLookDirection": 0.1533,
+        "sdk:CTRL_expressions_eyeUpperLidUpR:EyeWideRight": 1.0,
+        "CTRL_expressions_eyeWidenR": 1.0055,
+        "CTRL_expressions_eyelashesUpINR": 0.6385,
+        "sdk:CTRL_expressions_eyelashesUpOUTR:EyeWideRight": 1.0
+      },
+      "r2": 0.9542
+    },
+    "JawForward": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawFwd": 0.9051,
+        "CTRL_expressions_neckStretchL": 0.1019,
+        "CTRL_expressions_neckStretchR": 0.1094,
+        "CTRL_expressions_neckThroatDown": 0.0297
+      },
+      "r2": 0.9451
+    },
+    "JawLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawLeft": 0.8928
+      },
+      "r2": 0.9347
+    },
+    "JawRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawBack": 0.0442,
+        "CTRL_expressions_jawChinCompressR": 0.0379,
+        "CTRL_expressions_jawRight": 0.9521,
+        "CTRL_expressions_mouthCheekBlowR": 0.0487
+      },
+      "r2": 0.9701
+    },
+    "JawOpen": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawBack": 0.0516,
+        "CTRL_expressions_jawOpen": 0.9646,
+        "CTRL_expressions_neckDigastricDown": 0.0371,
+        "CTRL_expressions_neckStretchL": 0.0563,
+        "CTRL_expressions_neckStretchR": 0.0519
+      },
+      "r2": 0.9989
+    },
+    "MouthFunnel": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCornerSharpenUL": 0.1297,
+        "CTRL_expressions_mouthCornerSharpenUR": 0.2191,
+        "CTRL_expressions_mouthFunnelDL": 0.0999,
+        "CTRL_expressions_mouthFunnelDR": 0.3033,
+        "CTRL_expressions_mouthFunnelUR": 0.0944,
+        "CTRL_expressions_mouthLowerLipRollOutR": 0.0997
+      },
+      "r2": 0.7336
+    },
+    "MouthPucker": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCheekSuckL": 0.0263,
+        "CTRL_expressions_mouthCheekSuckR": 0.0381,
+        "CTRL_expressions_mouthLipsBlowL": 0.0204,
+        "CTRL_expressions_mouthLipsBlowR": 0.0403,
+        "CTRL_expressions_mouthLipsPressL": 0.045,
+        "CTRL_expressions_mouthLipsPressR": 0.0379,
+        "CTRL_expressions_mouthLipsPurseDL": 0.2018,
+        "CTRL_expressions_mouthLipsPurseDR": 0.1844,
+        "CTRL_expressions_mouthLipsPurseUL": 0.1418,
+        "CTRL_expressions_mouthLipsPurseUR": 0.1722,
+        "CTRL_expressions_mouthLipsStickyLPh2": 0.0245,
+        "CTRL_expressions_mouthLipsStickyRPh2": 0.0267,
+        "CTRL_expressions_mouthLipsStickyRPh3": 0.0238,
+        "CTRL_expressions_mouthLipsTowardsDL": 0.1381,
+        "CTRL_expressions_mouthLipsTowardsDR": 0.1242,
+        "CTRL_expressions_mouthLipsTowardsUL": 0.1571,
+        "CTRL_expressions_mouthLipsTowardsUR": 0.1325,
+        "CTRL_expressions_mouthLowerLipRollOutL": 0.1226,
+        "CTRL_expressions_mouthLowerLipRollOutR": 0.0554,
+        "CTRL_expressions_mouthPressUR": 0.0262,
+        "CTRL_expressions_mouthUpperLipRollOutL": 0.1259,
+        "CTRL_expressions_mouthUpperLipRollOutR": 0.0799
+      },
+      "r2": 0.9734
+    },
+    "MouthLeft": {
+      "kind": "passthrough",
+      "input": "CTRL_expressions_mouthLeft",
+      "r2": 0.9976
+    },
+    "MouthRight": {
+      "kind": "passthrough",
+      "input": "CTRL_expressions_mouthRight",
+      "r2": 0.9979
+    },
+    "MouthSmileLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCornerPullL": 0.8234,
+        "CTRL_expressions_mouthLipsBlowR": 0.046,
+        "CTRL_expressions_mouthSharpCornerPullL": 0.534
+      },
+      "r2": 0.9881
+    },
+    "MouthSmileRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCheekBlowL": 0.0723,
+        "CTRL_expressions_mouthCornerPullR": 0.8147,
+        "CTRL_expressions_mouthSharpCornerPullR": 0.494
+      },
+      "r2": 0.986
+    },
+    "MouthFrownLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCornerDepressL": 0.986,
+        "CTRL_expressions_mouthCornerRounderDL": 0.0318,
+        "CTRL_expressions_mouthDown": 0.1242,
+        "CTRL_expressions_mouthLipsPressL": 0.225,
+        "CTRL_expressions_mouthLipsThinInwardDL": 0.0208,
+        "CTRL_expressions_mouthLipsThinInwardUL": 0.0312,
+        "CTRL_expressions_mouthLowerLipBiteL": 0.0663,
+        "CTRL_expressions_mouthPressDL": 0.0367
+      },
+      "r2": 0.9927
+    },
+    "MouthFrownRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCornerDepressR": 0.9511,
+        "CTRL_expressions_mouthCornerRounderDR": 0.0341,
+        "CTRL_expressions_mouthDown": 0.1037,
+        "CTRL_expressions_mouthLipsPressR": 0.2746,
+        "CTRL_expressions_mouthLipsThinInwardDR": 0.0227,
+        "CTRL_expressions_mouthLipsThinInwardUR": 0.0271,
+        "CTRL_expressions_mouthLowerLipBiteR": 0.0533,
+        "CTRL_expressions_mouthPressDR": 0.0324,
+        "CTRL_expressions_mouthUpperLipRollOutR": 0.0338
+      },
+      "r2": 0.9928
+    },
+    "MouthDimpleLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinRaiseDL": 0.0568,
+        "CTRL_expressions_mouthCheekBlowR": 0.1106,
+        "CTRL_expressions_mouthDimpleL": 0.3937,
+        "CTRL_expressions_mouthLipsPressL": 0.3283,
+        "CTRL_expressions_mouthLipsPressR": 0.138,
+        "CTRL_expressions_mouthPressUL": 0.0386,
+        "CTRL_expressions_mouthSharpCornerPullL": 0.1127
+      },
+      "r2": 0.5933
+    },
+    "MouthDimpleRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCheekBlowL": 0.1014,
+        "CTRL_expressions_mouthDimpleR": 0.4152,
+        "CTRL_expressions_mouthLipsPressL": 0.0947,
+        "CTRL_expressions_mouthLipsPressR": 0.4876,
+        "CTRL_expressions_mouthPressUR": 0.0287,
+        "CTRL_expressions_mouthSharpCornerPullR": 0.0562,
+        "CTRL_expressions_mouthUp": 0.0397
+      },
+      "r2": 0.5937
+    },
+    "MouthStretchLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinCompressL": 0.0354,
+        "CTRL_expressions_jawChinCompressR": 0.0229,
+        "CTRL_expressions_mouthCheekBlowR": 0.1032,
+        "CTRL_expressions_mouthLipsPullUL": 0.0441,
+        "CTRL_expressions_mouthLipsThinDL": 0.0353,
+        "CTRL_expressions_mouthLowerLipRollOutL": 0.0311,
+        "CTRL_expressions_mouthLowerLipShiftLeft": 0.1096,
+        "CTRL_expressions_mouthStretchL": 0.8891,
+        "CTRL_expressions_neckDigastricUp": 0.0222,
+        "CTRL_expressions_neckStretchL": 0.0316
+      },
+      "r2": 0.984
+    },
+    "MouthStretchRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinCompressL": 0.028,
+        "CTRL_expressions_jawChinCompressR": 0.0318,
+        "CTRL_expressions_jawChinRaiseDL": 0.0266,
+        "CTRL_expressions_mouthCheekBlowL": 0.1019,
+        "CTRL_expressions_mouthLipsPullUR": 0.0386,
+        "CTRL_expressions_mouthLipsThinDR": 0.032,
+        "CTRL_expressions_mouthLowerLipRollOutR": 0.0858,
+        "CTRL_expressions_mouthLowerLipShiftRight": 0.0423,
+        "CTRL_expressions_mouthStretchR": 0.8829,
+        "CTRL_expressions_mouthUpperLipBiteL": 0.0393,
+        "CTRL_expressions_neckDigastricUp": 0.0225,
+        "CTRL_expressions_neckStretchR": 0.0396
+      },
+      "r2": 0.9867
+    },
+    "MouthRollLower": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthLowerLipBiteL": 0.2688,
+        "CTRL_expressions_mouthLowerLipBiteR": 0.2642,
+        "CTRL_expressions_mouthLowerLipRollInL": 0.5145,
+        "CTRL_expressions_mouthLowerLipRollInR": 0.4343,
+        "CTRL_expressions_mouthUpperLipRollInL": 0.0553
+      },
+      "r2": 0.9684
+    },
+    "MouthRollUpper": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthLipsPullUR": 0.0821,
+        "CTRL_expressions_mouthLipsTightenUL": 0.0408,
+        "CTRL_expressions_mouthLipsTightenUR": 0.0318,
+        "CTRL_expressions_mouthUp": 0.0256,
+        "CTRL_expressions_mouthUpperLipBiteL": 0.1458,
+        "CTRL_expressions_mouthUpperLipBiteR": 0.2012,
+        "CTRL_expressions_mouthUpperLipRollInL": 0.3163,
+        "CTRL_expressions_mouthUpperLipRollInR": 0.387,
+        "CTRL_expressions_mouthUpperLipTowardsTeethL": 0.0369,
+        "CTRL_expressions_mouthUpperLipTowardsTeethR": 0.039,
+        "CTRL_expressions_noseNasolabialDeepenL": 0.0279,
+        "CTRL_expressions_noseNostrilDepressR": 0.0605
+      },
+      "r2": 0.7206
+    },
+    "MouthShrugLower": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinCompressL": 0.1157,
+        "CTRL_expressions_jawChinCompressR": 0.1132,
+        "CTRL_expressions_jawChinRaiseDL": 0.4756,
+        "CTRL_expressions_jawChinRaiseDR": 0.4777,
+        "CTRL_expressions_mouthCornerSharpenDR": 0.0878,
+        "CTRL_expressions_mouthLipsPurseUR": 0.0329,
+        "CTRL_expressions_mouthLipsStickyLPh1": 0.0461,
+        "CTRL_expressions_mouthLipsStickyLPh2": 0.0433,
+        "CTRL_expressions_mouthLipsStickyLPh3": 0.0394,
+        "CTRL_expressions_mouthLipsStickyRPh1": 0.041,
+        "CTRL_expressions_mouthLipsStickyRPh2": 0.0348,
+        "CTRL_expressions_mouthLipsStickyRPh3": 0.0274,
+        "CTRL_expressions_mouthLipsTightenDL": 0.0355,
+        "CTRL_expressions_mouthLipsTowardsUL": 0.0546,
+        "CTRL_expressions_mouthLipsTowardsUR": 0.0591,
+        "CTRL_expressions_mouthLowerLipBiteR": 0.0249,
+        "CTRL_expressions_mouthLowerLipTowardsTeethL": 0.0708,
+        "CTRL_expressions_mouthLowerLipTowardsTeethR": 0.0703,
+        "CTRL_expressions_mouthPressDL": 0.0671,
+        "CTRL_expressions_mouthPressDR": 0.0635,
+        "CTRL_expressions_mouthUp": 0.156,
+        "CTRL_expressions_neckDigastricDown": 0.0207,
+        "CTRL_expressions_neckDigastricUp": 0.0814,
+        "CTRL_expressions_neckThroatUp": 0.0279
+      },
+      "r2": 0.8391
+    },
+    "MouthShrugUpper": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinRaiseUL": 0.4849,
+        "CTRL_expressions_jawChinRaiseUR": 0.4892,
+        "CTRL_expressions_mouthCheekSuckL": 0.098,
+        "CTRL_expressions_mouthCheekSuckR": 0.1004,
+        "CTRL_expressions_mouthFunnelUL": 0.045,
+        "CTRL_expressions_mouthLipsPullUL": 0.1853,
+        "CTRL_expressions_mouthLipsPullUR": 0.3598,
+        "CTRL_expressions_mouthLipsThinInwardUL": 0.0473,
+        "CTRL_expressions_mouthLipsThinInwardUR": 0.0537,
+        "CTRL_expressions_mouthLipsTightenUL": 0.1892,
+        "CTRL_expressions_mouthLipsTightenUR": 0.1686,
+        "CTRL_expressions_mouthPressUL": 0.0429,
+        "CTRL_expressions_mouthUp": 0.168
+      },
+      "r2": 0.7376
+    },
+    "MouthPressLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinRaiseDL": 0.0267,
+        "CTRL_expressions_mouthLowerLipBiteL": 0.5763,
+        "CTRL_expressions_mouthLowerLipRollInL": 0.0483,
+        "CTRL_expressions_mouthLowerLipTowardsTeethL": 0.0258,
+        "CTRL_expressions_mouthPressDL": 0.5734,
+        "CTRL_expressions_mouthPressUL": 0.3758,
+        "CTRL_expressions_mouthUpperLipBiteL": 0.2296
+      },
+      "r2": 0.972
+    },
+    "MouthPressRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthLipsTightenDR": 0.0423,
+        "CTRL_expressions_mouthLowerLipBiteR": 0.5847,
+        "CTRL_expressions_mouthLowerLipTowardsTeethR": 0.025,
+        "CTRL_expressions_mouthPressDR": 0.5642,
+        "CTRL_expressions_mouthPressUR": 0.3874,
+        "CTRL_expressions_mouthUpperLipBiteR": 0.2687,
+        "CTRL_expressions_mouthUpperLipRollInR": 0.0797
+      },
+      "r2": 0.9511
+    },
+    "MouthLowerDownLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinCompressR": 0.0694,
+        "CTRL_expressions_jawChinRaiseDR": 0.1176,
+        "CTRL_expressions_jawChinRaiseUL": 0.02,
+        "CTRL_expressions_mouthCheekBlowR": 0.1021,
+        "CTRL_expressions_mouthCornerSharpenDL": 0.585,
+        "CTRL_expressions_mouthCornerSharpenDR": 0.3908,
+        "CTRL_expressions_mouthDown": 0.0993,
+        "CTRL_expressions_mouthFunnelDL": 0.17,
+        "CTRL_expressions_mouthLipsBlowL": 0.0484,
+        "CTRL_expressions_mouthLipsPressL": 0.0223,
+        "CTRL_expressions_mouthLipsPushDR": 0.0699,
+        "CTRL_expressions_mouthLipsStickyLPh1": 0.0268,
+        "CTRL_expressions_mouthLipsStickyRPh1": 0.0615,
+        "CTRL_expressions_mouthLipsThinInwardDR": 0.0362,
+        "CTRL_expressions_mouthLowerLipDepressL": 0.4749,
+        "CTRL_expressions_mouthLowerLipRollOutL": 0.3914,
+        "CTRL_expressions_mouthLowerLipRollOutR": 0.1068,
+        "CTRL_expressions_mouthLowerLipTowardsTeethR": 0.0589,
+        "CTRL_expressions_mouthPressDR": 0.0366,
+        "CTRL_expressions_mouthPressUL": 0.0938,
+        "CTRL_expressions_neckDigastricDown": 0.0397,
+        "CTRL_expressions_neckDigastricUp": 0.0295,
+        "CTRL_expressions_neckStretchL": 0.0654,
+        "CTRL_expressions_neckStretchR": 0.0578,
+        "CTRL_expressions_neckSwallowPh2": 0.0259
+      },
+      "r2": 0.8974
+    },
+    "MouthLowerDownRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinCompressL": 0.0412,
+        "CTRL_expressions_jawChinRaiseDL": 0.1129,
+        "CTRL_expressions_jawChinRaiseUR": 0.0392,
+        "CTRL_expressions_mouthCheekBlowL": 0.0867,
+        "CTRL_expressions_mouthCheekSuckR": 0.0245,
+        "CTRL_expressions_mouthCornerSharpenDL": 0.4854,
+        "CTRL_expressions_mouthCornerSharpenDR": 0.3455,
+        "CTRL_expressions_mouthDown": 0.0881,
+        "CTRL_expressions_mouthFunnelDR": 0.184,
+        "CTRL_expressions_mouthLipsPressR": 0.1088,
+        "CTRL_expressions_mouthLipsStickyLPh1": 0.0537,
+        "CTRL_expressions_mouthLipsStickyRPh1": 0.0373,
+        "CTRL_expressions_mouthLipsThickDR": 0.03,
+        "CTRL_expressions_mouthLipsThinInwardDL": 0.0292,
+        "CTRL_expressions_mouthLipsThinInwardDR": 0.0608,
+        "CTRL_expressions_mouthLowerLipDepressR": 0.4993,
+        "CTRL_expressions_mouthLowerLipRollOutL": 0.0637,
+        "CTRL_expressions_mouthLowerLipRollOutR": 0.3416,
+        "CTRL_expressions_mouthLowerLipShiftRight": 0.1412,
+        "CTRL_expressions_mouthLowerLipTowardsTeethL": 0.0494,
+        "CTRL_expressions_mouthPressDL": 0.028,
+        "CTRL_expressions_mouthPressUR": 0.0405,
+        "CTRL_expressions_neckDigastricDown": 0.0517,
+        "CTRL_expressions_neckDigastricUp": 0.0285,
+        "CTRL_expressions_neckStretchL": 0.0702,
+        "CTRL_expressions_neckStretchR": 0.0576,
+        "CTRL_expressions_neckSwallowPh2": 0.0292,
+        "CTRL_expressions_neckThroatUp": 0.0212,
+        "CTRL_expressions_noseNostrilDepressR": 0.1269
+      },
+      "r2": 0.909
+    },
+    "MouthUpperUpLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinRaiseUL": 0.0244,
+        "CTRL_expressions_mouthFunnelUL": 0.0543,
+        "CTRL_expressions_mouthLowerLipBiteL": 0.0275,
+        "CTRL_expressions_mouthPressDL": 0.0345,
+        "CTRL_expressions_mouthUpperLipRaiseL": 0.4644,
+        "CTRL_expressions_mouthUpperLipRollOutL": 0.3715,
+        "CTRL_expressions_mouthUpperLipShiftLeft": 0.084,
+        "CTRL_expressions_mouthUpperLipTowardsTeethR": 0.0404,
+        "CTRL_expressions_noseNasolabialDeepenL": 0.2375,
+        "CTRL_expressions_noseNasolabialDeepenR": 0.0279
+      },
+      "r2": 0.8627
+    },
+    "MouthUpperUpRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_jawChinRaiseUR": 0.0261,
+        "CTRL_expressions_mouthFunnelUR": 0.0413,
+        "CTRL_expressions_mouthLowerLipBiteR": 0.0456,
+        "CTRL_expressions_mouthPressDR": 0.0326,
+        "CTRL_expressions_mouthUpperLipRaiseR": 0.4298,
+        "CTRL_expressions_mouthUpperLipRollOutR": 0.4098,
+        "CTRL_expressions_mouthUpperLipShiftRight": 0.2086,
+        "CTRL_expressions_mouthUpperLipTowardsTeethL": 0.0381,
+        "CTRL_expressions_noseNasolabialDeepenL": 0.0479,
+        "CTRL_expressions_noseNasolabialDeepenR": 0.2428
+      },
+      "r2": 0.8356
+    },
+    "BrowDownLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browDownL": 0.9957,
+        "CTRL_expressions_browLateralL": 0.0828,
+        "sdk:CTRL_expressions_eyeFaceScrunchL:BrowDownLeft": 0.3592,
+        "CTRL_expressions_jawClenchL": 0.0231
+      },
+      "r2": 0.9664
+    },
+    "BrowDownRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browDownR": 1.0216,
+        "CTRL_expressions_browLateralR": 0.0836,
+        "sdk:CTRL_expressions_eyeFaceScrunchR:BrowDownRight": 0.9655,
+        "CTRL_expressions_eyeLowerLidDownR": 0.0238,
+        "CTRL_expressions_jawClenchR": 0.0249
+      },
+      "r2": 0.9852
+    },
+    "BrowInnerUp": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browLateralR": 0.1696,
+        "CTRL_expressions_browRaiseInL": 0.0389
+      },
+      "r2": 0.3678
+    },
+    "BrowOuterUpLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browRaiseInL": 0.3316,
+        "CTRL_expressions_browRaiseOuterL": 0.6403
+      },
+      "r2": 0.9965
+    },
+    "BrowOuterUpRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browRaiseInR": 0.3129,
+        "CTRL_expressions_browRaiseOuterR": 0.6565
+      },
+      "r2": 0.9963
+    },
+    "CheekPuff": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_mouthCheekBlowL": 0.381,
+        "CTRL_expressions_mouthCheekBlowR": 0.3947,
+        "CTRL_expressions_mouthLipsBlowL": 0.0763,
+        "CTRL_expressions_mouthLipsBlowR": 0.0733
+      },
+      "r2": 0.9569
+    },
+    "CheekSquintLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_eyeCheekRaiseL": 0.9124,
+        "CTRL_expressions_eyeFaceScrunchL": 0.7088,
+        "CTRL_expressions_eyeLowerLidUpL": 0.1092,
+        "CTRL_expressions_eyeRelaxL": 0.0299,
+        "CTRL_expressions_mouthCheekSuckL": 0.0361,
+        "CTRL_expressions_noseNasolabialDeepenL": 0.0394
+      },
+      "r2": 0.9981
+    },
+    "CheekSquintRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browLateralL": 0.033,
+        "CTRL_expressions_eyeCheekRaiseR": 0.9146,
+        "CTRL_expressions_eyeFaceScrunchR": 0.6628,
+        "CTRL_expressions_eyeLowerLidUpR": 0.1076,
+        "CTRL_expressions_eyeRelaxR": 0.0403,
+        "CTRL_expressions_mouthCheekSuckR": 0.022
+      },
+      "r2": 0.9972
+    },
+    "NoseSneerLeft": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browRaiseOuterL": 0.0334,
+        "CTRL_expressions_mouthSharpCornerPullL": 0.075,
+        "CTRL_expressions_noseNasolabialDeepenL": 0.0742,
+        "CTRL_expressions_noseWrinkleL": 0.8926
+      },
+      "r2": 0.9812
+    },
+    "NoseSneerRight": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browRaiseOuterR": 0.0273,
+        "CTRL_expressions_mouthSharpCornerPullR": 0.0341,
+        "CTRL_expressions_noseNasolabialDeepenR": 0.0516,
+        "CTRL_expressions_noseWrinkleR": 0.9292
+      },
+      "r2": 0.9902
+    },
+    "TongueOut": {
+      "kind": "weighted_sum",
+      "terms": {
+        "CTRL_expressions_browLateralL": 0.0215,
+        "CTRL_expressions_tongueBendUp": 0.0978,
+        "CTRL_expressions_tongueIn": 0.058,
+        "sdk:CTRL_expressions_tongueOut:TongueOut": 1.1085,
+        "CTRL_expressions_tongueRight": 0.1229,
+        "CTRL_expressions_tongueThin": 0.0338,
+        "CTRL_expressions_tongueTipRight": 0.0506,
+        "CTRL_expressions_tongueTipUp": 0.3411
+      },
+      "r2": 0.8559
+    },
+    "MouthClose": {
+      "kind": "iphone-calibrated",
+      "r2": 0.6574,
+      "terms": {
+        "mouthLipsTogetherDL+mouthLipsTogetherDR": 0.0445,
+        "mouthLipsThickDL+mouthLipsThickDR": 0.2712,
+        "mouthLipsPurseUL+mouthLipsPurseUR": 0.0587,
+        "mouthCornerDownL+mouthCornerDownR": 0.315,
+        "mouthLipsPressL+mouthLipsPressR": 0.5418
+      },
+      "note": "fit vs measured iPhone MouthClose (take 20260814_DefaultSlate_2); ABP inversion invalid on MHA-origin curves (jawOpen ~0 when lips pressed)"
+    }
+  }
+}
