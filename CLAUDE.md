@@ -1,83 +1,78 @@
 # ARKit Remap
 
-MHA-to-ARKit facial curve remapping pipeline for Unreal Engine. Converts MetaHuman Animator `CTRL_expressions` curves into the 52 ARKit blendshapes for any ARKit-52-rigged character (FaceIt is the documented example).
+MHA-to-ARKit facial curve remapping for Unreal Engine **5.8**. Converts MetaHuman Animator
+`CTRL_expressions` curves into the 52 ARKit blendshapes for any ARKit-52-rigged character —
+baked (AnimSequence → AnimSequence), live (Live Link → morph targets in real time), or CSV
+(for Blender/FaceIt and other DCCs).
 
-This repo is set up for **Claude Code**. The `arkit-remap` skill in `.claude/skills/` is deliberately a bare pointer to this repo — **this repo (CLAUDE.md + `dev/knowledge-base.md`) is the single source of truth; never duplicate knowledge into the skill.**
+This repo is agent-first: **CLAUDE.md + `dev/knowledge-base.md` are the single source of
+truth.** The `arkit-remap` skill in `.claude/skills/` is deliberately a bare pointer here —
+never duplicate knowledge into it.
 
-## ⚠️ V3 is the active workstream — v2 is legacy
+## Are you USING the tool or DEVELOPING it?
 
-**Read `plans/arkit-remap-v3-plan.md` first.** V3 rebuilds the mapping from scratch on UE 5.8's RigMapper system + OpenRigLogic (see `dev/knowledge-base.md` Section K). Hard rule from Dylan: **v2's mapping numbers (payload weights, calibration constants) were AI-guessed and must NOT feed V3.** V2 material below is process/reference knowledge only.
+**Using it in a UE project → this section is your path. Do not start from `plans/` or v2.**
+
+The deliverable is **V3**: a `RigMapperDefinition` asset (`RM_MHA_to_ARKit`) plus drop-in
+helpers, all in `v3/uassets/`. Complete instructions: **`docs/USER-GUIDE.md`**. Summary:
+
+1. **Enable the `RigMapper` plugin** in the project (.uproject Plugins array) + restart the
+   editor. Without it the assets silently fail to load. (This is gotcha #1 — check it first.)
+2. Copy `v3/uassets/*.uasset` into the project's `Content/ARKitRemap/` — **exact folder name;
+   the assets reference each other at `/Game/ARKitRemap/...`**.
+3. Pick a workflow:
+   - **Baked**: right-click MHA AnimSequence(s) → *Convert Selected Using RigMapper* →
+     Definitions = `RM_MHA_to_ARKit`, Target Mesh = the ARKit character's mesh.
+   - **Live** (drive a mesh's ARKit morphs from MetaHuman Animator real-time / Live Link):
+     set the mesh's Anim Class to `abp_arkit_remap_universal_C`, set its `LiveLinkSubject` /
+     `UseLiveLink` vars. **Follow `dev/knowledge-base.md` Section K.3.1** — the field-verified
+     playbook (10 gotchas: plugin default-off, transient *Update Animation in Editor* flag as
+     the #1 "wired but frozen" cause, per-instance wiring on shared BPs, MetaHuman `UseLiveLink`
+     conflict, input/output curve bisect recipe, Python game-thread sampling trap…).
+   - **CSV export**: right-click AnimSequence → *Export Live Link Face CSV* (needs
+     `AAU_ARKitRemap_ExportLLFCSV.uasset`).
+4. Recording live performances: Take Recorder → From Actor → untick every component except the
+   target mesh → AnimSequence with ARKit morph curves, no live link needed for playback.
+5. Troubleshooting: `docs/USER-GUIDE.md` (user-level) and KB K.3.1 (agent-level, with Python
+   snippets).
+
+## Developing / improving the pipeline
+
+- **Read `plans/arkit-remap-v3-plan.md`** for the V3 workstream. Hard rule from Dylan: **v2's
+  mapping numbers (payload weights, calibration constants) were AI-guessed and must NOT feed
+  V3.** V2 material is process/reference knowledge only.
+- `dev/knowledge-base.md` — canonical 900+ line technical reference. Key sections: **K**
+  (RigMapper system survey), **K.3.1** (live setup playbook), **L** (V3 empirical findings —
+  RigLogic harness, ARKit basis solve, conventions), **E.6** (v2 pipeline, legacy), **D**
+  (PA_MetaHuman_ARKit_Mapping).
+- This repo is **public-facing**: other artists use it with their own agents. Write docs for
+  strangers — no machine-specific absolute paths or assumptions about a particular MCP stack in
+  user-facing material; label agent-stack-specific tips as such.
 
 ## Project structure
 
-- `release/` — user-facing package (copy to `Content/Python/` to install)
-- `dev/` — full development workspace (scripts, data, reports, archive)
-- `dev/knowledge-base.md` — canonical 800+ line technical reference
-- `dev/mapping-pose-asset/` — PoseAsset extraction workspace (start at `AGENT_INDEX.md`)
-- `plans/` — improvement log and backlog
-- `legacy/` — old Blueprint AnimModifier (.uasset)
+| Path | What |
+|---|---|
+| `v3/uassets/` | **The deliverable** — drop-in definition + live template ABP + helpers (see its README) |
+| `v3/RM_MHA_to_ARKit.json` | The definition as versioned JSON (LoadFromJson rebuilds it anywhere) |
+| `v3/scripts/`, `v3/reports/`, `v3/data/` | V3 solve/fit/score workspace and evidence |
+| `docs/USER-GUIDE.md` | User-facing install + workflows + troubleshooting |
+| `dev/knowledge-base.md` | Canonical technical reference (+ Revision Log) |
+| `dev/mapping-pose-asset/` | PoseAsset extraction workspace (start at `AGENT_INDEX.md`) |
+| `plans/` | V3 plan, improvement log, backlog |
+| `release/`, `legacy/` | v2 Python package + old Blueprint AnimModifier — **legacy, don't ship** |
 
-## Key files
+## When changing things
 
-| Purpose | Path |
-|---------|------|
-| Main remap script | `release/arkit_remap.py` |
-| Mapping payload + calibration | `release/arkit_remap_payload.json` |
-| Smoothing filters | `release/temporal_smoothing.py` |
-| Context menu launcher | `release/arkit_remap_menu.py` |
-| CSV export (context menu) | `release/arkit_csv_export.py` |
-| Menu registration (UE startup) | `release/init_unreal.py` |
-| Technical reference | `dev/knowledge-base.md` |
-| Improvement log + backlog | `plans/arkit-remap-improvementlog.md` |
-| PoseAsset extraction index | `dev/mapping-pose-asset/AGENT_INDEX.md` |
+Keep in sync after any change:
 
-## How to run
-
-1. Copy `release/` contents into a UE project's `Content/Python/`.
-2. Enable Python Editor Script Plugin.
-3. Select AnimSequence(s) in Content Browser.
-4. Output Log: `py import arkit_remap`
-
-## Testing and validation
-
-- `dev/scripts/roundtrip_validation.py` — offline round-trip accuracy (no UE needed)
-- `dev/scripts/coupled_solve.py` — standalone coupled/grouped solve verification
-- Both are pure Python, runnable outside Unreal.
-
-## Code style
-
-- Python scripts that run inside UE use `unreal.AnimationLibrary` (not `AnimationBlueprintLibrary`).
-- Payload JSON is the single source of calibration truth — don't hardcode magic numbers.
-- Use controller bracket batching for all curve writes.
-
-## When changing code
-
-Keep these in sync after any pipeline changes:
-
-1. `dev/knowledge-base.md` Section E.6 — update behavior/coverage description
-2. `dev/knowledge-base.md` Revision Log — add a dated entry
-3. `.claude/skills/arkit-remap/SKILL.md` — pointer only; touch it only if the repo's entry points moved
+1. `dev/knowledge-base.md` — relevant section + a dated **Revision Log** entry
+2. `docs/USER-GUIDE.md` — if user-visible workflow changed
+3. `CHANGELOG.md` — for user-visible changes
 4. `dev/mapping-pose-asset/AGENT_INDEX.md` — if payload or script paths changed
-5. `CHANGELOG.md` — for user-visible changes
+5. `.claude/skills/arkit-remap/SKILL.md` — pointer only; touch only if entry points moved
 
-## Build and release
-
-```
-python build_release.py
-```
-
-Produces `dist/ARKitRemap-v<version>.zip` from `release/` contents.
-
-## Key technical context
-
-- Uses `sum(weight²)` normalization (least-squares inverse projection)
-- Coupled solve for MouthPucker↔MouthFunnel, MouthRollLower↔MouthRollUpper
-- Grouped 3-target solve for BrowInnerUp + BrowOuterUpLeft/Right
-- Unified mouth-pair model: MouthClose derived from LipsTowards + LipsPurse, JawOpen purse-compensated
-- minWeight filter (0.05) removes trace contributor artifacts
-- EMA smoothing recommended over One-Euro
-- Tested on UE 5.7 (v2); V3 targets UE 5.8
-
-## Deep dive
-
-For full pipeline math, calibration methodology, forward/reverse pipeline analysis, and gap analysis, read `dev/knowledge-base.md`.
+v2-only (legacy) conventions, kept for reference: UE-side scripts use
+`unreal.AnimationLibrary` (not `AnimationBlueprintLibrary`); payload JSON is the calibration
+truth; controller bracket batching for curve writes. `python build_release.py` builds the v2
+zip from `release/`.
