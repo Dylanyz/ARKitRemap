@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.2 — 2026-08-20
+
+- **Universal live template: Sequencer playback support.** Added a `Slot 'DefaultSlot'` node between the space conversion and Output Pose in `abp_arkit_remap_universal`. Without it, Sequencer skeletal-animation tracks (Take Recorder playback, baked ARKit AnimSequences placed on the mesh) were silently overridden by the AnimBP's own output — the classic "sequence plays but nothing moves" failure. With the slot, Sequencer animation overrides the live chain during playback and hands back to Live Link when the sequence stops.
+
 ## v3.1.1 (docs) — 2026-08-20
 
 - **Live setup playbook from first production deployment** (MDR_Doomsday, custom mask mesh on a MetaHuman character): `dev/knowledge-base.md` Section K.3.1 — 10 field-verified gotchas including the RigMapper plugin being disabled by default, the transient **Update Animation in Editor** flag as the #1 "wired but frozen" cause, per-instance wiring on shared character BPs, disabling the MetaHuman's own live link, and an input/output curve bisect recipe. USER-GUIDE troubleshooting updated to match (frozen-in-editor entry; corrected the curve-name case claim — matching is case-insensitive). SKILL.md gained a V3 section.

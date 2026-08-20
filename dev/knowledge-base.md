@@ -952,6 +952,24 @@ Recording: Take Recorder → + Source → From Actor → the character; untick e
 the target mesh → recorded AnimSequence carries the 52 ARKit morph curves, no live link needed
 for playback.
 
+11. **Sequencer playback through the live ABP needs a Slot node.** A skeletal mesh whose Anim
+   Class is set plays Sequencer animation tracks through the AnimBP's `DefaultSlot`; a graph
+   without one silently discards the sequence and keeps outputting its own pose ("sequence plays
+   but the mesh doesn't move"). Fixed in `abp_arkit_remap_universal` v3.1.2 —
+   `ComponentToLocalSpace → Slot 'DefaultSlot' → Output Pose`. Sequencer overrides live during
+   playback, live link resumes when it stops.
+12. **Take Recorder actor-source checkbox UI can be cross-wired (UE 5.8).** Observed live: the
+   take's LevelSequence held TWO `TakeRecorderSources` subobjects; the details panel edited one
+   while recording read the other, with the last two skeletal-component rows swapped — ticks on
+   the custom mesh actually toggled the outfit mesh and vice versa, so the wrong component was
+   recorded no matter what the UI showed. Programmatic writes to the live source get stomped
+   every UI tick. Workarounds: invert the two checkboxes deliberately, or close the Take
+   Recorder panel, fix the stored `ActorRecorderPropertyMap` values via Python
+   (`unreal.ObjectIterator(unreal.ActorRecorderPropertyMap)`), and reopen. When Take Recorder
+   misbehaves, the reliable fallback is the offline path: export the MHA performance to an
+   AnimSequence, `RigMapperEditorSubsystem.convert_anim_sequence_new()` through the definition
+   targeting the ARKit mesh, and place the result on the mesh in a LevelSequence.
+
 ### K.4 Retargeter path: RigMapperOp plugin (5.8 restructure)
 
 Ops are instanced structs under the singleton **"Remap Curves"** parent op (`FIKRetargetCurveRemapOp`); child ops stack in priority order:
