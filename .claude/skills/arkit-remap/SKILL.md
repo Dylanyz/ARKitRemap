@@ -11,7 +11,7 @@ description: >-
 
 This skill is intentionally a pointer, not a source of truth.
 
-Everything lives in the repo at `C:\Users\DYLPC\Desktop\Coding\ARKitRemap`:
+Everything lives in this repo (two directories up from this file):
 
 1. **Start with the repo's `CLAUDE.md`** — orientation, V3-vs-v2 status, key file map.
 2. `dev/knowledge-base.md` — canonical technical reference (Section K.3.1 = live
