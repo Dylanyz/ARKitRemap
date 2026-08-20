@@ -88,8 +88,7 @@ This folder is the canonical workspace for extracting and reviewing
 
 - Whenever new artifacts are added/renamed in `mapping-pose-asset`, update this file in the same change.
 - Whenever this index changes materially, update `dev/knowledge-base.md` (navigation and usage
-  guidance). (`.claude/skills/arkit-remap/SKILL.md` is a bare pointer to the repo — do not sync
-  content into it.)
+  guidance).
 - Keep paths and regeneration steps current so future agents can reproduce outputs without searching.
 
 ## Current Snapshot (quick facts)

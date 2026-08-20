@@ -6,8 +6,8 @@ baked (AnimSequence → AnimSequence), live (Live Link → morph targets in real
 (for Blender/FaceIt and other DCCs).
 
 This repo is agent-first: **CLAUDE.md + `dev/knowledge-base.md` are the single source of
-truth.** The `arkit-remap` skill in `.claude/skills/` is deliberately a bare pointer here —
-never duplicate knowledge into it.
+truth.** Keep all knowledge in the repo docs — don't fork it into external skills, rules, or
+notes that can drift.
 
 ## Are you USING the tool or DEVELOPING it?
 
@@ -70,7 +70,6 @@ Keep in sync after any change:
 2. `docs/USER-GUIDE.md` — if user-visible workflow changed
 3. `CHANGELOG.md` — for user-visible changes
 4. `dev/mapping-pose-asset/AGENT_INDEX.md` — if payload or script paths changed
-5. `.claude/skills/arkit-remap/SKILL.md` — pointer only; touch only if entry points moved
 
 v2-only (legacy) conventions, kept for reference: UE-side scripts use
 `unreal.AnimationLibrary` (not `AnimationBlueprintLibrary`); payload JSON is the calibration
