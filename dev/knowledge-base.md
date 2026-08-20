@@ -829,10 +829,10 @@ The extraction workflow is now established and should be reused, not reinvented.
 ### J.0.3 Index and knowledge sync protocol
 
 - Treat `dev/mapping-pose-asset/AGENT_INDEX.md` as the canonical navigation index.
-- When adding/changing artifacts under `mapping-pose-asset`, update all three in the same pass:
+- When adding/changing artifacts under `mapping-pose-asset`, update both in the same pass:
   1. `mapping-pose-asset/AGENT_INDEX.md`,
-  2. this KB (Section D/J navigation + usage),
-  3. `.cursor/skills/arkit-remap/SKILL.md`.
+  2. this KB (Section D/J navigation + usage).
+  (`.claude/skills/arkit-remap/SKILL.md` is a bare pointer to this repo — never sync content into it.)
 - Future agents should start at `AGENT_INDEX.md` before exploring files ad hoc.
 
 ---

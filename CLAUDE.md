@@ -2,7 +2,7 @@
 
 MHA-to-ARKit facial curve remapping pipeline for Unreal Engine. Converts MetaHuman Animator `CTRL_expressions` curves into the 52 ARKit blendshapes for any ARKit-52-rigged character (FaceIt is the documented example).
 
-This repo is set up for **Claude Code**. The `arkit-remap` skill in `.claude/skills/` carries the full pipeline context and loads on demand.
+This repo is set up for **Claude Code**. The `arkit-remap` skill in `.claude/skills/` is deliberately a bare pointer to this repo — **this repo (CLAUDE.md + `dev/knowledge-base.md`) is the single source of truth; never duplicate knowledge into the skill.**
 
 ## ⚠️ V3 is the active workstream — v2 is legacy
 
@@ -56,7 +56,7 @@ Keep these in sync after any pipeline changes:
 
 1. `dev/knowledge-base.md` Section E.6 — update behavior/coverage description
 2. `dev/knowledge-base.md` Revision Log — add a dated entry
-3. `.claude/skills/arkit-remap/SKILL.md` — if workflow or packaging changed
+3. `.claude/skills/arkit-remap/SKILL.md` — pointer only; touch it only if the repo's entry points moved
 4. `dev/mapping-pose-asset/AGENT_INDEX.md` — if payload or script paths changed
 5. `CHANGELOG.md` — for user-visible changes
 
