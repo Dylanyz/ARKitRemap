@@ -1,5 +1,9 @@
 # Changelog
 
+## v3.1.1 (docs) — 2026-08-20
+
+- **Live setup playbook from first production deployment** (MDR_Doomsday, custom mask mesh on a MetaHuman character): `dev/knowledge-base.md` Section K.3.1 — 10 field-verified gotchas including the RigMapper plugin being disabled by default, the transient **Update Animation in Editor** flag as the #1 "wired but frozen" cause, per-instance wiring on shared character BPs, disabling the MetaHuman's own live link, and an input/output curve bisect recipe. USER-GUIDE troubleshooting updated to match (frozen-in-editor entry; corrected the curve-name case claim — matching is case-insensitive). SKILL.md gained a V3 section.
+
 ## v3.1.0 — 2026-08-15
 
 - **Universal live template** (same-day update): `abp_arkit_remap_universal.uasset` is a **Template Animation Blueprint** — no skeleton binding, works on any character (verified on two unrelated skeletons). Set any mesh's Anim Class to it and you're live; head-movement bone names (`neck_01`/`neck_02`/`head`) resolve at runtime and no-op when absent. `BC_ARKitRemapLive` now targets it. Supersedes the skeleton-bound `abp_arkit_remap_live` example.

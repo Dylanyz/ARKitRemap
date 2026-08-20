@@ -89,6 +89,27 @@ Reverse (primary — Python pipeline):
 
 **For full technical details:** see `dev/knowledge-base.md` **Section E.6**.
 
+## V3: RigMapper live driving (UE 5.8 — active workstream)
+
+V3 replaces the v2 Python write-pipeline with a `RigMapperDefinition` asset. Drop-in assets in
+`v3/uassets/` (install to `Content/ARKitRemap/` — the path matters):
+
+- `RM_MHA_to_ARKit` — the definition (164 MHA curves in → 52 ARKit out)
+- `abp_arkit_remap_universal` — Template AnimBP (Live Link Pose → Rig Mapper → output), binds to
+  ANY skeleton; vars `UseLiveLink`, `LiveLinkSubject`, `UseHeadMovement`
+- `BC_ARKitRemapLive` — actor component exposing those toggles in Details
+
+**Live setup for a mesh with ARKit-named morphs:** enable the **RigMapper plugin** in the
+.uproject (+ editor restart — assets won't load without it), copy the uassets in, set the mesh
+component's Anim Class to `abp_arkit_remap_universal_C`, set the ABP's subject/toggles, and for
+editor-world (non-PIE) preview call `comp.set_update_animation_in_editor(True)` — transient,
+resets each editor session, and its absence is the #1 "wired but not moving" cause. On MetaHuman
+actors, also set the actor's own `UseLiveLink` property False if the MetaHuman face should stay
+still. Batch/offline conversion: right-click AnimSequence → **Convert Selected Using RigMapper**.
+
+**Full field-verified playbook (10 gotchas + bisect recipe): `dev/knowledge-base.md` Section K.3.1.**
+Survey of the RigMapper system: Section K. Empirical V3 findings: Section L.
+
 ## Agent output organization (required)
 
 When creating new docs, reports, scripts, or extracted data, place them under `dev/` and keep the structure tidy.

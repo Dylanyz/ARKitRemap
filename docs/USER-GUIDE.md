@@ -167,7 +167,10 @@ That input is already ARKit — you don't need a remap at all, just point the ph
 The definition JSON loads anywhere the RigMapper plugin exists (experimental since 5.7), but everything here is built and tested on 5.8.
 
 **My character doesn't respond.**
-Check, in order: mesh actually has the 52 ARKit morph targets (open the mesh, Morph Target Preview); curve names match exactly (`EyeBlinkLeft`, not `eyeBlinkLeft`); the Live Link subject is streaming (green in the Live Link panel); the AnimBP is on the mesh's skeleton and assigned; `Use Live Link` is on.
+Check, in order: mesh actually has the 52 ARKit morph targets (open the mesh, Morph Target Preview); the Live Link subject is streaming (green in the Live Link panel); the AnimBP is assigned; `Use Live Link` is on. (Morph/curve name matching is case-insensitive — `eyeBlinkLeft` and `EyeBlinkLeft` both bind; field-verified.)
+
+**It evaluates but the mesh is frozen in the editor viewport (works in PIE).**
+Enable **Update Animation in Editor** on the skeletal mesh component (Details → search "update animation"). Outside PIE, skeletal components don't animate without it. It resets every editor session; MetaHuman BPs flip it themselves when their live link toggle is on, which is why MetaHumans work and custom meshes silently don't. From Python on a Blueprint-instanced component use `comp.set_update_animation_in_editor(True)` (the property setter errors with "cannot be edited on templates"). PIE and Take Recorder don't need it.
 
 ---
 

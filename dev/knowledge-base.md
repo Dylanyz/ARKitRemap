@@ -8,6 +8,7 @@ Detailed reference for the MHA-to-ARKit facial animation remapping pipeline. Thi
 
 | Date | Change | Source |
 |------|--------|--------|
+| 2026-08-20 | Added Section K.3.1: field-verified live setup playbook from first production deployment (MDR_Doomsday SpiderMask_BND). Gotchas: RigMapper plugin off by default (+restart), fixed /Game/ARKitRemap install path, multi-editor Python binding hazard, per-instance anim class on shared BP classes, ABP CDO defaults (exact var names + LiveLinkSubjectName struct), disabling the MetaHuman actor's own UseLiveLink, transient bUpdateAnimationInEditor via set_update_animation_in_editor() as the #1 frozen-mesh cause, input/output curve bisect recipe, game-thread sampling trap, Basic-role subject confirmation. | MDR_Doomsday live deployment (Claude Code session) |
 | 2026-08-12 | Added Section K: UE 5.8 RigMapper System. Full survey of Epic's RigMapper plugin (definition data model + JSON format, anim graph node, IK Retargeter ops, editor subsystem batch converters, Utilities asset actions + BPI_RigMapper interface, shipped MH/CD/FN definition assets and the Raw→Links→Baked authoring pattern), plus OpenRigLogic context. This is the foundation for ARKit Remap V3 (definition-based, replacing the v2 Python pipeline). | UE 5.8 RigMapper + OpenRigLogic investigation (Claude Code session) |
 | 2026-03-13 | Updated `arkit_csv_export.py`: added Yes/No prompt for CSV-only vs CSV+import mode, `LiveLinkFaceImporterFactory` availability check, renamed imported asset suffix to `_CSV`. Clarified primary use case as Blender/DCC export. | CSV export iteration |
 | 2026-03-13 | Added `arkit_csv_export.py` to release package and registered "ARKitRemap - Convert to CSV" context-menu entry in `init_unreal.py`. Exports ARKit blendshape curves from selected AnimSequence(s) to Live Link Face-style CSV in `{ProjectDir}/Saved/ARKitRemap/`. Adapted core logic from `import_arkit_animsequence_as_livelinkface.py` dev helper (CSV-only, no LiveLinkFace import step). | CSV export context menu |
@@ -902,6 +903,55 @@ A `UDataAsset` (`RigMapperDefinition.h`) with:
 ### K.3 Live path: FAnimNode_RigMapper
 
 Anim graph node ("Rig Mapper" in AnimBP): `SourcePose` link → evaluates definition stack over pose curves → sets output curves on the pose. Key properties: `Definitions` array, `Alpha` (pin shown by default — lerps output curves against input values), `LODThreshold`. If the target SkeletalMesh carries `URigMapperDefinitionUserData`, the node uses it to override its definitions. Output curves drive same-named morph targets automatically (standard UE curve→morph binding), so MHA-space curves in → ARKit-named curves out → ARKit character animates. This is the V3 live-preview path (Live Link Pose node → Rig Mapper node), mirroring the MetaHuman "use live link" toggle UX.
+
+### K.3.1 Live setup playbook — field-verified (MDR_Doomsday, 2026-08-20)
+
+First real deployment of the drop-in live path on a non-MetaHuman mesh (SpiderMask_BND, a
+skeletal mesh with ARKit-named morphs, component on a MetaHuman character BP). Every gotcha
+below cost real debugging time; agents doing this setup should walk the list in order.
+
+1. **RigMapper plugin is OFF by default.** Add `{"Name": "RigMapper", "Enabled": true}` to the
+   .uproject Plugins array (add `RigMapperOp` too if retargeter ops are wanted) and **restart the
+   editor**. Symptom before restart: `unreal.load_asset("/Game/ARKitRemap/RM_MHA_to_ARKit")`
+   returns None and `hasattr(unreal, "RigMapperDefinition")` is False. The Epic-MCP
+   `PluginToolset.SetPluginEnabled` may silently no-op — verify the .uproject JSON directly.
+2. **Install path is fixed.** The uassets must land in `Content/ARKitRemap/` — the template ABP
+   references `/Game/ARKitRemap/RM_MHA_to_ARKit` by path (confirm via asset-registry
+   dependencies of the ABP).
+3. **Multiple editor instances hijack Python remote exec.** If a second UE instance is open
+   (e.g. a template project), unreal-py may bind to it. Always verify
+   `unreal.Paths.get_project_file_path()` before trusting any probe result.
+4. **Per-instance wiring when the character BP is shared.** Multiple level actors sharing one BP
+   class (spider1/2/3 all `BP_MC_spider1_C`): set `animation_mode` + `anim_class` on the level
+   actor instance's component, not in the Blueprint.
+5. **ABP defaults via CDO**: `unreal.get_default_object(abp.generated_class())`, then
+   `set_editor_property` with exact names `UseLiveLink` (bool), `LiveLinkSubject`
+   (`unreal.LiveLinkSubjectName()` struct — set its `name`), `UseHeadMovement` (False when body
+   mocap owns the head). Save the ABP asset afterwards. (Snake-case name guesses fail.)
+6. **Kill the MetaHuman's own drive**: the character actor's `UseLiveLink` property (actor
+   Details → Live Link section) drives the MetaHuman face via ABP_Face — set it False
+   per-instance if only the custom mesh should move.
+7. **#1 "wired but frozen" cause: `bUpdateAnimationInEditor`.** Editor-world (non-PIE) skeletal
+   components do not visibly animate without it, even though the anim instance evaluates and
+   `get_curve_value` returns live values. `set_editor_property("update_animation_in_editor", True)`
+   fails on BP-instanced components ("cannot be edited on templates") — call
+   `comp.set_update_animation_in_editor(True)` instead. **Transient**: resets on editor restart
+   (PIE and Take Recorder are unaffected). MetaHuman BPs set it themselves when their live link
+   toggle is on, which is why MetaHumans "just work" and custom meshes don't.
+8. **Bisect recipe** (stream vs remap) on the component's anim instance:
+   `inst.get_curve_value("CTRL_expressions_jawOpen")` ≠ 0 → MHA stream arriving;
+   `inst.get_curve_value("jawOpen")` ≠ 0 → definition producing output; `MHFDSVersion == 1.0`
+   confirms the MHFDS stream. Curve→morph binding is name-based and case-insensitive, so
+   lowercase ARKit morph names match fine.
+9. **Do not sample in a `time.sleep` loop** inside one `editor_run_python` call — it blocks the
+   game thread, so anim never ticks and every sample reads identical. Take instant snapshots
+   across separate calls.
+10. The MHA real-time subject (MetaHuman Local Live Link source, e.g. a webcam device) is
+   **Basic role**, curves-only — Live Link Pose consumes it fine via its curve path.
+
+Recording: Take Recorder → + Source → From Actor → the character; untick every component except
+the target mesh → recorded AnimSequence carries the 52 ARKit morph curves, no live link needed
+for playback.
 
 ### K.4 Retargeter path: RigMapperOp plugin (5.8 restructure)
 
