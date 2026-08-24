@@ -10,9 +10,7 @@ rigs, Fab characters, CC/Reallusion, or any ARKit-compatible face — baked anim
 > proprietary `CTRL_expressions` curves). ARKit characters speak Apple's 52 blendshapes. This
 > project is the translator between them.
 
-**disclaimer** this is built with claude code. I have limited time to work on this and just
-need a solution to get these features for myself, and happy to make it public to share. If you
-have any difficulty, I recommend pasting this github link into an LLM and asking questions
+**disclaimer**: built with claude code. If you have any difficulty, I recommend pasting this github link into an LLM and asking questions
 about it, or using an agentic llm (claude code, antigravity, cursor, etc) and asking it to
 download this repo, install it for you, walk you through the features and how to use it, etc.
 
