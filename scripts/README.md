@@ -21,7 +21,7 @@ bridge you have:
 | **UE Output Log / Cmd** | `py "D:/path/to/ARKitRemap/scripts/verify_setup.py"` |
 | **Editor Python console** | `exec(open(r"D:/path/to/script.py").read())` |
 | **Epic's UE MCP** (or any MCP with an execute-Python tool) | pass the file's contents, or `exec(open(...).read())`, to the execute-Python tool |
-| **Python remote execution** (upyrc / `remote_execution.py`) | enable *Python Remote Execution* in Project Settings, connect, send `exec(open(...).read())` |
+| **Python remote execution** (`remote_execution.py`) | enable *Python Remote Execution* in Project Settings; the client ships with the engine at `Engine/Plugins/Experimental/PythonScriptPlugin/Content/Python/remote_execution.py` — import it, `RemoteExecution().start()`, open a command connection, send `exec(open(...).read())` (field-verified transport) |
 | **Headless / CI** | `UnrealEditor-Cmd.exe Project.uproject -run=pythonscript -script="D:/path/to/script.py"` |
 
 **Parameters** are module-level `CONFIG` values at the top of each script, overridable via
@@ -40,4 +40,7 @@ first: `import os; os.environ["ARKITREMAP_ACTOR"] = "spider1"`.
 - With multiple editors open, print/verify `unreal.Paths.get_project_file_path()` before
   trusting results ([gotcha](../reference/gotchas.md#python-binding-hijack)).
 - AnimSequence curves: `unreal.AnimationLibrary` (not `AnimationBlueprintLibrary`); batch
-  curve writes inside `controller.open_bracket()`/`close_bracket()`.
+  curve writes inside `controller.open_bracket()`/`close_bracket()`. Morph checks:
+  `get_all_morph_target_names()`, not `find_morph_target` (absent in 5.8 Python).
+- Git Bash callers: `/Game/...` arguments get mangled into Windows paths by MSYS — prefix the
+  command with `MSYS_NO_PATHCONV=1 MSYS2_ARG_CONV_EXCL="*"`.

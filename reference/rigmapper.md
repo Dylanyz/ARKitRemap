@@ -160,7 +160,11 @@ except float formatting (`1.0`→`1`).
   `get_num_frames` instead).
 - Batch remap: `unreal.RigMapperEditorSubsystem.convert_anim_sequence_new(source, target_mesh,
   [definitions], unreal.DirectoryPath (set "path"), "Name")` → new AnimSequence. Warns
-  `Invalid curve type: RCT_Vector` — benign (float curves only).
+  `Invalid curve type: RCT_Vector` — benign (float curves only). Output curve names are the
+  definition's capitalized ARKit names (`JawOpen`, not `jawOpen`) — fine, curve→morph binding
+  is case-insensitive.
+- Morph targets: `SkeletalMesh.find_morph_target` is **not exposed** in 5.8 Python — use
+  `mesh.get_all_morph_target_names()` and compare lowercased (field-verified 2026-08-24).
 - **"Remove Redundant Curve Keys" on anim export strips within ~1e-3 tolerance — lossy**, not
   exactly-redundant-only. With Linear interpolation the loss is invisible in practice; use
   all-keys exports for numeric ground truth.

@@ -12,7 +12,10 @@ using it changed:
   playbooks + reference.
 - **New scripts**: `scripts/verify_setup.py` (end-to-end setup checker — every failure prints
   its fix), `scripts/setup_live.py` (one-shot live wiring), `scripts/convert_baked.py` (batch
-  convert). *Not yet field-verified — run verify in a live project and report.*
+  convert). All three field-verified same day against a production project (MDR_Doomsday) via
+  Python remote execution: verify correctly caught the transient editor-preview flag and a
+  dead Live Link stream; setup_live fixed the wiring; convert_baked produced 52 plausible
+  ARKit curves from a real MHA take.
 - **Pruned**: all v2-era material (legacy/, archive/, v2 scripts/reports/run-logs) — preserved
   under the git tag `pre-redesign-v2`.
 

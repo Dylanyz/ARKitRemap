@@ -72,6 +72,15 @@ def check_project_tier():
     return plugin_ok and assets_ok
 
 
+def morph_names(comp):
+    """Lowercased morph target names of the component's mesh (5.8: no find_morph_target
+    in Python; use get_all_morph_target_names). Curve->morph binding is case-insensitive."""
+    mesh = comp.get_skeletal_mesh_asset()
+    if mesh is None:
+        return None
+    return {str(n).lower() for n in mesh.get_all_morph_target_names()}
+
+
 def find_component(actor):
     comps = list(actor.get_components_by_class(unreal.SkeletalMeshComponent))
     if not comps:
@@ -84,8 +93,8 @@ def find_component(actor):
               % (CONFIG["component_name"], [c.get_name() for c in comps]))
         return None
     for c in comps:  # prefer a mesh that actually has ARKit morphs
-        mesh = c.get_skeletal_mesh_asset() if hasattr(c, "get_skeletal_mesh_asset") else c.skeletal_mesh
-        if mesh and all(mesh.find_morph_target(m) is not None for m in ARKIT_PROBE_MORPHS[:1]):
+        names = morph_names(c)
+        if names and any(m.lower() in names for m in ARKIT_PROBE_MORPHS):
             return c
     return comps[0]
 
@@ -108,13 +117,17 @@ def check_live_tier():
         return
     print("INFO: checking component '%s'" % comp.get_name())
 
-    # Mesh has ARKit morphs
-    mesh = comp.get_skeletal_mesh_asset() if hasattr(comp, "get_skeletal_mesh_asset") else comp.skeletal_mesh
-    if mesh:
-        missing = [m for m in ARKIT_PROBE_MORPHS if mesh.find_morph_target(m) is None]
-        report(not missing, "mesh has ARKit morph targets (probed %s)" % ", ".join(ARKIT_PROBE_MORPHS),
-               "missing %s - this mesh is not ARKit-52 rigged (matching is case-insensitive, so "
-               "casing is not the problem). See %s#no-morph-response" % (missing, GOTCHAS))
+    # Mesh has ARKit morphs (partial sets are legitimate - e.g. a mask; fail only on zero)
+    names = morph_names(comp)
+    if names is not None:
+        hits = [m for m in ARKIT_PROBE_MORPHS if m.lower() in names]
+        missing = [m for m in ARKIT_PROBE_MORPHS if m.lower() not in names]
+        report(bool(hits), "mesh has ARKit morph targets (%d total; probed %s)"
+               % (len(names), ", ".join(ARKIT_PROBE_MORPHS)),
+               "none of the probed ARKit names exist - this mesh is not ARKit-rigged (matching "
+               "is case-insensitive, so casing is not the problem). See %s#no-morph-response" % GOTCHAS)
+        if hits and missing:
+            print("INFO: partial ARKit set - missing %s (fine for partial rigs like masks)" % missing)
 
     # Anim class wired per-instance
     anim_class = comp.get_editor_property("anim_class")
@@ -164,7 +177,13 @@ print("=" * 60)
 ok = check_project_tier()
 if CONFIG["actor_label"]:
     if ok:
-        check_live_tier()
+        try:
+            check_live_tier()
+        except Exception:
+            import traceback
+            _results["fail"] += 1
+            print("FAIL: live tier crashed - traceback follows (report this; the check itself is buggy)")
+            traceback.print_exc()
     else:
         print("INFO: skipping live tier until project tier passes")
 else:

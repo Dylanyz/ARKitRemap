@@ -75,8 +75,9 @@ if CONFIG["component_name"]:
              % (CONFIG["component_name"], [c.get_name() for c in comps]))
 else:
     for c in comps:
-        mesh = c.get_skeletal_mesh_asset() if hasattr(c, "get_skeletal_mesh_asset") else c.skeletal_mesh
-        if mesh and mesh.find_morph_target(ARKIT_PROBE_MORPH) is not None:
+        mesh = c.get_skeletal_mesh_asset()
+        if mesh and ARKIT_PROBE_MORPH.lower() in {
+                str(n).lower() for n in mesh.get_all_morph_target_names()}:
             comp = c
             break
     if comp is None:
