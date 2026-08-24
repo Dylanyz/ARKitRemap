@@ -1,5 +1,21 @@
 # Changelog
 
+## v3.2.0 — 2026-08-24
+
+**Repo redesign (ground zero).** No change to the remap itself; everything about finding and
+using it changed:
+
+- **Audience-organized tree**: `uassets/` (the product), `playbooks/` (one guide per workflow,
+  by-hand + agent lanes), `scripts/` (UE-editor Python with a per-transport run crib),
+  `reference/` (the knowledge base, split into rigmapper / conventions / findings / gotchas /
+  history), `dev/` (contributors only). `docs/USER-GUIDE.md` dissolved into README +
+  playbooks + reference.
+- **New scripts**: `scripts/verify_setup.py` (end-to-end setup checker — every failure prints
+  its fix), `scripts/setup_live.py` (one-shot live wiring), `scripts/convert_baked.py` (batch
+  convert). *Not yet field-verified — run verify in a live project and report.*
+- **Pruned**: all v2-era material (legacy/, archive/, v2 scripts/reports/run-logs) — preserved
+  under the git tag `pre-redesign-v2`.
+
 ## v3.1.2 — 2026-08-20
 
 - **Universal live template: Sequencer playback support.** Added a `Slot 'DefaultSlot'` node between the space conversion and Output Pose in `abp_arkit_remap_universal`. Without it, Sequencer skeletal-animation tracks (Take Recorder playback, baked ARKit AnimSequences placed on the mesh) were silently overridden by the AnimBP's own output — the classic "sequence plays but nothing moves" failure. With the slot, Sequencer animation overrides the live chain during playback and hands back to Live Link when the sequence stops.

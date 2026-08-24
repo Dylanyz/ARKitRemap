@@ -1,35 +1,19 @@
-# Drop-in assets
+# uassets — the product
 
-`RM_MHA_to_ARKit.uasset` — the fitted RigMapper Definition, ready to use.
+Drop-in UE 5.8 assets. **Install: enable the RigMapper plugin (Edit → Plugins → "RigMapper" →
+restart — without it these assets silently fail to load), then copy the .uasset files into
+your project at `Content/ARKitRemap/` — exact folder name; the assets reference each other at
+`/Game/ARKitRemap/...`.** Copy with the editor closed, or rescan afterwards. Verify with
+[playbooks/verify.md](../playbooks/verify.md).
 
-`AAU_ARKitRemap_ExportLLFCSV.uasset` — Asset Action Utility that adds
-**right-click AnimSequence → Scripted Asset Actions → Export Live Link Face
-CSV**. Accepts remapped ARKit sequences *or* raw MHA sequences (those are
-auto-remapped through the definition first). Writes `<name>_LLF.csv` beside
-the asset; optionally re-imports it into UE as a LevelSequence. Requires the
-Python Editor Script Plugin (enabled by default) — the exporter ships inside
-the asset, nothing else to install. Source of truth:
-[`../ue-python/arkit_llf_csv.py`](../ue-python/arkit_llf_csv.py).
+| File | What | Needed for |
+|---|---|---|
+| `RM_MHA_to_ARKit.uasset` | The remap itself — a RigMapper Definition, 164 MHA curves in → 52 ARKit curves out | **everything** |
+| `RM_MHA_to_ARKit.json` | The same definition as versioned, human-diffable JSON — the source of truth. Create a RigMapper Definition asset → right-click → *Load From Json* to rebuild the uasset anywhere | provenance / rebuilds |
+| `abp_arkit_remap_universal.uasset` | Live-driving template AnimBP (Live Link Pose → Rig Mapper → Slot), a **Template** AnimBP with no skeleton binding — works on any character. Toggles: `UseLiveLink`, `LiveLinkSubject`, `UseHeadMovement` (head rotation distributed down the neck chain; rigs without `neck_01/neck_02/head` bones skip it) | [live driving](../playbooks/setup-live.md) |
+| `BC_ARKitRemapLive.uasset` | Actor component exposing the three toggles on the character's Details panel (MetaHuman-style), per placed instance | live driving (optional convenience) |
+| `AAU_ARKitRemap_ExportLLFCSV.uasset` | Asset Action: right-click AnimSequence → *Export Live Link Face CSV*. Source: [scripts/arkit_llf_csv.py](../scripts/arkit_llf_csv.py) | [CSV export](../playbooks/export-csv.md) |
 
-`abp_arkit_remap_universal.uasset` — the live-driving template AnimBP
-(Live Link Pose → Rig Mapper → output, with Use Live Link / Subject /
-Use Head Movement toggles). It is a **Template Animation Blueprint — no
-skeleton binding**, so it works on ANY character: set the mesh's Anim Class
-to `abp_arkit_remap_universal_C` and you're live. (Head-movement bone names
-resolve at runtime; rigs without `neck_01`/`neck_02`/`head` bones simply
-skip those.)
-
-`BC_ARKitRemapLive.uasset` — actor component exposing the three toggles on
-the character's Details panel (MetaHuman-style). Add it to any character BP
-whose mesh runs the universal template.
-
-(`abp_arkit_remap_live.uasset` is the older skeleton-bound variant, kept for
-reference only — superseded by the universal template.)
-
-**Install:** copy to `YourProject/Content/ARKitRemap/` (create the folder if
-needed), then restart or rescan. The definition and CSV-action assets have no
-external dependencies; any UE 5.8 project with the RigMapper plugin enabled.
-
-Prefer building the definition from source? Create a RigMapper Definition
-asset and right-click → Load From Json →
-[`../RM_MHA_to_ARKit.json`](../RM_MHA_to_ARKit.json) — identical result.
+No other dependencies. Optional: stamp the definition onto a character's skeletal mesh
+(Details → Asset User Data → add *RigMapper Definition User Data* → add `RM_MHA_to_ARKit`) and
+every RigMapper tool auto-discovers it — set your team's characters up once.
