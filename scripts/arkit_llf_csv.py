@@ -29,8 +29,9 @@ frames, matching actual LLF recordings), BlendshapeCount, 52 blendshapes +
 doesn't carry are zero-filled. Optionally re-imports the CSV into UE as a
 LevelSequence via LiveLinkFaceImporterFactory (v2-parity feature).
 
-If you edit this file, re-embed it into the Asset Action Utility
-(v3/scripts/build_csv_action.py does the embedding).
+If you edit this file, re-embed it into the Asset Action Utility:
+uassets/AAU_ARKitRemap_ExportLLFCSV.uasset carries a copy of this script
+inside it — update the asset's embedded copy in the UE editor to match.
 """
 
 import os

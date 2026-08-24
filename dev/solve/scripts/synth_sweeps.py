@@ -9,8 +9,8 @@ the P1 basis:
   mix      random convex combinations of 2-4 PA poses (Dirichlet weights)
 
 Outputs:
-    v3/data/samples/synthetic_sweeps.npz      C, W, residual, tags
-    v3/reports/p2_single_control_routing.md   control -> dominant ARKit
+    dev/solve/data/samples/synthetic_sweeps.npz      C, W, residual, tags
+    dev/reports/p2_single_control_routing.md   control -> dominant ARKit
                                               weights at full activation
                                               (the seed of the definition)
 

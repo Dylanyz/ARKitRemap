@@ -3,9 +3,9 @@ from collections import defaultdict
 from pathlib import Path
 
 
-PROJECT_ROOT = Path(r"c:\Users\DYLPC\Documents\Unreal Projects\mdr_StrangerThings01")
-DATA_DIR = PROJECT_ROOT / ".cursor" / "arkit-remap" / "data" / "pose-asset-mapping" / "extracted"
-REPORT_DIR = PROJECT_ROOT / ".cursor" / "arkit-remap" / "reports" / "pose-asset-mapping"
+WORKSPACE_DIR = Path(__file__).resolve().parent.parent  # dev/pose-asset
+DATA_DIR = WORKSPACE_DIR / "data"
+REPORT_DIR = WORKSPACE_DIR / "reports"
 RAW_PATH = DATA_DIR / "PA_MetaHuman_ARKit_Mapping.posemap.raw.json"
 ADJ_PATH = DATA_DIR / "PA_MetaHuman_ARKit_Mapping.posemap.json"
 OUT_PATH = REPORT_DIR / "PA_MetaHuman_ARKit_Mapping_raw_vs_adjusted.md"

@@ -9,7 +9,7 @@ standalone python.exe is the reference interpreter:
 
 scipy is not shipped with Blender; install it repo-locally (gitignored) once:
 
-    python.exe -m pip install --target v3/.pydeps scipy
+    python.exe -m pip install --target dev/solve/.pydeps scipy
 
 All paths can be overridden via environment variables (ARKITREMAP_BINDINGS_DIR,
 ARKITREMAP_DNA_PATH) for other machines.
@@ -19,9 +19,12 @@ import os
 import sys
 from pathlib import Path
 
-V3_DIR = Path(__file__).resolve().parent.parent
-DATA_DIR = V3_DIR / "data"
-REPORTS_DIR = V3_DIR / "reports"
+SOLVE_DIR = Path(__file__).resolve().parent.parent   # dev/solve
+REPO_DIR = SOLVE_DIR.parent.parent                   # repo root
+DATA_DIR = SOLVE_DIR / "data"
+REPORTS_DIR = REPO_DIR / "dev" / "reports"
+DEFINITION_JSON = REPO_DIR / "uassets" / "RM_MHA_to_ARKit.json"
+V3_DIR = SOLVE_DIR  # legacy alias
 
 _DEFAULT_BINDINGS = (
     Path(os.environ.get("APPDATA", ""))

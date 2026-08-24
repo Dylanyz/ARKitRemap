@@ -24,8 +24,8 @@ Convention (per plan): name-consistent Epic-PA space, no Apple-quirk
 cross-wiring. Outputs with no expressible response are declared null_outputs.
 
 Outputs:
-    v3/RM_MHA_to_ARKit.json
-    v3/reports/p2_fit_report.{json,md}
+    uassets/RM_MHA_to_ARKit.json
+    dev/reports/p2_fit_report.{json,md}
 
 Run with Blender 5.2's python.exe (see p1_env.py).
 """
@@ -245,7 +245,7 @@ def main() -> None:
         "outputs": outputs,
         "null_outputs": sorted(null_outputs),
     }
-    (p1_env.V3_DIR / "RM_MHA_to_ARKit.json").write_text(json.dumps(definition, indent="\t"))
+    p1_env.DEFINITION_JSON.write_text(json.dumps(definition, indent="\t"))
 
     kinds = {}
     for r in report_rows.values():

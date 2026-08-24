@@ -12,7 +12,7 @@ This settles, per feature region:
   3. Solved-space: does each solved pair match the reference as-recorded or
      L/R-swapped?  (completes the loop through the P1 basis)
 
-Outputs: v3/reports/p2_convention_verdicts.{json,md}
+Outputs: dev/reports/p2_convention_verdicts.{json,md}
 
 Run with Blender 5.2's python.exe (see p1_env.py).
 """

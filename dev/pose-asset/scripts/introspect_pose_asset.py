@@ -7,8 +7,10 @@ import unreal
 
 ASSET_PATH = "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping.PA_MetaHuman_ARKit_Mapping"
 PROJECT_DIR = unreal.Paths.project_dir()
-OUTPUT_DIR = os.path.join(
-    PROJECT_DIR, ".cursor", "arkit-remap", "data", "pose-asset-mapping", "extracted"
+# Outputs go to <project>/Saved/ARKitRemap/pose-asset (override via ARKITREMAP_OUT);
+# copy results back into the repo at dev/pose-asset/{data,reports}.
+OUTPUT_DIR = os.environ.get(
+    "ARKITREMAP_OUT", os.path.join(PROJECT_DIR, "Saved", "ARKitRemap", "pose-asset")
 )
 OUT_PATH = os.path.join(OUTPUT_DIR, "PA_MetaHuman_ARKit_Mapping.introspection.json")
 

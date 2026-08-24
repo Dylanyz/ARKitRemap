@@ -7,7 +7,7 @@ This script tackles improvement-log item #12 by combining:
    (0.25 / 0.5 / 0.75 / 1.0), where no earlier pose contamination exists.
 
 Run inside Unreal Editor via:
-  python .cursor/scripts/run_python_in_unreal.py --file .cursor/arkit-remap/mapping-pose-asset/scripts/verify_pose_asset_linearity.py
+  py "<repo>/dev/pose-asset/scripts/verify_pose_asset_linearity.py"  (see scripts/README.md for transports)
 """
 
 import json
@@ -24,22 +24,11 @@ FRACTIONS = [0.25, 0.5, 0.75, 1.0]
 EPSILON = 1e-4
 
 PROJECT_DIR = unreal.Paths.project_dir()
-OUTPUT_JSON = os.path.join(
-    PROJECT_DIR,
-    ".cursor",
-    "arkit-remap",
-    "mapping-pose-asset",
-    "data",
-    "PA_MetaHuman_ARKit_Mapping.linearity_verification.json",
+OUT_DIR = os.environ.get(
+    "ARKITREMAP_OUT", os.path.join(PROJECT_DIR, "Saved", "ARKitRemap", "pose-asset")
 )
-OUTPUT_MD = os.path.join(
-    PROJECT_DIR,
-    ".cursor",
-    "arkit-remap",
-    "mapping-pose-asset",
-    "reports",
-    "PA_MetaHuman_ARKit_Mapping_linearity_verification.md",
-)
+OUTPUT_JSON = os.path.join(OUT_DIR, "PA_MetaHuman_ARKit_Mapping.linearity_verification.json")
+OUTPUT_MD = os.path.join(OUT_DIR, "PA_MetaHuman_ARKit_Mapping_linearity_verification.md")
 
 RCT_FLOAT = unreal.RawCurveTrackTypes.RCT_FLOAT
 LIB = unreal.AnimationLibrary

@@ -1,17 +1,17 @@
 """V3 P0: fresh extraction of PA_MetaHuman_ARKit_Mapping (ARKit -> MHA forward table).
 
 Runs inside the UE editor (unreal-py / remote execution):
-    py exec(open(r"<repo>/v3/scripts/extract_pa_mapping.py").read())
+    py exec(open(r"<repo>/dev/solve/scripts/extract_pa_mapping.py").read())
 
 Reads Epic's PoseAsset + its source AnimSequence and dumps every pose sample to
-v3/data/pa_mapping.json. No interpretation, no filtering beyond exact zeros.
+dev/solve/data/pa_mapping.json. No interpretation, no filtering beyond exact zeros.
 Ground rule: this is the ONLY mapping source (see plans/arkit-remap-v3-plan.md).
 
 Verified structure of AS_MetaHuman_ARKit_Mapping (UE 5.8.1, 2026-08-14):
 - 24 fps, 65 frames, 1172 float curves.
 - Pose i <-> frame i (time i/24) for the on-grid poses: index 0 = Default,
   indices 1..51 = 51 ARKit poses (MouthClose has NO pose - it is derived at
-  runtime in ABP_MH_LiveLink, matching knowledge-base Section C/D).
+  runtime in ABP_MH_LiveLink, matching reference/findings.md).
 - Indices 52..65 = Pose_4..Pose_17 (MetaHuman-internal extras) keyed at
   off-grid times with no reliable index<->time rule; their samples are dumped
   verbatim under offGridSamples instead of being force-assigned.
@@ -96,7 +96,7 @@ result["metadata"] = OrderedDict(
     [
         ("extractedFrom", {"poseAsset": PA_PATH, "sourceAnimation": AS_PATH}),
         ("engineVersion", unreal.SystemLibrary.get_engine_version()),
-        ("extractionScript", "v3/scripts/extract_pa_mapping.py"),
+        ("extractionScript", "dev/solve/scripts/extract_pa_mapping.py"),
         ("fps", FPS),
         ("poseToTimeRule", "pose index i <-> frame i (time i/24) for indices 0..51"),
         ("poseIndexLayout", "0=Default, 1..51=ARKit (no MouthClose pose), 52=Pose_4 (on-grid), 53..65=Pose_5..Pose_17 (unassigned, see offGridSamples)"),

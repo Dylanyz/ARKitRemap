@@ -4,8 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-PROJECT_ROOT = Path(r"c:\Users\DYLPC\Documents\Unreal Projects\mdr_StrangerThings01")
-WORKSPACE_DIR = PROJECT_ROOT / ".cursor" / "arkit-remap" / "mapping-pose-asset"
+WORKSPACE_DIR = Path(__file__).resolve().parent.parent  # dev/pose-asset
 DATA_DIR = WORKSPACE_DIR / "data"
 REPORT_DIR = WORKSPACE_DIR / "reports"
 

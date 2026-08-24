@@ -1,6 +1,6 @@
 """P1: evaluate the 52-shape ARKit basis in joint-output space + conditioning.
 
-For each ARKit pose j in the fresh PA extraction (v3/data/pa_mapping.json):
+For each ARKit pose j in the fresh PA extraction (dev/solve/data/pa_mapping.json):
 
     c_j = pose j's CTRL_expressions raw records (absolute PoseAsset values)
     B_j = RigLogic(c_j) - RigLogic(c_Default)     (joint-output deltas, 7830-dim)
@@ -11,10 +11,10 @@ own Default frame, evaluated through the real rig, not a subtraction of
 control values pushed through separately.
 
 Outputs:
-    v3/data/arkit_basis_joints.npz     B, C (controls), M (animated-map deltas),
+    dev/solve/data/arkit_basis_joints.npz     B, C (controls), M (animated-map deltas),
                                        names, baseline
-    v3/reports/p1_basis_report.json    curve-mapping audit + conditioning
-    v3/reports/p1_basis_report.md      human-readable summary
+    dev/reports/p1_basis_report.json    curve-mapping audit + conditioning
+    dev/reports/p1_basis_report.md      human-readable summary
 
 Run with Blender 5.2's python.exe (see p1_env.py).
 """

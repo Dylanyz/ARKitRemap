@@ -6,7 +6,7 @@
 Run as a script it validates itself on the basis poses (identity recovery:
 feeding pose j's own controls must return ~one-hot e_j) and probes rig
 linearity along scaled activations. Results land in
-v3/reports/p1_solver_validation.{json,md}.
+dev/reports/p1_solver_validation.{json,md}.
 
 Run with Blender 5.2's python.exe (see p1_env.py).
 """

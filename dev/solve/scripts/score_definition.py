@@ -8,7 +8,7 @@ compares:
   (b) definition output vs the mirrored iPhone ARKit reference (end metric,
       including MouthClose, which the per-frame solve cannot produce)
 
-Outputs: v3/reports/p2_definition_score.{json,md}
+Outputs: dev/reports/p2_definition_score.{json,md}
 
 Run with Blender 5.2's python.exe (see p1_env.py).
 """
@@ -80,7 +80,7 @@ def metrics(a: np.ndarray, b: np.ndarray) -> dict:
 
 
 def main() -> None:
-    definition = json.loads((p1_env.V3_DIR / "RM_MHA_to_ARKit.json").read_text())
+    definition = json.loads(p1_env.DEFINITION_JSON.read_text())
     grid, mha = load_mha(MHA_JSON)
     n = len(grid)
 

@@ -12,8 +12,8 @@ recovered by cross-correlating JawOpen. Speed: the 7830-dim LSQ is reduced
 once via QR (A = QR -> solve R w ~ Q^T d), making per-frame BVLS 51x51.
 
 Outputs:
-    v3/data/samples/arkittest_solved_weights.npz
-    v3/reports/p2_take_comparison.{json,md}
+    dev/solve/data/samples/arkittest_solved_weights.npz
+    dev/reports/p2_take_comparison.{json,md}
 
 Run with Blender 5.2's python.exe (see p1_env.py).
 """
