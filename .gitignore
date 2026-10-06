@@ -21,3 +21,6 @@ dev/solve/.pydeps/
 
 # archived auto-memory (2026-10-04), local only
 .claude/archive/
+
+# per-machine Claude Code settings (shared auto-memory pool); must stay untracked
+.claude/settings.local.json
