@@ -19,7 +19,7 @@ download this repo, install it for you, walk you through the features and how to
 ## Demos
 
 https://github.com/user-attachments/assets/630d3c59-fbbb-436d-a620-15f4942376bd
->yes, the first and third metahuman look exactly the same- but the third one is truly running arkit curves, I promise. They just look super identical. Also, pure arkit reverses the eyes for some reason.
+>yes, the first and third metahuman look exactly the same- but the third one is truly running arkit curves, I promise. They just look super identical. Also, I didn't mirror the video so it's flipped horizontally- sorry.
 
 <details><summary>Legacy demos (v2)</summary>
 

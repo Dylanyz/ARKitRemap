@@ -18,3 +18,6 @@ Desktop.ini
 *.swo
 *~
 dev/solve/.pydeps/
+
+# archived auto-memory (2026-10-04), local only
+.claude/archive/
