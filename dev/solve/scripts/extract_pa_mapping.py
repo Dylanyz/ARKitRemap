@@ -27,7 +27,7 @@ import unreal
 
 PA_PATH = "/Game/MetaHumans/Common/Face/ARKit/PA_MetaHuman_ARKit_Mapping"
 AS_PATH = "/Game/MetaHumans/Common/Face/ARKit/AS_MetaHuman_ARKit_Mapping"
-OUT_PATH = r"C:\Users\DYLPC\Desktop\Coding\ARKitRemap\v3\data\pa_mapping.json"
+OUT_PATH = r"C:\Users\DYLPC\Desktop\Coding\ueplugins\ARKitRemap\v3\data\pa_mapping.json"
 FPS = 24.0
 FRAME_TOLERANCE = 0.002
 GRID_POSE_COUNT = 53
