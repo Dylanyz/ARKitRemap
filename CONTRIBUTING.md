@@ -34,5 +34,5 @@ calibration and the validation suite. Open an issue to share one.
 
 ## License
 
-MPL-2.0 — by contributing you agree your changes are licensed the same way. See
-[LICENSE](LICENSE).
+CPAL-1.0 with the Commons Clause (source-available) — by contributing you agree your changes are
+licensed the same way. See [LICENSE](LICENSE) and [NOTICE](NOTICE).

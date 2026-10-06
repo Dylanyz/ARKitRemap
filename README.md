@@ -141,10 +141,15 @@ calibration and the validation suite.
 
 ## License
 
-Mozilla Public License 2.0 (`MPL-2.0`) — see [LICENSE](LICENSE). Use it, modify it, sell with
-it; if you distribute modified files from this project, make those files' source available
-under MPL-2.0 and keep the notices. Please credit the repo and author — **Dylan Gitalis** — so
-the project can grow.
+**Source-available, free for filmmakers.** CPAL-1.0 with the Commons Clause — see [LICENSE](LICENSE)
+and [NOTICE](NOTICE). Use ARKitRemap for anything, paid and monetized work included, with no credit
+owed in your work. Modify it privately however you like. If you publish or share a modified copy, it
+stays under this licence with its source and keeps the credit below. Nobody may sell or repackage it.
+
+Dylan Gitalis · [youtube.com/@madricetv](https://youtube.com/@madricetv) ·
+[github.com/Dylanyz/ARKitRemap](https://github.com/Dylanyz/ARKitRemap)
+
+Releases before 2026-10-06 were MPL-2.0 and stay under that licence.
 
 Developed for Unreal Engine / MetaHuman workflows; users are responsible for complying with
 Epic's applicable license terms.

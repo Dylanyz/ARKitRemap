@@ -209,3 +209,9 @@ This is a **QA / interpretability improvement**, not a change to synthesis math 
 - **Calibration:** `factor` (default 0.75) controls compensation strength. Higher = more jaw reduction when pursing.
 - **Expected result at frame 956:** jawOpen 0.53→0.15, mouthClose≈0.14. Real ARKit ref: jawOpen≈0.11, mouthClose≈0.13.
 - **Risk:** On frames where the jaw is genuinely open with some pucker (e.g., "oooo" sound), jawOpen will be somewhat reduced. The linear compensation is a reasonable first approximation. If overcorrection is observed, reduce `factor`.
+
+## Next: visible licence credit (decided 2026-10-06)
+
+CPAL section 14 / LICENSE Exhibit B: wherever ARKitRemap shows UI (the Content Browser menu entries and
+their dialogs), show "Dylan Gitalis · https://youtube.com/@madricetv" with a link to
+https://github.com/Dylanyz/ARKitRemap, and print it once when the scripts run (LICENSE Exhibit B).
